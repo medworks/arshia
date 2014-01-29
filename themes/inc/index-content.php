@@ -10,17 +10,17 @@
 							<img src="themes/images/others/slider_1_bg.jpg" alt="slider_1_bg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
 							<!-- LAYERS -->
 							<!-- LAYER NR. 1 -->
-							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="0" data-y="128" data-speed="300" data-start="1600" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">به سایت ما خوش آمدید.<br>سایت....</div>
+							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="0" data-y="128" data-speed="300" data-start="1600" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">به سایت ما خوش آمدید.<br>سایت مدیا</div>
 							<!-- LAYER NR. 2 -->
 							<div class="tp-caption sentinel-small-600-black lfr tp-resizeme" data-x="0" data-y="203" data-speed="300" data-start="2000" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 3">این سایت کاملا ریسپانسیو می باشد <br>از آخرین متدهای رنکینگ در آن استفاده شده است <br>با گرافیک بالا و تنوع رنگ طراحی گردیده است.</div>
 							<!-- LAYER NR. 3 -->
 							<!-- <div class="tp-caption randomrotate tp-resizeme" data-x="0" data-y="284" data-speed="300" data-start="2400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 4"><a href="" class="sc_button sc_button_round sc_button_medium sc_button_green">Purchase Item</a></div> -->
 							<!-- LAYER NR. 4 -->
-							<div class="tp-caption lfl" data-x="595" data-y="51" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 5"><img src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/photos/slider_1_browser.png" alt=""></div>
+							<div class="tp-caption lfl" data-x="595" data-y="51" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 5"><img src="themes/images/others/slider_1_browser.png" alt=""></div>
 							<!-- LAYER NR. 5 -->
-							<div class="tp-caption lfl" data-x="476" data-y="194" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 6"><img src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/photos/slider_1_tablet.png" alt=""></div>
+							<div class="tp-caption lfl" data-x="476" data-y="194" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 6"><img src="themes/images/others/slider_1_tablet.png" alt=""></div>
 							<!-- LAYER NR. 6 -->
-							<div class="tp-caption lfl" data-x="407" data-y="304" data-speed="300" data-start="400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 7"><img src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/photos/slider_1_phone.png" alt=""></div>
+							<div class="tp-caption lfl" data-x="407" data-y="304" data-speed="300" data-start="400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 7"><img src="themes/images/others/slider_1_phone.png" alt=""></div>
 						</li>
 						<!-- SLIDE  -->
 						<li data-transition="zoomout" data-slotamount="7" data-masterspeed="600">
@@ -28,11 +28,11 @@
 							<img src="themes/images/others/slider_2_bg.jpg" alt="slider_2_bg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
 							<!-- LAYERS -->
 							<!-- LAYER NR. 1 -->
-							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="658" data-y="128" data-speed="300" data-start="400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">EVERYTHING YOU NEED <br>TO BUILD EXCEPTIONAL PROJECT.</div>
+							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="658" data-y="128" data-speed="300" data-start="400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">به سایت ما خوش آمدید. <br>سایت مدیا.</div>
 							<!-- LAYER NR. 2 -->
-							<div class="tp-caption sentinel-small-600-black lfr tp-resizeme" data-x="658" data-y="203" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 3">Sentinel is the best solution for your business, Responsive &amp; <br>Flexible, You can present your business and services <br>properly.</div>
+							<div class="tp-caption sentinel-small-600-black lfr tp-resizeme" data-x="658" data-y="203" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 3">این سایت کاملا ریسپانسیو می باشد <br>از آخرین متدهای رنکینگ در آن استفاده شده است <br>با گرافیک بالا و تنوع رنگ طراحی گردیده است.</div>
 							<!-- LAYER NR. 3 -->
-							<div class="tp-caption sentinel-small-600-black randomrotate tp-resizeme" data-x="658" data-y="284" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 4"><a href="" class="sc_button sc_button_round sc_button_medium sc_button_green">Purchase Item</a></div>
+							<!-- <div class="tp-caption sentinel-small-600-black randomrotate tp-resizeme" data-x="658" data-y="284" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 4"><a href="" class="sc_button sc_button_round sc_button_medium sc_button_green">Purchase Item</a></div> -->
 						</li>
 						<!-- SLIDE  -->
 						<li data-transition="flyin" data-slotamount="7" data-masterspeed="300">
@@ -40,13 +40,13 @@
 							<img src="themes/images/others/slider_3_bg.jpg" alt="slider_3_bg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
 							<!-- LAYERS -->
 							<!-- LAYER NR. 1 -->
-							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="58" data-y="138" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">Fully Responsive. Retina Display Ready. <br>Touch Enabled Sliders.</div>
+							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="58" data-y="138" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">به سایت ما خوش آمدید. <br>سایت مدیا.</div>
 							<!-- LAYER NR. 2 -->
-							<div class="tp-caption sentinel-small-600-black lfr tp-resizeme" data-x="58" data-y="214" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 3">Sentinel is the best solution for your business, Responsive &amp; Flexible, <br>You can present your business and services properly.</div>
+							<div class="tp-caption sentinel-small-600-black lfr tp-resizeme" data-x="58" data-y="214" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 3">این سایت کاملا ریسپانسیو می باشد <br>از آخرین متدهای رنکینگ در آن استفاده شده است <br>با گرافیک بالا و تنوع رنگ طراحی گردیده است.</div>
 							<!-- LAYER NR. 3 -->
-							<div class="tp-caption sentinel-small-600-black randomrotate tp-resizeme" data-x="58" data-y="275" data-speed="300" data-start="1600" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 4"><a href="" class="sc_button sc_button_round sc_button_medium sc_button_green">Explore More Features</a></div>
+							<!-- <div class="tp-caption sentinel-small-600-black randomrotate tp-resizeme" data-x="58" data-y="275" data-speed="300" data-start="1600" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 4"><a href="" class="sc_button sc_button_round sc_button_medium sc_button_green">Explore More Features</a></div> -->
 							<!-- LAYER NR. 4 -->
-							<div class="tp-caption lfb" data-x="693" data-y="30" data-speed="300" data-start="400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 5"><img src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/photos/slider_3_tablet.png" alt=""></div>
+							<div class="tp-caption lfb" data-x="693" data-y="30" data-speed="300" data-start="400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 5"><img src="themes/images/others/slider_3_tablet.png" alt=""></div>
 						</li>
 					</ul>
 				</div>
@@ -139,39 +139,99 @@
 													<div class="page-1 content_cols_eq">
 														<div class="post_content">
 															<div class="grid ">
-																<div class="col-1-4 ">
+																<div class="col-1-4">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#"><span class="text_icon_expand_item_inner"><span class="text_icon_expand_image_wrapper"><img class="text_icon_expand_image" src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/2224bfa7415ed4256d66a183b9e3036f_blog_meet-615-339-c.jpg" alt=""></span><span class="tie_icon_wrapper"><span class="tie_icon icon-desktop"></span></span><span class="tie_content"><span class="tie_text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</span><span class="sc_button sc_button_round sc_button_small sc_button_green">Show me details</span></span><span class="tie_subtitle">Elite Admin Panel</span><span class="tie_title">Creative &amp; Clean Design</span></span></a>
+																			<a class="text_icon_expand_item" href="#">
+																				<span class="text_icon_expand_item_inner">
+																					<span class="text_icon_expand_image_wrapper">
+																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
+																					</span>
+																					<span class="tie_icon_wrapper">
+																						<span class="tie_icon icon-desktop"></span>
+																					</span>
+																					<span class="tie_content">
+																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
+																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
+																					</span>
+																					<span class="tie_subtitle">سایت ریسپانسیو</span>
+																					<span class="tie_title">سایت به صورت کامل رسپانسیو می باشد</span>
+																				</span>
+																			</a>
 																		</div>
 																	</div>
 																</div>
-																<div class="col-1-4 ">
+																<div class="col-1-4">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#"><span class="text_icon_expand_item_inner"><span class="text_icon_expand_image_wrapper"><img class="text_icon_expand_image" src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/bd06fc0b7b3684c29b042d5e8b334fb3_desk-615-339-c.jpg" alt=""></span><span class="tie_icon_wrapper"><span class="tie_icon icon-cloud"></span></span><span class="tie_content"><span class="tie_text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</span><span class="sc_button sc_button_round sc_button_small sc_button_green">Show me details</span></span><span class="tie_subtitle">Elite Admin Panel</span><span class="tie_title">Carefully Handcrafted</span></span></a>
+																			<a class="text_icon_expand_item" href="#">
+																				<span class="text_icon_expand_item_inner">
+																					<span class="text_icon_expand_image_wrapper">
+																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
+																					</span>
+																					<span class="tie_icon_wrapper">
+																						<span class="tie_icon icon-desktop"></span>
+																					</span>
+																					<span class="tie_content">
+																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
+																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
+																					</span>
+																					<span class="tie_subtitle">سایت ریسپانسیو</span>
+																					<span class="tie_title">سایت به صورت کامل رسپانسیو می باشد</span>
+																				</span>
+																			</a>
 																		</div>
 																	</div>
 																</div>
-																<div class="col-1-4 ">
+																<div class="col-1-4">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#"><span class="text_icon_expand_item_inner"><span class="text_icon_expand_image_wrapper"><img class="text_icon_expand_image" src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt=""></span><span class="tie_icon_wrapper"><span class="tie_icon icon-cogs"></span></span><span class="tie_content"><span class="tie_text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</span><span class="sc_button sc_button_round sc_button_small sc_button_green">Show me details</span></span><span class="tie_subtitle">Elite Admin Panel</span><span class="tie_title">Incredibly Flexible</span></span></a>
+																			<a class="text_icon_expand_item" href="#">
+																				<span class="text_icon_expand_item_inner">
+																					<span class="text_icon_expand_image_wrapper">
+																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
+																					</span>
+																					<span class="tie_icon_wrapper">
+																						<span class="tie_icon icon-desktop"></span>
+																					</span>
+																					<span class="tie_content">
+																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
+																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
+																					</span>
+																					<span class="tie_subtitle">سایت ریسپانسیو</span>
+																					<span class="tie_title">سایت به صورت کامل رسپانسیو می باشد</span>
+																				</span>
+																			</a>
 																		</div>
 																	</div>
 																</div>
-																<div class="col-1-4 ">
+																<div class="col-1-4">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#"><span class="text_icon_expand_item_inner"><span class="text_icon_expand_image_wrapper"><img class="text_icon_expand_image" src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/0da0d24e6128c65e1dca20734b5dae4b_man-615-339-c.jpg" alt=""></span><span class="tie_icon_wrapper"><span class="tie_icon icon-star"></span></span><span class="tie_content"><span class="tie_text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</span><span class="sc_button sc_button_round sc_button_small sc_button_green">Show me details</span></span><span class="tie_subtitle">Elite Admin Panel</span><span class="tie_title">Customer Support</span></span></a>
+																			<a class="text_icon_expand_item" href="#">
+																				<span class="text_icon_expand_item_inner">
+																					<span class="text_icon_expand_image_wrapper">
+																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
+																					</span>
+																					<span class="tie_icon_wrapper">
+																						<span class="tie_icon icon-desktop"></span>
+																					</span>
+																					<span class="tie_content">
+																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
+																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
+																					</span>
+																					<span class="tie_subtitle">سایت ریسپانسیو</span>
+																					<span class="tie_title">سایت به صورت کامل رسپانسیو می باشد</span>
+																				</span>
+																			</a>
 																		</div>
 																	</div>
 																</div>
 															</div>
 															<div class="grid ">
-																<div class="col-1-1 ">
+																<div class="col-1-1">
 																	<div class="col">
-																		<h3 style="text-align:left;">Recent works</h3>
+																		<h3 style="text-align:right;">رزومه</h3>
 																	</div>
 																</div>
 															</div>

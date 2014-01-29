@@ -179,7 +179,7 @@
 				<div class="header-1_container cwidth_container">
 					<div class="header-1_wrapper cwidth_wrapper">
 						<div class="header-1 cwidth">
-							<div class="col-1-5">
+							<div class="col-1-5 left">
 								<div class="col">
 									<a href="./" class="logo">
 										<img width="148" height="31" src="themes/images/others/logo.png" data-at2x="themes/images/others/logo@2x.png" alt="Arshia">

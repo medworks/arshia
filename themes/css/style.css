@@ -9,7 +9,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   margin: 0;
   padding: 0; }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -28,7 +27,12 @@ blockquote:before, blockquote:after, q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
+.right{
+  float: right !important;
+}
+.left{
+  float: left !important;
+}
 /* ------------------------ */
 /* CLEARING AND OTHER HACKS */
 /* ------------------------ */
@@ -197,7 +201,7 @@ body {
   margin-left: -10px; }
 
 [class*='col-'] {
-  float: left; }
+  float: right; }
 
 .col {
   padding-left: 10px;
@@ -817,7 +821,9 @@ blockquote {
   letter-spacing: -1px; }
 
 .page-1 .post_content h3 {
-  font-size: 18px;
+  font-family: 'bmitra';
+  font-weight: normal;
+  font-size: 24px;
   line-height: 22px; }
 
 .post_content ul {
@@ -4835,7 +4841,7 @@ table.table-2 {
 .recent_posts_slider_wrapper .rps_controls {
   position: absolute;
   top: -44px;
-  right: 10px; }
+  left: 10px; }
 
 .recent_posts_slider_wrapper .rps_controls a {
   width: 19px;
