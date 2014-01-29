@@ -1,0 +1,149 @@
+@media only screen and (max-width: 840px) {
+
+  /* GALLERY-1 */
+  .gallery-1.gallery-columns-1 .packery .grid-sizer,
+  .gallery-1.gallery-columns-2 .packery .grid-sizer,
+  .gallery-1.gallery-columns-3 .packery .grid-sizer,
+  .gallery-1.gallery-columns-4 .packery .grid-sizer,
+  .gallery-1.gallery-columns-5 .packery .grid-sizer,
+  .gallery-1.gallery-columns-6 .packery .grid-sizer,
+  .gallery-1.gallery-columns-7 .packery .grid-sizer,
+  .gallery-1.gallery-columns-8 .packery .grid-sizer,
+  .gallery-1.gallery-columns-9 .packery .grid-sizer {
+    width: 50%; }
+
+  .gallery-1.gallery-columns-1 .packery .gallery_item,
+  .gallery-1.gallery-columns-2 .packery .gallery_item,
+  .gallery-1.gallery-columns-3 .packery .gallery_item,
+  .gallery-1.gallery-columns-4 .packery .gallery_item,
+  .gallery-1.gallery-columns-5 .packery .gallery_item,
+  .gallery-1.gallery-columns-6 .packery .gallery_item,
+  .gallery-1.gallery-columns-7 .packery .gallery_item,
+  .gallery-1.gallery-columns-8 .packery .gallery_item,
+  .gallery-1.gallery-columns-9 .packery .gallery_item {
+    width: 50%; }
+
+
+}
+
+@media only screen and (max-width: 680px) {
+
+  /* GALLERY-1 */
+  .gallery-1.gallery-columns-1 .packery .grid-sizer,
+  .gallery-1.gallery-columns-2 .packery .grid-sizer,
+  .gallery-1.gallery-columns-3 .packery .grid-sizer,
+  .gallery-1.gallery-columns-4 .packery .grid-sizer,
+  .gallery-1.gallery-columns-5 .packery .grid-sizer,
+  .gallery-1.gallery-columns-6 .packery .grid-sizer,
+  .gallery-1.gallery-columns-7 .packery .grid-sizer,
+  .gallery-1.gallery-columns-8 .packery .grid-sizer,
+  .gallery-1.gallery-columns-9 .packery .grid-sizer {
+    width: 100%; }
+
+  .gallery-1.gallery-columns-1 .packery .gallery_item,
+  .gallery-1.gallery-columns-2 .packery .gallery_item,
+  .gallery-1.gallery-columns-3 .packery .gallery_item,
+  .gallery-1.gallery-columns-4 .packery .gallery_item,
+  .gallery-1.gallery-columns-5 .packery .gallery_item,
+  .gallery-1.gallery-columns-6 .packery .gallery_item,
+  .gallery-1.gallery-columns-7 .packery .gallery_item,
+  .gallery-1.gallery-columns-8 .packery .gallery_item,
+  .gallery-1.gallery-columns-9 .packery .gallery_item {
+    width: 100%; }
+
+}
+
+
+/* --------- */
+/* GALLERY-1 */
+/* --------- */
+.gallery-1 .post_content {
+  padding: 0; }
+
+.gallery-1 .packery_wrapper {
+  margin: -7px -7px 0 -7px;
+  padding: 15px 0 30px 0; }
+
+.gallery-1.gallery-columns-1 .packery .grid-sizer,
+.gallery-1.gallery-columns-1 .packery .gallery_item {
+  width: 100%;
+  /* 3 columns */ }
+
+.gallery-1.gallery-columns-2 .packery .grid-sizer,
+.gallery-1.gallery-columns-2 .packery .gallery_item {
+  width: 50%;
+  /* 3 columns */ }
+
+.gallery-1.gallery-columns-3 .packery .grid-sizer,
+.gallery-1.gallery-columns-3 .packery .gallery_item {
+  width: 33.33%;
+  /* 3 columns */ }
+
+.gallery-1.gallery-columns-4 .packery .grid-sizer,
+.gallery-1.gallery-columns-4 .packery .gallery_item {
+  width: 25%;
+  /* 3 columns */ }
+
+.gallery-1.gallery-columns-5 .packery .grid-sizer,
+.gallery-1.gallery-columns-5 .packery .gallery_item {
+  width: 19.99%;
+  /* 3 columns */ }
+
+.gallery-1.gallery-columns-6 .packery .grid-sizer,
+.gallery-1.gallery-columns-6 .packery .gallery_item {
+  width: 16.66%;
+  /* 3 columns */ }
+
+.gallery-1.gallery-columns-7 .packery .grid-sizer,
+.gallery-1.gallery-columns-7 .packery .gallery_item {
+  width: 14.285%;
+  /* 3 columns */ }
+
+.gallery-1.gallery-columns-8 .packery .grid-sizer,
+.gallery-1.gallery-columns-8 .packery .gallery_item {
+  width: 12.5%;
+  /* 3 columns */ }
+
+.gallery-1.gallery-columns-9 .packery .grid-sizer,
+.gallery-1.gallery-columns-9 .packery .gallery_item {
+  width: 11.11%;
+  /* 3 columns */ }
+
+.gallery-1 .packery .gallery_item .featured_image_container {
+  padding: 7px; }
+
+.gallery-1 .packery_wrapper .fullwidth .gallery_item {
+  width: 100% !important;
+  /*padding-bottom: $lineheight;*/ }
+
+.gallery-1 .packery img {
+  min-width: 100%;
+  max-width: 100%;
+  display: block; }
+
+.gallery.loading {
+  width: 100%;
+  height: 200px;
+  position: relative; }
+
+.gallery .packery_loading_icon {
+  display: none; }
+
+.gallery.loading .packery_loading_icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -16px;
+  background: url("loader.gif") no-repeat center center;
+  /*@include animation(spin 1.6s infinite linear);*/ }
+
+.gallery.loading .packery {
+  display: none; }
+
+.gallery .packery {
+  display: block; }
+
