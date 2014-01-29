@@ -170,7 +170,7 @@
 																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
 																					</span>
 																					<span class="tie_icon_wrapper">
-																						<span class="tie_icon icon-desktop"></span>
+																						<span class="tie_icon icon-cloud"></span>
 																					</span>
 																					<span class="tie_content">
 																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
@@ -192,7 +192,7 @@
 																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
 																					</span>
 																					<span class="tie_icon_wrapper">
-																						<span class="tie_icon icon-desktop"></span>
+																						<span class="tie_icon icon-cogs"></span>
 																					</span>
 																					<span class="tie_content">
 																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
@@ -214,7 +214,7 @@
 																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
 																					</span>
 																					<span class="tie_icon_wrapper">
-																						<span class="tie_icon icon-desktop"></span>
+																						<span class="tie_icon icon-star"></span>
 																					</span>
 																					<span class="tie_content">
 																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
@@ -253,7 +253,7 @@
 																							</div>
 																						</div>
 																						<div class="rps_content">
-																							<div class="rps_like_wrapper"><a href="#" class="dot-irecommendthis" id="dot-irecommendthis-194" title="Recommend this"><span class="dot-irecommendthis-count">26</span> <span class="dot-irecommendthis-suffix"></span></a></div>
+																							<!-- <div class="rps_like_wrapper"><a href="#" class="dot-irecommendthis" id="dot-irecommendthis-194" title="Recommend this"><span class="dot-irecommendthis-count">26</span> <span class="dot-irecommendthis-suffix"></span></a></div> -->
 																							<h3 class="rps_title"><a href="http://rawofnature.com/demfile/sn/wp/portfolio/dolor-sit-amet-consectetur/">Dolor sit amet consectetur.</a></h3>
 																							<div class="rps_date">November 18, 2013</div>
 																						</div>
@@ -270,9 +270,9 @@
 																							</div>
 																						</div>
 																						<div class="rps_content">
-																							<div class="rps_like_wrapper">
+																							<!-- <div class="rps_like_wrapper">
 																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-193" title="Recommend this"><span class="dot-irecommendthis-count">42</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div>
+																							</div> -->
 																							<h3 class="rps_title"><a href="http://rawofnature.com/demfile/sn/wp/portfolio/adipisicing-elit-sed/">Adipisicing elit sed.</a></h3>
 																							<div class="rps_date">November 18, 2013</div>
 																						</div>
@@ -289,9 +289,9 @@
 																							</div>
 																						</div>
 																						<div class="rps_content">
-																							<div class="rps_like_wrapper">
+																							<!-- <div class="rps_like_wrapper">
 																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-192" title="Recommend this"><span class="dot-irecommendthis-count">45</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div>
+																							</div> -->
 																							<h3 class="rps_title"><a href="http://rawofnature.com/demfile/sn/wp/portfolio/do-eiusmod-tempor/">Do eiusmod tempor.</a></h3>
 																							<div class="rps_date">November 18, 2013</div>
 																						</div>
@@ -308,9 +308,9 @@
 																							</div>
 																						</div>
 																						<div class="rps_content">
-																							<div class="rps_like_wrapper">
+																							<!-- <div class="rps_like_wrapper">
 																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-191" title="Recommend this"><span class="dot-irecommendthis-count">22</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div>
+																							</div> -->
 																							<h3 class="rps_title">
 																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/incididunt-ut-labore/">Incididunt ut labore.</a>
 																							</h3>
@@ -329,9 +329,9 @@
 																							</div>
 																						</div>
 																						<div class="rps_content">
-																							<div class="rps_like_wrapper">
+																							<!-- <div class="rps_like_wrapper">
 																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-190" title="Recommend this"><span class="dot-irecommendthis-count">24</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div>
+																							</div> -->
 																							<h3 class="rps_title">
 																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/perspiciatis-unde/">Perspiciatis unde.</a>
 																							</h3>
@@ -350,9 +350,9 @@
 																							</div>
 																						</div>
 																						<div class="rps_content">
-																							<div class="rps_like_wrapper">
+																							<!-- <div class="rps_like_wrapper">
 																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-189" title="Recommend this"><span class="dot-irecommendthis-count">30</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div>
+																							</div> -->
 																							<h3 class="rps_title">
 																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/sed-ut-perspiciatis-unde/">Sed ut perspiciatis unde.</a>
 																							</h3>
@@ -371,9 +371,9 @@
 																							</div>
 																						</div>
 																						<div class="rps_content">
-																							<div class="rps_like_wrapper">
+																							<!-- <div class="rps_like_wrapper">
 																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-188" title="Recommend this"><span class="dot-irecommendthis-count">20</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div>
+																							</div> -->
 																							<h3 class="rps_title">
 																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/voluptatem-accusantium/">Voluptatem accusantium.</a>
 																							</h3>
@@ -392,9 +392,9 @@
 																							</div>
 																						</div>
 																						<div class="rps_content">
-																							<div class="rps_like_wrapper">
+																							<!-- <div class="rps_like_wrapper">
 																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-187" title="Recommend this"><span class="dot-irecommendthis-count">20</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div>
+																							</div> -->
 																							<h3 class="rps_title">
 																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/doloremque-lauda/">Doloremque lauda.</a>
 																							</h3>
