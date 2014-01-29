@@ -147,7 +147,7 @@
 		}
 	</style>
 </head>
-<body class="home page page-id-675 page-template-default layout_fullwidth wpb-js-composer js-comp-ver-3.6.14.1 vc_responsive">
+<body class="home page page-id-675 page-template-default layout_fullwidth js-comp-ver-3.6.14.1 vc_responsive">
 	<div id="layout_width" class="fullwidth">
 		<div class="content_container">
 			<div class="header-2_container cwidth_container">
@@ -157,16 +157,16 @@
 							<div class="col">
 								<div class="header-2_content clearfix">
 									<div class="contact_info">
-										Call Us: (2)245 23 68 - Mail <a href="mailto:info@sentinel.com">info@sentinel.com</a>
+										Call Us: (98)511 766 6436 - Mail <a href="mailto:info@arshia.com">info@arshia.com</a>
 									</div>
 									<div class="header_right">
 										<div class="social_links">
-											<a href="http://twitter.com/_freshface" class="social_link icon-twitter"></a>
-											<a href="http://dribbble.com/freshface" class="social_link icon-dribbble"></a>
-											<a href="http://facebook.com/freshfacethemes" class="social_link icon-facebook"></a>
-											<a href="http://plus.google.com/" class="social_link icon-google-plus"></a>
-											<a href="http://rawofnature.com/demfile/sn/wp/?feed=rss2" class="social_link icon-rss"></a>
-											<a href="http://linkedin.com/" class="social_link icon-linkedin"></a>
+											<a href="#" class="social_link icon-twitter"></a>
+											<a href="#" class="social_link icon-dribbble"></a>
+											<a href="#" class="social_link icon-facebook"></a>
+											<a href="#" class="social_link icon-google-plus"></a>
+											<a href="#" class="social_link icon-rss"></a>
+											<a href="#" class="social_link icon-linkedin"></a>
 										</div>						
 									</div>
 								</div>
@@ -181,8 +181,8 @@
 						<div class="header-1 cwidth">
 							<div class="col-1-5">
 								<div class="col">
-									<a href="http://rawofnature.com/demfile/sn/wp/" class="logo">
-										<img width="148" height="31" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/images/logo.png" data-at2x="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/images/logo@2x.png" alt="">
+									<a href="./" class="logo">
+										<img width="148" height="31" src="themes/images/others/logo.png" data-at2x="themes/images/others/logo@2x.png" alt="Arshia">
 									</a>
 								</div>
 							</div>
