@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="fa-IR">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="fa-IR">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,29 +70,33 @@
 	<!-- <link rel="stylesheet" href='http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/framework/demo/switcher.css?ver=3.8.1' type="text/css" media="all"> -->
 	<link rel="stylesheet" href="themes/css/colorpicker.css" type="text/css" media="all">
 	
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-includes/js/jquery/jquery.js?ver=1.10.2"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/mailchimp/js/scrollTo.js?ver=1.4.1"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.45.0-2013.10.17"></script>
+	<script type="text/javascript" src="themes/js/jquery.js"></script>
+	<script type="text/javascript" src="themes/js/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="themes/js/scrollTo.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.form.min.js"></script>
+	
 	<script type="text/javascript">
 		/* <![CDATA[ */
 		var mailchimpSF = {"ajax_url":"http:\/\/rawofnature.com\/demfile\/sn\/wp\/"};
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/mailchimp/js/mailchimp.js?ver=1.4.1"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.10.3"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/mailchimp//js/datepicker.js?ver=3.8.1"></script>
+
+	<script type="text/javascript" src="themes/js/mailchimp.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="themes/js/datepicker.js"></script>
+	
 	<script type="text/javascript">
 		/* <![CDATA[ */
 		var dot_irecommendthis = {"ajaxurl":"http:\/\/rawofnature.com\/demfile\/sn\/wp\/wp-admin\/admin-ajax.php"};
 		/* ]]> */
 	</script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/i-recommend-this/js/dot_irecommendthis.js?ver=2.6.0"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?rev=4.0.4&amp;ver=3.8.1"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?rev=4.0.4&amp;ver=3.8.1"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/bxslider/jquery.bxslider.min.js?ver=3.8.1"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/caroufredsel/jquery.caroufredsel.min.js?ver=3.8.1"></script>
-	<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/colorpicker/js/colorpicker.js?ver=3.8.1"></script>
+
+	<script type="text/javascript" src="themes/js/dot_irecommendthis.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.caroufredsel.min.js"></script>
+	<script type="text/javascript" src="themes/js/colorpicker.js"></script>
 	
 	<!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://rawofnature.com/demfile/sn/wp/xmlrpc.php?rsd">
 	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://rawofnature.com/demfile/sn/wp/wp-includes/wlwmanifest.xml"> 
@@ -101,7 +105,7 @@
 	<link rel="canonical" href="http://rawofnature.com/demfile/sn/wp/">
 	<link rel="shortlink" href="http://rawofnature.com/demfile/sn/wp/?p=675"> -->
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		jQuery(function($) {
 			$('.date-pick').each(function() {
 				var format = $(this).data('format') || 'mm/dd/yyyy';
@@ -133,7 +137,7 @@
 			});
 
 		});
-	</script>
+	</script> -->
 
 	<style type="text/css">
 		.recentcomments a{
