@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="fa-IR">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="fa-IR">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -157,7 +157,7 @@
 							<div class="col">
 								<div class="header-2_content clearfix">
 									<div class="contact_info">
-										Call Us: (98)511 766 6436 - Mail <a href="mailto:info@arshia.com">info@arshia.com</a>
+										Call Us: (98)511 123 4567 - Mail <a href="mailto:info@arshia.com">info@arshia.com</a>
 									</div>
 									<div class="header_right">
 										<div class="social_links">
@@ -194,68 +194,28 @@
 												<div class="navigation-desktop">
 													<div class="menu-navigation-container">
 														<ul id="menu-navigation-desktop" class="menu">
-															<li id="menu-item-688" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item menu-item-688 top-menu-item has-sub-menu">
-																<a href="http://rawofnature.com/demfile/sn/wp/" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">Home</span> </span></span></a>
-																<ul class="sub-menu">
-																	<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-78">
-																		<a href="http://rawofnature.com/demfile/sn/wp/home-1/"><span class="item_wrapper"><span class="item"><span class="item_name">Home 1</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-77">
-																		<a href="http://rawofnature.com/demfile/sn/wp/home-2/"><span class="item_wrapper"><span class="item"><span class="item_name">Home 2</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-76">
-																		<a href="http://rawofnature.com/demfile/sn/wp/home-3/"><span class="item_wrapper"><span class="item"><span class="item_name">Home 3</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-75">
-																		<a href="http://rawofnature.com/demfile/sn/wp/home-4/"><span class="item_wrapper"><span class="item"><span class="item_name">Home 4</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-74">
-																		<a href="http://rawofnature.com/demfile/sn/wp/home-5/"><span class="item_wrapper"><span class="item"><span class="item_name">Home 5</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-686" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-675 current_page_item menu-item menu-item-686">
-																		<a href="http://rawofnature.com/demfile/sn/wp/"><span class="item_wrapper"><span class="item"><span class="item_name">Home 6</span> </span></span></a>
-																	</li>
-																</ul>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item menu-item-688 top-menu-item has-sub-menu">
+																<a href="./" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">صفحه اصلی</span> </span></span></a>
 															</li>
-															<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
-																<a href="http://rawofnature.com/demfile/sn/wp/about/" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">Pages</span> </span></span></a>
-																<ul class="sub-menu">
-																	<li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-118">
-																		<a href="http://rawofnature.com/demfile/sn/wp/about/"><span class="item_wrapper"><span class="item"><span class="item_name">About</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-117">
-																		<a href="http://rawofnature.com/demfile/sn/wp/team/"><span class="item_wrapper"><span class="item"><span class="item_name">Team</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-116">
-																		<a href="http://rawofnature.com/demfile/sn/wp/services/"><span class="item_wrapper"><span class="item"><span class="item_name">Services</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-276">
-																		<a href="http://rawofnature.com/demfile/sn/wp/page-with-a-left-sidebar/"><span class="item_wrapper"><span class="item"><span class="item_name">Left Sidebar</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-277">
-																		<a href="http://rawofnature.com/demfile/sn/wp/page-with-a-right-sidebar/"><span class="item_wrapper"><span class="item"><span class="item_name">Right Sidebar</span> </span></span></a>
-																	</li>
-																	<li id="menu-item-275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-275">
-																		<a href="http://rawofnature.com/demfile/sn/wp/page-fullwidth/"><span class="item_wrapper"><span class="item"><span class="item_name">Fullwidth</span> </span></span></a>
-																	</li>
-																</ul>
+															<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
+																<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">درباره ما</span> </span></span></a>
 															</li>
-															<li id="menu-item-585" class="noactive menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
-																<a href="http://rawofnature.com/demfile/sn/wp/about/" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">Elements</span> </span></span></a>
+															<li class="noactive menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
+																<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر</span> </span></span></a>
 																<ul class="sub-menu">
-																	<li id="menu-item-594" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="http://rawofnature.com/demfile/sn/wp/shortcodes/#accordeon" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">Accordeons</span> </span></span></a>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 1</span> </span></span></a>
 																		<ul class="sub-menu">
-																			<li id="menu-item-627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item menu-item-627">
-																				<a href="http://rawofnature.com/demfile/sn/wp/shortcodes/#accordeon"><span class="item_wrapper"><span class="item"><span class="item_name">Accordeon 1</span> </span></span></a>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item menu-item-627">
+																				<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 1-1</span> </span></span></a>
 																			</li>
-																			<li id="menu-item-626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item menu-item-626">
-																				<a href="http://rawofnature.com/demfile/sn/wp/home-1/#accordeon2"><span class="item_wrapper"><span class="item"><span class="item_name">Accordeon 2</span> </span></span></a>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item menu-item-626">
+																				<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 1-2</span> </span></span></a>
 																			</li>
 																		</ul>
 																	</li>
-																	<li id="menu-item-597" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-597 has-sub-menu">
-																		<a href="http://rawofnature.com/demfile/sn/wp/shortcodes/#alertboxes" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">Alert Boxes</span> </span></span></a>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-597 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">Alert Boxes</span> </span></span></a>
 																		<ul class="sub-menu">
 																			<li id="menu-item-643" class="menu-item menu-item-type-custom menu-item-object-custom menu-item menu-item-643">
 																				<a href="http://rawofnature.com/demfile/sn/wp/shortcodes/#alertboxes"><span class="item_wrapper"><span class="item"><span class="item_name">Confirmation</span> </span></span></a>
