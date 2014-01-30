@@ -417,7 +417,7 @@
 																<div class="col-1-2 ">
 																	<div class="col">
 																		<div class="recent_posts_list">
-																			<h3>Latest News</h3>
+																			<h3>آخرین اخبار</h3>
 																			<div class="rpl_post ">
 																				<div class="blog-post-1">
 																					<div class="grid">
@@ -428,7 +428,7 @@
 																										<div class="post_meta_left_date">
 																											<div class="date_box">21</div>
 																										</div>
-																										<div class="date_month">Nov</div>
+																										<div class="date_month">تیر</div>
 																									</div>
 																								</div>
 																							</div>
@@ -437,16 +437,16 @@
 																							<div class="col">
 																								<div class="post_header">
 																									<h2 class="post_title">
-																										<a href="http://rawofnature.com/demfile/sn/wp/this-is-a-standard-post/">This is a Standard Post</a>
+																										<a href="#">خبر شماه دو</a>
 																									</h2>
 																								</div>
-																								<div class="post_meta">
+																								<!-- <div class="post_meta">
 																									<span class="post_meta_item post_meta_comment_number">
 																										<a href="http://rawofnature.com/demfile/sn/wp/this-is-a-standard-post/">No Comments</a>
-																									</span>
-																								</div>
+																									</span> 
+																								</div> -->
 																								<div class="post_content">
-																									<p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Perspiciatis unde omnis iste natus error sit voluptatem accusantium… <a href="http://rawofnature.com/demfile/sn/wp/this-is-a-standard-post/" class="read_more_link">Read More</a></p>
+																									<p>این سایت کاملا ریسپانسیو بوده و از آخرین متدهای رنکینگ و بالا بردن سئو در تمام موتورهای جستجو در آن استفاده شده ایت. <a href="#" class="read_more_link">ادامه مطلب</a></p>
 																								</div>
 																							</div>
 																						</div>
@@ -461,9 +461,9 @@
 																								<div class="post_meta_left">
 																									<div class="post_meta_left_date_wrapper">
 																										<div class="post_meta_left_date">
-																											<div class="date_box">20</div>
+																											<div class="date_box">19</div>
 																										</div>
-																										<div class="date_month">Oct</div>
+																										<div class="date_month">آذر</div>
 																									</div>
 																								</div>
 																							</div>
@@ -472,16 +472,16 @@
 																							<div class="col">
 																								<div class="post_header">
 																									<h2 class="post_title">
-																										<a href="http://rawofnature.com/demfile/sn/wp/this-is-a-gallery-post/">This is a Gallery Post</a>
+																										<a href="#">خبر شماه یک</a>
 																									</h2>
 																								</div>
-																								<div class="post_meta">
+																								<!-- <div class="post_meta">
 																									<span class="post_meta_item post_meta_comment_number">
-																										<a href="http://rawofnature.com/demfile/sn/wp/this-is-a-gallery-post/">No Comments</a>
-																									</span>
-																								</div>
+																										<a href="http://rawofnature.com/demfile/sn/wp/this-is-a-standard-post/">No Comments</a>
+																									</span> 
+																								</div> -->
 																								<div class="post_content">
-																									<p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque… <a href="http://rawofnature.com/demfile/sn/wp/this-is-a-gallery-post/" class="read_more_link">Read More</a></p>
+																									<p>این سایت کاملا ریسپانسیو بوده و از آخرین متدهای رنکینگ و بالا بردن سئو در تمام موتورهای جستجو در آن استفاده شده ایت. <a href="#" class="read_more_link">ادامه مطلب</a></p>
 																								</div>
 																							</div>
 																						</div>
@@ -493,7 +493,7 @@
 																</div>
 																<div class="col-1-4 ">
 																	<div class="col">
-																		<h3>More about us</h3>
+																		<h3>بیشتر درباره ما بدانید</h3>
 																		<div class="accordeon-2">
 																			<div class="tb_accordeon_container">
 																				<div class="tb_accordeon_wrapper">
@@ -501,13 +501,13 @@
 																						<div class="tb_accordeon_item ">
 																							<div class="tb_accordeon_item_post_title_wrapper">
 																								<div class="tb_accordeon_item_arrows"></div>
-																								<h3 class="tb_accordeon_item_title">Who we are?</h3>
+																								<h3 class="tb_accordeon_item_title">ما که هستیم؟</h3>
 																								<div class="clear"></div>
 																							</div>
 																							<div class="tb_accordeon_item_content_wrapper" style="display: block; height: 0px;">
 																								<div class="tb_accordeon_item_content">
 																									<div class="">
-																										<p>Voluptatem accusantium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore. veritatis et quasi architecto beatae vitae dicta sunt.</p>
+																										<p>درباره ما... </p>
 																									</div>
 																								</div>
 																							</div>
@@ -515,13 +515,13 @@
 																						<div class="tb_accordeon_item tb_accordeon_item_open">
 																							<div class="tb_accordeon_item_post_title_wrapper">
 																								<div class="tb_accordeon_item_arrows"></div>
-																								<h3 class="tb_accordeon_item_title">What we do?</h3>
+																								<h3 class="tb_accordeon_item_title">ما چه میکنیم؟</h3>
 																								<div class="clear"></div>
 																							</div>
 																							<div class="tb_accordeon_item_content_wrapper" style="display: block; height: 0px;">
 																								<div class="tb_accordeon_item_content">
 																									<div class="">
-																										<p>Voluptatem accusantium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore. veritatis et quasi architecto beatae vitae dicta sunt.</p>
+																										<p>کار ما... </p>
 																									</div>
 																								</div>
 																							</div>
@@ -529,13 +529,13 @@
 																						<div class="tb_accordeon_item ">
 																							<div class="tb_accordeon_item_post_title_wrapper">
 																								<div class="tb_accordeon_item_arrows"></div>
-																								<h3 class="tb_accordeon_item_title">Where we do it?</h3>
+																								<h3 class="tb_accordeon_item_title">ما کجا هستیم؟</h3>
 																								<div class="clear"></div>
 																							</div>
 																							<div class="tb_accordeon_item_content_wrapper" style="display: block; height: 0px;">
 																								<div class="tb_accordeon_item_content">
 																									<div class="">
-																										<p>Voluptatem accusantium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore. veritatis et quasi architecto beatae vitae dicta sunt.</p>
+																										<p>آدرس ما..</p>
 																									</div>
 																								</div>
 																							</div>
@@ -548,17 +548,17 @@
 																</div>
 																<div class="col-1-4 ">
 																	<div class="col">
-																		<h3 style="text-align:left;">Testimonials</h3>
+																		<h3>از زبان مشتریان</h3>
 																		<div class="testimonial-2 ">
 																			<div class="testimonial_content">
 																				<div class="testimonial_content_inner">
-																					<p>Soluptatem accusantium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore. veritatis et quasi architecto beatae.</p>
+																					<p>کامنت های مربوط به مشتریان... این سایت کاملا ریسپانسیو بوده و در آن از آخرین متدهای رنکینگ و سئو برای بالا بردن سایت در موتورهای جستجو مانند گوگل استفاده شده است.</p>
 																				</div>
 																			</div>
-																			<div class="testimonial_author clearfix"><img class="testimonial_photo" src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/acd1f94ba73128cb74463e8c2ff04719_head1-40-40-c.jpg" alt=""><br>
+																			<!-- <div class="testimonial_author clearfix"><img class="testimonial_photo" src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/acd1f94ba73128cb74463e8c2ff04719_head1-40-40-c.jpg" alt=""><br>
 																				<h3 class="testimonial_name">Robert Green</h3>
 																				<div class="testimonial_position">Businessman</div>
-																			</div>
+																			</div> -->
 																		</div>
 																	</div>
 																</div>

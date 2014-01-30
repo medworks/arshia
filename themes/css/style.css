@@ -2726,7 +2726,8 @@ body.layout_boxed .header_main_wrapper {
 
 .blog-post-1 h1.post_title a,
 .blog-post-1 h2.post_title a {
-  position: relative; }
+  position: relative;
+  font-size: 15px; }
 
 /* POST META LEFT */
 .blog-post-1 .post_meta_left {
@@ -2753,7 +2754,7 @@ body.layout_boxed .header_main_wrapper {
 .blog-post-1 .post_meta_left .post_meta_left_date_wrapper .date_month {
   width: 41px;
   line-height: 18px;
-  font-size: 10px;
+  font-size: 14px;
   color: #828282;
   text-transform: uppercase; }
 
@@ -3895,9 +3896,9 @@ body.layout_boxed .header_main_wrapper {
 
 .accordeon-2 h3.tb_accordeon_item_title {
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 20px;
-  padding: 8px 60px 8px 14px;
+  padding: 8px 35px 8px 14px;
   color: #535353;
   border: 1px solid #e8e8e8;
   -webkit-border-radius: 2px;
@@ -5097,7 +5098,8 @@ table.table-2 {
   margin: 0; }
 
 .recent_posts_list .blog-post-1 .post_content {
-  margin: -18px 0 0 0; }
+  margin: -18px 0 0 0;
+  font-size: 15px; }
 
 .recent_posts_list .blog-post-1 .post_meta_left {
   margin-top: 2px; }
