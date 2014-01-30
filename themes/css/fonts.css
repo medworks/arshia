@@ -34,3 +34,12 @@
   font-weight: 700;
   src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/PRmiXeptR36kaC0GEAetxjqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
 }
+@font-face{
+  font-family:'bmitra';
+  src:url('../fonts/BMitra.eot');
+  src:url('../fonts/BMitra.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BMitra.woff') format('woff'),
+      url('../fonts/BMitra.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
