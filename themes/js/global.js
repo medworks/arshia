@@ -335,13 +335,13 @@ function fix_navigation_submenu_direction() {
 		var subMenuCount = count_sub_menu( $(this) );
 
 		var fullOpenedMenuWidth = subMenuCount * subMenuWidth;
-		var position = $(this).offset().left;
+		var position = $(this).offset().right;
 		var windowWidth = $(window).width();
 		
 		if( (position + fullOpenedMenuWidth) > windowWidth ) {
-			$(this).children('.sub-menu').find('.sub-menu').css('margin-left', -subMenuWidth);
+			$(this).children('.sub-menu').find('.sub-menu').css('margin-right', -subMenuWidth);
 		} else {
-			$(this).children('.sub-menu').find('.sub-menu').css('margin-left', subMenuWidth);
+			$(this).children('.sub-menu').find('.sub-menu').css('margin-right', subMenuWidth);
 		}
 	});
 }
