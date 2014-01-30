@@ -859,18 +859,17 @@
 					var _wpcf7 = {"loaderUrl":"http:\/\/rawofnature.com\/demfile\/sn\/wp\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
 					/* ]]> */
 				</script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=3.5.4"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/ffPackeryGallery/packery/packery.pkgd.min.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/plugins/ffPackeryGallery/shortcodes.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/imagesloaded/imagesloaded.min.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/js/global.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/magnific-popup/magnific-popup.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/isotope/jquery.isotope.min.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/gmaps/jquery.gmaps.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/countdown/jquery.countdown.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/countdown/jquery.countdown_init.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/retinajs/retina-1.1.0-ff-updt.min.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/framework/demo/cookie.js?ver=3.8.1"></script>
-				<script type="text/javascript" src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/framework/demo/switcher.js?ver=3.8.1"></script>
+				<script type="text/javascript" src="themes/js/scripts.js"></script>
+				<script type="text/javascript" src="themes/js/packery.pkgd.min.js"></script>
+				<script type="text/javascript" src="themes/js/shortcodes.js"></script>
+				<script type="text/javascript" src="themes/js/imagesloaded.min.js"></script>
+				<script type="text/javascript" src="themes/js/global.js"></script>
+				<script type="text/javascript" src="themes/js/magnific-popup.js"></script>
+				<script type="text/javascript" src="themes/js/jquery.isotope.min.js"></script>
+				<script type="text/javascript" src="themes/js/jquery.gmaps.js"></script>
+				<script type="text/javascript" src="themes/js/jquery.countdown.js"></script>
+				<script type="text/javascript" src="themes/js/jquery.countdown_init.js"></script>
+				<script type="text/javascript" src="themes/js/retina-1.1.0-ff-updt.min.js"></script>
+				<script type="text/javascript" src="themes/js/cookie.js"></script>
 </body>
 </html>
