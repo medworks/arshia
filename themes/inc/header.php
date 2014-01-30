@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="generator" content="Mediateq">
 	
-	<title>Arshia</title>
+	<title>Media</title>
 
 	<link rel="shortcut icon" href="./favicon.ico">
 
@@ -157,7 +157,7 @@
 							<div class="col">
 								<div class="header-2_content clearfix">
 									<div class="contact_info">
-										Call Us: (98)511 123 4567 - Mail <a href="mailto:info@arshia.com">info@arshia.com</a>
+										Call Us: (98)511 123 4567 - Mail <a href="mailto:info@media.com">info@meida.com</a>
 									</div>
 									<div class="header_right">
 										<div class="social_links">
@@ -303,12 +303,12 @@
 				</div>
 				<div class="search_top_overlay">
 					<div class="cwidth_wrapper">
-						<form method="get" class="searchform clearfix" action="http://rawofnature.com/demfile/sn/wp">
+						<form method="get" class="searchform clearfix" action="">
 							<button class="searchbutton">
 								<i class="search_top_overlay_button"></i>
 							</button>
 							<div class="search_top_close"></div>
-							<p><input type="text" class="searchfield nooutline" name="s" autocomplete="off" placeholder="Search..."></p>
+							<p><input type="text" class="searchfield nooutline" name="s" autocomplete="off" placeholder="جستجو..."></p>
 						</form>
 					</div>
 				</div>
