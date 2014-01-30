@@ -4831,11 +4831,13 @@ table.table-2 {
   color: #787878; }
 
 .recent_posts_slider h3.rps_title {
-  font-size: 14px;
+  font-size: 20px;
+  text-align: right;
   margin: 13px 0 0 0;
-  padding: 0 50px 0 0; }
+  /*padding: 0 50px 0 0;*/ }
 
 .recent_posts_slider .rps_date {
+  text-align: right;
   color: #747474; }
 
 .recent_posts_slider_wrapper .rps_controls {

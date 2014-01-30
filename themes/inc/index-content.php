@@ -245,149 +245,30 @@
 																			<ul class="recent_posts_slider clearfix" data-num-columns="4" data-image-width="280" data-autoslide-interval="2500" data-autoslide-stop-click="yes">
 																				<li>
 																					<div class="rps_slide">
-																						<div class="rps_image_wrapper"><img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/bf1631f1ba680635e05d9d28bb509f1a_bridge-280-188-c.jpg" alt="" class="rps_image">
+																						<div class="rps_image_wrapper">
+																							<img src="themes/images/others/bf1631f1ba680635e05d9d28bb509f1a_bridge-280-188-c.jpg" alt="" class="rps_image">
 																							<div class="rps_image_hover">
 																								<div class="rps_image_controls clearfix">
-																									<a href="http://rawofnature.com/demfile/sn/wp/portfolio/dolor-sit-amet-consectetur/" class="rps_image_link"></a><a class="rps_image_zoom" data-effect="mfp-zoom-in" href="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/2013/11/bridge.jpg"></a>
+																									<a href="#" class="rps_image_link"></a>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/bridge.jpg"></a>
 																								</div>
 																							</div>
 																						</div>
 																						<div class="rps_content">
 																							<!-- <div class="rps_like_wrapper"><a href="#" class="dot-irecommendthis" id="dot-irecommendthis-194" title="Recommend this"><span class="dot-irecommendthis-count">26</span> <span class="dot-irecommendthis-suffix"></span></a></div> -->
-																							<h3 class="rps_title"><a href="http://rawofnature.com/demfile/sn/wp/portfolio/dolor-sit-amet-consectetur/">Dolor sit amet consectetur.</a></h3>
-																							<div class="rps_date">November 18, 2013</div>
+																							<h3 class="rps_title"><a href="#">رزمه چهار</a></h3>
+																							<div class="rps_date">فروردین 18, 1392</div>
 																						</div>
 																					</div>
 																				</li>
 																				<li>
 																					<div class="rps_slide">
 																						<div class="rps_image_wrapper">
-																							<img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/e9ee5fe2ecf71ece2440c30fd224efdf_plane-280-188-c.jpg" alt="" class="rps_image">
+																							<img src="themes/images/others/c8a76aa244780f50869f55419be8cdb6_lightroom-280-188-c.jpg" alt="" class="rps_image">
 																							<div class="rps_image_hover">
 																								<div class="rps_image_controls clearfix">
-																									<a href="http://rawofnature.com/demfile/sn/wp/portfolio/adipisicing-elit-sed/" class="rps_image_link"></a><a class="rps_image_zoom" data-effect="mfp-zoom-in" href="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/2013/11/plane.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-193" title="Recommend this"><span class="dot-irecommendthis-count">42</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title"><a href="http://rawofnature.com/demfile/sn/wp/portfolio/adipisicing-elit-sed/">Adipisicing elit sed.</a></h3>
-																							<div class="rps_date">November 18, 2013</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/4e2175a4b7567f0b678d1e7137dc6cc9_beach-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="http://rawofnature.com/demfile/sn/wp/portfolio/do-eiusmod-tempor/" class="rps_image_link"></a><a class="rps_image_zoom" data-effect="mfp-zoom-in" href="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/2013/11/beach.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-192" title="Recommend this"><span class="dot-irecommendthis-count">45</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title"><a href="http://rawofnature.com/demfile/sn/wp/portfolio/do-eiusmod-tempor/">Do eiusmod tempor.</a></h3>
-																							<div class="rps_date">November 18, 2013</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/80c9ef192567f5c0682735eb3644ea2a_keyb-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="http://rawofnature.com/demfile/sn/wp/portfolio/incididunt-ut-labore/" class="rps_image_link"></a><a class="rps_image_zoom" data-effect="mfp-zoom-in" href="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/2013/11/keyb.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-191" title="Recommend this"><span class="dot-irecommendthis-count">22</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title">
-																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/incididunt-ut-labore/">Incididunt ut labore.</a>
-																							</h3>
-																							<div class="rps_date">November 18, 2013</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/98e5ccfb1f8835e8b4ecf7590385e19b_women-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="http://rawofnature.com/demfile/sn/wp/portfolio/perspiciatis-unde/" class="rps_image_link"></a><a class="rps_image_zoom" data-effect="mfp-zoom-in" href="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/2013/11/women.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-190" title="Recommend this"><span class="dot-irecommendthis-count">24</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title">
-																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/perspiciatis-unde/">Perspiciatis unde.</a>
-																							</h3>
-																							<div class="rps_date">November 18, 2013</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/00d0ad41ea4ed9d0bb526dba04435c58_couple-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="http://rawofnature.com/demfile/sn/wp/portfolio/sed-ut-perspiciatis-unde/" class="rps_image_link"></a><a class="rps_image_zoom" data-effect="mfp-zoom-in" href="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/2013/11/couple.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-189" title="Recommend this"><span class="dot-irecommendthis-count">30</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title">
-																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/sed-ut-perspiciatis-unde/">Sed ut perspiciatis unde.</a>
-																							</h3>
-																							<div class="rps_date">November 18, 2013</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/2d0353a165cb1b51deb38044ab105205_note-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="http://rawofnature.com/demfile/sn/wp/portfolio/voluptatem-accusantium/" class="rps_image_link"></a><a class="rps_image_zoom" data-effect="mfp-zoom-in" href="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/2013/11/note.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-188" title="Recommend this"><span class="dot-irecommendthis-count">20</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title">
-																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/voluptatem-accusantium/">Voluptatem accusantium.</a>
-																							</h3>
-																							<div class="rps_date">November 18, 2013</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/c8a76aa244780f50869f55419be8cdb6_lightroom-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="http://rawofnature.com/demfile/sn/wp/portfolio/doloremque-lauda/" class="rps_image_link"></a><a class="rps_image_zoom" data-effect="mfp-zoom-in" href="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/2013/11/lightroom.jpg"></a>
+																									<a href="#" class="rps_image_link"></a>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/lightroom.jpg"></a>
 																								</div>
 																							</div>
 																						</div>
@@ -396,9 +277,133 @@
 																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-187" title="Recommend this"><span class="dot-irecommendthis-count">20</span> <span class="dot-irecommendthis-suffix"></span></a>
 																							</div> -->
 																							<h3 class="rps_title">
-																								<a href="http://rawofnature.com/demfile/sn/wp/portfolio/doloremque-lauda/">Doloremque lauda.</a>
+																								<a href="#">رزومه سه</a>
 																							</h3>
-																							<div class="rps_date">November 18, 2013</div>
+																							<div class="rps_date">تیر 18, 1392</div>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="rps_slide">
+																						<div class="rps_image_wrapper">
+																							<img src="themes/images/others/4e2175a4b7567f0b678d1e7137dc6cc9_beach-280-188-c.jpg" alt="" class="rps_image">
+																							<div class="rps_image_hover">
+																								<div class="rps_image_controls clearfix">
+																									<a href="#" class="rps_image_link"></a>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/beach.jpg"></a>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="rps_content">
+																							<!-- <div class="rps_like_wrapper">
+																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-192" title="Recommend this"><span class="dot-irecommendthis-count">45</span> <span class="dot-irecommendthis-suffix"></span></a>
+																							</div> -->
+																							<h3 class="rps_title"><a href="#">رزومه دو</a></h3>
+																							<div class="rps_date">اردیبهشت 18, 1392</div>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="rps_slide">
+																						<div class="rps_image_wrapper">
+																							<img src="themes/images/others/80c9ef192567f5c0682735eb3644ea2a_keyb-280-188-c.jpg" alt="" class="rps_image">
+																							<div class="rps_image_hover">
+																								<div class="rps_image_controls clearfix">
+																									<a href="#" class="rps_image_link"></a>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/keyb.jpg"></a>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="rps_content">
+																							<!-- <div class="rps_like_wrapper">
+																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-191" title="Recommend this"><span class="dot-irecommendthis-count">22</span> <span class="dot-irecommendthis-suffix"></span></a>
+																							</div> -->
+																							<h3 class="rps_title">
+																								<a href="#">رزومه یک</a>
+																							</h3>
+																							<div class="rps_date">خرداد 18, 1392</div>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="rps_slide">
+																						<div class="rps_image_wrapper">
+																							<img src="themes/images/others/bf1631f1ba680635e05d9d28bb509f1a_bridge-280-188-c.jpg" alt="" class="rps_image">
+																							<div class="rps_image_hover">
+																								<div class="rps_image_controls clearfix">
+																									<a href="#" class="rps_image_link"></a>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/bridge.jpg"></a>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="rps_content">
+																							<!-- <div class="rps_like_wrapper"><a href="#" class="dot-irecommendthis" id="dot-irecommendthis-194" title="Recommend this"><span class="dot-irecommendthis-count">26</span> <span class="dot-irecommendthis-suffix"></span></a></div> -->
+																							<h3 class="rps_title"><a href="#">رزمه پنج</a></h3>
+																							<div class="rps_date">فروردین 18, 1392</div>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="rps_slide">
+																						<div class="rps_image_wrapper">
+																							<img src="themes/images/others/c8a76aa244780f50869f55419be8cdb6_lightroom-280-188-c.jpg" alt="" class="rps_image">
+																							<div class="rps_image_hover">
+																								<div class="rps_image_controls clearfix">
+																									<a href="#" class="rps_image_link"></a>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/lightroom.jpg"></a>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="rps_content">
+																							<!-- <div class="rps_like_wrapper">
+																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-187" title="Recommend this"><span class="dot-irecommendthis-count">20</span> <span class="dot-irecommendthis-suffix"></span></a>
+																							</div> -->
+																							<h3 class="rps_title">
+																								<a href="#">رزومه شش</a>
+																							</h3>
+																							<div class="rps_date">تیر 18, 1392</div>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="rps_slide">
+																						<div class="rps_image_wrapper">
+																							<img src="themes/images/others/4e2175a4b7567f0b678d1e7137dc6cc9_beach-280-188-c.jpg" alt="" class="rps_image">
+																							<div class="rps_image_hover">
+																								<div class="rps_image_controls clearfix">
+																									<a href="#" class="rps_image_link"></a>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/beach.jpg"></a>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="rps_content">
+																							<!-- <div class="rps_like_wrapper">
+																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-192" title="Recommend this"><span class="dot-irecommendthis-count">45</span> <span class="dot-irecommendthis-suffix"></span></a>
+																							</div> -->
+																							<h3 class="rps_title"><a href="#">رزومه هفت</a></h3>
+																							<div class="rps_date">اردیبهشت 18, 1392</div>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="rps_slide">
+																						<div class="rps_image_wrapper">
+																							<img src="themes/images/others/80c9ef192567f5c0682735eb3644ea2a_keyb-280-188-c.jpg" alt="" class="rps_image">
+																							<div class="rps_image_hover">
+																								<div class="rps_image_controls clearfix">
+																									<a href="#" class="rps_image_link"></a>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/keyb.jpg"></a>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="rps_content">
+																							<!-- <div class="rps_like_wrapper">
+																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-191" title="Recommend this"><span class="dot-irecommendthis-count">22</span> <span class="dot-irecommendthis-suffix"></span></a>
+																							</div> -->
+																							<h3 class="rps_title">
+																								<a href="#">رزومه هشت</a>
+																							</h3>
+																							<div class="rps_date">خرداد 18, 1392</div>
 																						</div>
 																					</div>
 																				</li>
