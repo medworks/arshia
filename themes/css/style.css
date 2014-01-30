@@ -33,6 +33,12 @@ table {
 .left{
   float: left !important;
 }
+.rtl{
+  direction: rtl;
+}
+.ltr{
+  direction: ltr;
+}
 /* ------------------------ */
 /* CLEARING AND OTHER HACKS */
 /* ------------------------ */
@@ -1346,7 +1352,14 @@ td {
 .ffWidgetContact .email {
   padding: 0 0 2px 21px;
   background-repeat: no-repeat;
-  background-position: -2px 3px; }
+  background-position: 248px 3px; }
+
+.ffWidgetContact .address strong,
+.ffWidgetContact .phone strong,
+.ffWidgetContact .email strong{
+  margin-right: 15px;
+  font-size: 14px;
+}
 
 .ffWidgetContact .address {
   background-image: url(../images/widget_contact_address.png); }
@@ -1363,7 +1376,8 @@ td {
 
 .widget_recent_entries ul > li > a {
   background: none !important;
-  padding: 0; }
+  padding: 0;
+  font-size: 17px; }
 
 .widget_recent_entries li {
   padding: 9px 0; }
@@ -1374,7 +1388,7 @@ td {
 
 /* WIDGET - NEWSLETTER */
 .widget_mailchimpsf_widget .mc_input {
-  float: left !important;
+  float: right !important;
   margin: 0 3px 3px 0 !important;
   width: 55% !important;
   height: 28px !important;
@@ -1383,7 +1397,7 @@ td {
 .widget_mailchimpsf_widget .button {
   height: 30px !important;
   line-height: 30px !important;
-  margin: 0 !important;
+  margin: 0 5px !important;
   width: auto !important; }
 
 .widget_mailchimpsf_widget #mc_subheader {
@@ -1401,7 +1415,7 @@ td {
   display: none !important; }
 
 .mc_signup_submit {
-  text-align: left !important; }
+  text-align: right !important; }
 
 .mc_input {
   -webkit-box-sizing: content-box !important;
@@ -1414,7 +1428,7 @@ td {
 /* WIDGET - SOCIAL */
 .ffWidgetSocial .social_icon {
   display: block;
-  float: left;
+  float: right;
   margin: 0 5px 5px 0;
   background-color: #303436;
   color: #ffffff;
@@ -5988,13 +6002,13 @@ hr {
   padding: 11px 0 11px 27px; }
 
 .footer-social:before {
-  content: "\f099";
+  content: "\f09e";
   font-family: FontAwesome;
   font-size: 17px;
   color: #b5b8bd;
   position: absolute;
   top: 11px;
-  left: 10px;
+  right: 10px;
   /*@include text-shadow(0 -1px 0 #8e939f);*/ }
 
 .footer-social .timeline {
@@ -6003,6 +6017,11 @@ hr {
   font-family: Georgia, serif;
   font-size: 13px;
   color: #5e5e5e; }
+
+.footer-social .timeline li{
+  margin-right: 25px;
+  font-size: 13px;
+}
 
 .footer-social .tweet p {
   padding: 0;
@@ -6043,7 +6062,7 @@ hr {
 
 .footer-widgets .widget .widget_title {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 18px;
   margin: 9px 0; }
 
 /* FOOTER WIDGET - RECENT POSTS CUSTOM */
@@ -6081,7 +6100,8 @@ hr {
 
 /* FOOTER WIDGET - CONTACT */
 .footer-widgets .ffWidgetContact h3.widget_title {
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  font-size: 18px; }
 
 /* FOOTER WIDGET - RECENT COMMENTS */
 .footer-widgets .widget_recent_comments li:before {

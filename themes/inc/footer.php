@@ -7,7 +7,9 @@
 						<div class="col-1-1">
 							<div class="col">
 								<ul class="timeline">
-									<li class="tweet">Check out our brand NEW #themeforest item 'Sentinel - Responsive Multi-Purpose Theme' <a href="http://t.co/aLYHr71hyv">http://t.co/aLYHr71hyv</a> #wordpress</li><li class="tweet">You can now follow us on Facebook as well <a href="https://t.co/LsZm5EnKeZ">https://t.co/LsZm5EnKeZ</a></li><li class="tweet">Check out our latest #wordpress theme "New York Epiq Street" <a href="http://t.co/XTtIqEZXUO">http://t.co/XTtIqEZXUO</a></li><li class="tweet">Our latest Wordpress Theme "New York Epiq Street" will be updated to v2.0 with a full WooCommerce integration, demo: <a href="http://t.co/A0U9R4IpWj">http://t.co/A0U9R4IpWj</a></li><li class="tweet">v1.3 New York Epiq Street #wordpress theme, release notes: <a href="http://t.co/e2gEK2Zl6V">http://t.co/e2gEK2Zl6V</a></li>					</ul>
+									<li class="tweet">طراحی کامل به صورت ریسپانسیو <a href="#">رسپانسیو چیست</a></li>
+									<li class="tweet">بکارگیری آخرین متدهای سئو <a href="#">سئو چیست</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -19,15 +21,15 @@
 						<div class="col-1-4">
 							<div class="col">
 								<section id="ffwidgetcontact-4" class="widget clearfix ffWidgetContact">
-									<h3 class="widget_title">CONTACT INFO</h3>
+									<h3 class="widget_title">تماس با ما</h3>
 									<div class="address">
-										<strong>Address:</strong> 58911 Weinhaus, 85000 Viena, Austria
+										<strong>آدرس:</strong> ...
 									</div>
 									<div class="phone">
-										<strong>Telephones:</strong> +1 777 64-21-35
+										<strong>تلفن:</strong> 7654 321 511 98+
 									</div>
 									<div class="email">
-										<strong>E-mail:</strong> contacts@sentinel.com
+										<strong>ایمیل:</strong> info@media.com
 									</div>
 								</section>
 							</div>
@@ -35,15 +37,15 @@
 						<div class="col-1-4">
 							<div class="col">
 								<section id="recent-posts-5" class="widget clearfix widget_recent_entries">
-									<h3 class="widget_title">Recent Posts</h3>
+									<h3 class="widget_title">اخبرا اخیر</h3>
 									<ul>
 										<li>
-											<a href="http://rawofnature.com/demfile/sn/wp/this-is-a-standard-post/">This is a Standard Post</a>
-											<span class="post-date">November 21, 2013</span>
+											<a href="#">خبر دو</a>
+											<span class="post-date">تیر 21, 1392</span>
 										</li>
 										<li>
-											<a href="http://rawofnature.com/demfile/sn/wp/this-is-a-gallery-post/">This is a Gallery Post</a>
-											<span class="post-date">October 20, 2013</span>
+											<a href="#">خبر یک</a>
+											<span class="post-date">آذز 19, 1392</span>
 										</li>
 									</ul>
 								</section>
@@ -52,7 +54,7 @@
 						<div class="col-1-4">
 							<div class="col">
 								<section id="mailchimpsf_widget-3" class="widget clearfix widget_mailchimpsf_widget">
-									<h3 class="widget_title">Newsletter</h3>
+									<h3 class="widget_title">ثبت نام خبرنامه</h3>
 									<style>
 										.widget_mailchimpsf_widget .widget-title {
 											line-height: 1.4em;
@@ -133,20 +135,20 @@
 											<input type="hidden" name="mcsf_action" value="mc_submit_signup_form">
 											<input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="22f16727a5">		
 												<div id="mc_subheader">
-													Subscribe and stay up to date with the latest news from us.
+													می توانید از طریق امیبل از آخرین خبرها با خبر شوید.
 												</div><!-- /mc_subheader -->															
 												<div class="mc_form_inside">
 													<div class="updated" id="mc_message"></div><!-- /mc_message -->									
 													<div class="mc_merge_var">
-														<label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">Email Address</label>
+														<label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">آدرس ایمیل</label>
 														<input type="text" size="18" placeholder="" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input">
 													</div><!-- /mc_merge_var -->
 													<div class="mc_signup_submit">
-														<input type="submit" name="mc_signup_submit" id="mc_signup_submit" value="Submit" class="button">
+														<input type="submit" name="mc_signup_submit" id="mc_signup_submit" value="ثبت نام" class="button">
 													</div><!-- /mc_signup_submit -->
 													<br>
 													<div id="mc_display_rewards" align="center">
-														powered by <a href="http://www.mailchimp.com/affiliates/?aid=6d6c425ecb535afc00b8144dd&amp;afl=1">MailChimp</a>!
+														powered by <a href="#">Media</a>!
 													</div><!-- /mc_display_rewards -->
 												</div><!-- /mc_form_inside -->
 										</form><!-- /mc_signup_form -->
@@ -157,14 +159,14 @@
 						<div class="col-1-4">
 							<div class="col">
 								<section id="ffwidgetsocial-4" class="widget clearfix ffWidgetSocial">
-									<h3 class="widget_title">Follow Us</h3>
+									<h3 class="widget_title">پیگیری ما در</h3>
 									<div class="social_icons clearfix">
-										<a href="http://twitter.com/_freshface" class="social_icon zocial-twitter"></a>
-										<a href="http://dribbble.com/freshface" class="social_icon zocial-dribbble"></a>
-										<a href="http://facebook.com/freshfacethemes" class="social_icon zocial-facebook"></a>
-										<a href="http://plus.google.com/" class="social_icon zocial-google-plus"></a>
-										<a href="//rawofnature.com/demfile/sn/wp/?feed=rss" class="social_icon zocial-rss"></a>
-										<a href="http://linkedin.com/" class="social_icon zocial-linkedin"></a>
+										<a href="#" class="social_icon zocial-twitter"></a>
+										<a href="#" class="social_icon zocial-dribbble"></a>
+										<a href="#" class="social_icon zocial-facebook"></a>
+										<a href="#" class="social_icon zocial-google-plus"></a>
+										<a href="#" class="social_icon zocial-rss"></a>
+										<a href="#" class="social_icon zocial-linkedin"></a>
 									</div>
 								</section>
 							</div>
@@ -178,17 +180,17 @@
 						<div class="col-1-1">
 							<div class="col">
 								<div class="footer-bottom_content clearfix">
-									<a class="logo_footer" href="http://rawofnature.com/demfile/sn/wp/">
-										<img src="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/images/logo_footer.png" data-at2x="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/images/logo_footer@2x.png" alt="">
+									<a class="logo_footer" href="./">
+										<img src="themes/images/others/logo_footer.png" alt="media">
 									</a>
-									<div class="footer-bottom_left">
-										© Copyright 2013 by WebLionMedia. All Rights Reserved.
+									<div class="footer-bottom_left ltr">
+										© Copyright 2013 by Media. All Rights Reserved.
 									</div>
 									<div class="footer-bottom_right">
 										<div class="footer_links">
-											<a href="http://rawofnature.com/demfile/sn/wp/sentinel-website-faq/">FAQ’s</a>
-											<a href="http://rawofnature.com/demfile/sn/wp/about/">About</a>
-											<a href="http://rawofnature.com/demfile/sn/wp/contact/">Contact</a>
+											<a href="#">FAQ’s</a>
+											<a href="#">About</a>
+											<a href="#">Contact</a>
 										</div>
 									</div>
 								</div>
