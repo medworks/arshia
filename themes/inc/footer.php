@@ -203,34 +203,19 @@
 		<div class="jqres"></div>
 	</div><!-- END BOXED -->
 	
-	<script>
+	<!-- <script>
 		function get_template_directory_uri(){
 			'use strict';
 			return 'http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel';
 		}
-	</script>
+	</script> 
 	<script>
 		function get_PATH_NAME_SEPARATOR(){
 			'use strict';
 			return '---';
 		}
-	</script>
-	<script type="text/javascript">
-		/* <![CDATA[ */
-		var _wpcf7 = {"loaderUrl":"http:\/\/rawofnature.com\/demfile\/sn\/wp\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
-		/* ]]> */
-	</script>
-	<script type="text/javascript" src="themes/js/scripts.js"></script>
-	<script type="text/javascript" src="themes/js/packery.pkgd.min.js"></script>
-	<script type="text/javascript" src="themes/js/shortcodes.js"></script>
-	<script type="text/javascript" src="themes/js/imagesloaded.min.js"></script>
-	<script type="text/javascript" src="themes/js/global.js"></script>
-	<script type="text/javascript" src="themes/js/magnific-popup.js"></script>
-	<script type="text/javascript" src="themes/js/jquery.isotope.min.js"></script>
-	<script type="text/javascript" src="themes/js/jquery.gmaps.js"></script>
-	<script type="text/javascript" src="themes/js/jquery.countdown.js"></script>
-	<script type="text/javascript" src="themes/js/jquery.countdown_init.js"></script>
-	<script type="text/javascript" src="themes/js/retina-1.1.0-ff-updt.min.js"></script>
-	<script type="text/javascript" src="themes/js/cookie.js"></script>
+	</script> -->
+	
+	
 </body>
 </html>

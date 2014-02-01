@@ -77,7 +77,7 @@
 	
 	<script type="text/javascript">
 		/* <![CDATA[ */
-		var mailchimpSF = {"ajax_url":"http:\/\/rawofnature.com\/demfile\/sn\/wp\/"};
+		var mailchimpSF = {"ajax_url":".\/"};
 		/* ]]> */
 	</script>
 
@@ -87,7 +87,7 @@
 	
 	<script type="text/javascript">
 		/* <![CDATA[ */
-		var dot_irecommendthis = {"ajaxurl":"http:\/\/rawofnature.com\/demfile\/sn\/wp\/wp-admin\/admin-ajax.php"};
+		var dot_irecommendthis = {"ajaxurl":".\/"};
 		/* ]]> */
 	</script>
 
@@ -97,6 +97,19 @@
 	<script type="text/javascript" src="themes/js/jquery.bxslider.min.js"></script>
 	<script type="text/javascript" src="themes/js/jquery.caroufredsel.min.js"></script>
 	<script type="text/javascript" src="themes/js/colorpicker.js"></script>
+
+	<script type="text/javascript" src="themes/js/scripts.js"></script>
+	<script type="text/javascript" src="themes/js/packery.pkgd.min.js"></script>
+	<script type="text/javascript" src="themes/js/shortcodes.js"></script>
+	<script type="text/javascript" src="themes/js/imagesloaded.min.js"></script>
+	<script type="text/javascript" src="themes/js/global.js"></script>
+	<script type="text/javascript" src="themes/js/magnific-popup.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.gmaps.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="themes/js/jquery.countdown_init.js"></script>
+	<script type="text/javascript" src="themes/js/retina-1.1.0-ff-updt.min.js"></script>
+	<script type="text/javascript" src="themes/js/cookie.js"></script>
 	
 	<!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://rawofnature.com/demfile/sn/wp/xmlrpc.php?rsd">
 	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://rawofnature.com/demfile/sn/wp/wp-includes/wlwmanifest.xml"> 
