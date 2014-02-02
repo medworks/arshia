@@ -37,7 +37,7 @@
 						<div class="col-1-4">
 							<div class="col">
 								<section id="recent-posts-5" class="widget clearfix widget_recent_entries">
-									<h3 class="widget_title">اخبرا اخیر</h3>
+									<h3 class="widget_title">اخبار اخیر</h3>
 									<ul>
 										<li>
 											<a href="#">خبر دو</a>
