@@ -213,8 +213,8 @@
 																<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">درباره ما</span> </span></span></a>
 															</li>
 															<li class="noactive menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
-																<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر</span> </span></span></a>
-																<ul class="sub-menu">
+																<a href="research.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تحقیقات</span> </span></span></a>
+																<!-- <ul class="sub-menu">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
 																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 1</span> </span></span></a>
 																		<ul class="sub-menu">
@@ -246,7 +246,7 @@
 																			</li>
 																		</ul>
 																	</li>
-																</ul>
+																</ul> -->
 															</li>
 															<li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-has-children menu-item menu-item-206 top-menu-item has-sub-menu">
 																<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">رزومه</span> </span></span></a>

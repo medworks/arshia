@@ -5,25 +5,24 @@ deny from all
                            
 <IFModule mod_rewrite.c>   
 	RewriteEngine On 
-	RewriteRule ^index.html media/index.php [L]
-	RewriteRule ^search.html media/index.php?item=search&act=do [L]
-	RewriteRule ^about-us.html media/index.php?item=about [L]
-	RewriteRule ^gallery.html media/index.php?item=gallery [L]
-	RewriteRule ^articles.html media/index.php?item=articles [L]
-	RewriteRule ^contact.html media/index.php?item=contact [L]
-	RewriteRule ^news.html media/index.php?item=news&act=do [L]
-	RewriteRule ^works.html media/index.php?item=works&act=do [L]
-	RewriteRule ^news-fullpage([0-9]+).html media/index.php?item=fullnews&act=do&wid=$1 [L]
-	RewriteRule ^work-fullpage([0-9]+).html media/index.php?item=fullworks&act=do&wid=$1 [L]
-	RewriteRule ^article-fullpage([0-9]+).html media/index.php?item=fullarticles&act=do&wid=$1 [L]		
-	RewriteBase / 	
+	RewriteRule ^index.html arshia/index.php [L]
+	RewriteRule ^search.html arshia/index.php?item=search&act=do [L]
+	RewriteRule ^about-us.html arshia/index.php?item=about [L]
+	RewriteRule ^gallery.html arshia/index.php?item=gallery [L]
+	RewriteRule ^articles.html arshia/index.php?item=articles [L]
+	RewriteRule ^contact.html arshia/index.php?item=contact [L]
+	RewriteRule ^news.html arshia/index.php?item=news&act=do [L]
+	RewriteRule ^research.html arshia/index.php?item=research&act=do [L]
+	RewriteRule ^news-fullpage([0-9]+).html arshia/index.php?item=fullnews&act=do&wid=$1 [L]
+	RewriteRule ^article-fullpage([0-9]+).html arshia/index.php?item=fullarticles&act=do&wid=$1 [L]		
+	RewriteBase /
 
 #Skip WWW	
-	#RewriteCond %{HTTP_HOST} ^www.mediateq.ir [NC] 
-	#RewriteRule ^(.*)$ http://mediateq.ir/$1 [L,R=301]
+	#RewriteCond %{HTTP_HOST} ^www.arshia.ir [NC] 
+	#RewriteRule ^(.*)$ http://arshia.ir/$1 [L,R=301]
 #Add WWW		
-	RewriteCond %{HTTP_HOST} ^mediateq.ir$ [NC]
-	RewriteRule ^(.*)$ http://www.mediateq.ir/$1 [L,R=301]	
+	RewriteCond %{HTTP_HOST} ^arshia.ir$ [NC]
+	RewriteRule ^(.*)$ http://www.arshia.ir/$1 [L,R=301]	
 	
 # proc/self/environ? no way!
 	RewriteCond %{QUERY_STRING} proc/self/environ [OR]
@@ -47,11 +46,11 @@ deny from all
 	RewriteRule ^(.*)$ index.php [F,L]	
 
 </IFModule>
-ErrorDocument 404 http://www.mediateq.ir/themes/404.html
+ErrorDocument 404 http://www.arshia.ir/404.html
 # Enable / Disable directory Listing/Browsing
 Options -Indexes
 IndexOptions -FancyIndexing
 ServerSignature Off
 
-#RewriteCond %{HTTP_HOST} ^mediateq.ir$
-#RewriteRule ^/?$ "http\:\/\/www\.mediateq\.ir\/" [R=301,L]
+#RewriteCond %{HTTP_HOST} ^arshia.ir$
+#RewriteRule ^/?$ "http\:\/\/www\.arshia\.ir\/" [R=301,L]
