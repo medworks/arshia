@@ -228,6 +228,15 @@
 																	</div>
 																</div>
 															</div>
+
+<?php
+ include_once("config.php");
+ include_once("classes/functions.php");
+if (GetPageName($_GET['item'],$_GET['act'])){
+        echo include_once GetPageName($_GET['item'],$_GET['act']);
+}		
+?>															
+															
 															<div class="grid ">
 																<div class="col-1-1">
 																	<div class="col">
