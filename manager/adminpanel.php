@@ -95,7 +95,7 @@
             <a href="?item=reconstructmgr&act=do" id="reconstruct" name="reconstruct" class="news"><p>مدیریت بازسازی</p></a>
           </li>
           <li >            
-            <a href="?item=worksmgr&act=do" id="works" name="works" class="works"><p>مدیریت ساخت</p></a>
+            <a href="?item=constructmgr&act=do" id="construct" name="construct" class="works"><p>مدیریت ساخت</p></a>
           </li>
           <li>
             <a href="?item=slidesmgr&act=do" class="slidemgr"><p>مدیریت اسلاید</p></a>
