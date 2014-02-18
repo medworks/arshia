@@ -16,16 +16,20 @@
 	$sess = Session::GetSesstion();	
 	$userid = $sess->Get("userid");
 	$overall_error = false;
-	if ($_GET['item']!="researchmgr")	exit();	   
+	if ($_GET['item']!="researchmgr")	exit();
+	$recordcount = $db->CountOf("allparts", "`part` = 1");
+	if ($recordcount > 0)
+	{
+	  $row=$db->Select("allparts","*","part='1'");
+	}
 	if ($_POST["mark"]== "save")
 	{
 	    $fields = array("`detail`","`part`");
 		$_POST["detail"] = addslashes($_POST["detail"]);		
-		$values = array("'{$_POST[detail]}'","'1'");		
-		$count = $db->CountOf("allpart", "`part` = 1");
-		if ($count == 0)
+		$values = array("'{$_POST[detail]}'","'1'");				
+		if ($recordcount == 0)
 		{
-			if (!$db->InsertQuery('allpart',$fields,$values)) 
+			if (!$db->InsertQuery('allparts',$fields,$values)) 
 			{
 				//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
 				header('location:?item=researchmgr&act=new&msg=2');
@@ -40,7 +44,7 @@
 		{
 		   $_POST["detail"] = addslashes($_POST["detail"]);	    
 		   $values = array("`detail`"=>"'{$_POST[detail]}'");		
-		   if (!$db->UpdateQuery("allpart",$values,array("part='1'")))
+		   if (!$db->UpdateQuery("allparts",$values,array("part='1'")))
 		   {
 		     header('location:?item=researchmgr&act=new&msg=2');
 		   }
@@ -73,7 +77,7 @@ $html=<<<cd
          <label for="detail">توضیحات </label>
          <span>*</span>
        </p>
-       <textarea cols="50" rows="10" name="detail" class="detail" id="detail" > {$row[body]}</textarea>       
+       <textarea cols="50" rows="10" name="detail" class="detail" id="detail" > {$row[detail]}</textarea>       
 	     <input type="submit" value="ثبت" class='submit' />
 		 <input type="hidden" name = "mark" value="save" />
       	 <input type="reset" value="پاک کردن" class='reset' />
