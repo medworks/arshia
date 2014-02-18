@@ -16,17 +16,17 @@
 	$sess = Session::GetSesstion();	
 	$userid = $sess->Get("userid");
 	$overall_error = false;
-	if ($_GET['item']!="researchmgr")	exit();
-	$recordcount = $db->CountOf("allparts", "`part` = 1");
+	if ($_GET['item']!="reconstructmgr")	exit();
+	$recordcount = $db->CountOf("allparts", "`part` = 2");
 	if ($recordcount > 0)
 	{
-	  $row=$db->Select("allparts","*","part='1'");
+	  $row=$db->Select("allparts","*","part='2'");
 	}
 	if ($_POST["mark"]== "save")
 	{
 	    $fields = array("`detail`","`part`");
 		$_POST["detail"] = addslashes($_POST["detail"]);		
-		$values = array("'{$_POST[detail]}'","'1'");				
+		$values = array("'{$_POST[detail]}'","'2'");				
 		if ($recordcount == 0)
 		{
 			if (!$db->InsertQuery('allparts',$fields,$values)) 
@@ -44,7 +44,7 @@
 		{
 		   $_POST["detail"] = addslashes($_POST["detail"]);	    
 		   $values = array("`detail`"=>"'{$_POST[detail]}'");		
-		   if (!$db->UpdateQuery("allparts",$values,array("part='1'")))
+		   if (!$db->UpdateQuery("allparts",$values,array("part='2'")))
 		   {
 		     header('location:?item=researchmgr&act=new&msg=2');
 		   }
@@ -64,7 +64,7 @@ $html=<<<cd
   <div class="title">
       <ul>
         <li><a href="adminpanel.php?item=dashboard&act=do">پیشخوان</a></li>
-	    <li><span>مدیریت تحقیقات</span></li>
+	    <li><span>مدیریت بازسازی</span></li>
       </ul>
       <div class="badboy"></div>
   </div>
