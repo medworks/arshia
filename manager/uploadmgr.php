@@ -14,17 +14,19 @@
  $db = Database::GetDatabase();
  $overall_error = false;
  // in this variable save string bit of pics folders
- $pic_fldr_bit_addr = array("newspics"=>0,
-                            "workspics"=>0,
+ $pic_fldr_bit_addr = array("researchpics"=>0,
+                            "Reconstructpics"=>0,
+							"constructpics"=>0,
   						    "userspics"=>0,
 							"slidespics"=>0,
 							"gallerypics"=>0);
- $pic_fldrs = array("newspics","workspics","userspics","slidespics","gallerypics");
- $fa_pic_fldrs = array("اخبار","فعالیت ها","کاربران","اسلایدها","گالری تصاویر");
+ $pic_fldrs = array("researchpics","Reconstructpics","constructpics","userspics","slidespics","gallerypics");
+ $fa_pic_fldrs = array("تحقیقات","بازسازی","ساخت","کاربران","اسلایدها","گالری تصاویر");
   for($i=0;$i<count($_POST['picsaddr']);$i++)
   {
-	if ($_POST['picsaddr'][$i]=="newspics") {$pic_fldr_bit_addr["newspics"]= 1;}
-	if ($_POST['picsaddr'][$i]=="workspics") {$pic_fldr_bit_addr["workspics"]= 1;}
+	if ($_POST['picsaddr'][$i]=="researchpics") {$pic_fldr_bit_addr["researchpics"]= 1;}
+	if ($_POST['picsaddr'][$i]=="Reconstructpics") {$pic_fldr_bit_addr["Reconstructpics"]= 1;}
+	if ($_POST['picsaddr'][$i]=="constructpics") {$pic_fldr_bit_addr["constructpics"]= 1;}
 	if ($_POST['picsaddr'][$i]=="userspics") {$pic_fldr_bit_addr["userspics"]= 1;}
 	if ($_POST['picsaddr'][$i]=="slidespics") {$pic_fldr_bit_addr["slidespics"]= 1;}	  
 	if ($_POST['picsaddr'][$i]=="gallerypics") {$pic_fldr_bit_addr["gallerypics"]= 1;}	  
