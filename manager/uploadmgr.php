@@ -15,7 +15,7 @@
  $overall_error = false;
  // in this variable save string bit of pics folders
  $pic_fldr_bit_addr = array("researchpics"=>0,
-                            "Reconstructpics"=>0,
+                            "reconstructpics"=>0,
 							"constructpics"=>0,
   						    "userspics"=>0,
 							"slidespics"=>0,
