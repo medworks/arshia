@@ -45,38 +45,38 @@ $html=<<<cd
 <script type='text/javascript'>
 	$(document).ready(function(){		  	 
 		$("#tab1").click(function(){	
-			$.get('ajaxcommand.php?cmd=file&item=newspics', function(data) {
+			$.get('ajaxcommand.php?cmd=file&item=researchpics', function(data) {
 						$('#catab1 ul').html(data);
 				});			
 			return false;
 		});		
 		$("#tab2").click(function(){
-		$.get('ajaxcommand.php?cmd=file&item=workspics', function(data) {
+		$.get('ajaxcommand.php?cmd=file&item=reconstructpics', function(data) {
 						$('#catab2 ul').html(data);
 				});			
 			return false;
 		});
 		$("#tab3").click(function(){
-		$.get('ajaxcommand.php?cmd=file&item=workspics', function(data) {
-						$('#catab2 ul').html(data);
+		$.get('ajaxcommand.php?cmd=file&item=constructpics', function(data) {
+						$('#catab3 ul').html(data);
 				});			
 			return false;
 		});
 		$("#tab4").click(function(){
 		$.get('ajaxcommand.php?cmd=file&item=slidespics', function(data) {
-						$('#catab3 ul').html(data);
+						$('#catab4 ul').html(data);
 				});			
 			return false;
 		});
 		$("#tab5").click(function(){
 		$.get('ajaxcommand.php?cmd=file&item=gallerypics', function(data) {
-						$('#catab4 ul').html(data);
+						$('#catab5 ul').html(data);
 				});			
 			return false;
 		});
 		$("#tab6").click(function(){
 		$.get('ajaxcommand.php?cmd=file&item=userspics', function(data) {
-						$('#catab5 ul').html(data);
+						$('#catab6 ul').html(data);
 				});			
 			return false;
 		});
@@ -101,11 +101,11 @@ $html=<<<cd
 				<div class="cat-tabs-header">
 					<ul>
 						<li id="tab1"><a href="#catab1">پوشه تحقیقات</a></li>
-						<li id="tab2"><a href="#catab2">پوشه باسازی</a></li>
-						<li id="tab2"><a href="#catab2">پوشه ساخت</a></li>
-						<li id="tab3"><a href="#catab3">پوشه اسلاید ها</a></li>
-						<li id="tab4"><a href="#catab4">پوشه گالری</a></li>
-						<li id="tab5"><a href="#catab5">پوشه کاربران</a></li>
+						<li id="tab2"><a href="#catab2">پوشه بازسازی</a></li>
+						<li id="tab2"><a href="#catab3">پوشه ساخت</a></li>
+						<li id="tab3"><a href="#catab4">پوشه اسلاید ها</a></li>
+						<li id="tab4"><a href="#catab5">پوشه گالری</a></li>
+						<li id="tab5"><a href="#catab6">پوشه کاربران</a></li>
 					</ul>
 				</div>
 				<div class="cat-tabs-wrap" id="catab1">
