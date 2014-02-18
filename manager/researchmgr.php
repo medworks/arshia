@@ -36,6 +36,21 @@
 				header('location:?item=researchmgr&act=new&msg=1');
 			}  				 
 		}
+		else
+		{
+		   $_POST["detail"] = addslashes($_POST["detail"]);	    
+		   $values = array("`detail`"=>"'{$_POST[detail]}'");		
+		   if (!$db->UpdateQuery("allpart",$values,array("part='1'")))
+		   {
+		     header('location:?item=researchmgr&act=new&msg=2');
+		   }
+		   else
+		   {
+		     header('location:?item=researchmgr&act=new&msg=1');
+		   }		   
+		}
+	}
+$msgs = GetMessage($_GET['msg']);	
 $html=<<<cd
 	<script type='text/javascript'>
 		$(document).ready(function(){	   
