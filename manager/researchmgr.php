@@ -17,7 +17,25 @@
 	$userid = $sess->Get("userid");
 	$overall_error = false;
 	if ($_GET['item']!="researchmgr")	exit();	   
-	
+	if ($_POST["mark"]== "save")
+	{
+	    $fields = array("`detail`","`part`");
+		$_POST["detail"] = addslashes($_POST["detail"]);		
+		$values = array("'{$_POST[detail]}'","'1'");		
+		$count = $db->CountOf("allpart", "`part` = 1");
+		if ($count == 0)
+		{
+			if (!$db->InsertQuery('allpart',$fields,$values)) 
+			{
+				//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
+				header('location:?item=researchmgr&act=new&msg=2');
+			} 	
+			else 
+			{  										
+				//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
+				header('location:?item=researchmgr&act=new&msg=1');
+			}  				 
+		}
 $html=<<<cd
 	<script type='text/javascript'>
 		$(document).ready(function(){	   
@@ -42,6 +60,7 @@ $html=<<<cd
        </p>
        <textarea cols="50" rows="10" name="detail" class="detail" id="detail" > {$row[body]}</textarea>       
 	     <input type="submit" value="ثبت" class='submit' />
+		 <input type="hidden" name = "mark" value="save" />
       	 <input type="reset" value="پاک کردن" class='reset' />
        </p>  
 	</form>
