@@ -221,7 +221,7 @@ $html=<<<cd
 				<img id="img" src="" alt="" />				
 			</div>
 			<p>
-				<label for="subject">اسم مستعار</label>
+				<label for="subject">عنوان</label>
 				<span></span>
 			</p>
 			<input type="text" name="subject" class="subject" id="subject" value="{$row[subject]}" />
