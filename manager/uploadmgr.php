@@ -20,12 +20,12 @@
   						    "userspics"=>0,
 							"slidespics"=>0,
 							"gallerypics"=>0);
- $pic_fldrs = array("researchpics","Reconstructpics","constructpics","userspics","slidespics","gallerypics");
+ $pic_fldrs = array("researchpics","reconstructpics","constructpics","userspics","slidespics","gallerypics");
  $fa_pic_fldrs = array("تحقیقات","بازسازی","ساخت","کاربران","اسلایدها","گالری تصاویر");
   for($i=0;$i<count($_POST['picsaddr']);$i++)
   {
 	if ($_POST['picsaddr'][$i]=="researchpics") {$pic_fldr_bit_addr["researchpics"]= 1;}
-	if ($_POST['picsaddr'][$i]=="Reconstructpics") {$pic_fldr_bit_addr["Reconstructpics"]= 1;}
+	if ($_POST['picsaddr'][$i]=="reconstructpics") {$pic_fldr_bit_addr["reconstructpics"]= 1;}
 	if ($_POST['picsaddr'][$i]=="constructpics") {$pic_fldr_bit_addr["constructpics"]= 1;}
 	if ($_POST['picsaddr'][$i]=="userspics") {$pic_fldr_bit_addr["userspics"]= 1;}
 	if ($_POST['picsaddr'][$i]=="slidespics") {$pic_fldr_bit_addr["slidespics"]= 1;}	  
@@ -173,7 +173,7 @@ if ($_GET['act']=="new" or $_GET['act']=="edit")
 {
 $msgs = GetMessage($_GET['msg']);
 $chechbox = array("researchpics"=>"پوشه تحقیقات",
-                  "Reconstructpics"=>"پوشه بازسازی",
+                  "reconstructpics"=>"پوشه بازسازی",
 				  "constructpics"=>"پوشه ساخت",
                   "userspics"=>"پوشه کاربران",
 				  "slidespics"=>"پوشه اسلاید ها",
