@@ -12,14 +12,18 @@
 	}
     $pics = "";
 	$dir = "";	
-	if ($_GET['item']=="newsmgr")
+	if ($_GET['item']=="researchpics")
 	{	   
-		$dir='../newspics';
+		$dir='../researchpics';
 	}	
 	else
-	if ($_GET['item']=="worksmgr")
+	if ($_GET['item']=="reconstructpics")
 	{	 
-		$dir='../workspics';
+		$dir='../reconstructpics';
+	}
+	if ($_GET['item']=="constructpics")
+	{	 
+		$dir='../constructpics';
 	}
 	else
 	if ($_GET['item']=="slidesmgr")
@@ -53,18 +57,24 @@ $html=<<<cd
 			return false;
 		});
 		$("#tab3").click(function(){
+		$.get('ajaxcommand.php?cmd=file&item=workspics', function(data) {
+						$('#catab2 ul').html(data);
+				});			
+			return false;
+		});
+		$("#tab4").click(function(){
 		$.get('ajaxcommand.php?cmd=file&item=slidespics', function(data) {
 						$('#catab3 ul').html(data);
 				});			
 			return false;
 		});
-		$("#tab4").click(function(){
+		$("#tab5").click(function(){
 		$.get('ajaxcommand.php?cmd=file&item=gallerypics', function(data) {
 						$('#catab4 ul').html(data);
 				});			
 			return false;
 		});
-		$("#tab5").click(function(){
+		$("#tab6").click(function(){
 		$.get('ajaxcommand.php?cmd=file&item=userspics', function(data) {
 						$('#catab5 ul').html(data);
 				});			
@@ -90,8 +100,9 @@ $html=<<<cd
 			<div class="pics cat-box-content cat-box tab" id="cats-tabs-box">
 				<div class="cat-tabs-header">
 					<ul>
-						<li id="tab1"><a href="#catab1">پوشه اخبار</a></li>
-						<li id="tab2"><a href="#catab2">پوشه کارها</a></li>
+						<li id="tab1"><a href="#catab1">پوشه تحقیقات</a></li>
+						<li id="tab2"><a href="#catab2">پوشه باسازی</a></li>
+						<li id="tab2"><a href="#catab2">پوشه ساخت</a></li>
 						<li id="tab3"><a href="#catab3">پوشه اسلاید ها</a></li>
 						<li id="tab4"><a href="#catab4">پوشه گالری</a></li>
 						<li id="tab5"><a href="#catab5">پوشه کاربران</a></li>
