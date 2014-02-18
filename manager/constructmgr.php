@@ -16,41 +16,41 @@
 	$sess = Session::GetSesstion();	
 	$userid = $sess->Get("userid");
 	$overall_error = false;
-	if ($_GET['item']!="reconstructmgr")	exit();
-	$recordcount = $db->CountOf("allparts", "`part` = 2");
+	if ($_GET['item']!="constructmgr")	exit();
+	$recordcount = $db->CountOf("allparts", "`part` = 3");
 	if ($recordcount > 0)
 	{
-	  $row=$db->Select("allparts","*","part='2'");
+	  $row=$db->Select("allparts","*","part='3'");
 	}
 	if ($_POST["mark"]== "save")
 	{
 	    $fields = array("`detail`","`part`");
 		$_POST["detail"] = addslashes($_POST["detail"]);		
-		$values = array("'{$_POST[detail]}'","'2'");				
+		$values = array("'{$_POST[detail]}'","'3'");
 		if ($recordcount == 0)
 		{
 			if (!$db->InsertQuery('allparts',$fields,$values)) 
 			{
 				//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
-				header('location:?item=researchmgr&act=new&msg=2');
+				header('location:?item=constructmgr&act=new&msg=2');
 			} 	
 			else 
 			{  										
 				//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
-				header('location:?item=researchmgr&act=new&msg=1');
+				header('location:?item=constructmgr&act=new&msg=1');
 			}  				 
 		}
 		else
 		{
 		   $_POST["detail"] = addslashes($_POST["detail"]);	    
 		   $values = array("`detail`"=>"'{$_POST[detail]}'");		
-		   if (!$db->UpdateQuery("allparts",$values,array("part='2'")))
+		   if (!$db->UpdateQuery("allparts",$values,array("part='3'")))
 		   {
-		     header('location:?item=researchmgr&act=new&msg=2');
+		     header('location:?item=constructmgr&act=new&msg=2');
 		   }
 		   else
 		   {
-		     header('location:?item=researchmgr&act=new&msg=1');
+		     header('location:?item=constructmgr&act=new&msg=1');
 		   }		   
 		}
 	}
@@ -64,13 +64,13 @@ $html=<<<cd
   <div class="title">
       <ul>
         <li><a href="adminpanel.php?item=dashboard&act=do">پیشخوان</a></li>
-	    <li><span>مدیریت بازسازی</span></li>
+	    <li><span>مدیریت ساخت</span></li>
       </ul>
       <div class="badboy"></div>
   </div>
   <div class="mes" id="message">{$msgs}</div>
   <div class='content'>
-	<form name="frmresearchmgr" id="frmresearchmgr" class="" action="" method="post" >
+	<form name="frmconstructmgr" id="frmconstructmgr" class="" action="" method="post" >
      <p class="note">پر کردن موارد مشخص شده با * الزامی می باشد</p>
 	 <div class="badboy"></div>              
   	   <p>
