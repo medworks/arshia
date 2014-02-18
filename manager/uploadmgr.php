@@ -170,8 +170,9 @@ ht;
 if ($_GET['act']=="new" or $_GET['act']=="edit")
 {
 $msgs = GetMessage($_GET['msg']);
-$chechbox = array("newspics"=>"پوشه اخبار",
-                  "workspics"=>"پوشه فعالیت ها",
+$chechbox = array("researchpics"=>"پوشه تحقیقات",
+                  "Reconstructpics"=>"پوشه بازسازی",
+				  "constructpics"=>"پوشه ساخت",
                   "userspics"=>"پوشه کاربران",
 				  "slidespics"=>"پوشه اسلاید ها",
 				  "gallerypics"=>"پوشه گالری تصاویر");
