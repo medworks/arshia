@@ -32,12 +32,12 @@
 			if (!$db->InsertQuery('allparts',$fields,$values)) 
 			{
 				//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
-				header('location:?item=researchmgr&act=new&msg=2');
+				header('location:?item=reconstructmgr&act=new&msg=2');
 			} 	
 			else 
 			{  										
 				//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
-				header('location:?item=researchmgr&act=new&msg=1');
+				header('location:?item=reconstructmgr&act=new&msg=1');
 			}  				 
 		}
 		else
@@ -46,11 +46,11 @@
 		   $values = array("`detail`"=>"'{$_POST[detail]}'");		
 		   if (!$db->UpdateQuery("allparts",$values,array("part='2'")))
 		   {
-		     header('location:?item=researchmgr&act=new&msg=2');
+		     header('location:?item=reconstructmgr&act=new&msg=2');
 		   }
 		   else
 		   {
-		     header('location:?item=researchmgr&act=new&msg=1');
+		     header('location:?item=reconstructmgr&act=new&msg=1');
 		   }		   
 		}
 	}
@@ -70,7 +70,7 @@ $html=<<<cd
   </div>
   <div class="mes" id="message">{$msgs}</div>
   <div class='content'>
-	<form name="frmresearchmgr" id="frmresearchmgr" class="" action="" method="post" >
+	<form name="frmreconstructmgr" id="frmreconstructmgr" class="" action="" method="post" >
      <p class="note">پر کردن موارد مشخص شده با * الزامی می باشد</p>
 	 <div class="badboy"></div>              
   	   <p>
