@@ -1,3 +1,12 @@
+<?php
+	include_once("config.php");
+	include_once("classes/functions.php");
+	if (GetPageName($_GET['item'],$_GET['act'])){
+	        echo include_once GetPageName($_GET['item'],$_GET['act']);
+	}
+	else{		
+
+$html=<<<cd
 <div class="top_content">
 	<section class="slider-1_container">
 		<div class="slider-1_wrapper">
@@ -227,16 +236,7 @@
 																		</div>
 																	</div>
 																</div>
-															</div>
-
-<?php
- include_once("config.php");
- include_once("classes/functions.php");
-if (GetPageName($_GET['item'],$_GET['act'])){
-        echo include_once GetPageName($_GET['item'],$_GET['act']);
-}		
-?>															
-															
+															</div>				
 															<div class="grid ">
 																<div class="col-1-1">
 																	<div class="col">
@@ -585,3 +585,7 @@ if (GetPageName($_GET['item'],$_GET['act'])){
 					</div>
 				</div>
 			</div>
+cd;
+echo $html;
+}
+?>
