@@ -134,6 +134,7 @@ public function MaxOfAll($column, $table)
 public function CountOf($table, $where)
 {
   $this->cmd ="SELECT COUNT(*) FROM `$table` WHERE $where";
+  //echo $this->cmd;
   $res = $this->RunSQL();
   $row = mysqli_fetch_row($res);
   return $row[0];
