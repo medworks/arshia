@@ -1352,7 +1352,7 @@ td {
 .ffWidgetContact .email {
   padding: 0 0 2px 21px;
   background-repeat: no-repeat;
-  background-position: 248px 3px; }
+  background-position: right 3px; }
 
 .ffWidgetContact .address strong,
 .ffWidgetContact .phone strong,
