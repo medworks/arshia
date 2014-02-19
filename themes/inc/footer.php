@@ -1,7 +1,7 @@
 <div class="footer_push"></div>
 		</div><!-- END content_container-->
 		<footer class="footer_container">
-			<div class="footer-social_container cwidth_container">
+			<!-- <div class="footer-social_container cwidth_container">
 				<div class="footer-social_wrapper cwidth_wrapper">
 					<div class="footer-social cwidth">
 						<div class="col-1-1">
@@ -14,7 +14,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="footer-widgets_container cwidth_container">
 				<div class="footer-widgets_wrapper cwidth_wrapper">
 					<div class="footer-widgets cwidth">
