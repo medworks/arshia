@@ -2,7 +2,7 @@
   include_once("./classes/database.php");  
   $db = Database::GetDatabase();  
   $research = $db->Select("allparts","*","`part`= 1");
-  $pics = $db->SelectAll("uploadcenter","*","address LIKE '1%'");  
+  $pics = $db->SelectAll("uploadcenter","*","address LIKE '1%'",null,"0","5");  
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
@@ -33,8 +33,19 @@ $html=<<<cd
 															<div class="col">
 																<div class="featured_area ltr">
 																	<ul class="bxslider">
-																		<li><img src="themes/images/others/keyb.jpg" data-at2x="themes/images/others/keyb.jpg" alt="" title="عکس اول" data-disable-retina-attrs-resize="false"></li>
-																		<li><img src="themes/images/others/bridge.jpg" data-at2x="themes/images/others/bridge.jpg" alt="" title="عکس دوم" data-disable-retina-attrs-resize="false"></li>
+cd;
+foreach($pics as $key=>$val)
+{
+$html.=<<<cd
+	<li>
+	   <img src="./researchpics/{$val[image]}"  
+	   data-at2x="./researchpics/{$val[image]}" 
+	   alt="{$val[subject]}" title="{$val[body]}" 
+	   data-disable-retina-attrs-resize="false">
+	</li>		
+cd;
+}
+$html.=<<<cd
 																	</ul>
 																</div>
 															</div>
