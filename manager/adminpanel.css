@@ -719,6 +719,18 @@ header #mini-nav span.newSignup{
   background-image: url('./images/articles.png');
 }
 
+#mainnav > ul > li a.research{
+  background-image: url('./images/research.png');
+}
+
+#mainnav > ul > li a.reconstruct{
+  background-image: url('./images/regeneration.png');
+}
+
+#mainnav > ul > li a.construct{
+  background-image: url('./images/cnstruction.png');
+}
+
 #mainnav > ul > li a.works{
   background-image: url('./images/works.png');
 }

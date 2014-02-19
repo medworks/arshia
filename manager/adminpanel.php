@@ -89,13 +89,13 @@
             <a href="?item=secmgr&act=do" class="trick"></a>
           </li>
           <li>
-            <a href="?item=researchmgr&act=do" id="research" name="research" class="articles"><p>مدیریت تحقیقات</p></a>
+            <a href="?item=researchmgr&act=do" id="research" name="research" class="research"><p>مدیریت تحقیقات</p></a>
           </li>
           <li>
-            <a href="?item=reconstructmgr&act=do" id="reconstruct" name="reconstruct" class="news"><p>مدیریت بازسازی</p></a>
+            <a href="?item=reconstructmgr&act=do" id="reconstruct" name="reconstruct" class="reconstruct"><p>مدیریت بازسازی</p></a>
           </li>
           <li >            
-            <a href="?item=constructmgr&act=do" id="construct" name="construct" class="works"><p>مدیریت ساخت</p></a>
+            <a href="?item=constructmgr&act=do" id="construct" name="construct" class="construct"><p>مدیریت ساخت</p></a>
           </li>
           <li>
             <a href="?item=slidesmgr&act=do" class="slidemgr"><p>مدیریت اسلاید</p></a>
