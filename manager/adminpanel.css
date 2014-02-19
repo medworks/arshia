@@ -448,7 +448,7 @@ label{
   background:#F7F7F7;
   height:35px;
   border-bottom: 3px solid #EAEAEA;
-  padding:8px 10px 0;
+  padding:5px 0px 2px;
 }
 
 .cat-tabs-header li{
@@ -461,7 +461,7 @@ label{
   -moz-border-radius-topright: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  padding:4px 10px;
+  padding:4px 2px;
   font-family:Arial, Helvetica, sans-serif;
   font-size:12pt;
 }
@@ -505,7 +505,7 @@ label{
 }
 
 .tab .cat-tabs-header li a{
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .tab li.first-li .pic{
