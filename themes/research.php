@@ -27,10 +27,10 @@ $html=<<<cd
 													<div class="grid">
 														<div class="col-portfolio-single-left" style="width:70%;">
 															<div class="col">
-																<div class="featured_area">
+																<div class="featured_area ltr">
 																	<ul class="bxslider">
-																		<li><img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/80c9ef192567f5c0682735eb3644ea2a_keyb-770-480-c.jpg" data-at2x="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/80c9ef192567f5c0682735eb3644ea2a_keyb-770-480-c@2x.jpg" alt="" data-disable-retina-attrs-resize="false"></li>
-																		<li><img src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/98e5ccfb1f8835e8b4ecf7590385e19b_women-770-480-c.jpg" data-at2x="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/freshizer/98e5ccfb1f8835e8b4ecf7590385e19b_women-770-480-c@2x.jpg" alt="" data-disable-retina-attrs-resize="false"></li>
+																		<li><img src="themes/images/others/keyb.jpg" data-at2x="themes/images/others/keyb.jpg" alt="" title="عکس اول" data-disable-retina-attrs-resize="false"></li>
+																		<li><img src="themes/images/others/bridge.jpg" data-at2x="themes/images/others/bridge.jpg" alt="" title="عکس دوم" data-disable-retina-attrs-resize="false"></li>
 																	</ul>
 																</div>
 															</div>
