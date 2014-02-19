@@ -37,16 +37,19 @@ $html=<<<cd
 														</div>
 														<div class="col-portfolio-single-right" style="width:30%;">
 															<div class="col">
-																<div class="post_meta clearfix">
+																<!-- <div class="post_meta clearfix">
 																	<div class="post_meta_item post_date">Posted: <strong>November 18, 2013</strong></div>
 																	<span class="post_meta_item like_number">
-																		<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-192" title="Recommend this"><span class="dot-irecommendthis-count">47</span> <span class="dot-irecommendthis-suffix"></span></a>
+																		<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-192" title="Recommend this">
+																			<span class="dot-irecommendthis-count">47</span>
+																			<span class="dot-irecommendthis-suffix"></span>
+																		</a>
 																	</span>
-																</div>
+																</div> -->
 																<div class="post_content">
 																	<p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
 																	<p>Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-																	<h3>Project Details</h3><table class="table-3"><tbody><tr><td>CLIENT:</td><td></td><td>ThemeForest</td><td></td></tr><tr><td>DATE:</td><td></td><td>April 11, 2013</td><td></td></tr><tr><td>TAGS:</td><td></td><td>Animation, Web Development</td><td></td></tr></tbody></table><a href="http://www.google.com/" class="sc_button sc_button_round sc_button_small sc_button_dark">Launch Project</a>
+																	<!-- <h3>Project Details</h3><table class="table-3"><tbody><tr><td>CLIENT:</td><td></td><td>ThemeForest</td><td></td></tr><tr><td>DATE:</td><td></td><td>April 11, 2013</td><td></td></tr><tr><td>TAGS:</td><td></td><td>Animation, Web Development</td><td></td></tr></tbody></table><a href="http://www.google.com/" class="sc_button sc_button_round sc_button_small sc_button_dark">Launch Project</a> -->
 																</div>
 															</div>
 														</div>
