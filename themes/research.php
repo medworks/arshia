@@ -1,4 +1,8 @@
 <?php
+  include_once("./classes/database.php");  
+  $db = Database::GetDatabase();  
+  $research = $db->Select("allparts","*","`part`= 1");
+  $pics = $db->SelectAll("uploadcenter","*","address LIKE '1%'");  
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
@@ -47,7 +51,7 @@ $html=<<<cd
 																	</span>
 																</div> -->
 																<div class="post_content">
-																	<p>توضیحات</p>
+																	<p>{$research["detail"]}</p>
 																	<!-- <h3>Project Details</h3><table class="table-3"><tbody><tr><td>CLIENT:</td><td></td><td>ThemeForest</td><td></td></tr><tr><td>DATE:</td><td></td><td>April 11, 2013</td><td></td></tr><tr><td>TAGS:</td><td></td><td>Animation, Web Development</td><td></td></tr></tbody></table><a href="http://www.google.com/" class="sc_button sc_button_round sc_button_small sc_button_dark">Launch Project</a> -->
 																</div>
 															</div>
