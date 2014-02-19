@@ -33,24 +33,18 @@
             case 'research':
 				$seo->Site_Title = "تحقیقات";
                 if ($act=="do") return "themes/research.php";
-            break;		          
-            case 'news':
-				$seo->Site_Title = "اخبار";
-                if ($act=="do") return "themes/news.php";
-			break;
-			case 'fullnews':
-                if ($act=="do") return "themes/single-news.php";
-			break;
+            break;
+            case 'construction':
+				$seo->Site_Title = "ساخت";
+                if ($act=="do") return "themes/construction.php";
+            break;
+            case 'regeneration':
+				$seo->Site_Title = "بازسازی";
+                if ($act=="do") return "themes/regeneration.php";
+            break;	
 			case 'search':
 				$seo->Site_Title = "جستجو";
                 if ($act=="do") return "themes/search.php";
-			break;
-			case 'articles':
-				$seo->Site_Title = "مطالب مفید";
-                return "themes/articles.php";
-			break;
-			case 'fullarticles':
-                if ($act=="do") return "themes/single-articles.php";
 			break;
 			case 'uploadmgr':
               if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/uploadmgr.php";
