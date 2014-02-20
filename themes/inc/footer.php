@@ -184,13 +184,14 @@
 										<img src="themes/images/others/logo_footer.png" alt="media">
 									</a>
 									<div class="footer-bottom_left ltr">
-										© Copyright 2013 by Media. All Rights Reserved.
+										© Copyright 2013 by Arshia. All Rights Reserved. Designed by <a href="http://www.mediateq.ir" target="_blank">Mediateq</a>
 									</div>
 									<div class="footer-bottom_right">
 										<div class="footer_links">
-											<a href="#">FAQ’s</a>
-											<a href="#">About</a>
+											<a href="./">Home</a>
+											<a href="#">Gallery</a>
 											<a href="#">Contact</a>
+											<a href="#">About</a>
 										</div>
 									</div>
 								</div>
