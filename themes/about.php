@@ -1,4 +1,5 @@
 <?php
+$about = GetSettingValue('About_System',0);
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
@@ -23,7 +24,7 @@ $html=<<<cd
 														درباره ما
 													</h2>
 													<div class="post_content">
-														<p>توضیحات.</p>
+														<p>{$about}</p>
 														<!-- <div class="grid ">
 															<div class="col-1-1 ">
 																<div class="col">
