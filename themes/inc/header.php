@@ -209,9 +209,6 @@
 															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item menu-item-688 top-menu-item has-sub-menu">
 																<a href="./" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">صفحه اصلی</span> </span></span></a>
 															</li>
-															<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
-																<a href="about-us.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">درباره ما</span> </span></span></a>
-															</li>
 															<li class="noactive menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
 																<a href="construction.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت</span> </span></span></a>
 															</li>
@@ -241,6 +238,9 @@
 															<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-162 top-menu-item has-sub-menu">
 																<a href="contact.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تماس با ما</span> </span></span></a>
 															</li>
+															<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
+																<a href="about-us.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">درباره ما</span> </span></span></a>
+															</li>
 														</ul>
 													</div>
 													<div class="clear"></div>
@@ -261,63 +261,34 @@
 																<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item menu-item-688 top-menu-item has-sub-menu">
 																	<a href="./" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">صفحه اصلی</span> </span></span></a>
 																</li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
-																	<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">درباره ما</span> </span></span></a>
+																<li class="noactive menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
+																	<a href="construction.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت</span> </span></span></a>
 																</li>
 																<li class="noactive menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
-																	<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر</span> </span></span></a>
-																	<ul class="sub-menu">
-																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																			<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 1</span> </span></span></a>
-																			<ul class="sub-menu">
-																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item menu-item-627">
-																					<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 1-1</span> </span></span></a>
-																				</li>
-																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item menu-item-626">
-																					<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 1-2</span> </span></span></a>
-																				</li>
-																			</ul>
-																		</li>
-																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-597 has-sub-menu">
-																			<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 2</span> </span></span></a>
-																			<ul class="sub-menu">
-																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item menu-item-643">
-																					<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 2-1</span> </span></span></a>
-																				</li>
-																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item menu-item-644">
-																					<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">گالری تصاویر 2-2</span> </span></span></a>
-																				</li>
-																			</ul>
-																		</li>
-																	</ul>
+																	<a href="regeneration.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی</span> </span></span></a>
+																</li>
+																<li class="noactive menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
+																	<a href="research.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تحقیقات</span> </span></span></a>
 																</li>
 																<li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item-has-children menu-item menu-item-206 top-menu-item has-sub-menu">
-																	<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">رزومه</span> </span></span></a>
+																	<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">گالری</span> </span></span></a>
 																	<ul class="sub-menu">
 																		<li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item menu-item-33">
-																			<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">رزومه 1</span> </span></span></a>
+																			<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت</span> </span></span></a>
 																		</li>
 																		<li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item menu-item-208">
-																			<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">رزومه 2</span> </span></span></a>
+																			<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی</span> </span></span></a>
 																		</li>
 																		<li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio-category menu-item menu-item-207">
-																			<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">رزومه 3</span> </span></span></a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item menu-item-658">
-																			<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">رزومه 4</span> </span></span></a>
-																		</li>
-																	</ul>
-																</li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-162 top-menu-item has-sub-menu">
-																	<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">خدمات</span> </span></span></a>
-																	<ul class="sub-menu">
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-671">
-																			<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">اخبار</span> </span></span></a>
+																			<a href="#"><span class="item_wrapper"><span class="item"><span class="item_name">تحقیقات</span> </span></span></a>
 																		</li>
 																	</ul>
 																</li>
 																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item menu-item-689 top-menu-item">
-																	<a href="#" class="top-menu-item-a"><span class="item_wrapper"><span class="item"><span class="item_name">تماس با ما</span> </span></span></a>
+																	<a href="contact.html" class="top-menu-item-a"><span class="item_wrapper"><span class="item"><span class="item_name">تماس با ما</span> </span></span></a>
+																</li>
+																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
+																	<a href="about-us.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">درباره ما</span> </span></span></a>
 																</li>
 															</ul>
 														</div>
