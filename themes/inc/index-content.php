@@ -148,7 +148,73 @@ $html=<<<cd
 													<div class="page-1 content_cols_eq">
 														<div class="post_content">
 															<div class="grid ">
-																<div class="col-1-4">
+																<div class="col-1-3">
+																	<div class="col">
+																		<div class="text_icon_expand_item_wrapper ">
+																			<a class="text_icon_expand_item" href="#">
+																				<span class="text_icon_expand_item_inner">
+																					<span class="text_icon_expand_image_wrapper">
+																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
+																					</span>
+																					<span class="tie_icon_wrapper">
+																						<span class="tie_icon icon-legal"></span>
+																					</span>
+																					<span class="tie_content">
+																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
+																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
+																					</span>
+																					<span class="tie_subtitle">ساخت</span>
+																					<span class="tie_title">ساخت</span>
+																				</span>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-1-3">
+																	<div class="col">
+																		<div class="text_icon_expand_item_wrapper ">
+																			<a class="text_icon_expand_item" href="#">
+																				<span class="text_icon_expand_item_inner">
+																					<span class="text_icon_expand_image_wrapper">
+																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
+																					</span>
+																					<span class="tie_icon_wrapper">
+																						<span class="tie_icon icon-retweet"></span>
+																					</span>
+																					<span class="tie_content">
+																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
+																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
+																					</span>
+																					<span class="tie_subtitle">بازسازی</span>
+																					<span class="tie_title">بازسازی</span>
+																				</span>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-1-3">
+																	<div class="col">
+																		<div class="text_icon_expand_item_wrapper ">
+																			<a class="text_icon_expand_item" href="#">
+																				<span class="text_icon_expand_item_inner">
+																					<span class="text_icon_expand_image_wrapper">
+																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
+																					</span>
+																					<span class="tie_icon_wrapper">
+																						<span class="tie_icon icon-search"></span>
+																					</span>
+																					<span class="tie_content">
+																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
+																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
+																					</span>
+																					<span class="tie_subtitle">تحقیقات</span>
+																					<span class="tie_title">تحقیقات</span>
+																				</span>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<!-- <div class="col-1-4">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
 																			<a class="text_icon_expand_item" href="#">
@@ -169,73 +235,7 @@ $html=<<<cd
 																			</a>
 																		</div>
 																	</div>
-																</div>
-																<div class="col-1-4">
-																	<div class="col">
-																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#">
-																				<span class="text_icon_expand_item_inner">
-																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
-																					</span>
-																					<span class="tie_icon_wrapper">
-																						<span class="tie_icon icon-cloud"></span>
-																					</span>
-																					<span class="tie_content">
-																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
-																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
-																					</span>
-																					<span class="tie_subtitle">سایت ریسپانسیو</span>
-																					<span class="tie_title">سایت به صورت کامل رسپانسیو می باشد</span>
-																				</span>
-																			</a>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-1-4">
-																	<div class="col">
-																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#">
-																				<span class="text_icon_expand_item_inner">
-																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
-																					</span>
-																					<span class="tie_icon_wrapper">
-																						<span class="tie_icon icon-cogs"></span>
-																					</span>
-																					<span class="tie_content">
-																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
-																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
-																					</span>
-																					<span class="tie_subtitle">سایت ریسپانسیو</span>
-																					<span class="tie_title">سایت به صورت کامل رسپانسیو می باشد</span>
-																				</span>
-																			</a>
-																		</div>
-																	</div>
-																</div>
-																<div class="col-1-4">
-																	<div class="col">
-																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#">
-																				<span class="text_icon_expand_item_inner">
-																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
-																					</span>
-																					<span class="tie_icon_wrapper">
-																						<span class="tie_icon icon-star"></span>
-																					</span>
-																					<span class="tie_content">
-																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
-																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
-																					</span>
-																					<span class="tie_subtitle">سایت ریسپانسیو</span>
-																					<span class="tie_title">سایت به صورت کامل رسپانسیو می باشد</span>
-																				</span>
-																			</a>
-																		</div>
-																	</div>
-																</div>
+																</div> -->
 															</div>				
 															<div class="grid ">
 																<div class="col-1-1">
