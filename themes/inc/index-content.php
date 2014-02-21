@@ -4,8 +4,9 @@
 	if (GetPageName($_GET['item'],$_GET['act'])){
 	        echo include_once GetPageName($_GET['item'],$_GET['act']);
 	}
-	else{		
-
+	else{
+    $db = Database::GetDatabase();  	
+    $slides = $db->SelectAll("slides","*");	
 $html=<<<cd
 <div class="top_content">
 	<section class="slider-1_container">
@@ -14,49 +15,33 @@ $html=<<<cd
 			<div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#fafafa;padding:0px;margin-top:0px;margin-bottom:0px;max-height:451px;">
 				<div id="rev_slider_3_1" class="rev_slider fullwidthabanner" style="display:none;max-height:451px;height:451;">
 					<ul>	<!-- SLIDE  -->
-						<li data-transition="fade" data-slotamount="7" data-masterspeed="300">
+cd;
+foreach($slides as $key=>$val){
+$html.=<<<cd
+<li data-transition="fade" data-slotamount="7" data-masterspeed="300">
 							<!-- MAIN IMAGE -->
-							<img src="themes/images/others/slider_1_bg.jpg" alt="slider_1_bg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
+							<img src="{$val[image]}" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
 							<!-- LAYERS -->
 							<!-- LAYER NR. 1 -->
-							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="0" data-y="128" data-speed="300" data-start="1600" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">به سایت ما خوش آمدید.<br>سایت مدیا</div>
+							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="0" data-y="128" data-speed="300" data-start="1600" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">{$val["subject"]}</div>
 							<!-- LAYER NR. 2 -->
-							<div class="tp-caption sentinel-small-600-black lfr tp-resizeme" data-x="0" data-y="203" data-speed="300" data-start="2000" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 3">این سایت کاملا ریسپانسیو می باشد <br>از آخرین متدهای رنکینگ در آن استفاده شده است <br>با گرافیک بالا و تنوع رنگ طراحی گردیده است.</div>
-							<!-- LAYER NR. 3 -->
-							<!-- <div class="tp-caption randomrotate tp-resizeme" data-x="0" data-y="284" data-speed="300" data-start="2400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 4"><a href="" class="sc_button sc_button_round sc_button_medium sc_button_green">Purchase Item</a></div> -->
+							<div class="tp-caption sentinel-small-600-black lfr tp-resizeme" data-x="0" data-y="203" data-speed="300" data-start="2000" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 3">{$val["body"]}</div>							
 							<!-- LAYER NR. 4 -->
+							<!--
 							<div class="tp-caption lfl" data-x="595" data-y="51" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 5"><img src="themes/images/others/slider_1_browser.png" alt=""></div>
+							-->
 							<!-- LAYER NR. 5 -->
+							<!--
 							<div class="tp-caption lfl" data-x="476" data-y="194" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 6"><img src="themes/images/others/slider_1_tablet.png" alt=""></div>
+							-->
 							<!-- LAYER NR. 6 -->
+							<!--
 							<div class="tp-caption lfl" data-x="407" data-y="304" data-speed="300" data-start="400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 7"><img src="themes/images/others/slider_1_phone.png" alt=""></div>
+							-->
 						</li>
-						<!-- SLIDE  -->
-						<li data-transition="zoomout" data-slotamount="7" data-masterspeed="600">
-							<!-- MAIN IMAGE -->
-							<img src="themes/images/others/slider_2_bg.jpg" alt="slider_2_bg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
-							<!-- LAYERS -->
-							<!-- LAYER NR. 1 -->
-							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="658" data-y="128" data-speed="300" data-start="400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">به سایت ما خوش آمدید. <br>سایت مدیا.</div>
-							<!-- LAYER NR. 2 -->
-							<div class="tp-caption sentinel-small-600-black lfr tp-resizeme" data-x="658" data-y="203" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 3">این سایت کاملا ریسپانسیو می باشد <br>از آخرین متدهای رنکینگ در آن استفاده شده است <br>با گرافیک بالا و تنوع رنگ طراحی گردیده است.</div>
-							<!-- LAYER NR. 3 -->
-							<!-- <div class="tp-caption sentinel-small-600-black randomrotate tp-resizeme" data-x="658" data-y="284" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 4"><a href="" class="sc_button sc_button_round sc_button_medium sc_button_green">Purchase Item</a></div> -->
-						</li>
-						<!-- SLIDE  -->
-						<li data-transition="flyin" data-slotamount="7" data-masterspeed="300">
-							<!-- MAIN IMAGE -->
-							<img src="themes/images/others/slider_3_bg.jpg" alt="slider_3_bg" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
-							<!-- LAYERS -->
-							<!-- LAYER NR. 1 -->
-							<div class="tp-caption sentinel-medium-700-black lfr tp-resizeme" data-x="58" data-y="138" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 2">به سایت ما خوش آمدید. <br>سایت مدیا.</div>
-							<!-- LAYER NR. 2 -->
-							<div class="tp-caption sentinel-small-600-black lfr tp-resizeme" data-x="58" data-y="214" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 3">این سایت کاملا ریسپانسیو می باشد <br>از آخرین متدهای رنکینگ در آن استفاده شده است <br>با گرافیک بالا و تنوع رنگ طراحی گردیده است.</div>
-							<!-- LAYER NR. 3 -->
-							<!-- <div class="tp-caption sentinel-small-600-black randomrotate tp-resizeme" data-x="58" data-y="275" data-speed="300" data-start="1600" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 4"><a href="" class="sc_button sc_button_round sc_button_medium sc_button_green">Explore More Features</a></div> -->
-							<!-- LAYER NR. 4 -->
-							<div class="tp-caption lfb" data-x="693" data-y="30" data-speed="300" data-start="400" data-easing="Power3.easeInOut" data-endspeed="300" style="z-index: 5"><img src="themes/images/others/slider_3_tablet.png" alt=""></div>
-						</li>
+cd;
+}
+$html.=<<<cd
 					</ul>
 				</div>
 			</div>			
