@@ -18,7 +18,7 @@ $html=<<<cd
 cd;
 foreach($slides as $key=>$val){
 $html.=<<<cd
-<li data-transition="fade" data-slotamount="7" data-masterspeed="300">
+<li data-transition="flyin" data-slotamount="7" data-masterspeed="300">
 							<!-- MAIN IMAGE -->
 							<img src="{$val[image]}" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
 							<!-- LAYERS -->
