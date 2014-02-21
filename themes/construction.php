@@ -2,7 +2,7 @@
   include_once("./classes/database.php");  
   $db = Database::GetDatabase();  
   $research = $db->Select("allparts","*","`part`= 3");
-  $pics = $db->SelectAll("uploadcenter","*","address LIKE '__1%'",null,"0","5");  
+  $pics = $db->SelectAll("uploadcenter","*","address LIKE '__1%'");  
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
