@@ -143,7 +143,7 @@ $html.=<<<cd
 																			<a class="text_icon_expand_item" href="#">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
-																						
+																						<img class="text_icon_expand_image" src="./constructpics/{$conspic[image]}" alt="{$conspic[subject]}">
 																					</span>
 																					<span class="tie_icon_wrapper">
 																						<span class="tie_icon icon-legal"></span>
