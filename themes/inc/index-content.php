@@ -10,6 +10,7 @@
 	$construct = $db->Select("allparts","*","part =  3");
 	$conspic = $db->Select("uploadcenter","*","address LIKE '__1%'",null,"0","1");	
 	$consbody = mb_substr($construct["detail"],0,150,"UTF-8")."...";
+	$consbody = strip_tags($consbody);
 $html=<<<cd
 <div class="top_content">
 	<section class="slider-1_container">
