@@ -6,7 +6,7 @@
 	}
 	else{
     $db = Database::GetDatabase();  	
-    $slides = $db->SelectAll("slides","*");	
+    $slides = $db->SelectAll("slides","*");
 	$construct = $db->Select("allparts","*","part =  3");
 	$conspic = $db->Select("uploadcenter","*","address LIKE '__1%'",null,"0","1");	
 	$consbody = mb_substr($construct["detail"],0,150,"UTF-8")."...";
@@ -21,6 +21,10 @@
 	$respic = $db->Select("uploadcenter","*","address LIKE '1%'",null,"0","1");	
 	$resbody = mb_substr($research["detail"],0,150,"UTF-8")."...";
 	$resbody = strip_tags($resbody);
+	
+	$allparts = $db->SelectAll("uploadcenter","*","`address` ='100000' OR `address` ='010000'
+	                            OR `address` ='001000' ","address","0","12");
+	
 	
 $html=<<<cd
 <div class="top_content">
@@ -214,29 +218,7 @@ $html.=<<<cd
 																			</a>
 																		</div>
 																	</div>
-																</div>
-																<!-- <div class="col-1-4">
-																	<div class="col">
-																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#">
-																				<span class="text_icon_expand_item_inner">
-																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
-																					</span>
-																					<span class="tie_icon_wrapper">
-																						<span class="tie_icon icon-desktop"></span>
-																					</span>
-																					<span class="tie_content">
-																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
-																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
-																					</span>
-																					<span class="tie_subtitle">سایت ریسپانسیو</span>
-																					<span class="tie_title">سایت به صورت کامل رسپانسیو می باشد</span>
-																				</span>
-																			</a>
-																		</div>
-																	</div>
-																</div> -->
+																</div>																
 															</div>				
 															<div class="grid ">
 																<div class="col-1-1">
@@ -253,10 +235,24 @@ $html.=<<<cd
 																				<a href="" class="btn_prev">Prev</a><a href="" class="btn_next">Next</a>
 																			</div>
 																			<ul class="recent_posts_slider clearfix" data-num-columns="4" data-image-width="280" data-autoslide-interval="2500" data-autoslide-stop-click="yes">
+cd;
+foreach($allparts as $key=>$val)
+{
+$html.=<<<cd
 																				<li>
 																					<div class="rps_slide">
 																						<div class="rps_image_wrapper">
-																							<img src="themes/images/others/bf1631f1ba680635e05d9d28bb509f1a_bridge-280-188-c.jpg" alt="" class="rps_image">
+cd;
+if ($val["address"][0]=='1')
+	$html.="<img src='./researchpics/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='280px' height='180px' />" ;
+else
+if ($val["address"][1]=='1')
+	$html.="<img src='./reconstructpics/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='280px' height='180px' />";
+else
+if ($val["address"][2]=='1')
+	$html.="<img src='./constructpics/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='280px' height='180px' />";
+
+$html.=<<<cd
 																							<div class="rps_image_hover">
 																								<div class="rps_image_controls clearfix">
 																									<a href="#" class="rps_image_link"></a>
@@ -266,157 +262,15 @@ $html.=<<<cd
 																						</div>
 																						<div class="rps_content">
 																							<!-- <div class="rps_like_wrapper"><a href="#" class="dot-irecommendthis" id="dot-irecommendthis-194" title="Recommend this"><span class="dot-irecommendthis-count">26</span> <span class="dot-irecommendthis-suffix"></span></a></div> -->
-																							<h3 class="rps_title"><a href="#">رزمه چهار</a></h3>
-																							<div class="rps_date">فروردین 18, 1392</div>
+																							<h3 class="rps_title"><a href="#">{$val["subject"]}</a></h3>
+																							<!-- <div class="rps_date">فروردین 18, 1392</div> -->
 																						</div>
 																					</div>
 																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="themes/images/others/c8a76aa244780f50869f55419be8cdb6_lightroom-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="#" class="rps_image_link"></a>
-																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/lightroom.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-187" title="Recommend this"><span class="dot-irecommendthis-count">20</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title">
-																								<a href="#">رزومه سه</a>
-																							</h3>
-																							<div class="rps_date">تیر 18, 1392</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="themes/images/others/4e2175a4b7567f0b678d1e7137dc6cc9_beach-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="#" class="rps_image_link"></a>
-																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/beach.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-192" title="Recommend this"><span class="dot-irecommendthis-count">45</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title"><a href="#">رزومه دو</a></h3>
-																							<div class="rps_date">اردیبهشت 18, 1392</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="themes/images/others/80c9ef192567f5c0682735eb3644ea2a_keyb-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="#" class="rps_image_link"></a>
-																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/keyb.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-191" title="Recommend this"><span class="dot-irecommendthis-count">22</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title">
-																								<a href="#">رزومه یک</a>
-																							</h3>
-																							<div class="rps_date">خرداد 18, 1392</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="themes/images/others/bf1631f1ba680635e05d9d28bb509f1a_bridge-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="#" class="rps_image_link"></a>
-																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/bridge.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper"><a href="#" class="dot-irecommendthis" id="dot-irecommendthis-194" title="Recommend this"><span class="dot-irecommendthis-count">26</span> <span class="dot-irecommendthis-suffix"></span></a></div> -->
-																							<h3 class="rps_title"><a href="#">رزمه پنج</a></h3>
-																							<div class="rps_date">فروردین 18, 1392</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="themes/images/others/c8a76aa244780f50869f55419be8cdb6_lightroom-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="#" class="rps_image_link"></a>
-																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/lightroom.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-187" title="Recommend this"><span class="dot-irecommendthis-count">20</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title">
-																								<a href="#">رزومه شش</a>
-																							</h3>
-																							<div class="rps_date">تیر 18, 1392</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="themes/images/others/4e2175a4b7567f0b678d1e7137dc6cc9_beach-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="#" class="rps_image_link"></a>
-																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/beach.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-192" title="Recommend this"><span class="dot-irecommendthis-count">45</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title"><a href="#">رزومه هفت</a></h3>
-																							<div class="rps_date">اردیبهشت 18, 1392</div>
-																						</div>
-																					</div>
-																				</li>
-																				<li>
-																					<div class="rps_slide">
-																						<div class="rps_image_wrapper">
-																							<img src="themes/images/others/80c9ef192567f5c0682735eb3644ea2a_keyb-280-188-c.jpg" alt="" class="rps_image">
-																							<div class="rps_image_hover">
-																								<div class="rps_image_controls clearfix">
-																									<a href="#" class="rps_image_link"></a>
-																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/keyb.jpg"></a>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="rps_content">
-																							<!-- <div class="rps_like_wrapper">
-																								<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-191" title="Recommend this"><span class="dot-irecommendthis-count">22</span> <span class="dot-irecommendthis-suffix"></span></a>
-																							</div> -->
-																							<h3 class="rps_title">
-																								<a href="#">رزومه هشت</a>
-																							</h3>
-																							<div class="rps_date">خرداد 18, 1392</div>
-																						</div>
-																					</div>
-																				</li>
+cd;
+}
+$html.=<<<cd
+																																								
 																			</ul>
 																		</div>
 																		<p><!-- END recent_posts_slider_wrapper --></p>
