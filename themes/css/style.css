@@ -39,6 +39,10 @@ table {
 .ltr{
   direction: ltr;
 }
+a,p,h1,h2,h3,h4,h5,h6,div,span,label,strong{
+  font-family: "nassim";
+  font-weight: "normal";
+}
 /* ------------------------ */
 /* CLEARING AND OTHER HACKS */
 /* ------------------------ */
