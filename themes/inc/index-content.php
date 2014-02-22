@@ -244,19 +244,20 @@ $html.=<<<cd
 																						<div class="rps_image_wrapper">
 cd;
 if ($val["address"][0]=='1')
-	$html.="<img src='./researchpics/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='280px' height='180px' />" ;
+	$picadd="researchpics" ;
 else
 if ($val["address"][1]=='1')
-	$html.="<img src='./reconstructpics/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='280px' height='180px' />";
+	$picadd="reconstructpics";
 else
 if ($val["address"][2]=='1')
-	$html.="<img src='./constructpics/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='280px' height='180px' />";
+   $picadd="constructpics";
 
 $html.=<<<cd
+<img src='./{$picadd}/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='280px' height='180px' />
 																							<div class="rps_image_hover">
 																								<div class="rps_image_controls clearfix">
 																									<a href="#" class="rps_image_link"></a>
-																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="themes/images/others/bridge.jpg"></a>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="./{$picadd}/{$val[image]}"></a>
 																								</div>
 																							</div>
 																						</div>
