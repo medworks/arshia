@@ -11,10 +11,17 @@
 	$conspic = $db->Select("uploadcenter","*","address LIKE '__1%'",null,"0","1");	
 	$consbody = mb_substr($construct["detail"],0,150,"UTF-8")."...";
 	$consbody = strip_tags($consbody);
+	
 	$reconstruct = $db->Select("allparts","*","part =  2");
 	$reconspic = $db->Select("uploadcenter","*","address LIKE '_1%'",null,"0","1");	
 	$reconsbody = mb_substr($reconstruct["detail"],0,150,"UTF-8")."...";
 	$reconsbody = strip_tags($reconsbody);
+	
+	$research = $db->Select("allparts","*","part =  1");
+	$respic = $db->Select("uploadcenter","*","address LIKE '1%'",null,"0","1");	
+	$resbody = mb_substr($research["detail"],0,150,"UTF-8")."...";
+	$resbody = strip_tags($resbody);
+	
 $html=<<<cd
 <div class="top_content">
 	<section class="slider-1_container">
@@ -170,7 +177,7 @@ $html.=<<<cd
 																			<a class="text_icon_expand_item" href="#">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="./constructpics/{$reconspic[image]}" alt="{$reconspic[subject]}">
+																						<img class="text_icon_expand_image" src="./reconstructpics/{$reconspic[image]}" alt="{$reconspic[subject]}">
 																					</span>
 																					<span class="tie_icon_wrapper">
 																						<span class="tie_icon icon-retweet"></span>
@@ -192,13 +199,13 @@ $html.=<<<cd
 																			<a class="text_icon_expand_item" href="#">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="themes/images/others/92c95ef0f217568e1ffb365e594d4150_blog_flower-615-339-c.jpg" alt="">
+																						<img class="text_icon_expand_image" src="./researchpics/{$respic[image]}" alt="{$respic[subject]}">
 																					</span>
 																					<span class="tie_icon_wrapper">
 																						<span class="tie_icon icon-search"></span>
 																					</span>
 																					<span class="tie_content">
-																						<span class="tie_text">سایت کاملا ریسپانسیو می باشد، سایت رسپانسیو سایتی سایتی است که بر روی تمامی دیوایس ها با رزولوشن های مختلف به صورت بهینه و مطلوب عمل میکند. از آخرین متدها برای بالا بردن رنکینگ و سئو استفاده شده است.</span>
+																						<span class="tie_text">{$resbody}</span>
 																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
 																					</span>
 																					<span class="tie_subtitle">تحقیقات</span>
