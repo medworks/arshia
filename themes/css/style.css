@@ -1438,8 +1438,8 @@ td {
   color: #ffffff;
   width: 28px;
   height: 28px;
-  line-height: 26px;
-  font-size: 13px;
+  line-height: 32px;
+  font-size: 15px;
   text-align: center;
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;
@@ -1451,7 +1451,7 @@ td {
   padding: 3px 0 0 0; }
 
 .ffWidgetSocial .zocial-twitter {
-  font-size: 10px; }
+  font-size: 11px; }
 
 .ffWidgetSocial .social_icon:hover {
   color: #ffffff !important; }
