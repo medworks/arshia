@@ -253,7 +253,7 @@ if ($val["address"][2]=='1')
    $picadd="constructpics";
 
 $html.=<<<cd
-<img src='./{$picadd}/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='280px' height='180px' />
+<img src='./{$picadd}/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='260px' height='175px' />
 																							<div class="rps_image_hover">
 																								<div class="rps_image_controls clearfix">
 																									<a href="#" class="rps_image_link"></a>
