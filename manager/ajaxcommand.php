@@ -29,7 +29,7 @@ if ($_GET["news"]=="reg")
 
 if($_GET["contact"]=="reg"){
 
-	$admin = 'info@mediateq.ir';
+	$admin = GetSettingValue('Contact_Email',0);
 
 	$name    = $_POST['family'];
 	$email   = $_POST['email'];
