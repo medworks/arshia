@@ -30,7 +30,7 @@ $html=<<<cd
 																<div class="">
 																	<h3>ارسال پیام</h3>
 																	<div class="wpcf7" id="wpcf7-f211-p120-o1">
-																		<form action="" method="post" class="wpcf7-form" novalidate="novalidate">
+																		<form id="contact-form" name ="contact-form" action="" method="post" class="wpcf7-form" novalidate="novalidate">
 																			<div style="display: none;">
 																				<input type="hidden" name="_wpcf7" value="211"><br>
 																				<input type="hidden" name="_wpcf7_version" value="3.5.4"><br>
@@ -70,6 +70,30 @@ $html=<<<cd
 																			</p>
 																			<div class="wpcf7-response-output wpcf7-display-none"></div>
 																		</form>
+																		<div id="note-contact" ></div>
+																		<script>
+                            $(document).ready(function(){
+                            $("#contact-form").submit(function(){
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: "manager/ajaxcommand.php?contact=reg",
+                                    data: $("#contact-form").serialize(),
+                                        success: function(msg)
+                                        {
+                                            $("#note-contact").ajaxComplete(function(event, request, settings){             
+                                                $(this).hide();
+                                                $(this).html(msg).slideDown("slow");
+                                                $(this).html(msg);
+
+
+                                            });
+                                        }
+                                });
+                                return false;
+                            });
+                        });
+                    </script>
 																	</div>
 																</div>
 															</div>
