@@ -1,4 +1,10 @@
 <?php
+$address = GetSettingValue('Address',0);
+$tel = GetSettingValue('Tell_Number',0);
+$fax = GetSettingValue('Fax_Number',0);
+$cell_phone1 = GetSettingValue('Cell_Phone1',0);
+$cell_phone2 = GetSettingValue('Cell_Phone2',0);
+$Contact_Email = GetSettingValue('Contact_Email',0);
 $html=<<<cd
 <div class="top_content">
 	<div class="titlebar-3_container cwidth_container ltr">
@@ -73,10 +79,10 @@ $html=<<<cd
 																<div class="">
 																	<h3>اطلاعات تماس</h3>
 																	<p>
-																		آدرس: Street 1234, Paris 1234<br>
-																		تلفن: 1234 5678<br>
-																		فاکس: 2564 9821<br>
-																		ایمیل: email@sentinel.com
+																		آدرس: {$address}<br>
+																		تلفن : {$tel}<br>
+																		فاکس : {$fax}<br>
+																		ایمیل: {$Contact_Email}
 																	</p>
 																</div>
 															</div>
