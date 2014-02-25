@@ -71,7 +71,7 @@ $html=<<<cd
                                             $("#note-contact").ajaxComplete(function(event, request, settings){             
                                                 $(this).hide();
                                                 $(this).html(msg).slideDown("slow");
-                                                $(this).html(msg);
+                                                //$(this).html(msg);
 
 
                                             });
