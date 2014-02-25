@@ -34,22 +34,22 @@ $html=<<<cd
 																			
 																			<p class="half half_first">نام و نام خانوادگی (*)<br>
 																			    <span class="wpcf7-form-control-wrap your-name">
-																			    	<input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
+																			    	<input type="text" name="family" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
 																			    </span>
 																			</p>
 																			<p class="half half_last">ایمیل (*)<br>
 																			    <span class="wpcf7-form-control-wrap your-email">
-																			    	<input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
+																			    	<input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
 																			    </span>
 																		    </p>
 																			<p>موضوع<br>
 																			    <span class="wpcf7-form-control-wrap your-subject">
-																			    	<input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text">
+																			    	<input type="text" name="subject" value="" size="40" class="wpcf7-form-control wpcf7-text">
 																			    </span>
 																			</p>
 																			<p>پیام<br>
 																			    <span class="wpcf7-form-control-wrap your-message">
-																			    	<textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"></textarea>
+																			    	<textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"></textarea>
 																			    </span>
 																			</p>																			
 																			<p>
@@ -58,8 +58,8 @@ $html=<<<cd
 																			<div class="wpcf7-response-output wpcf7-display-none"></div>
 																		</form>
 																		<div id="note-contact" ></div>
-																		<script>
-                            $(document).ready(function(){
+						<script>                           
+							jQuery(document).ready(function ($){
                             $("#contact-form").submit(function(){
 
                                 $.ajax({
@@ -67,7 +67,7 @@ $html=<<<cd
                                     url: "manager/ajaxcommand.php?contact=reg",
                                     data: $("#contact-form").serialize(),
                                         success: function(msg)
-                                        { alert("ok");
+                                        { 
                                             $("#note-contact").ajaxComplete(function(event, request, settings){             
                                                 $(this).hide();
                                                 $(this).html(msg).slideDown("slow");
