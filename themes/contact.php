@@ -31,13 +31,7 @@ $html=<<<cd
 																	<h3>ارسال پیام</h3>
 																	<div class="wpcf7" id="wpcf7-f211-p120-o1">
 																		<form id="contact-form" name ="contact-form" action="" method="post" class="wpcf7-form" novalidate="novalidate">
-																			<div style="display: none;">
-																				<input type="hidden" name="_wpcf7" value="211"><br>
-																				<input type="hidden" name="_wpcf7_version" value="3.5.4"><br>
-																				<input type="hidden" name="_wpcf7_locale" value="en_US"><br>
-																				<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f211-p120-o1"><br>
-																				<input type="hidden" name="_wpnonce" value="9ab3a037cb">
-																			</div>
+																			
 																			<p class="half half_first">نام و نام خانوادگی (*)<br>
 																			    <span class="wpcf7-form-control-wrap your-name">
 																			    	<input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
@@ -57,14 +51,7 @@ $html=<<<cd
 																			    <span class="wpcf7-form-control-wrap your-message">
 																			    	<textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"></textarea>
 																			    </span>
-																			</p>
-																			<!-- <p class="captcha_wrapper">Captcha
-																				<input type="hidden" name="_wpcf7_captcha_challenge_captcha-717" value="106828509">
-																				<img class="wpcf7-form-control wpcf7-captchac wpcf7-captcha-captcha-717" width="72" height="24" alt="captcha" src="http://rawofnature.com/demfile/sn/wp/wp-content/uploads/wpcf7_captcha/106828509.png"><br>
-																		    	<span class="wpcf7-form-control-wrap captcha-717">
-																		    		<input type="text" name="captcha-717" value="" size="40" class="wpcf7-form-control wpcf7-captchar">
-																		    	</span>
-																		    </p> -->
+																			</p>																			
 																			<p>
 																				<input type="submit" value="ارسال پیام" class="wpcf7-form-control wpcf7-submit">
 																			</p>
@@ -80,7 +67,7 @@ $html=<<<cd
                                     url: "manager/ajaxcommand.php?contact=reg",
                                     data: $("#contact-form").serialize(),
                                         success: function(msg)
-                                        {
+                                        { alert("ok");
                                             $("#note-contact").ajaxComplete(function(event, request, settings){             
                                                 $(this).hide();
                                                 $(this).html(msg).slideDown("slow");
