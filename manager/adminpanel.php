@@ -108,7 +108,10 @@
           </li>	
           <li >            
             <a href="?item=uploadmgr&act=do" id="users" name="users" class="upload"><p>مدیریت آپلود</p></a>
-          </li>		           
+          </li>
+		  <li >            
+            <a href="?item=requestmgr&act=do" id="request" name="request" class="upload"><p>مدیریت درخواست ها</p></a>
+          </li>		       		  
   		    <li>
             <a href="?item=settingmgr&act=do" class="setting"><p>تنظیمات</p></a>
           </li>
