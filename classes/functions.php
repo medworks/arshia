@@ -78,7 +78,7 @@
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/categorymgr.php";
 			break;
 			case 'requestmgr':
-                if ($act=="do" or $act=="chg" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/requestmgr.php";
+                if ($act=="do" or $act=="check" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/requestmgr.php";
 			break;
 			case 'settingmgr':
                 if ($act=="do" or $act=="about" or $act=="seo" or $act=="grid" or $act=="addresses") return "../manager/settingmgr.php";
