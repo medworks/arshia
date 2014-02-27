@@ -1,6 +1,6 @@
 <?php
-  include_once("../config.php");
-  include_once("../classes/database.php"); 
+  include_once("./config.php");
+  include_once("./classes/database.php"); 
 $html=<<<cd
 <div class="top_content">
 	<div class="main_content_container cwidth_container">
@@ -72,7 +72,7 @@ $html=<<<cd
 																		<div id="note-request" ></div>
 						<script>                           
 							jQuery(document).ready(function ($){
-                            $("#contact-form").submit(function(){
+                            $("#request-form").submit(function(){
 
                                 $.ajax({
                                     type: "POST",

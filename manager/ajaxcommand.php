@@ -71,7 +71,7 @@ if($_GET["request"]=="reg"){
 
 	
 	$fields = array("`name`","`tel`","`mobile`","`address`","`postcode`","`email`","`detail`");		
-	$values = array("'{$name]}'","'{$tel]}'","'{$mobile]}'","'{$address]}'","'{$postcode]}'","'{$detail]}'");
+	$values = array("'{$name}'","'{$tel}'","'{$mobile}'","'{$address}'","'{$postcode}'","'{$email}'","'{$detail}'");
 	
 
     if( strlen($name)>=1 && checkEmail($email))
@@ -81,7 +81,8 @@ if($_GET["request"]=="reg"){
 		else
 		{
 			echo "<div class='notification_error rtl'>ثبت مشخصات شما با مشکل مواجه شد! لطفا فیلدها را بررسی نمایید و مجددا تلاش کنید.</div>";
-         }	
+			//echo $db->cmd;
+        }	
 	} 
 	else 
 	{
