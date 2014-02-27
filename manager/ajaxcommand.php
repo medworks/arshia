@@ -57,6 +57,41 @@ if($_GET["contact"]=="reg"){
 
 }
 
+if($_GET["request"]=="reg"){
+
+	$admin = GetSettingValue('Contact_Email',0);
+
+	$name    = $_POST['name'];
+	$email   = $_POST['email'];
+	$tel     = $_POST['tel'];
+	$mobile  = $_POST['mobile'];
+	$address = $_POST['address'];
+	$postcode= $_POST['postcode'];
+	$detail  = $_POST['detail'];
+
+	
+	$fields = array("`name`","`tel`","`mobile`","`address`","`postcode`","`email`","`detail`");		
+	$values = array("'{$name}'","'{$tel}'","'{$mobile}'","'{$address}'","'{$postcode}'","'{$email}'","'{$detail}'");
+	
+
+    if( strlen($name)>=1 && checkEmail($email))
+	{
+		if ($db->InsertQuery('request',$fields,$values)){
+	    	echo "<div class='notification_ok rtl'>مشخصات شما با موفقیت ثبت شد.</div>";}
+		else
+		{
+			echo "<div class='notification_error rtl'>ثبت مشخصات شما با مشکل مواجه شد! لطفا فیلدها را بررسی نمایید و مجددا تلاش کنید.</div>";
+			//echo $db->cmd;
+        }	
+	} 
+	else 
+	{
+		echo "<div class='notification_error rtl'>ثبت مشخصات شما با مشکل مواجه شد! لطفا فیلدها را بررسی نمایید و مجددا تلاش کنید.</div>";
+	}
+		 
+
+}
+
  if (isset($_GET["sec"]))
 {
 	$category = $db->SelectAll("category","*","secid={$_GET[sec]}","id ASC");
