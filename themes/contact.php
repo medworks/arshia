@@ -31,13 +31,12 @@ $html=<<<cd
 																	<h3>ارسال پیام</h3>
 																	<div class="wpcf7" id="wpcf7-f211-p120-o1">
 																		<form id="contact-form" name ="contact-form" action="" method="post" class="wpcf7-form" novalidate="novalidate">
-																			
-																			<p class="half half_first">نام و نام خانوادگی (*)<br>
+																			<p class="half half_first">نام و نام خانوادگی *<br>
 																			    <span class="wpcf7-form-control-wrap your-name">
 																			    	<input type="text" name="family" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
 																			    </span>
 																			</p>
-																			<p class="half half_last">ایمیل (*)<br>
+																			<p class="half half_last">ایمیل *<br>
 																			    <span class="wpcf7-form-control-wrap your-email">
 																			    	<input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
 																			    </span>
@@ -87,13 +86,20 @@ $html=<<<cd
 														</div>
 														<div class="col-1-3 ">
 															<div class="col">
-																<div class="">
+																<div class="contact">
 																	<h3>اطلاعات تماس</h3>
 																	<p>
-																		آدرس: {$address}<br>
-																		تلفن : {$tel}<br>
-																		فاکس : {$fax}<br>
-																		ایمیل: {$Contact_Email}
+																		<span>آدرس:</span> {$address}
+																	</p>
+																	<p>
+																		<span>تلفن:</span> {$tel}
+																	</p>
+																	<p>
+																		<span>فاکس:</span> {$fax}
+																	<p>
+																	</p>
+																	<p>
+																		<span>ایمیل:</span> {$Contact_Email}
 																	</p>
 																</div>
 															</div>

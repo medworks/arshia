@@ -6001,6 +6001,14 @@ hr {
 .sitemap-1 .widget a:hover {
   color: #454545; }
 
+.contact p{
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.contact p span{
+  color: #aaa;
+}
 /* ------------- */
 /* FOOTER-SOCIAL */
 /* ------------- */
