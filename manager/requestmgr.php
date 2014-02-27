@@ -81,7 +81,7 @@ if ($_GET['act']=="mgr")
 				{
 						$rowsClass[] = "datagridoddrow";
 				}				
-				$rows[$i]["edit"] = "<a href='?item=requestmgr&act=edit&rid={$rows[$i]["id"]}' class='edit-field'" .
+				$rows[$i]["check"] = "<a href='?item=requestmgr&act=check&rid={$rows[$i]["id"]}' class='edit-field'" .
 						"style='text-decoration:none;'></a>";								
 				$rows[$i]["delete"]=<<< del
 				<a href="javascript:void(0)"
@@ -102,7 +102,7 @@ del;
 							"address"=>"آدرس",
 							"postcode"=>"کد پستی",
 							"email"=>"ایمیل",
-							"edit"=>"ویرایش",
+							"check"=>"بررسی",
 							"delete"=>"حذف",), $rows, $colsClass, $rowsClass, 10,
                             $_GET["pageNo"], "id", false, true, true, $rowCount,"item=requestmgr&act=mgr");
                     
