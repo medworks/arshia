@@ -11,6 +11,7 @@ deny from all
 	RewriteRule ^gallery.html arshia/index.php?item=gallery [L]
 	RewriteRule ^articles.html arshia/index.php?item=articles [L]
 	RewriteRule ^contact.html arshia/index.php?item=contact [L]
+	RewriteRule ^documentation.html arshia/index.php?item=documentation [L]
 	RewriteRule ^construction.html arshia/index.php?item=construction&act=do [L]
 	RewriteRule ^research.html arshia/index.php?item=research&act=do [L]
 	RewriteRule ^regeneration.html arshia/index.php?item=regeneration&act=do [L]

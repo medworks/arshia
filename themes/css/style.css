@@ -43,6 +43,10 @@ a,p,h1,h2,h3,h4,h5,h6,div,span,label,strong{
   font-family: "nassim";
   font-weight: normal;
 }
+input{
+  font-family: 'bmitra';
+  font-weight: normal;
+}
 /* ------------------------ */
 /* CLEARING AND OTHER HACKS */
 /* ------------------------ */
@@ -5407,7 +5411,8 @@ table.table-2 {
   margin: -17px 0 24px 0 !important; }
 
 .wpcf7 p {
-  margin: 17px 0 17px 0; }
+  margin: 17px 0 17px 0;
+  font-size: 16px; }
 
 .wpcf7 p > span {
   display: block;
@@ -5427,19 +5432,20 @@ table.table-2 {
 
 .wpcf7 input[type=submit] {
   width: inherit;
-  margin: 4px 0 0 0; }
+  margin: 4px 0 0 0;
+  font-size: 15px; }
 
 .wpcf7 .half {
   width: 50%;
-  padding-left: 10px;
+  /*padding-left: 10px;*/
   padding-right: 10px;
-  float: left; }
+  float: right; }
 
 .wpcf7 .half_first {
   padding-left: 0; }
 
 .wpcf7 .half_last {
-  padding-right: 0; }
+  padding-left: 0; }
 
 .wpcf7 .half input {
   width: 100%; }
