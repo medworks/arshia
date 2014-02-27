@@ -37,12 +37,22 @@ $html=<<<cd
 																			    	<input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
 																			    </span>
 																		    </p>
-																		    <p class="half half_first">شماره تماس *<br>
+																		    <p class="half half_first">شماره ثابت *<br>
 																			    <span class="wpcf7-form-control-wrap your-name">
 																			    	<input type="text" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
 																			    </span>
 																			</p>
-																			<p class="half half_last">آدرس *<br>
+																			<p class="half half_last">شماره همراه *<br>
+																			    <span class="wpcf7-form-control-wrap your-email">
+																			    	<input type="email" name="address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
+																			    </span>
+																		    </p>
+																		    <p class="half half_first">آدرس *<br>
+																			    <span class="wpcf7-form-control-wrap your-name">
+																			    	<input type="text" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
+																			    </span>
+																			</p>
+																			<p class="half half_last">کد پستی *<br>
 																			    <span class="wpcf7-form-control-wrap your-email">
 																			    	<input type="email" name="address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
 																			    </span>
