@@ -77,26 +77,12 @@
 			case 'catmgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/categorymgr.php";
 			break;
-			case 'thememgr':
-                if ($act=="do" or $act=="chg" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/thememgr.php";
+			case 'requestmgr':
+                if ($act=="do" or $act=="chg" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/requestmgr.php";
 			break;
 			case 'settingmgr':
                 if ($act=="do" or $act=="about" or $act=="seo" or $act=="grid" or $act=="addresses") return "../manager/settingmgr.php";
-			break;
-			case 'blocksmgr':
-                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/blockmgr.php";
-			break;
-			case 'pluginsmgr':
-                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/pluginmgr.php";
-			break;
-			case 'newslettermgr':
-                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="user" or 
-				    $act=="dela" or $act=="delu" or $act=="set" or $act=="arc") return "../manager/newslettermgr.php";
-			break;
-			case 'pollmgr':
-                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="stat" or $act=="del" or $act=="edit" or $act=="chg") return "../manager/pollmgr.php";
-			break;
-
+			break;			
 		}
 	}
 	function GetMessage($msgid)
