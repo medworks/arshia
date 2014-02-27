@@ -27,7 +27,7 @@ $html=<<<cd
 																<div class="">
 																	<h3>فرم درخواست مسنتدات</h3>
 																	<div class="wpcf7" id="wpcf7-f211-p120-o1">
-																		<form id="contact-form" name ="contact-form" action="" method="post" class="wpcf7-form" novalidate="novalidate">
+																		<form id="request-form" name ="request-form" action="" method="post" class="wpcf7-form" novalidate="novalidate">
 																			<p class="half half_first">نام و نام خانوادگی *<br>
 																			    <span class="wpcf7-form-control-wrap your-name">
 																			    	<input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
@@ -69,18 +69,18 @@ $html=<<<cd
 																			</p>
 																			<div class="wpcf7-response-output wpcf7-display-none"></div>
 																		</form>
-																		<div id="note-contact" ></div>
+																		<div id="note-request" ></div>
 						<script>                           
 							jQuery(document).ready(function ($){
                             $("#contact-form").submit(function(){
 
                                 $.ajax({
                                     type: "POST",
-                                    url: "manager/ajaxcommand.php?contact=reg",
-                                    data: $("#contact-form").serialize(),
+                                    url: "manager/ajaxcommand.php?request=reg",
+                                    data: $("#request-form").serialize(),
                                         success: function(msg)
                                         { 
-                                            $("#note-contact").ajaxComplete(function(event, request, settings){             
+                                            $("#note-request").ajaxComplete(function(event, request, settings){             
                                                 $(this).hide();
                                                 $(this).html(msg).slideDown("slow");
                                                 //$(this).html(msg);
