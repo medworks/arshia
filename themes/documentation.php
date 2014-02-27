@@ -1,5 +1,6 @@
 <?php
-
+  include_once("../config.php");
+  include_once("../classes/database.php"); 
 $html=<<<cd
 <div class="top_content">
 	<div class="main_content_container cwidth_container">
@@ -29,7 +30,7 @@ $html=<<<cd
 																		<form id="contact-form" name ="contact-form" action="" method="post" class="wpcf7-form" novalidate="novalidate">
 																			<p class="half half_first">نام و نام خانوادگی *<br>
 																			    <span class="wpcf7-form-control-wrap your-name">
-																			    	<input type="text" name="family" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
+																			    	<input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
 																			    </span>
 																			</p>
 																			<p class="half half_last">ایمیل *<br>
@@ -44,26 +45,27 @@ $html=<<<cd
 																			</p>
 																			<p class="half half_last">شماره همراه *<br>
 																			    <span class="wpcf7-form-control-wrap your-email">
-																			    	<input type="email" name="address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
+																			    	<input type="text" name="mobile" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
 																			    </span>
 																		    </p>
 																		    <p class="half half_first">آدرس *<br>
 																			    <span class="wpcf7-form-control-wrap your-name">
-																			    	<input type="text" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
+																			    	<input type="text" name="address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true">
 																			    </span>
 																			</p>
 																			<p class="half half_last">کد پستی *<br>
 																			    <span class="wpcf7-form-control-wrap your-email">
-																			    	<input type="email" name="address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
+																			    	<input type="text" name="postcode" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
 																			    </span>
 																		    </p>
 																			<p style="padding-right:10px">توضیحات<br>
 																			    <span class="wpcf7-form-control-wrap your-message">
-																			    	<textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"></textarea>
+																			    	<textarea name="detail" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"></textarea>
 																			    </span>
 																			</p>																			
 																			<p style="padding-right:10px">
 																				<input type="submit" value="ارسال درخواست" class="wpcf7-form-control wpcf7-submit">
+																				<input type="hidden" name="mark" value="addreq" />
 																			</p>
 																			<div class="wpcf7-response-output wpcf7-display-none"></div>
 																		</form>
