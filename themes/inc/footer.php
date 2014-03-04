@@ -181,7 +181,7 @@
 							<div class="col">
 								<div class="footer-bottom_content clearfix">
 									<a class="logo_footer" href="./">
-										<img src="themes/images/others/logo_footer.png" alt="media">
+										<img src="themes/images/logo_footer.png" alt="media">
 									</a>
 									<div class="footer-bottom_left ltr">
 										© Copyright 2013 by Arshia. All Rights Reserved. Designed by <a href="http://www.mediateq.ir" target="_blank">Mediateq</a>

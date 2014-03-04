@@ -194,7 +194,7 @@
 							<div class="col-1-5 left">
 								<div class="col">
 									<a href="./" class="logo">
-										<img width="148" height="31" src="themes/images/others/logo.png" data-at2x="themes/images/others/logo@2x.png" alt="media">
+										<img width="148" height="31" src="themes/images/logo.png" data-at2x="themes/images/logo@2x.png" alt="media">
 									</a>
 								</div>
 							</div>
