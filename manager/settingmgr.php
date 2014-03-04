@@ -27,7 +27,8 @@
 			}		 			
 		 
 		}	 
-		SetSettingValue("About_System",$_POST["about"]);		
+		SetSettingValue("About_Pic_Name","about_pic".$ext);
+		SetSettingValue("About_System",$_POST["about"]);
 		header('location:?item=settingmgr&act=do');
 		//$_GET['item'] = "settingmgr";
 		//$_GET['act'] = "about";
