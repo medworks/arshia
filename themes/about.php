@@ -1,5 +1,6 @@
 <?php
 $about = GetSettingValue('About_System',0);
+$about_pic ="./aboutpic/".GetSettingValue('About_Pic_Name',0);
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
@@ -15,8 +16,8 @@ $html=<<<cd
 												<div class="page-1 content_cols_eq">
 													<div class="featured_area">
 														<div class="featured_image_container">
-															<a class="featured_image_wrapper" href="themes/images/others/about1.jpg" data-effect="mfp-zoom-in">
-																<img class="featured_image" src="themes/images/others/about.jpg" alt="">
+															<a class="featured_image_wrapper" href="{$about_pic}" data-effect="mfp-zoom-in">
+																<img class="featured_image" src="{$about_pic}" alt="">
 															</a>
 														</div>
 													</div>
