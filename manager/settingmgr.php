@@ -15,6 +15,18 @@
 	$db = Database::GetDatabase();
 	if ($_POST['mark']=="editabout")
 	{
+	    if((!empty($_FILES["pic"])) && ($_FILES['pic']['error'] == 0))
+		{
+			$filename =strtolower(basename($_FILES['pic']['name']));
+			$ext = substr($filename, strrpos($filename, '.') + 1);	   		 		
+			$newfilename = $_FILES['pic']['name'];
+			$newname = OS_ROOT."/aboutpic/about_pic.".$ext;
+			if (!(move_uploaded_file($_FILES['pic']['tmp_name'],$newname)))
+			{       
+			   
+			}		 			
+		 
+		}	 
 		SetSettingValue("About_System",$_POST["about"]);		
 		header('location:?item=settingmgr&act=do');
 		//$_GET['item'] = "settingmgr";
@@ -109,9 +121,9 @@ else
 	      </ul>
 	      <div class="badboy"></div>
 	</div>
-	<form name="frmabout" id= "frmabout" action="" method="post" >
+	<form name="frmabout" id= "frmabout" action="" method="post" enctype="multipart/form-data" >
 	<p>
-		<label for='pic'>فایل </label>
+		<label for='pic'>عکس </label>
 		<span>*</span>
 	</p>
 	<div class='upload-file'>
