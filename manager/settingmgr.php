@@ -110,7 +110,20 @@ else
 	      <div class="badboy"></div>
 	</div>
 	<form name="frmabout" id= "frmabout" action="" method="post" >
-		<p>
+	<p>
+		<label for='pic'>فایل </label>
+		<span>*</span>
+	</p>
+	<div class='upload-file'>
+				<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' />  
+				<span class='filename'>لطفا عکس مورد نظر را انتخاب نمایید</span>
+				<span class='action'>انتخاب فایل</span>
+			</div>
+		   <div class="badboy"></div>
+		   <div id="imgpreview">
+				<img id="img" src="" alt="" />				
+			</div>
+		   <p>
 			 <label for="about">درباره ما </label>
 		   </p>
 		   <textarea cols="50" rows="10" name="about" class="validate[required] detail" id="detail">{$About_System}</textarea>
