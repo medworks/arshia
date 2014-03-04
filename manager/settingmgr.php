@@ -114,6 +114,7 @@ else
 	if ($_GET['act']=="about")
 	{
 	$About_System = GetSettingValue('About_System',0);
+	$About_Pic ="../aboutpic/".GetSettingValue('About_Pic_Name',0);
 	$html=<<<ht
 	<div class="title">
 	      <ul>
@@ -127,15 +128,15 @@ else
 		<label for='pic'>عکس </label>
 		<span>*</span>
 	</p>
-	<div class='upload-file'>
+			<div class='upload-file'>
 				<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' />  
 				<span class='filename'>لطفا عکس مورد نظر را انتخاب نمایید</span>
 				<span class='action'>انتخاب فایل</span>
 			</div>
-		   <div class="badboy"></div>
+		   <div class="badboy"> </div>
 		   <div id="imgpreview">
-				<img id="img" src="" alt="" />				
-			</div>
+				<img id="img" src="" alt="" />
+			</div>			
 		   <p>
 			 <label for="about">درباره ما </label>
 		   </p>
