@@ -17,7 +17,7 @@ $html=<<<cd
 													<div class="featured_area">
 														<div class="featured_image_container">
 															<a class="featured_image_wrapper" href="{$about_pic}" data-effect="mfp-zoom-in">
-																<img class="featured_image" src="{$about_pic}" alt="">
+																<img class="featured_image" src="{$about_pic}" alt="درباره ما" width="1000px" height="400px">
 															</a>
 														</div>
 													</div>
