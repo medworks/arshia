@@ -15,30 +15,7 @@
  if ($_GET['item']!="requestmgr")	exit();
  $db = Database::GetDatabase();
  
- if ($_GET['act']=="do")
-{
-	$html=<<<ht
-		<div class="title">
-	      <ul>
-	        <li><a href="adminpanel.php?item=dashboard&act=do">پیشخوان</a></li>
-	        <li><span>مدیریت درخواست مستندات</span></li>
-	      </ul>
-	      <div class="badboy"></div>
-	    </div>
-		<div class="sub-menu" id="mainnav">
-			<ul>			  
-			  <li>
-				<a href="?item=requestmgr&act=mgr" id="request" name="request">
-				  مدیریت درخواست ها
-					<span class="edit-gallery"></span>
-				</a>
-			  </li>
-			 </ul>
-			 <div class="badboy"></div>
-		</div>		 
-ht;
-}else
-if ($_GET['act']=="mgr")
+ if ($_GET['act']=="mgr" or $_GET['act']=="do")
 {
 	if ($_POST["mark"]=="srhreq")
 	{	 			   
