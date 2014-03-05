@@ -1419,7 +1419,8 @@ td {
 .widget_mailchimpsf_widget #mc_subheader {
   line-height: 18px !important;
   padding: 0 0 17px 0 !important;
-  margin: 0 !important; }
+  margin: 0 !important;
+  font-size: 16px; }
 
 .mc_merge_var {
   margin: 0 !important; }
@@ -6075,6 +6076,14 @@ hr {
   color: #dcdcdc;
   margin-bottom: 41px; }
 
+.footer-widgets .widget p{
+  font-size: 16px;
+  font-weight: normal;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 12px 0;
+}
+
 .footer-widgets .widget span{
   font-size: 16px;
 }
@@ -6094,7 +6103,7 @@ hr {
 .footer-widgets .widget .widget_title {
   font-weight: normal;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 22px;
   margin: 9px 0; }
 
 /* FOOTER WIDGET - RECENT POSTS CUSTOM */

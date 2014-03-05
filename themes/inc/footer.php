@@ -5,6 +5,12 @@ $tel = GetSettingValue('Tell_Number',0);
 $fax = GetSettingValue('Fax_Number',0);
 $Contact_Email = GetSettingValue('Contact_Email',0);
 $about = GetSettingValue('About_System',0);
+$about = (mb_strlen($about)>250) ? mb_substr($about,0,250,"UTF-8")."..." : $about;
+$about = strip_tags($about);
+$gplus = GetSettingValue('Gplus_Add',0);
+$facebook = GetSettingValue('FaceBook_Add',0);
+$twitter = GetSettingValue('Twitter_Add',0);
+$rss = GetSettingValue('Rss_Add',0);
 
 $html=<<<cd
 
@@ -51,7 +57,8 @@ $html=<<<cd
 							<div class="col">
 								<section id="recent-posts-5" class="widget clearfix widget_recent_entries">
 									<h3 class="widget_title">درباره ما</h3>
-									<ul>
+									<a href="about-us.html"><p>{$about}</p></a>
+									<!-- <ul>
 										<li>
 											<a href="#">خبر دو</a>
 											<span class="post-date">تیر 21, 1392</span>
@@ -60,7 +67,7 @@ $html=<<<cd
 											<a href="#">خبر یک</a>
 											<span class="post-date">آذز 19, 1392</span>
 										</li>
-									</ul>
+									</ul> -->
 								</section>
 							</div>
 						</div>
@@ -148,7 +155,7 @@ $html=<<<cd
 											<input type="hidden" name="mcsf_action" value="mc_submit_signup_form">
 											<input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="22f16727a5">		
 												<div id="mc_subheader">
-													می توانید از طریق امیبل از آخرین خبرها با خبر شوید.
+													می توانید از طریق ایمیل از آخرین خبرهای ما با خبر شوید.
 												</div><!-- /mc_subheader -->															
 												<div class="mc_form_inside">
 													<div class="updated" id="mc_message"></div><!-- /mc_message -->									
@@ -174,12 +181,12 @@ $html=<<<cd
 								<section id="ffwidgetsocial-4" class="widget clearfix ffWidgetSocial">
 									<h3 class="widget_title">پیگیری ما در</h3>
 									<div class="social_icons clearfix">
-										<a href="#" class="social_icon zocial-twitter"></a>
-										<a href="#" class="social_icon zocial-dribbble"></a>
-										<a href="#" class="social_icon zocial-facebook"></a>
-										<a href="#" class="social_icon zocial-google-plus"></a>
-										<a href="#" class="social_icon zocial-rss"></a>
+										<a href="https://{$twitter}" class="social_icon zocial-twitter"></a>
+										<a href="https://{$facebook}" class="social_icon zocial-facebook"></a>
+										<a href="https://{$gplus}" class="social_icon zocial-google-plus"></a>
+										<a href="http://{$rss}" class="social_icon zocial-rss"></a>
 										<a href="#" class="social_icon zocial-linkedin"></a>
+										<a href="#" class="social_icon zocial-dribbble"></a>
 									</div>
 								</section>
 							</div>
