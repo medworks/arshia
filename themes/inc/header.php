@@ -284,9 +284,4 @@
 						</form>
 					</div>
 				</div>
-					<!--
-						header-1.php
-						header-2.php
-						1 of these 2 params needs to be set
-					-->
 			</header>
