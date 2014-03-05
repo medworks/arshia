@@ -1,3 +1,8 @@
+<?php
+	include_once("classes/functions.php");
+	include_once("classes/seo.php");
+	$seo = Seo::GetSeo();	
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="fa-IR">
 <head>
@@ -5,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="generator" content="Mediateq">
 	
-	<title>Media</title>
+	<title><?php echo $seo->Site_Title;?></title>
 
 	<link rel="shortcut icon" href="./favicon.ico">
 
