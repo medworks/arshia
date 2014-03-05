@@ -2,6 +2,14 @@
 	include_once("classes/functions.php");
 	include_once("classes/seo.php");
 	$seo = Seo::GetSeo();	
+
+	$tel = GetSettingValue('Tell_Number',0);
+	$Contact_Email = GetSettingValue('Contact_Email',0);
+
+	$gplus = GetSettingValue('Gplus_Add',0);
+	$facebook = GetSettingValue('FaceBook_Add',0);
+	$twitter = GetSettingValue('Twitter_Add',0);
+	$rss = GetSettingValue('Rss_Add',0);
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="fa-IR">
@@ -14,8 +22,6 @@
 
 	<link rel="shortcut icon" href="./favicon.ico">
 
-	<!-- <link rel="alternate" type="application/rss+xml" title="Sentinel » Feed" href="http://rawofnature.com/demfile/sn/wp/feed/">
-	<link rel="alternate" type="application/rss+xml" title="Sentinel » Comments Feed" href="http://rawofnature.com/demfile/sn/wp/comments/feed/"> -->
 	<link rel="stylesheet" href="themes/css/flick.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/wp.css" type="text/css" media="all">
 	<!--[if IE]>
@@ -27,7 +33,7 @@
 	<link rel="stylesheet" href="themes/css/dynamic-captions.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/static-captions.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/style.css" type="text/css" media="all">
-	<!-- <style type="text/css">
+	<style type="text/css">
 		body{ 
 			font-family: 'Open Sans', Arial, sans-serif !important;
 		}
@@ -60,13 +66,12 @@
 			background-position: left top;
 			background-repeat: repeat;
 		}
-	</style> -->
+	</style>
 	<link rel="stylesheet" href="themes/css/retina.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/responsive.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/fonts.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/blue.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/jquery.bxslider.css" type="text/css" media="all">
-	<!-- <link rel="stylesheet" href="http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/scripts/rs-plugin/css/settings.css?ver=3.8.1" type="text/css" media="all"> -->
 	<link rel="stylesheet" href="themes/css/magnific-popup.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/magnific-popup-anim.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/font-awesome.min.css" type="text/css" media="all">
@@ -114,47 +119,6 @@
 	<script type="text/javascript" src="themes/js/jquery.countdown_init.js"></script>
 	<script type="text/javascript" src="themes/js/retina-1.1.0-ff-updt.min.js"></script>
 	<script type="text/javascript" src="themes/js/cookie.js"></script>
-	
-	<!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://rawofnature.com/demfile/sn/wp/xmlrpc.php?rsd">
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://rawofnature.com/demfile/sn/wp/wp-includes/wlwmanifest.xml"> 
-	<link rel="prev" title="Gallery" href="http://rawofnature.com/demfile/sn/wp/gallery/">
-	<link rel="next" title="Blog" href="http://rawofnature.com/demfile/sn/wp/blog/">
-	<link rel="canonical" href="http://rawofnature.com/demfile/sn/wp/">
-	<link rel="shortlink" href="http://rawofnature.com/demfile/sn/wp/?p=675"> -->
-
-	<!-- <script type="text/javascript">
-		jQuery(function($) {
-			$('.date-pick').each(function() {
-				var format = $(this).data('format') || 'mm/dd/yyyy';
-				format = format.replace(/yyyy/i, 'yy');
-				$(this).datepicker({
-					autoFocusNextInput: true,
-					constrainInput: false,
-					changeMonth: true,
-					changeYear: true,
-					beforeShow: function(input, inst) { $('#ui-datepicker-div').addClass('show'); },
-					dateFormat: format.toLowerCase(),
-				});
-			});
-			d = new Date();
-			$('.birthdate-pick').each(function() {
-				var format = $(this).data('format') || 'mm/dd';
-				format = format.replace(/yyyy/i, 'yy');
-				$(this).datepicker({
-					autoFocusNextInput: true,
-					constrainInput: false,
-					changeMonth: true,
-					changeYear: false,
-					minDate: new Date(d.getFullYear(), 1-1, 1),
-					maxDate: new Date(d.getFullYear(), 12-1, 31),
-					beforeShow: function(input, inst) { $('#ui-datepicker-div').removeClass('show'); },
-					dateFormat: format.toLowerCase(),
-				});
-
-			});
-
-		});
-	</script> -->
 
 	<style type="text/css">
 		.recentcomments a{
@@ -174,16 +138,16 @@
 							<div class="col">
 								<div class="header-2_content clearfix">
 									<div class="contact_info">
-										Call Us: (98)511 123 4567 - Mail <a href="mailto:info@media.com">info@meida.com</a>
+										Call Us: <?php echo $tel; ?> - Mail: <a href="mailto:<?php echo $Contact_Email; ?>"><?php echo $Contact_Email; ?></a>
 									</div>
 									<div class="header_right">
 										<div class="social_links">
-											<a href="#" class="social_link icon-twitter"></a>
-											<a href="#" class="social_link icon-dribbble"></a>
-											<a href="#" class="social_link icon-facebook"></a>
-											<a href="#" class="social_link icon-google-plus"></a>
-											<a href="#" class="social_link icon-rss"></a>
+											<a href="https://<?php echo $twitter; ?>" class="social_link icon-twitter"></a>
+											<a href="https://<?php echo $facebook; ?>" class="social_link icon-facebook"></a>
+											<a href="https://<?php echo $gplus; ?>" class="social_link icon-google-plus"></a>
+											<a href="http://<?php echo $rss; ?>" class="social_link icon-rss"></a>
 											<a href="#" class="social_link icon-linkedin"></a>
+											<a href="#" class="social_link icon-dribbble"></a>
 										</div>						
 									</div>
 								</div>

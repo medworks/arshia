@@ -4,9 +4,11 @@ $address = GetSettingValue('Address',0);
 $tel = GetSettingValue('Tell_Number',0);
 $fax = GetSettingValue('Fax_Number',0);
 $Contact_Email = GetSettingValue('Contact_Email',0);
+
 $about = GetSettingValue('About_System',0);
 $about = (mb_strlen($about)>250) ? mb_substr($about,0,250,"UTF-8")."..." : $about;
 $about = strip_tags($about);
+
 $gplus = GetSettingValue('Gplus_Add',0);
 $facebook = GetSettingValue('FaceBook_Add',0);
 $twitter = GetSettingValue('Twitter_Add',0);
