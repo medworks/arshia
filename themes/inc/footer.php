@@ -150,7 +150,7 @@ $html=<<<cd
 										}
 									</style>
 									<div id="mc_signup">
-										<form method="post" action="#mc_signup" id="mc_signup_form">
+										<form method="post" action="" id="mc_signup_form">
 											<input type="hidden" id="mc_submit_type" name="mc_submit_type" value="html">
 											<input type="hidden" name="mcsf_action" value="mc_submit_signup_form">
 											<input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="22f16727a5">		
@@ -201,7 +201,7 @@ $html=<<<cd
 							<div class="col">
 								<div class="footer-bottom_content clearfix">
 									<a class="logo_footer" href="./">
-										<img src="themes/images/logo_footer.png" alt="media">
+										<img src="themes/images/logo_footer.png" alt="Arshia">
 									</a>
 									<div class="footer-bottom_left ltr">
 										© Copyright 2013 by Arshia. All Rights Reserved. Designed by <a href="http://www.mediateq.ir" target="_blank">Mediateq</a>
@@ -209,9 +209,9 @@ $html=<<<cd
 									<div class="footer-bottom_right">
 										<div class="footer_links">
 											<a href="./">Home</a>
-											<a href="#">Gallery</a>
-											<a href="#">Contact</a>
-											<a href="#">About</a>
+											<a href="gallery.html">Gallery</a>
+											<a href="contact.html">Contact</a>
+											<a href="about-us.html">About</a>
 										</div>
 									</div>
 								</div>
@@ -223,19 +223,6 @@ $html=<<<cd
 		</footer>
 		<div class="jqres"></div>
 	</div><!-- END BOXED -->
-	
-	<!-- <script>
-		function get_template_directory_uri(){
-			'use strict';
-			return 'http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel';
-		}
-	</script> 
-	<script>
-		function get_PATH_NAME_SEPARATOR(){
-			'use strict';
-			return '---';
-		}
-	</script> -->
 	
 </body>
 </html>
