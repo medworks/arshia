@@ -1,3 +1,13 @@
+<?php
+
+$address = GetSettingValue('Address',0);
+$tel = GetSettingValue('Tell_Number',0);
+$fax = GetSettingValue('Fax_Number',0);
+$Contact_Email = GetSettingValue('Contact_Email',0);
+$about = GetSettingValue('About_System',0);
+
+$html=<<<cd
+
 <div class="footer_push"></div>
 		</div><!-- END content_container-->
 		<footer class="footer_container">
@@ -23,13 +33,16 @@
 								<section id="ffwidgetcontact-4" class="widget clearfix ffWidgetContact">
 									<h3 class="widget_title">تماس با ما</h3>
 									<div class="address">
-										<strong>آدرس:</strong> ...
+										<strong>آدرس:</strong> <span>{$address}</span>
 									</div>
-									<div class="phone">
-										<strong>تلفن:</strong> 7654 321 511 98+
+									<div class="tel">
+										<strong>تلفن:</strong> <span>{$tel}</span>
+									</div>
+									<div class="fax">
+										<strong>فاکس:</strong> <span>{$fax}</span>
 									</div>
 									<div class="email">
-										<strong>ایمیل:</strong> info@media.com
+										<strong>ایمیل:</strong> <a href="mailto:{$Contact_Email}" target="_blank"><span>{$Contact_Email}</span></a>
 									</div>
 								</section>
 							</div>
@@ -37,7 +50,7 @@
 						<div class="col-1-4">
 							<div class="col">
 								<section id="recent-posts-5" class="widget clearfix widget_recent_entries">
-									<h3 class="widget_title">اخبار اخیر</h3>
+									<h3 class="widget_title">درباره ما</h3>
 									<ul>
 										<li>
 											<a href="#">خبر دو</a>
@@ -217,6 +230,9 @@
 		}
 	</script> -->
 	
-	
 </body>
 </html>
+
+cd;
+echo $html;
+?>

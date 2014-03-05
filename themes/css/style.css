@@ -1357,23 +1357,31 @@ td {
 
 .ffWidgetContact .address,
 .ffWidgetContact .phone,
-.ffWidgetContact .email {
-  padding: 0 0 2px 21px;
+.ffWidgetContact .email,
+.ffWidgetContact .tel,
+.ffWidgetContact .fax {
+  padding: 0 0 7px 21px;
   background-repeat: no-repeat;
   background-position: right 3px; }
 
 .ffWidgetContact .address strong,
 .ffWidgetContact .phone strong,
-.ffWidgetContact .email strong{
-  margin-right: 15px;
-  font-size: 14px;
+.ffWidgetContact .email strong,
+.ffWidgetContact .tel strong,
+.ffWidgetContact .fax strong{
+  margin-right: 18px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .ffWidgetContact .address {
   background-image: url(../images/widget_contact_address.png); }
 
-.ffWidgetContact .phone {
-  background-image: url(../images/widget_contact_phone.png); }
+.ffWidgetContact .tel {
+  background-image: url(../images/widget_contact_tel.png); }
+
+.ffWidgetContact .fax {
+  background-image: url(../images/widget_contact_fax.png); }
 
 .ffWidgetContact .email {
   background-image: url(../images/widget_contact_email.png); }
@@ -6067,6 +6075,10 @@ hr {
   color: #dcdcdc;
   margin-bottom: 41px; }
 
+.footer-widgets .widget span{
+  font-size: 15px;
+}
+
 .footer-widgets a {
   color: #ffffff; }
 
@@ -6080,8 +6092,9 @@ hr {
   border-top-color: rgba(255, 255, 255, 0.1); }
 
 .footer-widgets .widget .widget_title {
+  font-weight: normal;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 24px;
   margin: 9px 0; }
 
 /* FOOTER WIDGET - RECENT POSTS CUSTOM */
@@ -6119,8 +6132,7 @@ hr {
 
 /* FOOTER WIDGET - CONTACT */
 .footer-widgets .ffWidgetContact h3.widget_title {
-  padding-bottom: 6px;
-  font-size: 18px; }
+  padding-bottom: 6px; }
 
 /* FOOTER WIDGET - RECENT COMMENTS */
 .footer-widgets .widget_recent_comments li:before {
