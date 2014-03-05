@@ -36,10 +36,10 @@ $html=<<<cd
 										<strong>آدرس:</strong> <span>{$address}</span>
 									</div>
 									<div class="tel">
-										<strong>تلفن:</strong> <span>{$tel}</span>
+										<strong>تلفن:</strong> <span style="display:inline-block;direction:ltr;">{$tel}</span>
 									</div>
 									<div class="fax">
-										<strong>فاکس:</strong> <span>{$fax}</span>
+										<strong>فاکس:</strong> <span style="display:inline-block;direction:ltr;">{$fax}</span>
 									</div>
 									<div class="email">
 										<strong>ایمیل:</strong> <a href="mailto:{$Contact_Email}" target="_blank"><span>{$Contact_Email}</span></a>
