@@ -18,11 +18,11 @@ deny from all
 	RewriteBase /
 
 #Skip WWW	
-	#RewriteCond %{HTTP_HOST} ^www.arshia.ir [NC] 
-	#RewriteRule ^(.*)$ http://arshia.ir/$1 [L,R=301]
+	#RewriteCond %{HTTP_HOST} ^www.mediateq.ir [NC] 
+	#RewriteRule ^(.*)$ http://mediateq.ir/$1 [L,R=301]
 #Add WWW		
-	RewriteCond %{HTTP_HOST} ^arshia.ir$ [NC]
-	RewriteRule ^(.*)$ http://www.arshia.ir/$1 [L,R=301]	
+	RewriteCond %{HTTP_HOST} ^mediateq.ir$ [NC]
+	RewriteRule ^(.*)$ http://www.mediateq.ir/$1 [L,R=301]	
 	
 # proc/self/environ? no way!
 	RewriteCond %{QUERY_STRING} proc/self/environ [OR]
@@ -46,11 +46,11 @@ deny from all
 	RewriteRule ^(.*)$ index.php [F,L]	
 
 </IFModule>
-ErrorDocument 404 http://www.arshia.ir/404.html
+# ErrorDocument 404 http://www.mediateq.ir/404.html
 # Enable / Disable directory Listing/Browsing
 Options -Indexes
 IndexOptions -FancyIndexing
 ServerSignature Off
 
-#RewriteCond %{HTTP_HOST} ^arshia.ir$
-#RewriteRule ^/?$ "http\:\/\/www\.arshia\.ir\/" [R=301,L]
+#RewriteCond %{HTTP_HOST} ^mediateq.ir$
+#RewriteRule ^/?$ "http\:\/\/www\.mediateq\.ir\/" [R=301,L]
