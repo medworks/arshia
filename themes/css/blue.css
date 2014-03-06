@@ -80,10 +80,6 @@ input[type="submit"] {
 .navigation-1 .search_top_button:hover {
   color: #0093cf; }
 
-.navigation-1 .current-menu-ancestor .top-menu-item-a,
-.navigation-1 .current-menu-parent .top-menu-item-a,
-.navigation-1 .current_page_parent .top-menu-item-a,
-.navigation-1 .current_page_ancestor .top-menu-item-a,
 .navigation-1 .current-menu-item .top-menu-item-a {
   color: #0093cf; }
 

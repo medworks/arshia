@@ -296,15 +296,23 @@
 	};
 
 	var url= window.location.href;
-	$('.menu-navigation-container > ul > li > span.item_name').each(function(){
+	alert('0');
+
+	$('ul#menu-navigation-desktop > li').each(function(){
+	    alert("1");
+
 	    if(this.href.trim() == url){
-	        $(this).attr("id","current");
+	        alert("2");
+
+	        $(this).parent().addClass('current-menu-item');
 	        return false;
 	    }else if(url.match(/page/i)){
+	        alert("3");
+
 	        var href= window.location.href.substr(url.indexOf("/"));
 	        href= href.split('-');
 	        href= href[0].split('/');
-	        $('#navigation > ul > li > a[href*="'+href[3]+'"]').attr('id','current');
+	        $('.navigation-1_container > ul > li > a[href*="'+href[3]+'"]').parent().addClass('current-menu-item');
 	    }
 	});
 
