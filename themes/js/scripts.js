@@ -295,4 +295,17 @@
 		return features;
 	};
 
+	var url= window.location.href;
+	$('.menu-navigation-container > ul > li > span.item_name').each(function(){
+	    if(this.href.trim() == url){
+	        $(this).attr("id","current");
+	        return false;
+	    }else if(url.match(/page/i)){
+	        var href= window.location.href.substr(url.indexOf("/"));
+	        href= href.split('-');
+	        href= href[0].split('/');
+	        $('#navigation > ul > li > a[href*="'+href[3]+'"]').attr('id','current');
+	    }
+	});
+
 })(jQuery);

@@ -751,6 +751,10 @@ header #mini-nav span.newSignup{
   background-image: url('./images/slides.png');
 }
 
+#mainnav > ul > li a.request{
+  background-image: url('./images/document.png');
+}
+
 #mainnav > ul > li a.gallerymgr{
   background-image: url('./images/gallerymgr.png');
 }

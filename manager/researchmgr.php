@@ -78,9 +78,10 @@ $html=<<<cd
          <span>*</span>
        </p>
        <textarea cols="50" rows="10" name="detail" class="detail" id="detail" > {$row[detail]}</textarea>       
-	     <input type="submit" value="ثبت" class='submit' />
-		 <input type="hidden" name = "mark" value="save" />
-      	 <input type="reset" value="پاک کردن" class='reset' />
+       <p>
+	       <input type="submit" value="ثبت" class='submit' />
+		   <input type="hidden" name = "mark" value="save" />
+	       <input type="reset" value="پاک کردن" class='reset' />
        </p>  
 	</form>
 	<div class='badboy'></div>	

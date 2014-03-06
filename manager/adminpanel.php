@@ -98,7 +98,7 @@
             <a href="?item=constructmgr&act=do" id="construct" name="construct" class="construct"><p>مدیریت ساخت</p></a>
           </li>
 		  <li >            
-            <a href="?item=requestmgr&act=do" id="request" name="request" class="upload"><p>درخواست ها</p></a>
+            <a href="?item=requestmgr&act=do" id="request" name="request" class="request"><p>درخواست ها</p></a>
           </li>		       
           <li>
             <a href="?item=slidesmgr&act=do" class="slidemgr"><p>مدیریت اسلاید</p></a>

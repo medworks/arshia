@@ -78,6 +78,7 @@ $html=<<<cd
          <span>*</span>
        </p>
        <textarea cols="50" rows="10" name="detail" class="detail" id="detail" > {$row[detail]}</textarea>       
+	    <p>
 	     <input type="submit" value="ثبت" class='submit' />
 		 <input type="hidden" name = "mark" value="save" />
       	 <input type="reset" value="پاک کردن" class='reset' />
