@@ -77,7 +77,6 @@
 	<link rel="stylesheet" href="themes/css/font-awesome.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/entypo.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/zocial.css" type="text/css" media="all">
-	<link rel="stylesheet" href="themes/css/colorpicker.css" type="text/css" media="all">
 	
 	<script type="text/javascript" src="themes/js/jquery.js"></script>
 	<script type="text/javascript" src="themes/js/jquery-migrate.min.js"></script>
@@ -92,7 +91,7 @@
 
 	<script type="text/javascript" src="themes/js/mailchimp.js"></script>
 	<script type="text/javascript" src="themes/js/jquery.ui.core.min.js"></script>
-	<script type="text/javascript" src="themes/js/datepicker.js"></script>
+	<!-- <script type="text/javascript" src="themes/js/datepicker.js"></script> -->
 	
 	<script type="text/javascript">
 		/* <![CDATA[ */
@@ -100,12 +99,11 @@
 		/* ]]> */
 	</script>
 
-	<script type="text/javascript" src="themes/js/dot_irecommendthis.js"></script>
+	<!-- <script type="text/javascript" src="themes/js/dot_irecommendthis.js"></script> -->
 	<script type="text/javascript" src="themes/js/jquery.themepunch.plugins.min.js"></script>
 	<script type="text/javascript" src="themes/js/jquery.themepunch.revolution.min.js"></script>
 	<script type="text/javascript" src="themes/js/jquery.bxslider.min.js"></script>
 	<script type="text/javascript" src="themes/js/jquery.caroufredsel.min.js"></script>
-	<script type="text/javascript" src="themes/js/colorpicker.js"></script>
 
 	<script type="text/javascript" src="themes/js/scripts.js"></script>
 	<script type="text/javascript" src="themes/js/packery.pkgd.min.js"></script>
@@ -118,7 +116,7 @@
 	<script type="text/javascript" src="themes/js/jquery.countdown.js"></script>
 	<script type="text/javascript" src="themes/js/jquery.countdown_init.js"></script>
 	<script type="text/javascript" src="themes/js/retina-1.1.0-ff-updt.min.js"></script>
-	<script type="text/javascript" src="themes/js/cookie.js"></script>
+	<!-- <script type="text/javascript" src="themes/js/cookie.js"></script> -->
 
 	<style type="text/css">
 		.recentcomments a{
