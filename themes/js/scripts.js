@@ -296,7 +296,7 @@
 	};
 
 	var url= window.location.href;
-	alert('0');
+	//alert('0');
 
 	$('ul#menu-navigation-desktop > li').each(function(){
 	    alert("1");

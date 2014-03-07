@@ -1117,7 +1117,8 @@ td {
   background-size: cover; }
 
 .titlebar-1 .titlebar_title {
-  font-size: 22px;
+  font-weight: normal;
+  font-size: 24px;
   line-height: 22px;
   margin: 54px 0 0 -10px;
   background-color: #ffffff;
@@ -2734,7 +2735,7 @@ body.layout_boxed .header_main_wrapper {
   /*margin-right: -15px;*/ }
 
 .blog-post-1 > .grid > .col-blog-post-left {
-  float: left;
+  float: right;
   width: 60px; }
 
 .blog-post-1 > .grid > .col-blog-post-right {
@@ -2759,7 +2760,7 @@ body.layout_boxed .header_main_wrapper {
 .blog-post-1 h1.post_title a,
 .blog-post-1 h2.post_title a {
   position: relative;
-  font-size: 15px; }
+  font-size: 20px; }
 
 /* POST META LEFT */
 .blog-post-1 .post_meta_left {
@@ -3160,7 +3161,7 @@ body.layout_boxed .header_main_wrapper {
 
 .pagination-1 .page {
   display: block;
-  float: left;
+  float: right;
   margin: 0 3px 0 0;
   background-color: #303436;
   color: #ffffff;
@@ -3176,7 +3177,10 @@ body.layout_boxed .header_main_wrapper {
   border-radius: 2px; }
 
 .blog-cat-1 .pagination-1 {
-  margin-left: 74px; }
+  /*margin-left: 74px;*/
+  float: right;
+
+}
 
 /* ------------- */
 /* ARCHIVE-CAT-1 */
