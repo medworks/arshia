@@ -6319,3 +6319,7 @@ html body .mfp-zoom-in.mfp-ready.mfp-bg {
 .post_content .caroufredsel_wrapper ul {
   margin: 0;
   list-style: none; }
+
+.post_content p{
+  margin: 0;
+}
