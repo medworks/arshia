@@ -4138,7 +4138,8 @@ a.sc_button_round {
 
 .sc_button_small,
 a.sc_button_small {
-  font-size: 10px;
+  font-size: 20px;
+  font-weight: normal;
   padding: 4px 11px 4px 11px;
   margin: 0 11px 14px 0; }
 
@@ -5925,7 +5926,7 @@ hr {
   margin: 9px 0 4px 0; }
 
 .page404 .page404_desc {
-  font-size: 15px;
+  font-size: 22px;
   line-height: 23px;
   text-align: center;
   color: #6a6a6a;
