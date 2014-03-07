@@ -2519,6 +2519,11 @@ body.layout_boxed .header_main_wrapper {
   background-repeat: no-repeat;
   background-position: 0 0; }
 
+.navigation-2 a span.item_name{
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .header-2_container + .header-1_container .navigation-2 .mobile_nav_button {
   margin-top: 5px; }
 
@@ -3516,7 +3521,11 @@ body.layout_boxed .header_main_wrapper {
   width: 70.8%; }
 
 .portfolio-single-1 > .grid > .col-portfolio-single-right {
-  width: 29.2%; }
+  width: 29.2%;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: justify;
+  line-height: 1.5; }
 
 .portfolio-single-1 > .grid > .col-portfolio-single-left > .col,
 .portfolio-single-1 > .grid > .col-portfolio-single-right > .col {
