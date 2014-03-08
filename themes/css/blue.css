@@ -22,11 +22,11 @@ input[type="submit"] {
 /* GMAP */
 /* ---- */
 .gmap .marker:before {
-  background-image: url("images/marker.png"); }
+  background-image: url("../images/marker.png"); }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .gmap .marker:before {
-    background-image: url("images/marker@2x.png");
+    background-image: url("../images/marker@2x.png");
     background-size: 45px 39px;
     /* equals the size of @1x version */ } }
 /* -------- */

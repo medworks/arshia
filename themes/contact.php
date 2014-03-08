@@ -88,18 +88,17 @@ $html=<<<cd
 															<div class="col">
 																<div class="contact">
 																	<h3>اطلاعات تماس</h3>
-																	<p>
+																	<p style="margin-top:25px;margin-bottom:10px;">
 																		<span>آدرس:</span> {$address}
 																	</p>
-																	<p>
-																		<span>تلفن:</span> {$tel}
+																	<p style="margin-bottom:10px;">
+																		<span>تلفن: </span><span style="display:inline-block;direction:ltr;color:#000;">{$tel}</span>
 																	</p>
-																	<p>
-																		<span>فاکس:</span> {$fax}
-																	<p>
+																	<p style="margin-bottom:10px;">
+																		<span>فاکس: </span><span style="display:inline-block;direction:ltr;color:#000;">{$fax}</span>
 																	</p>
-																	<p>
-																		<span>ایمیل:</span> {$Contact_Email}
+																	<p style="margin-bottom:10px;">
+																		<span>ایمیل:</span><a href="mailto:{$Contact_Email}" target="_blank">{$Contact_Email}</a>
 																	</p>
 																</div>
 															</div>

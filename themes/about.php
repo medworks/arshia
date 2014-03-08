@@ -25,7 +25,7 @@ $html=<<<cd
 														درباره ما
 													</h2>
 													<div class="post_content">
-														<p>{$about}</p>
+														{$about}
 														<!-- <div class="grid ">
 															<div class="col-1-1 ">
 																<div class="col">

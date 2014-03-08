@@ -2712,7 +2712,7 @@ body.layout_boxed .header_main_wrapper {
   margin: 6px 0 0 0; }
 
 .page-1 .post_title {
-  font-size: 18px;
+  font-size: 22px;
   margin: 33px 0 20px 0; }
 
 .page-1 .featured_area {
@@ -5431,7 +5431,7 @@ table.table-2 {
   box-sizing: border-box; }
 
 .wpcf7 {
-  margin: -17px 0 24px 0 !important; }
+  margin: 25px 0 24px 0 !important; }
 
 .wpcf7 p {
   margin: 17px 0 17px 0;
@@ -6322,4 +6322,8 @@ html body .mfp-zoom-in.mfp-ready.mfp-bg {
 
 .post_content p{
   margin: 0;
+  font-size: 18px;
+  text-align: justify;
+  font-weight:normal;
+  line-height:1.5;
 }
