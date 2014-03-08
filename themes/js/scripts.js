@@ -295,25 +295,4 @@
 		return features;
 	};
 
-	var url= window.location.href;
-	//alert('0');
-
-	$('ul#menu-navigation-desktop > li').each(function(){
-	    alert("1");
-
-	    if(this.href.trim() == url){
-	        alert("2");
-
-	        $(this).parent().addClass('current-menu-item');
-	        return false;
-	    }else if(url.match(/page/i)){
-	        alert("3");
-
-	        var href= window.location.href.substr(url.indexOf("/"));
-	        href= href.split('-');
-	        href= href[0].split('/');
-	        $('.navigation-1_container > ul > li > a[href*="'+href[3]+'"]').parent().addClass('current-menu-item');
-	    }
-	});
-
 })(jQuery);
