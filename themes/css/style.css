@@ -187,6 +187,7 @@ body {
   margin: 0; }
 
 .bx-wrapper img {
+  height: 474px;
   min-width: 100% !important; }
 
 .bx-wrapper .bx-viewport {

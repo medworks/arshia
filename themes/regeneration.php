@@ -31,7 +31,7 @@ $html=<<<cd
 													<div class="grid">
 														<div class="col-portfolio-single-left" style="width:70%;">
 															<div class="col">
-																<div class="featured_area ltr">
+																<div class="featured_area">
 																	<ul class="bxslider">
 cd;
 foreach($pics as $key=>$val)
