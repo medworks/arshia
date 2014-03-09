@@ -281,13 +281,14 @@
 				</div>
 				<div class="search_top_overlay">
 					<div class="cwidth_wrapper">
-						<form method="get" class="searchform clearfix" action="">
-							<button class="searchbutton">
-								<i class="search_top_overlay_button"></i>
-							</button>
-							<div class="search_top_close"></div>
-							<p><input type="text" class="searchfield nooutline" name="s" autocomplete="off" placeholder="جستجو..."></p>
-						</form>
+					 <form action="search.html" method="post" name="frmsearch" class="searchform clearfix">
+					    <button class="searchbutton">
+						  <i class="search_top_overlay_button"></i>
+					    </button> 
+						<div class="search_top_close"></div>
+						<input class="searchfield nooutline" name="searchtxt" id="header-search-input" type="text" autocomplete="off" placeholder="عبارت مورد نظرتان را تایپ سپس اینتر نمایید...">						
+						<input type="hidden" name="mark" value="search" />
+					 </form>						
 					</div>
 				</div>
 			</header>
