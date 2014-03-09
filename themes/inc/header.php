@@ -17,7 +17,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="generator" content="Mediateq">
-	
+	<meta name="description" content="<?php echo $seo->Site_Describtion;?>" />
+	<meta name="keywords" content="<?php echo $seo->Site_KeyWords;?>" />
+
 	<title><?php echo $seo->Site_Title;?></title>
 
 	<link rel="shortcut icon" href="./favicon.ico">
