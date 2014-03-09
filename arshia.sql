@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 19, 2014 at 02:21 PM
+-- Generation Time: Mar 09, 2014 at 06:34 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -59,32 +59,6 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `keywords` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `block`
---
-
-CREATE TABLE IF NOT EXISTS `block` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `pos` tinyint(4) NOT NULL,
-  `order` tinyint(4) NOT NULL,
-  `acclevel` tinyint(4) NOT NULL,
-  `plugin` varchar(100) NOT NULL,
-  `content` text NOT NULL,
-  `contenttype` tinyint(4) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `block`
---
-
-INSERT INTO `block` (`id`, `name`, `pos`, `order`, `acclevel`, `plugin`, `content`, `contenttype`) VALUES
-(1, 'اخبار', 1, 1, 1, '', 'jsj sj hc uigjhbhghgh', 2),
-(2, 'سعید', 2, 1, 2, '', 'm kjnhubuyggnomnjo', 1);
 
 -- --------------------------------------------------------
 
@@ -170,93 +144,19 @@ INSERT INTO `news` (`id`, `subject`, `image`, `body`, `ndate`, `userid`, `resour
 -- --------------------------------------------------------
 
 --
--- Table structure for table `newsletter`
+-- Table structure for table `request`
 --
 
-CREATE TABLE IF NOT EXISTS `newsletter` (
+CREATE TABLE IF NOT EXISTS `request` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nid` int(11) NOT NULL,
-  `sdate` datetime NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `tel` varchar(15) NOT NULL,
+  `mobile` varchar(11) NOT NULL,
+  `address` varchar(300) NOT NULL,
+  `postcode` varchar(11) NOT NULL,
+  `email` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
-
---
--- Dumping data for table `newsletter`
---
-
-INSERT INTO `newsletter` (`id`, `nid`, `sdate`) VALUES
-(2, 121, '2013-09-22 00:00:00'),
-(3, 47, '2013-09-16 00:00:00'),
-(4, 48, '2013-09-22 00:00:00');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pollanswers`
---
-
-CREATE TABLE IF NOT EXISTS `pollanswers` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `poid` int(11) NOT NULL,
-  `ip` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
-
---
--- Dumping data for table `pollanswers`
---
-
-INSERT INTO `pollanswers` (`id`, `poid`, `ip`) VALUES
-(1, 4, '127.0.0.1');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `polloptions`
---
-
-CREATE TABLE IF NOT EXISTS `polloptions` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL,
-  `option` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
-
---
--- Dumping data for table `polloptions`
---
-
-INSERT INTO `polloptions` (`id`, `pid`, `option`) VALUES
-(1, 2, '<p>عالی</p>\r'),
-(2, 2, '<p>خوب</p>\r'),
-(3, 2, '<p>متوسط</p>'),
-(4, 3, '<p>1- عالی</p>\r'),
-(5, 3, '<p>2- خوب</p>\r'),
-(6, 3, '<p>3- متوسط</p>\r'),
-(7, 3, '<p>4- ضعیف</p>');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `polls`
---
-
-CREATE TABLE IF NOT EXISTS `polls` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(200) NOT NULL,
-  `regdate` datetime NOT NULL,
-  `active` tinyint(4) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
-
---
--- Dumping data for table `polls`
---
-
-INSERT INTO `polls` (`id`, `title`, `regdate`, `active`) VALUES
-(1, '2013-11-02 17:05:38', '0000-00-00 00:00:00', 0),
-(2, '2013-11-02 17:11:07', '2013-11-02 00:00:00', 0),
-(3, 'نظر شما؟', '2013-11-02 17:12:46', 1);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -296,7 +196,7 @@ CREATE TABLE IF NOT EXISTS `settings` (
   `key` varchar(30) NOT NULL,
   `value` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
 
 --
 -- Dumping data for table `settings`
@@ -328,7 +228,8 @@ INSERT INTO `settings` (`id`, `key`, `value`) VALUES
 (23, 'Email_Sender_Name', 'گروه مدیاتک'),
 (24, 'WellCome_Title', 'به سایت ژیک خوش آمدید'),
 (25, 'WellCome_Body', 'شرکت ساختمانی ژیک  جهت رفاه حال پزشکان ساختمانی شیک طراحی و ساخته است'),
-(26, 'Gplus_Add', 'www.googleplus.com');
+(26, 'Gplus_Add', 'www.googleplus.com'),
+(27, 'About_Pic_Name', 'about_pic.jpg');
 
 -- --------------------------------------------------------
 
@@ -430,91 +331,6 @@ INSERT INTO `users` (`id`, `name`, `family`, `image`, `email`, `username`, `pass
 (2, 'علی رضا', 'صادقی نژاد', './newspics/editnews.png', 'r.sadeghi@yahoo.com', 'reza', '4510', 1),
 (3, 'علی', 'قائمی', './newspics/works.png', 'ali.ghaemi@gmail.com', 'ghaemi', '827ccb0eea8a706c4c34a16891f84e7b', 0),
 (4, 'آرش', 'خویتندار', './newspics/addworks.png', 'arash.kh@gmail.com', 'arash', '827ccb0eea8a706c4c34a16891f84e7b', 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `usersnews`
---
-
-CREATE TABLE IF NOT EXISTS `usersnews` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(30) NOT NULL,
-  `tel` varchar(12) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
-
---
--- Dumping data for table `usersnews`
---
-
-INSERT INTO `usersnews` (`id`, `email`, `tel`, `name`) VALUES
-(2, 'hatami4510@gmail.com', '', 'سعید'),
-(4, 'hatami4560@yahoo.com', '09151204395', 'سعید حاتمی'),
-(5, 'hatami4560@yahoo.com', '09151204395', 'سعید حاتمی'),
-(6, 'hatami4510@gmail.com', '09151204395', 'سعید حاتمی'),
-(7, 'hatami4560@yahoo.com', '09151204395', 'سعید'),
-(8, 'hatami4560@yahoo.com', '09151204395', 'سعید'),
-(9, '', '', ''),
-(10, 'hatami4560@yahoo.com', '09366903366', 'رضا وطن خواه'),
-(11, 'amjadi.mojtaba@gmail.com', '09151091162', 'سعید حاتمی'),
-(12, '', '', ''),
-(13, '', '', ''),
-(14, 'hatami4510@gmail.com', '09151091155', 'علی'),
-(15, '', '', ''),
-(16, 'hatami4560@yahoo.com', '09151204395', 'رضا وطن خواه');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `works`
---
-
-CREATE TABLE IF NOT EXISTS `works` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `subject` varchar(50) NOT NULL,
-  `image` varchar(60) NOT NULL,
-  `body` text NOT NULL,
-  `link` varchar(20) NOT NULL,
-  `sdate` datetime NOT NULL,
-  `fdate` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=154 ;
-
---
--- Dumping data for table `works`
---
-
-INSERT INTO `works` (`id`, `subject`, `image`, `body`, `link`, `sdate`, `fdate`) VALUES
-(100, 'تست اول', '/media/workspics/تست اول.png', ' test 1', '', '2013-06-01 00:00:00', '2013-08-17 00:00:00'),
-(151, 'تست سابمیت', './workspics/test.jpg', '<p>jbSJbjj</p>', '', '2013-06-26 19:07:42', '2013-07-03 19:07:42'),
-(152, 'تست سابمیت12', './workspics/editslides.png', '<p>hk</p>', '', '2013-08-16 11:21:35', '2013-07-16 11:21:35'),
-(153, 'تست ورک', '../workspics/users.png', '<p>تسیت لینک کار</p>', 'www.mediateq.ir', '2013-07-23 11:13:56', '2013-08-22 11:13:56');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `workstat`
---
-
-CREATE TABLE IF NOT EXISTS `workstat` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `workid` int(11) NOT NULL,
-  `subject` varchar(50) NOT NULL,
-  `percent` float NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
-
---
--- Dumping data for table `workstat`
---
-
-INSERT INTO `workstat` (`id`, `workid`, `subject`, `percent`) VALUES
-(1, 100, 'graphic', 90),
-(2, 100, 'php', 50),
-(3, 100, 'CSS', 30),
-(4, 100, 'HTML', 60);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
