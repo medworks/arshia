@@ -87,7 +87,7 @@ del;
                     
             }
 $msgs = GetMessage($_GET['msg']);
-$list = array("name"=>"عنوان",
+$list = array("name"=>"نام",
               "tel"=>"تلفن",
 			  "mobile"=>"موبایل",
 			  "email"=>"ایمیل");
