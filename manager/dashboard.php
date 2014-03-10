@@ -13,16 +13,16 @@
 		die(); // solve a security bug
 	}	
 	$db = Database::GetDatabase();
-	$news = $db->SelectAll("news","*",null,"ndate");	
-	if (isset($news))
+	$request = $db->SelectAll("request","*",null,"regdate");	
+	if (isset($request))
 	{
 		$row = array();
 		$pie = array();
 		$itemcount = array();
 		$count = array();
-		foreach($news as $key => $val)
+		foreach($request as $key => $val)
 		{
-		  $row[] = "'".ToJalali($val['ndate'],"Y-m-d")."'";	
+		  $row[] = "'".ToJalali($val['regdate'],"Y-m-d")."'";	
 		}	
 		if (isset($row))
 		{
@@ -50,6 +50,7 @@
 		}	
 	}	
 //*************************************************************
+/*
     $works = $db->SelectAll("works","*",null,"sdate");
 	if (isset($works))
 	{
@@ -83,6 +84,7 @@
 			unset($count);
 		}	
 	}	
+*/	
 $list = array("none"=>"انتخاب نوع نمودار",
               "area"=>"محیطی",
               "line"=>"خطی",
@@ -105,7 +107,7 @@ $combobox = SelectOptionTag("cbchart",$list);
 });	
 
  $(function () {       		
-        $('#pnlnews').highcharts({
+        $('#pnlrequest').highcharts({
            chart: {		
 				type: '{$_GET[type]}',
 				width: 800,
@@ -114,7 +116,7 @@ $combobox = SelectOptionTag("cbchart",$list);
 			},			
             title: {
 			style: {fontFamily: 'bmitra', fontWeight: 'bold', fontSize: '25px' },
-             text: 'نمودار اخبار'
+             text: 'نمودار درخواست ها'
             },
             xAxis: {			   
 			  style: {fontFamily: 'bmitra', fontWeight: 'bold', fontSize: '25px' },	
@@ -123,7 +125,7 @@ $combobox = SelectOptionTag("cbchart",$list);
 			yAxis: {
 			  style: {fontFamily: 'bmitra', fontWeight: 'bold', fontSize: '25px' },
               title: {
-                    text: 'تعداد خبر '
+                    text: 'تعداد درخواست '
                 }
             },
             credits: {
@@ -134,13 +136,13 @@ $combobox = SelectOptionTag("cbchart",$list);
 			    title: {
                     text: 'تعداد'
                 },
-                name: 'تعداد اخبار ',
+                name: 'تعداد درخواست ',
 				color: '#8bbc21',
                 data: [{$nseries}]
                 }]
         });
     });
-	
+<!--	
 	$(function () {
         $('#pnlworks').highcharts({
            chart: {		
@@ -176,10 +178,10 @@ $combobox = SelectOptionTag("cbchart",$list);
     });
 		
 	</script>
-	
- <div id="pnlnews" style="width: 400px; height: 400px; margin: 0;"></div>
+	-->
+ <div id="pnlrequest" style="width: 400px; height: 400px; margin: 0;"></div>
  <hr/><br/>
- <div id="pnlworks" style="width: 400px; height: 400px; margin:200px 0;"></div>
+ <div id="pnlworkss" style="width: 400px; height: 400px; margin:200px 0;"></div>
 
 cd;
  return $html;
