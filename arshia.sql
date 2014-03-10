@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 09, 2014 at 06:34 PM
+-- Generation Time: Mar 10, 2014 at 07:41 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -155,8 +155,19 @@ CREATE TABLE IF NOT EXISTS `request` (
   `address` varchar(300) NOT NULL,
   `postcode` varchar(11) NOT NULL,
   `email` varchar(30) NOT NULL,
+  `detail` varchar(500) NOT NULL,
+  `regdate` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `request`
+--
+
+INSERT INTO `request` (`id`, `name`, `tel`, `mobile`, `address`, `postcode`, `email`, `detail`, `regdate`) VALUES
+(1, 'سعید حاتمی', '05116623685', '09151204395', 'مشهد-بلوار فلاحی', '91446696645', 'hatami4560@yahoo.com', '', '2014-03-10 01:02:04'),
+(2, 'مجتبی امجدی', '7316266', '09151091162', 'مشهد - بلوار فلسطین', '854548', 'amjadi@yahoo.com', '', '2014-03-11 00:00:00'),
+(3, 'مجید حاتمی', '6623685', '09999999999', 'مشهد - قاسم آباد', '945465465', 'hatami4510@gmail.com', '', '2014-03-10 19:00:18');
 
 -- --------------------------------------------------------
 
