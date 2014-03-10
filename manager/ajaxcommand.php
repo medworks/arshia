@@ -68,10 +68,11 @@ if($_GET["request"]=="reg"){
 	$address = $_POST['address'];
 	$postcode= $_POST['postcode'];
 	$detail  = $_POST['detail'];
+	$regdate  = date('Y-m-d H:i:s');
 
 	
-	$fields = array("`name`","`tel`","`mobile`","`address`","`postcode`","`email`","`detail`");		
-	$values = array("'{$name}'","'{$tel}'","'{$mobile}'","'{$address}'","'{$postcode}'","'{$email}'","'{$detail}'");
+	$fields = array("`name`","`tel`","`mobile`","`address`","`postcode`","`email`","`detail`","`regdate`");		
+	$values = array("'{$name}'","'{$tel}'","'{$mobile}'","'{$address}'","'{$postcode}'","'{$email}'","'{$detail}'","'{$regdate}'");
 	
 
     if( strlen($name)>=1 && checkEmail($email))
@@ -81,7 +82,7 @@ if($_GET["request"]=="reg"){
 		else
 		{
 			echo "<div class='notification_error rtl'>ثبت مشخصات شما با مشکل مواجه شد! لطفا فیلدها را بررسی نمایید و مجددا تلاش کنید.</div>";
-			//echo $db->cmd;
+		//	echo "<br/>",$db->cmd;
         }	
 	} 
 	else 
