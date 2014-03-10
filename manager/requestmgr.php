@@ -58,6 +58,7 @@
 				{
 						$rowsClass[] = "datagridoddrow";
 				}				
+				$rows[$i]["regdate"] = ToJalali($rows[$i]["regdate"]," l d F  Y ");
 				$rows[$i]["check"] = "<a href='?item=requestmgr&act=check&rid={$rows[$i]["id"]}' class='edit-field'" .
 						"style='text-decoration:none;'></a>";								
 				$rows[$i]["delete"]=<<< del
@@ -73,6 +74,7 @@ del;
             if (Count($rows) > 0)
             {                    
                     $gridcode.= DataGrid(array( 
+					        "regdate"=>"تاریخ سفارش",
 							"name"=>"نام",
 							"tel"=>"تلفن",
 							"mobile"=>"موبایل",
