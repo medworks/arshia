@@ -286,8 +286,10 @@
 						  <i class="search_top_overlay_button"></i>
 					    </button> 
 						<div class="search_top_close"></div>
-						<input class="searchfield nooutline" name="searchtxt" id="header-search-input" type="text" autocomplete="off" placeholder="عبارت مورد نظرتان را تایپ سپس اینتر نمایید...">						
-						<input type="hidden" name="mark" value="search" />
+						<p>
+							<input class="searchfield nooutline" name="searchtxt" id="header-search-input" type="text" autocomplete="off" placeholder="عبارت مورد نظرتان را تایپ سپس اینتر نمایید...">						
+							<input type="hidden" name="mark" value="search" />
+						</p>
 					 </form>						
 					</div>
 				</div>

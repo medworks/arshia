@@ -83,7 +83,7 @@ $html=<<<cd
 														</div>
 													</div>
 												</div>
-												<div class="pagination-1_container">
+												<!-- <div class="pagination-1_container">
 													<div class="pagination-1_wrapper">
 														<div class="pagination-1">
 															<div class="desktop clearfix">
@@ -93,7 +93,7 @@ $html=<<<cd
 															</div>
 														</div>
 													</div>
-												</div>
+												</div> -->
 												<div class="clear"></div>
 											</div>
 										</div>
