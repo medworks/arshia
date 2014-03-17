@@ -103,10 +103,10 @@ $html=<<<cd
 					<ul>
 						<li id="tab1"><a href="#catab1">پوشه تحقیقات</a></li>
 						<li id="tab2"><a href="#catab2">پوشه بازسازی</a></li>
-						<li id="tab2"><a href="#catab3">پوشه ساخت</a></li>
-						<li id="tab3"><a href="#catab4">پوشه اسلاید ها</a></li>
-						<li id="tab4"><a href="#catab5">پوشه گالری</a></li>
-						<li id="tab5"><a href="#catab6">پوشه کاربران</a></li>
+						<li id="tab3"><a href="#catab3">پوشه ساخت</a></li>
+						<li id="tab4"><a href="#catab4">پوشه اسلاید ها</a></li>
+						<li id="tab5"><a href="#catab5">پوشه گالری</a></li>
+						<li id="tab6"><a href="#catab6">پوشه کاربران</a></li>
 					</ul>
 				</div>
 				<div class="cat-tabs-wrap" id="catab1">
@@ -134,6 +134,12 @@ $html=<<<cd
 					<div class="badboy"></div>
 				</div>
 				<div class="cat-tabs-wrap" id="catab5">
+					<ul>
+						
+					</ul>
+					<div class="badboy"></div>
+				</div>
+				<div class="cat-tabs-wrap" id="catab6">
 					<ul>
 						
 					</ul>
