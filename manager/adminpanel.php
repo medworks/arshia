@@ -18,7 +18,7 @@ header('Content-Type: text/html; charset=UTF-8');
   $sess = Session::GetSesstion();
   $name = $sess->Get("name").' '.$sess->Get("family");
   $user = $sess->Get("username");
-    $pic = $sess->Get("userimg");
+  $pic = $sess->Get("userimg");
   $datetime = ToJalali(date('Y-M-d H:i:s'),'l، d F Y');
   if ($_GET["item"] == "logout")
    {
