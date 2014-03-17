@@ -156,7 +156,7 @@ $html.=<<<cd
 																<div class="col-1-3">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#">
+																			<a class="text_icon_expand_item" href="construction.html">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
 																						<img class="text_icon_expand_image" src="./constructpics/{$conspic[image]}" alt="{$conspic[subject]}">
@@ -178,7 +178,7 @@ $html.=<<<cd
 																<div class="col-1-3">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#">
+																			<a class="text_icon_expand_item" href="regeneration.html">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
 																						<img class="text_icon_expand_image" src="./reconstructpics/{$reconspic[image]}" alt="{$reconspic[subject]}">
@@ -200,7 +200,7 @@ $html.=<<<cd
 																<div class="col-1-3">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="#">
+																			<a class="text_icon_expand_item" href="research.html">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
 																						<img class="text_icon_expand_image" src="./researchpics/{$respic[image]}" alt="{$respic[subject]}">
