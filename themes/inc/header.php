@@ -221,7 +221,7 @@ header('Content-Type: text/html; charset=UTF-8');
 													</div>
 													<div class="clear"></div>
 												</div>			
-												<div class="search_top_button"></div>
+												<!--<div class="search_top_button"></div> -->
 											</div>
 										</div>
 									</nav>
