@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html; charset=UTF-8');
 	include_once("classes/functions.php");
 	include_once("classes/seo.php");
 	$seo = Seo::GetSeo();	
