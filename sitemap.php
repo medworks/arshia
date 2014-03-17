@@ -8,9 +8,9 @@
     $sm = '<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
     
-	$news = $db->SelectAll("news","*",null,"id ASC");
-	$works = $db->SelectAll("works","*",null,"id ASC");
-	$articles = $db->SelectAll("articles","*",null,"id ASC");	
+	$research = $db->Select("allparts","*","`part`= 1");
+	$regenerate = $db->Select("allparts","*","`part`= 2");
+	$construction = $db->Select("allparts","*","`part`= 3");	
 	$add ="http://www.arshia-co.com/" ;
 
 	$sm .="
@@ -24,13 +24,13 @@
 	  <loc>http://www.arshia-co.com/about-us.html</loc>
 	</url>
 	<url>
-	  <loc>http://www.arshia-co.com/works.html</loc>
+	  <loc>http://www.arshia-co.com/construction.html</loc>
 	</url>
 	<url>
-	  <loc>http://www.arshia-co.com/news.html</loc>
+	  <loc>http://www.arshia-co.com/regeneration.html</loc>
 	</url>
 	<url>
-	  <loc>http://www.arshia-co.com/articles.html</loc>
+	  <loc>http://www.arshia-co.com/research.html</loc>
 	</url>
 	<url>
 	  <loc>http://www.arshia-co.com/contact.html</loc>
@@ -41,44 +41,44 @@
 ";
 	$date = date("Y-m-d");	
 
-	foreach($news as $key=>$val)
-	{
+	//foreach($news as $key=>$val)
+//	{
 		//$date = date("Y-m-dTH:i:s+00:00",$val['ndate']);
 		//$date = date("D, d M Y H:i:s T");
 		$sm.=<<<cd
 		<url>
-			<loc>{$add}news-fullpage{$val["id"]}.html</loc>
+			<loc>{$add}construction.html</loc>
 			<lastmod>{$date}</lastmod>
 			<changefreq>daily</changefreq>
 			<priority>0.8</priority>
         </url>    		
 cd;
-	}
-	foreach($works as $key=>$val)
-	{
+	//}
+	//foreach($works as $key=>$val)
+	//{
 	   //$date = date("D, d M Y H:i:s T",$val['sdate']);
 	   //$date = date("D, d M Y H:i:s T");
 		$sm.=<<<cd
 		<url>
-			<loc>{$add}works-fullpage{$val["id"]}.html</loc>
+			<loc>{$add}regeneration.html</loc>
 			<lastmod>{$date}</lastmod>
 			<changefreq>daily</changefreq>
 			<priority>0.8</priority>
         </url>    		
 cd;
-	}
-	foreach($articles as $key=>$val)
-	{
+	//}
+	//foreach($articles as $key=>$val)
+	//{
 		//$date = date("D, d M Y H:i:s T",$val['ndate']);
 		//$date = date("D, d M Y H:i:s T");
 		$sm.=<<<cd
 		<url>
-			<loc>{$add}articles-fullpage{$val["id"]}.html</loc>
+			<loc>{$add}research.html</loc>
 			<lastmod>{$date}</lastmod>
 			<changefreq>daily</changefreq>
 			<priority>0.8</priority>
         </url>    		
 cd;
-	}		
+	//}		
     $sm.= "</urlset>";
 	echo $sm;
