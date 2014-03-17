@@ -1,14 +1,24 @@
 .tp-caption.sentinel-medium-700-black {
 font-size:24px;
 font-weight:700;
-color:#171717;
+color:#000000;
+background-color:#DDDDDD;
 line-height:30px;
+padding: 7px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
 }
 
 .tp-caption.sentinel-small-600-black {
 font-size:14px;
 font-weight:600;
-color:#424242;
+color:#000000;
+background-color:#DDDDDD;
 line-height:20px;
+padding: 7px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
 }
 
