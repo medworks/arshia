@@ -104,8 +104,7 @@ $combobox = SelectOptionTag("cbchart",$list);
 	window.location.href = "adminpanel.php?item=dashboard&act=do&type="+$(this).val();	
 	return false;
 				});
-});	
-
+});
  $(function () {       		
         $('#pnlrequest').highcharts({
            chart: {		
@@ -142,7 +141,14 @@ $combobox = SelectOptionTag("cbchart",$list);
                 }]
         });
     });
-<!--	
+ </script>
+ <div id="pnlrequest" style="width: 400px; height: 400px; margin: 0;"></div>
+ <hr/><br/>
+ <div id="pnlworks" style="width: 400px; height: 400px; margin:200px 0;"></div>
+
+cd;
+ return $html;
+/*	
 	$(function () {
         $('#pnlworks').highcharts({
            chart: {		
@@ -178,11 +184,5 @@ $combobox = SelectOptionTag("cbchart",$list);
     });
 		
 	</script>
-	-->
- <div id="pnlrequest" style="width: 400px; height: 400px; margin: 0;"></div>
- <hr/><br/>
- <div id="pnlworkss" style="width: 400px; height: 400px; margin:200px 0;"></div>
-
-cd;
- return $html;
+*/
 ?>
