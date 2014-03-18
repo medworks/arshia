@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 10, 2014 at 07:41 PM
+-- Generation Time: Mar 18, 2014 at 10:24 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -82,6 +82,28 @@ CREATE TABLE IF NOT EXISTS `category` (
 INSERT INTO `category` (`id`, `secid`, `catname`, `latinname`, `describe`) VALUES
 (5, 2, 'روانشناسی کودک', 'sycologists', 'اطلاعات روانشناسی'),
 (6, 1, 'برنامه نویسی', 'programming', 'انواع زبان های برنامه نویسی');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `docs`
+--
+
+CREATE TABLE IF NOT EXISTS `docs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `subject` varchar(60) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `body` varchar(300) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `docs`
+--
+
+INSERT INTO `docs` (`id`, `subject`, `address`, `body`) VALUES
+(1, 'اسناد محرمانه', 'D:/xampp/htdocs/arshia/docfiles/New Text Document.txt', 'تست'),
+(2, '10 اشتباه مهم کاربردپذیری در طراحی وب سایت', './docfiles/Practice LM 4.docx', 'تست');
 
 -- --------------------------------------------------------
 
