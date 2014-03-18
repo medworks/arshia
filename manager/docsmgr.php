@@ -16,40 +16,32 @@
  $db = Database::GetDatabase();
  $overall_error = false;
  $pic_on_edit_section = null;
- if (isset($_POST["mark"]) and $_POST["mark"]!="srhdocs")
- {
-	 if(empty($_POST["selectpic"]))
-		{ 
-			//$msgs = $msg->ShowError("لط??ا ??ایل عکس را انتخاب کنید");
-			header('location:?item=gallermgr&act=new&msg=4');
-			//$_GET["item"] = "gallermgr";
-			//$_GET["act"] = "new";
-			//$_GET["msg"] = 4;
-			$overall_error = true;
-			//exit();
-		}
-  } 	
+ 	
  if (!$overall_error && $_POST["mark"]=="savedoc")
- {						   				
-	$fields = array("`image`","`subject`","`body`");	
-	$values = array("'{$_POST[selectpic]}'","'{$_POST[subject]}'","'{$_POST[body]}'");
-	if (!$db->InsertQuery('gallery',$fields,$values)) 
+ {  
+		if((!empty($_FILES["pic"])) && ($_FILES['pic']['error'] == 0))
+		{
+			$filename =strtolower(basename($_FILES['pic']['name']));
+			$ext = substr($filename, strrpos($filename, '.') + 1);	   		 		
+			$newfilename = $_FILES['pic']['name'];
+			$newname = OS_ROOT."/docfiles/".$newfilename;
+			if (!(move_uploaded_file($_FILES['pic']['tmp_name'],$newname)))
+			{       
+			   
+			}		 			
+		 
+		}	 
+	$fields = array("`subject`","`address`","`body`");	
+	$values = array("'{$_POST[subject]}'","'./docfiles/{$newfilename}'","'{$_POST[body]}'");
+	if (!$db->InsertQuery('docs',$fields,$values)) 
 	{
 		//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
-		header('location:?item=docsmgr&act=new&msg=2');
-		//exit();
-		//$_GET["item"] = "gallerymgr";
-		//$_GET["act"] = "new";
-		//$_GET["msg"] = 2;
+		header('location:?item=docsmgr&act=new&msg=2');			
 	} 	
 	else 
 	{  										
 		//$msgs = $msg->ShowSuccess("ثبت اطلاعات با موفقیت انجام شد");
-		header('location:?item=docsmgr&act=new&msg=1');					
-		//exit();
-		//$_GET["item"] = "gallerymgr";
-		//$_GET["act"] = "new";
-		//$_GET["msg"] = 1;
+		header('location:?item=docsmgr&act=new&msg=1');
 	 }
  }
  else
@@ -147,7 +139,7 @@ $html=<<<cd
 				<span>*</span>
 			</p>
 			<div class='upload-file'>
-				<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' />  
+				<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='' />  
 				<span class='filename'>لطفا فایل مورد نظر را انتخاب کنید</span>
 				<span class='action'>انتخاب فایل</span>
 			</div>
