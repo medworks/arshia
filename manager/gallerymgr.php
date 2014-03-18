@@ -188,7 +188,7 @@ if ($_GET['act']=="mgr")
 				//$_GET['item'] = "gallery";
 				//$_GET['act'] = "mgr";
 				//$_GET['msg'] = 6;				
-				header("Location:?item=worksmgr&act=mgr&msg=6");
+				header("Location:?item=gallerymgr&act=mgr&msg=6");
 			}
 		
 	}
