@@ -170,8 +170,7 @@ if ($_GET['act']=="mgr")
 			if (!$rows) 
 			{					
 				header("Location:?item=docsmgr&act=mgr&msg=6");
-			}
-		
+			}		
 	}
 	else
 	{	
@@ -256,7 +255,6 @@ $code=<<<edit
 							</form>
 					   </center>
 					</div>
-
 edit;
 $html = $code;
 }	
