@@ -75,6 +75,7 @@ $html=<<<cd
 						</div>
 						<div class="col-1-4">
 							<div class="col">
+							<!--
 								<section id="mailchimpsf_widget-3" class="widget clearfix widget_mailchimpsf_widget">
 									<h3 class="widget_title">ثبت نام خبرنامه</h3>
 									<style>
@@ -158,24 +159,26 @@ $html=<<<cd
 											<input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="22f16727a5">		
 												<div id="mc_subheader">
 													می توانید از طریق ایمیل از آخرین خبرهای ما با خبر شوید.
-												</div><!-- /mc_subheader -->															
+												</div>
 												<div class="mc_form_inside">
-													<div class="updated" id="mc_message"></div><!-- /mc_message -->									
+													<div class="updated" id="mc_message"></div>
 													<div class="mc_merge_var">
 														<label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">آدرس ایمیل</label>
 														<input type="text" size="18" placeholder="" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input">
-													</div><!-- /mc_merge_var -->
+													</div>
 													<div class="mc_signup_submit">
 														<input type="submit" name="mc_signup_submit" id="mc_signup_submit" value="ثبت نام" class="button">
-													</div><!-- /mc_signup_submit -->
+													</div>
 													<br>
 													<div id="mc_display_rewards" align="center">
 														powered by <a href="#">Media</a>!
-													</div><!-- /mc_display_rewards -->
-												</div><!-- /mc_form_inside -->
-										</form><!-- /mc_signup_form -->
-									</div><!-- /mc_signup_container -->
+													</div>
+												</div>
+										</form>
+									</div>
 								</section>
+								-->
+								 &nbsp;
 							</div>
 						</div>
 						<div class="col-1-4">
