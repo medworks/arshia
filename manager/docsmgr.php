@@ -161,7 +161,7 @@ if ($_GET['act']=="mgr")
 	if ($_POST["mark"]=="srhdocs")
 	{	 			   
 		$rows = $db->SelectAll(
-				"gallery",
+				"docs",
 				"*",
 				"{$_POST[cbsearch]} LIKE '%{$_POST[txtsrh]}%'",
 				"id DESC",
@@ -169,17 +169,14 @@ if ($_GET['act']=="mgr")
 				10);
 			if (!$rows) 
 			{					
-				//$_GET['item'] = "gallery";
-				//$_GET['act'] = "mgr";
-				//$_GET['msg'] = 6;				
-				header("Location:?item=worksmgr&act=mgr&msg=6");
+				header("Location:?item=docsmgr&act=mgr&msg=6");
 			}
 		
 	}
 	else
 	{	
 		$rows = $db->SelectAll(
-				"gallery",
+				"docs",
 				"*",
 				null,
 				"id DESC",
@@ -188,14 +185,13 @@ if ($_GET['act']=="mgr")
     }
                 $rowsClass = array();
                 $colsClass = array();
-                $rowCount =($_GET["rec"]=="all" or $_POST["mark"]!="srhdocs" )?$db->CountAll("gallery"):Count($rows);
+                $rowCount =($_GET["rec"]=="all" or $_POST["mark"]!="srhdocs" )?$db->CountAll("docs"):Count($rows);
                 for($i = 0; $i < Count($rows); $i++)
                 {						
 		        $rows[$i]["subject"] =(mb_strlen($rows[$i]["subject"])>20)?mb_substr($rows[$i]["subject"],0,20,"UTF-8")."...":$rows[$i]["subject"];
                 $rows[$i]["body"] =(mb_strlen($rows[$i]["body"])>30)?
                 mb_substr(html_entity_decode(strip_tags($rows[$i]["body"]), ENT_QUOTES, "UTF-8"), 0, 30,"UTF-8") . "..." :
-                html_entity_decode(strip_tags($rows[$i]["body"]), ENT_QUOTES, "UTF-8");               
-                $rows[$i]["image"] ="<img src='{$rows[$i][image]}' alt='{$rows[$i][subject]}' width='40px' height='40px' />";
+                html_entity_decode(strip_tags($rows[$i]["body"]), ENT_QUOTES, "UTF-8");                               
 				if ($i % 2==0)
 				 {
 						$rowsClass[] = "datagridevenrow";
@@ -218,9 +214,8 @@ del;
     if (!$_GET["pageNo"] or $_GET["pageNo"]<=0) $_GET["pageNo"] = 0;
             if (Count($rows) > 0)
             {                    
-                    $gridcode.= DataGrid(array( 
-							"image"=>"عکس",
-							"subject"=>"عنوان",
+                    $gridcode.= DataGrid(array( 							
+							"subject"=>"عنوان",							
 							"body"=>"توضیحات",
 							 "edit"=>"ویرایش",
 							"delete"=>"حذف",), $rows, $colsClass, $rowsClass, 10,
@@ -257,9 +252,7 @@ $code=<<<edit
 								</p>
 								<input type="hidden" name="mark" value="srhdocs" /> 
 								{$msgs}
-
-								{$gridcode} 
-															
+								{$gridcode} 														
 							</form>
 					   </center>
 					</div>
