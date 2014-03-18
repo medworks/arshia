@@ -47,25 +47,21 @@
  else
  if (!$overall_error && $_POST["mark"]=="editdoc")
  {			    
-	$values = array("`image`"=>"'{$_POST[selectpic]}'",
-	       		    "`subject`"=>"'{$_POST[subject]}'",
+	$values = array("`subject`"=>"'{$_POST[selectpic]}'",
+	       		    "`address`"=>"'{$_POST[subject]}'",
 					"`body`"=>"'{$_POST[body]}'");
-	$db->UpdateQuery("gallery",$values,array("id='{$_GET['sid']}'"));
-	header('location:?item=docsmgr&act=mgr');
-	//$_GET["item"] = "gallerymgr";
-	//$_GET["act"] = "mgr";			
+	$db->UpdateQuery("docs",$values,array("id='{$_GET['did']}'"));
+	header('location:?item=docsmgr&act=mgr');	
  }
 
 	if ($overall_error)
 	{
-		$row = array("image"=>$_FILES['pic']['name'],
-					 "subject"=>$_POST['subject'],
+		$row = array("subject"=>$_POST['subject'],
+					 "address"=>$_FILES['pic']['name'],
 					 "body"=>$_POST['body']);
 	}
- 
    if ($_GET['act']=="new")
-	{
-	    $pic_on_edit_insert_section ="<img id='img' src='' alt='' />";
+	{	   
 		$editorinsert = "
 			<p>
 				<input type='submit' id='submit' value='ذخیره' class='submit' />	 
@@ -73,8 +69,7 @@
 	}
 	if ($_GET['act']=="edit")
 	{
-		$row=$db->Select("gallery","*","id='{$_GET["sid"]}'",NULL);
-		$pic_on_edit_insert_section = "<img src='{$row[image]}'width='200px' height='100px' />";
+		$row=$db->Select("docs","*","id='{$_GET["did"]}'",NULL);		
 		$editorinsert = "
 		<p>
 			 <input type='submit' id='submit' value='ویرایش' class='submit' />	 
@@ -82,8 +77,8 @@
 	}
 	if ($_GET['act']=="del")
 	{
-		$db->Delete("gallery"," id",$_GET["sid"]);
-		if ($db->CountAll("gallery")%10==0) $_GET["pageNo"]-=1;		
+		$db->Delete("docs"," id",$_GET["did"]);
+		if ($db->CountAll("docs")%10==0) $_GET["pageNo"]-=1;		
 		header("location:?item=docsmgr&act=mgr&pageNo={$_GET[pageNo]}");
 	}	
 if ($_GET['act']=="do")
@@ -209,13 +204,13 @@ if ($_GET['act']=="mgr")
 				{
 						$rowsClass[] = "datagridoddrow";
 				}				
-				$rows[$i]["edit"] = "<a href='?item=docsmgr&act=edit&sid={$rows[$i]["id"]}' class='edit-field'" .
+				$rows[$i]["edit"] = "<a href='?item=docsmgr&act=edit&did={$rows[$i]["id"]}' class='edit-field'" .
 						"style='text-decoration:none;'></a>";								
 				$rows[$i]["delete"]=<<< del
 				<a href="javascript:void(0)"
 				onclick="DelMsg('{$rows[$i]['id']}',
 					'از حذف این فعالیت اطمینان دارید؟',
-				'?item=docsmgr&act=del&pageNo={$_GET[pageNo]}&sid=');"
+				'?item=docsmgr&act=del&pageNo={$_GET[pageNo]}&did=');"
 				 class='del-field' style='text-decoration:none;'></a>
 del;
                }
