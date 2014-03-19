@@ -204,7 +204,7 @@ if ($_GET['act']=="mgr")
 				$rows[$i]["delete"]=<<< del
 				<a href="javascript:void(0)"
 				onclick="DelMsg('{$rows[$i]['id']}',
-					'از حذف این فعالیت اطمینان دارید؟',
+					'از حذف این سند اطمینان دارید؟',
 				'?item=docsmgr&act=del&pageNo={$_GET[pageNo]}&did=');"
 				 class='del-field' style='text-decoration:none;'></a>
 del;
