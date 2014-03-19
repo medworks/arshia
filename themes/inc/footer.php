@@ -36,7 +36,7 @@ $html=<<<cd
 			<div class="footer-widgets_container cwidth_container">
 				<div class="footer-widgets_wrapper cwidth_wrapper">
 					<div class="footer-widgets cwidth">
-						<div class="col-1-4">
+						<div class="col-1-3">
 							<div class="col">
 								<section id="ffwidgetcontact-4" class="widget clearfix ffWidgetContact">
 									<h3 class="widget_title">تماس با ما</h3>
@@ -55,7 +55,7 @@ $html=<<<cd
 								</section>
 							</div>
 						</div>
-						<div class="col-1-4">
+						<div class="col-1-3">
 							<div class="col">
 								<section id="recent-posts-5" class="widget clearfix widget_recent_entries">
 									<h3 class="widget_title">درباره ما</h3>
@@ -73,115 +73,7 @@ $html=<<<cd
 								</section>
 							</div>
 						</div>
-						<div class="col-1-4">
-							<div class="col">
-							<!--
-								<section id="mailchimpsf_widget-3" class="widget clearfix widget_mailchimpsf_widget">
-									<h3 class="widget_title">ثبت نام خبرنامه</h3>
-									<style>
-										.widget_mailchimpsf_widget .widget-title {
-											line-height: 1.4em;
-											margin-bottom: 0.75em;
-										}
-										#mc_subheader {
-											line-height: 1.25em;
-											margin-bottom: 18px;
-										}
-										.mc_merge_var {
-											margin-bottom: 1.0em;
-										}
-										.mc_var_label,
-										.mc_interest_label {
-											display: block;
-											margin-bottom: 0.5em;
-										}
-										.mc_input {
-											-moz-box-sizing: border-box;
-											-webkit-box-sizing: border-box;
-											box-sizing: border-box;
-											width: 100%;
-										}
-										.mc_input.mc_phone {
-											width: auto;
-										}
-										select.mc_select {
-											margin-top: 0.5em;
-											width: 100%;
-										}
-										.mc_address_label {
-											margin-top: 1.0em;
-											margin-bottom: 0.5em;
-											display: block;
-										}
-										.mc_address_label ~ select {
-											width: 100%;		
-										}
-										.mc_list li {
-											list-style: none;
-											background: none !important;
-										}
-										.mc_interests_header {
-											margin-top: 1.0em;
-											margin-bottom: 0.5em;
-										}
-										.mc_interest label,
-										.mc_interest input {
-											margin-bottom: 0.4em;
-										}
-										#mc_signup_submit {
-											margin-top: 1.5em;
-											width: 80%;
-										}
-										#mc_unsub_link a {
-											font-size: 0.75em;
-										}
-										#mc_unsub_link {
-											margin-top: 1.0em;
-										}
-										.mc_header_address,
-										.mc_email_format {
-											display: block;
-											font-weight: bold;
-											margin-top: 1.0em;
-											margin-bottom: 0.5em;
-										}
-										.mc_email_options {
-											margin-top: 0.5em;
-										}
-										.mc_email_type {
-											padding-left: 4px;
-										}
-									</style>
-									<div id="mc_signup">
-										<form method="post" action="" id="mc_signup_form">
-											<input type="hidden" id="mc_submit_type" name="mc_submit_type" value="html">
-											<input type="hidden" name="mcsf_action" value="mc_submit_signup_form">
-											<input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="22f16727a5">		
-												<div id="mc_subheader">
-													می توانید از طریق ایمیل از آخرین خبرهای ما با خبر شوید.
-												</div>
-												<div class="mc_form_inside">
-													<div class="updated" id="mc_message"></div>
-													<div class="mc_merge_var">
-														<label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">آدرس ایمیل</label>
-														<input type="text" size="18" placeholder="" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input">
-													</div>
-													<div class="mc_signup_submit">
-														<input type="submit" name="mc_signup_submit" id="mc_signup_submit" value="ثبت نام" class="button">
-													</div>
-													<br>
-													<div id="mc_display_rewards" align="center">
-														powered by <a href="#">Media</a>!
-													</div>
-												</div>
-										</form>
-									</div>
-								</section>
-								-->
-								 &nbsp;
-							</div>
-						</div>
-						<div class="col-1-4">
+						<div class="col-1-3">
 							<div class="col">
 								<section id="ffwidgetsocial-4" class="widget clearfix ffWidgetSocial">
 									<h3 class="widget_title">پیگیری ما در</h3>
