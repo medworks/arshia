@@ -2,9 +2,11 @@
   include_once("./config.php");
   include_once("./classes/database.php");
   $db = Database::GetDatabase();
-  $rows = $db->SelectAll("docs","*",null,"id DESC");
-  $docs = "";
+  $rows = $db->SelectAll("docs","*",null,"id DESC");  
+  $docs = "";  
   $i=0;
+  if (!$rows)
+   $docs = "در حال حاضر سندی موجود نمی باشد";
   foreach($rows as $key=>$val)
   {
   $i++;
