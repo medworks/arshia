@@ -133,7 +133,7 @@ $html=<<<cd
 		<form name="frmdocsmgr" id="frmdocsmgr" class="" action="" method="post" enctype="multipart/form-data" > 
 			<p>
 				<label for="pic">فایل سند </label>
-				<span>*</span>
+				<span></span>
 			</p>
 			<div class='upload-file'>
 				<input type='file' name='pic' class='pic ltr' id='pic' onChange='' />  
