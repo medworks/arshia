@@ -1,6 +1,14 @@
 <?php
   include_once("./config.php");
-  include_once("./classes/database.php"); 
+  include_once("./classes/database.php");
+  $db = Database::GetDatabase();
+  $rows = $db->SelectAll("docs","*",null,"id DESC");
+  $docs = "";
+  foreach($rows as $key=>$val)
+  {
+   $docs .= "{$val['subject']}<input type='checkbox' name='docs' value='{$val[id]}' aria-required='true'/> ";
+  }
+  
 $html=<<<cd
 <div class="top_content">
 	<div class="main_content_container cwidth_container">
@@ -8,8 +16,7 @@ $html=<<<cd
 			<div class="main_content cwidth">
 				<div class="col-1-1">
 					<div class="col">
-						<div class="grid">
-							
+						<div class="grid">							
 							<div class="col-content">
 								<div class="col">
 									<article id="post-120" class="post-120 page type-page status-publish hentry page-1_container main_column">
@@ -58,6 +65,14 @@ $html=<<<cd
 																			    	<input type="text" name="postcode" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
 																			    </span>
 																		    </p>
+																			<p class="half half_last">انتخاب اسناد<br>
+																			    <span class="wpcf7-form-control-wrap your-email">																			    
+																			    </span>
+																		    </p>
+																			<div>
+																				{$docs}	
+																				<input type="checkbox" name="vehicle" value="Bike" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">I have a bike<br>
+																			</div>
 																			<p style="padding-right:10px">توضیحات<br>
 																			    <span class="wpcf7-form-control-wrap your-message">
 																			    	<textarea name="detail" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"></textarea>
