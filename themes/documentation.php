@@ -4,9 +4,14 @@
   $db = Database::GetDatabase();
   $rows = $db->SelectAll("docs","*",null,"id DESC");
   $docs = "";
+  $i=0;
   foreach($rows as $key=>$val)
   {
-   $docs .= "{$val['subject']}<input type='checkbox' name='docs' value='{$val[id]}' aria-required='true'/> ";
+  $i++;
+  if ($i % 3 == 0)
+	$docs .=" <input type='checkbox' name='docs' value='{$val[id]}' aria-required='true'/> {$val['subject']} &nbsp;&nbsp; <br/> ";
+  else
+    $docs .= " <input type='checkbox' name='docs' value='{$val[id]}' aria-required='true'/> {$val['subject']} &nbsp;&nbsp;";
   }
   
 $html=<<<cd
