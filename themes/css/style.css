@@ -6329,6 +6329,13 @@ html body .mfp-zoom-in.mfp-ready.mfp-bg {
   font-weight:normal;
   line-height:1.5;
 }
+p.select-doc{
+  margin-bottom:20px;
+  margin-right:15px;
+  text-align:right;
+  display:inline-block;
+  font-size:16px;
+}
 p.select-doc input{
   width:auto;
   text-align:right;
