@@ -133,7 +133,7 @@ html, body 	{
 
 /* WEBKIT INPUT STYLE MESSUP FIX, MAINLY ON iOS */
 input, textarea {
-  -webkit-appearance: none; }
+  /*-webkit-appearance: none;*/ }
 
 /* FIX FOR WRAPPING REALLY LONG WORDS ONTO A NEW LINE */
 body {
@@ -572,7 +572,7 @@ form p {
 input,
 textarea {
   font-family: "Open Sans", Arial, sans-serif;
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
   outline-width: 0;
   outline: none; }
 
@@ -6328,4 +6328,9 @@ html body .mfp-zoom-in.mfp-ready.mfp-bg {
   text-align: justify;
   font-weight:normal;
   line-height:1.5;
+}
+p.select-doc input{
+  width:auto;
+  text-align:right;
+  clear:both;
 }

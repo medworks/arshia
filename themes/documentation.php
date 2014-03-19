@@ -66,13 +66,15 @@ $html=<<<cd
 																			    </span>
 																		    </p>
 																			<p class="half half_last">انتخاب اسناد<br>
-																			    <span class="wpcf7-form-control-wrap your-email">																			    
-																			    </span>
+																			    <span class="wpcf7-form-control-wrap your-email"></span>
 																		    </p>
+																		    <div class='clear'></div>
 																			<div>
-																				{$docs}	
-																				<input type="checkbox" name="vehicle" value="Bike" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">I have a bike<br>
+																				<p class="select-doc" style="text-align:right;display:inline-block;">
+																					{$docs}	
+																				</p>
 																			</div>
+																		    <div class='clear'></div>
 																			<p style="padding-right:10px">توضیحات<br>
 																			    <span class="wpcf7-form-control-wrap your-message">
 																			    	<textarea name="detail" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"></textarea>
