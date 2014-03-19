@@ -46,9 +46,11 @@
  }
  else
  if (!$overall_error && $_POST["mark"]=="editdoc")
- {			    
-	$values = array("`subject`"=>"'{$_POST[selectpic]}'",
-	       		    "`address`"=>"'{$_POST[subject]}'",
+ {	
+	$row=$db->Select("docs","*","id='{$_GET["did"]}'",NULL); 
+	$_FILES['pic']['name'] = preg_replace('/^.+[\\\\\\/]/', '',$row['address']);
+	$values = array("`subject`"=>"'{$_POST[subject]}'",
+	       		    "`address`"=>"'./docfiles/{$_FILES['pic']['name']}'",
 					"`body`"=>"'{$_POST[body]}'");
 	$db->UpdateQuery("docs",$values,array("id='{$_GET['did']}'"));
 	header('location:?item=docsmgr&act=mgr');	
@@ -134,7 +136,7 @@ $html=<<<cd
 				<span>*</span>
 			</p>
 			<div class='upload-file'>
-				<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='' />  
+				<input type='file' name='pic' class='pic ltr' id='pic' onChange='' />  
 				<span class='filename'>لطفا فایل مورد نظر را انتخاب کنید</span>
 				<span class='action'>انتخاب فایل</span>
 			</div>
@@ -216,7 +218,7 @@ del;
                     $gridcode.= DataGrid(array( 							
 							"subject"=>"عنوان",							
 							"body"=>"توضیحات",
-							 "edit"=>"ویرایش",
+							"edit"=>"ویرایش",
 							"delete"=>"حذف",), $rows, $colsClass, $rowsClass, 10,
                             $_GET["pageNo"], "id", false, true, true, $rowCount,"item=docsmgr&act=mgr");
                     
