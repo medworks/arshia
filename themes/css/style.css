@@ -5463,7 +5463,8 @@ table.table-2 {
   width: 50%;
   /*padding-left: 10px;*/
   padding-right: 10px;
-  float: right; }
+  float: right;
+  margin-bottom: 20px; }
 
 .wpcf7 .half_first {
   padding-left: 0; }

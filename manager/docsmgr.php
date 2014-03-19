@@ -97,13 +97,13 @@ if ($_GET['act']=="do")
 			<ul>
 			  <li>		  
 				<a href="?item=docsmgr&act=new">سند جدید
-					<span class="add-gallery"></span>
+					<span class="add-doc"></span>
 				</a>
 			  </li>
 			  <li>
 				<a href="?item=docsmgr&act=mgr" id="news" name="news">
 				  حذف/ویرایش اسناد
-					<span class="edit-gallery"></span>
+					<span class="edit-doc"></span>
 				</a>
 			  </li>
 			 </ul>
