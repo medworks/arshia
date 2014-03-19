@@ -70,12 +70,12 @@ $html=<<<cd
 																			    	<input type="text" name="postcode" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true">
 																			    </span>
 																		    </p>
-																			<p class="half half_last">انتخاب اسناد<br>
+																			<p class="half half_last" style="margin-bottom:0">انتخاب اسناد<br>
 																			    <span class="wpcf7-form-control-wrap your-email"></span>
 																		    </p>
 																		    <div class='clear'></div>
 																			<div>
-																				<p class="select-doc" style="text-align:right;display:inline-block;">
+																				<p class="select-doc">
 																					{$docs}	
 																				</p>
 																			</div>
