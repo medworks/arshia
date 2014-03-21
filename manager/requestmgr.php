@@ -19,15 +19,16 @@
  {
    $req=$db->Select("request","*","id='{$_GET["rid"]}'");
    $regdate = ToJalali($req['regdate']);
-   $rows = $db->SelectAll("docreq","*","reqid = {$req[id]}");
-   if(!$rows)
+   $rows = $db->SelectAll("docreq","*","reqid ={$req['id']}");   
+  // if(!$rows)
    {
     $i = 0;
 	foreach($rows as $key=>$val)
 	{
 		$i++;
 		$doc=$db->Select("docs","*","id='{$val[docid]}'");
-		$docreq.="{$i}-{$doc['subject']}<br/>";
+		//echo $db->cmd;
+		$docreq.=" <br/>{$i}- {$doc['subject']}";
 	}
    }
    $html =<<<cd
