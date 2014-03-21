@@ -19,6 +19,17 @@
  {
    $req=$db->Select("request","*","id='{$_GET["rid"]}'");
    $regdate = ToJalali($req['regdate']);
+   $rows = $db->SelectAll("docreq","*","reqid = {$req[id]}");
+   if(!$rows)
+   {
+    $i = 0;
+	foreach($rows as $key=>$val)
+	{
+		$i++;
+		$doc=$db->Select("docs","*","id='{$val[docid]}'");
+		$docreq.="{$i}-{$doc['subject']}<br/>";
+	}
+   }
    $html =<<<cd
      <p><span>تاریخ سفارش :</span>
 	 {$regdate}</p>
@@ -37,7 +48,7 @@
 	 <p><span>توضیحات :</span>
 	 {$req['detail']}</p>
 	 <p><span>لیست درخواست ها :</span>
-	 {$req['detail']}</p>
+	 {$docreq}</p>
 cd;
  }
 else
