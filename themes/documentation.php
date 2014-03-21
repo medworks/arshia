@@ -11,9 +11,9 @@
   {
   $i++;
   if ($i % 3 == 0)
-	$docs .=" <input type='checkbox' name='docs' value='{$val[id]}' aria-required='true'/> {$val['subject']} &nbsp;&nbsp; <br/> ";
+	$docs .=" <input type='checkbox' name='docs[]' value='{$val[id]}' aria-required='true'/> {$val['subject']} &nbsp;&nbsp; <br/> ";
   else
-    $docs .= " <input type='checkbox' name='docs' value='{$val[id]}' aria-required='true'/> {$val['subject']} &nbsp;&nbsp;";
+    $docs .= " <input type='checkbox' name='docs[]' value='{$val[id]}' aria-required='true'/> {$val['subject']} &nbsp;&nbsp;";
   }
   
 $html=<<<cd
