@@ -1339,6 +1339,13 @@ select.select2{
   height: 16px;
 }
 
+.admin_container a.check-field{
+  background: url('./images/icons/check.png') no-repeat center;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
 .admin_container a.del-field{
   background: url('./images/icons/delete.gif') no-repeat center;
   display: inline-block;
