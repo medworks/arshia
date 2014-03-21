@@ -49,6 +49,10 @@
 	 {$req['detail']}</p>
 	 <p><span>لیست درخواست ها :</span>
 	 {$docreq}</p>
+	 <form action="" method="post">
+		<input type="submit" name="submit" value="ارسال تاییده" />
+		<input type="hidden" name="mark" value="sendok" />
+	 </form>
 cd;
  }
 else
