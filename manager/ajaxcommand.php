@@ -86,7 +86,7 @@ if($_GET["request"]=="reg"){
 				foreach($docs as $key=>$val)
 				{			
 				  $values = array("'{$reqid}'","'{$val}'");
-				  $db->InsertQuery('docreq',$fields,$values));				
+				  $db->InsertQuery('docreq',$fields,$values);
 				}
 			}
 		else
