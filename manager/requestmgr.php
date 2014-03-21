@@ -59,7 +59,7 @@
 						$rowsClass[] = "datagridoddrow";
 				}				
 				$rows[$i]["regdate"] = ToJalali($rows[$i]["regdate"]," l d F  Y ");
-				$rows[$i]["check"] = "<a href='?item=requestmgr&act=check&rid={$rows[$i]["id"]}' class='edit-field'" .
+				$rows[$i]["check"] = "<a href='?item=requestmgr&act=check&rid={$rows[$i]["id"]}' class='check-field'" .
 						"style='text-decoration:none;'></a>";								
 				$rows[$i]["delete"]=<<< del
 				<a href="javascript:void(0)"
