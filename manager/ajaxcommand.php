@@ -69,7 +69,8 @@ if($_GET["request"]=="reg"){
 	$address = $_POST['address'];
 	$postcode= $_POST['postcode'];
 	$detail  = $_POST['detail'];
-	$regdate  = date('Y-m-d H:i:s');
+	$regdate = date('Y-m-d H:i:s');
+	$docs    = $_POST['docs'];
 
 	
 	$fields = array("`name`","`tel`","`mobile`","`address`","`postcode`","`email`","`detail`","`regdate`");		
@@ -79,7 +80,15 @@ if($_GET["request"]=="reg"){
     if( strlen($name)>=1 && checkEmail($email))
 	{
 		if ($db->InsertQuery('request',$fields,$values)){
-	    	echo "<div class='notification_ok rtl'>مشخصات شما با موفقیت ثبت شد.</div>";}
+	    	echo "<div class='notification_ok rtl'>مشخصات شما با موفقیت ثبت شد.</div>";
+			$fields = array("`reqid`","`docid`");
+			$reqid = $db->InsertId();
+				foreach($docs as $key=>$val)
+				{			
+				  $values = array("'{$reqid}'","'{$val}'");
+				  $db->InsertQuery('docreq',$fields,$values));				
+				}
+			}
 		else
 		{
 			echo "<div class='notification_error rtl'>ثبت مشخصات شما با مشکل مواجه شد! لطفا فیلدها را بررسی نمایید و مجددا تلاش کنید.</div>";
