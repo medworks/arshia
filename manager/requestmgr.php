@@ -15,6 +15,32 @@
  if ($_GET['item']!="requestmgr")	exit();
  $db = Database::GetDatabase();
  
+ if ($_GET['act']=="check")
+ {
+   $req=$db->Select("request","*","id='{$_GET["rid"]}'");
+   $regdate = ToJalali($req['regdate']);
+   $html =<<<cd
+     <p><span>تاریخ سفارش :</span>
+	 {$regdate}</p>
+	 <p><span>نام متقاضی :</span>
+	 {$req['name']}</p>
+	 <p><span>تلفن :</span>
+	 {$req['tel']}</p>
+	 <p><span>موبایل :</span>
+	 {$req['mobile']}</p>
+	 <p><span>ایمیل :</span>
+	 {$req['email']}</p>
+	 <p><span>آدرس :</span>
+	 {$req['address']}</p>
+	 <p><span>کد پستی :</span>
+	 {$req['postcode']}</p>
+	 <p><span>توضیحات :</span>
+	 {$req['detail']}</p>
+	 <p><span>لیست درخواست ها :</span>
+	 {$req['detail']}</p>
+cd;
+ }
+else
  if ($_GET['act']=="mgr" or $_GET['act']=="do")
 {
 	if ($_POST["mark"]=="srhreq")
@@ -27,10 +53,7 @@
 				$_GET["pageNo"]*10,
 				10);
 			if (!$rows) 
-			{					
-				//$_GET['item'] = "gallery";
-				//$_GET['act'] = "mgr";
-				//$_GET['msg'] = 6;				
+			{
 				header("Location:?item=requestmgr&act=mgr&msg=6");
 			}
 		
