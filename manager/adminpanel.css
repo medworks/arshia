@@ -1580,3 +1580,12 @@ p.note{
   padding-right: 10px;
   line-height: 2;
 }
+
+.detail-req{
+  margin-right: 15px;
+}
+
+.detail-req p{
+  font-size: 18px;
+  line-height: 2;
+}

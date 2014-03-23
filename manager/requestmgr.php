@@ -31,28 +31,55 @@
 	}
    }
    $html =<<<cd
-     <p><span>تاریخ سفارش :</span>
-	 {$regdate}</p>
-	 <p><span>نام متقاضی :</span>
-	 {$req['name']}</p>
-	 <p><span>تلفن :</span>
-	 {$req['tel']}</p>
-	 <p><span>موبایل :</span>
-	 {$req['mobile']}</p>
-	 <p><span>ایمیل :</span>
-	 {$req['email']}</p>
-	 <p><span>آدرس :</span>
-	 {$req['address']}</p>
-	 <p><span>کد پستی :</span>
-	 {$req['postcode']}</p>
-	 <p><span>توضیحات :</span>
-	 {$req['detail']}</p>
-	 <p><span>لیست درخواست ها :</span>
-	 {$docreq}</p>
-	 <form action="" method="post">
-		<input type="submit" name="submit" value="ارسال تاییده" />
-		<input type="hidden" name="mark" value="sendok" />
-	 </form>
+	<div class="title">
+      	<ul>
+	        <li><a href="adminpanel.php?item=dashboard&act=do">پیشخوان</a></li>
+		    <li><span>مدیریت درخواست ها</span></li>
+      	</ul>
+      	<div class="badboy"></div>
+	</div>
+	<div class="detail-req">
+	    <p>
+	    	<span>تاریخ سفارش :</span>
+			{$regdate}
+		</p>
+		<p>
+			<span>نام متقاضی :</span>
+			{$req['name']}
+		</p>
+		<p>
+			<span>تلفن :</span>
+			{$req['tel']}
+		</p>
+		<p>
+			<span>موبایل :</span>
+			{$req['mobile']}
+		</p>
+		<p>
+			<span>ایمیل :</span>
+			{$req['email']}
+		</p>
+		<p>
+			<span>آدرس :</span>
+			{$req['address']}
+		</p>
+		<p>
+			<span>کد پستی :</span>
+			{$req['postcode']}
+		</p>
+		<p>
+			<span>توضیحات :</span>
+			{$req['detail']}
+		</p>
+		<p>
+			<span>لیست درخواست ها :</span>
+			{$docreq}
+		</p>
+		<form action="" method="post">
+			<input type="submit" name="submit" value="ارسال تاییدیه" />
+			<input type="hidden" name="mark" value="sendok" />
+		</form>
+	</div>
 cd;
  }
 else
