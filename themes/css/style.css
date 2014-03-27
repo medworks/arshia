@@ -4727,6 +4727,8 @@ table.table-2 {
   transition: height 0.3s ease-out; }
 
 .text_icon_expand_item .tie_text {
+  font-size: 17px;
+  font-weight: normal !important;
   color: #51585b;
   padding: 14px 0 25px 0;
   display: inline-block;
@@ -4749,6 +4751,8 @@ table.table-2 {
   transition: opacity 0.1s ease-out; }
 
 .text_icon_expand_item .tie_subtitle {
+  font-size: 20px;
+  font-weight: normal !important;
   display: block;
   color: #6b6b6b;
   margin: 0 0 2px 0;
@@ -4756,9 +4760,9 @@ table.table-2 {
 
 .text_icon_expand_item .tie_title {
   margin: 0;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: normal !important;
   color: #272727;
   display: block;
   padding: 0 26px 25px 26px;

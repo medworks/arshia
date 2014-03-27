@@ -17,6 +17,7 @@ header('Content-Type: text/html; charset=UTF-8');
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="zRGZMhJemg0Oqr68VEDkUOqMVB0a4Xenlu-XV0ZMwxM" />
 	<meta name="generator" content="Mediateq">
 	<meta name="description" content="<?php echo $seo->Site_Describtion;?>" />
 	<meta name="keywords" content="<?php echo $seo->Site_KeyWords;?>" />
