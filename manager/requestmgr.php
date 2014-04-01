@@ -6,6 +6,7 @@
  include_once("../classes/functions.php"); 
  include_once("../lib/persiandate.php");
  include_once("../classes/login.php");
+ include_once("../lib/class.phpmailer.php");
  $login = Login::GetLogin();
  if (!$login->IsLogged())
  {
@@ -14,6 +15,15 @@
  }
  if ($_GET['item']!="requestmgr")	exit();
  $db = Database::GetDatabase();
+ 
+ if ($_POST['mark'] == "sendok")
+ {
+    $info_email = GetSettingValue('Contact_Email',0);
+	$sender_name = GetSettingValue('Email_Sender_Name',0);
+	$subject = GetSettingValue('Send_Ok_Subject',0);
+	$message = GetSettingValue('Send_Ok_Body',0);	
+	SendEmail($info_email,$sender_name , array($_POST['recemail']), $subject, $message);
+ }
  
  if ($_GET['act']=="check")
  {
@@ -79,6 +89,8 @@
 		<form action="" method="post">
 			<input type="submit" name="submit" value="ارسال تاییدیه" />
 			<input type="hidden" name="mark" value="sendok" />
+			<input type="hidden" name="recemail" value="{$req[email]}" />
+			
 		</form>
 	</div>
 cd;
