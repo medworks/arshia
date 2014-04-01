@@ -51,6 +51,7 @@
 		SetSettingValue("Admin_Email",$_POST["admin_email"]);
 		SetSettingValue("News_Email",$_POST["news_email"]);
 		SetSettingValue("Contact_Email",$_POST["contact_email"]);
+		SetSettingValue("Email_Sender_Name",$_POST["Email_Sender_Name"]);		
 		SetSettingValue("FaceBook_Add",$_POST["facebook_add"]);
 		SetSettingValue("Twitter_Add",$_POST["twitter_add"]);
 		SetSettingValue("Rss_Add",$_POST["rss_add"]);
@@ -190,6 +191,7 @@ ht;
 		$Admin_Email = GetSettingValue('Admin_Email',0);
 		$News_Email = GetSettingValue('News_Email',0);
 		$Contact_Email = GetSettingValue('Contact_Email',0);
+		$Email_Sender_Name = GetSettingValue('Email_Sender_Name',0);
 		$FaceBook_Add = GetSettingValue('FaceBook_Add',0);
 		$Twitter_Add = GetSettingValue('Twitter_Add',0);
 		$Rss_Add = GetSettingValue('Rss_Add',0);
@@ -214,10 +216,14 @@ ht;
 					<label for="subject">ایمیل خبرنامه </label>
 				</p>    
 				<input type="text" name="news_email" class="subject ltr" id="news_email" value='{$News_Email}'/>
-								<p>
-					<label for="subject"> ایمیل تماس با ما</label>
+				<p>
+				<label for="subject"> ایمیل تماس با ما</label>
 				</p>    
 				<input type="text" name="contact_email" class="subject ltr" id="contact_email" value='{$Contact_Email}'/>
+				<p>
+				<label for="subject"> نام برای ایمیل ارسال کننده</label>
+				</p>    
+				<input type="text" name="Email_Sender_Name" class="subject ltr" id="contact_email" value='{$Email_Sender_Name}'/>
 				<p>
 					<label for="facebook">آدرس فیس بوک </label>
 				</p>    
