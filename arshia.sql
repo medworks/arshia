@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2.2
+-- version 4.1.6
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 18, 2014 at 10:24 PM
--- Server version: 5.5.27
--- PHP Version: 5.4.7
+-- Generation Time: Apr 01, 2014 at 04:47 PM
+-- Server version: 5.6.16
+-- PHP Version: 5.5.9
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -82,6 +82,27 @@ CREATE TABLE IF NOT EXISTS `category` (
 INSERT INTO `category` (`id`, `secid`, `catname`, `latinname`, `describe`) VALUES
 (5, 2, 'روانشناسی کودک', 'sycologists', 'اطلاعات روانشناسی'),
 (6, 1, 'برنامه نویسی', 'programming', 'انواع زبان های برنامه نویسی');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `docreqs`
+--
+
+CREATE TABLE IF NOT EXISTS `docreqs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `reqid` int(11) NOT NULL,
+  `docid` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `docreqs`
+--
+
+INSERT INTO `docreqs` (`id`, `reqid`, `docid`) VALUES
+(1, 5, 2),
+(2, 5, 1);
 
 -- --------------------------------------------------------
 
@@ -180,7 +201,7 @@ CREATE TABLE IF NOT EXISTS `request` (
   `detail` varchar(500) NOT NULL,
   `regdate` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `request`
@@ -189,7 +210,9 @@ CREATE TABLE IF NOT EXISTS `request` (
 INSERT INTO `request` (`id`, `name`, `tel`, `mobile`, `address`, `postcode`, `email`, `detail`, `regdate`) VALUES
 (1, 'سعید حاتمی', '05116623685', '09151204395', 'مشهد-بلوار فلاحی', '91446696645', 'hatami4560@yahoo.com', '', '2014-03-10 01:02:04'),
 (2, 'مجتبی امجدی', '7316266', '09151091162', 'مشهد - بلوار فلسطین', '854548', 'amjadi@yahoo.com', '', '2014-03-11 00:00:00'),
-(3, 'مجید حاتمی', '6623685', '09999999999', 'مشهد - قاسم آباد', '945465465', 'hatami4510@gmail.com', '', '2014-03-10 19:00:18');
+(3, 'مجید حاتمی', '6623685', '09999999999', 'مشهد - قاسم آباد', '945465465', 'hatami4510@gmail.com', '', '2014-03-10 19:00:18'),
+(4, 'مدیر', '165416645', '09999999999', 'مشهد - سه راه فلسطین - ساختمان 202 - طبقه اول - واحد 3', '646565645', 'admin@mediateq.ir', '', '2014-04-01 16:40:44'),
+(5, 'مدیر', '165416645', '09999999999', 'مشهد - سه راه فلسطین - ساختمان 202 - طبقه اول - واحد 3', '646565645', 'admin@mediateq.ir', '', '2014-04-01 16:42:00');
 
 -- --------------------------------------------------------
 
