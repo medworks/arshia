@@ -19,7 +19,7 @@
  {
    $req=$db->Select("request","*","id='{$_GET["rid"]}'");
    $regdate = ToJalali($req['regdate']);
-   $rows = $db->SelectAll("docreq","*","reqid ={$req['id']}");   
+   $rows = $db->SelectAll("docreqs","*","reqid ={$req['id']}");   
    if(!empty($rows))
    {
     $i = 0;
@@ -27,7 +27,7 @@
 	{
 		$i++;
 		$doc=$db->Select("docs","*","id='{$val[docid]}'");
-		$docreq.=" <br/>{$i}- {$doc['subject']}";
+		$docreqs.=" <br/>{$i}- {$doc['subject']}";
 	}
    }
    $html =<<<cd
@@ -73,8 +73,9 @@
 		</p>
 		<p>
 			<span>لیست درخواست ها :</span>
-			{$docreq}
+			{$docreqs}
 		</p>
+		<br/> <br/>
 		<form action="" method="post">
 			<input type="submit" name="submit" value="ارسال تاییدیه" />
 			<input type="hidden" name="mark" value="sendok" />
