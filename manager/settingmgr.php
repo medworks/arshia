@@ -173,10 +173,19 @@ ht;
 					<label for="subject">کلمات کلیدی </label>
 				</p>    
 				<input type="text" name="keywords" class="subject" id="keywords" value='{$Site_KeyWords}'/>
-								<p>
+				<p>
 					<label for="subject">توضیحات سایت </label>
 				</p>    
 				<input type="text" name="describe" class="subject" id="describe" value='{$Site_Describtion}'/>
+				<p>
+					<label for="Send_Ok_Subject">عنوان نامه ارسال تایدیه</label>
+				</p>    
+				<input type="text" name="Send_Ok_Subject" class="subject" id="Send_Ok_Subject" value='{$Send_Ok_Subject}'/>
+				<p>
+				<label for="Send_Ok_Body">متن ارسال تایدیه  درخواست </label>
+		       </p>
+		        <textarea cols="50" rows="10" name="Send_Ok_Body" class="validate[required] detail" id="Send_Ok_Body">{$Send_Ok_Body}</textarea>
+		   <p>
 				<p>
 			 <input type='submit' id='submit' value='ویرایش' class='submit' />	 
 			 <input type='hidden' name='mark' value='editseo' />
