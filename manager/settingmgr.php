@@ -40,6 +40,8 @@
 		SetSettingValue("Site_Title",$_POST["title"]);
 		SetSettingValue("Site_KeyWords",$_POST["keywords"]);
 		SetSettingValue("Site_Describtion",$_POST["describe"]);
+		SetSettingValue("Send_Ok_Subject",$_POST["Send_Ok_Subject"]);
+		SetSettingValue("Send_Ok_Body",$_POST["Send_Ok_Body"]);		
 		header('location:?item=settingmgr&act=do');	
 		//$_GET['item'] = "settingmgr";
 		//$_GET['act'] = "seo";
@@ -156,6 +158,8 @@ ht;
 		$Site_Title = GetSettingValue('Site_Title',0);
 		$Site_KeyWords = GetSettingValue('Site_KeyWords',0);
 		$Site_Describtion = GetSettingValue('Site_Describtion',0);
+		$Send_Ok_Subject  = GetSettingValue('Send_Ok_Subject',0);
+		$Send_Ok_Body  = GetSettingValue('Send_Ok_Body',0);
 		$html=<<<ht
 		<div class="title">
 	      <ul>
