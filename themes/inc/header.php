@@ -140,7 +140,7 @@ header('Content-Type: text/html; charset=UTF-8');
 							<div class="col">
 								<div class="header-2_content clearfix">
 									<div class="contact_info">
-										Call Us: <?php echo $tel; ?> - Mail: <a href="mailto:<?php echo $Contact_Email; ?>"><?php echo $Contact_Email; ?></a>
+										Call Us: <a href="javascript:void(0);" style="font-family:'bmitra' !important"><?php echo $tel; ?></a> - Mail: <a href="javascript:void(0);"><?php echo $Contact_Email; ?></a>
 									</div>
 									<div class="header_right">
 										<div class="social_links">
