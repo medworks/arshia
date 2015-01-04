@@ -71,7 +71,7 @@
 	}
 	if ($_GET['act']=="edit")
 	{
-		$row=$db->Select("docs","*","id='{$_GET["did"]}'",NULL);
+		$row=$db->Select("docs","*","id='{$_GET["did"]}'",NULL);		
 		$editorinsert = "
 		<p>
 			 <input type='submit' id='submit' value='ویرایش' class='submit' />	 
