@@ -9,7 +9,7 @@ $html=<<<cd
 <div class="top_content">
 	<div class="titlebar-3_container cwidth_container ltr">
 		<div class="gmap_wrapper" style="height: 415px;">
-			<div class="gmap" style="height: 415px;" data-gmap-latitude="35.997500" data-gmap-longitude="58.999313" data-gmap-zoom="10" data-gmap-tooltip="شرکت ارشیا نیرو گستران آژند"></div>
+			<iframe src="https://mapsengine.google.com/map/u/2/embed?mid=z9FVbEWGiKoM.kLwf0PSBpJOc&z=16" width="100%" height="415"></iframe>
 		</div>
 	</div>
 	<div class="main_content_container cwidth_container">
