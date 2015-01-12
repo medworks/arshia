@@ -2304,10 +2304,10 @@ body.layout_boxed .header_main_wrapper {
   color: #0f0f0f;
   display: block;
   line-height: 78px;
-  padding: 0 15px;
+  padding: 0 8px;
   font-weight: bold;
   font-family: "nassim" !important;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: normal;
   }
 
@@ -2330,7 +2330,9 @@ body.layout_boxed .header_main_wrapper {
   text-transform: none;
   color: #bab9b9;
   border-bottom: 1px solid #3d4245;
-  font-size: 17px; }
+  font-size: 17px;
+  text-align: center;  
+}
 
 .navigation-1 .top-menu-item {
   float: right; }

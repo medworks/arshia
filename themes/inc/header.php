@@ -142,6 +142,11 @@ header('Content-Type: text/html; charset=UTF-8');
 									<div class="contact_info">
 										Call Us: <a href="javascript:void(0);" style="font-family:'bmitra' !important"><?php echo $tel; ?></a> - Mail: <a href="javascript:void(0);"><?php echo $Contact_Email; ?></a>
 									</div>
+									<div style="float:left;margin-left:220px">
+										<a href="./" class="logo">
+											<img width="148" height="31" src="themes/images/logo.png" data-at2x="themes/images/logo@2x.png" alt="media">
+										</a>
+									</div>
 									<div class="header_right">
 										<div class="social_links">
 											<a href="https://<?php echo $twitter; ?>" class="social_link icon-twitter"></a>
@@ -158,14 +163,14 @@ header('Content-Type: text/html; charset=UTF-8');
 					</div>
 				</div>
 			</div>
-			<header class="header_main_wrapper" data-position="fixed">
+			<header class="header_main_wrapper" data-position="fixed" style="margin:20px 0">
 				<div class="header-1_container cwidth_container">
 					<div class="header-1_wrapper cwidth_wrapper">
 						<div class="header-1 cwidth">
 							<div class="col-1-5 left">
 								<div class="col">
 									<a href="./" class="logo">
-										<img width="148" height="31" src="themes/images/logo.png" data-at2x="themes/images/logo@2x.png" alt="media">
+										<!-- <img width="148" height="31" src="themes/images/logo.png" data-at2x="themes/images/logo@2x.png" alt="media"> -->
 									</a>
 								</div>
 							</div>
@@ -186,7 +191,292 @@ header('Content-Type: text/html; charset=UTF-8');
 															<li class="<?php echo ($page_name=='')?'current-menu-item':'';?> menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item menu-item-688 top-menu-item has-sub-menu">
 																<a href="./" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">صفحه اصلی</span> </span></span></a>
 															</li>
+															<!-- پمپها و کمپرسورهای اسکرو -->
 															<li class="<?php echo ($page_name=='construction.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
+																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پمپها و کمپرسورهای اسکرو</span> </span></span></a>
+																<ul class="sub-menu">
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پروژها</span> </span></span></a>
+																		<ul class="sub-menu">
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پمپ اسکرو سوخت مایع توربین گازی</span> </span></span></a>
+																				<ul class="sub-menu">
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">اسکروها</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پوسته</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">دنده تایمینگ</span> </span></span></a>
+																					</li>
+																				</ul>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پمپ اسکرو سوخت مایع توربین گازی</span> </span></span></a>
+																				<ul class="sub-menu">
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">اسکروها</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پوسته</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بوشها</span> </span></span></a>
+																					</li>
+																				</ul>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پمپ اسکرو سوخت مایع توربینهای بخار</span> </span></span></a>
+																				<ul class="sub-menu">
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">اسکروها</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پوسته</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بوشها</span> </span></span></a>
+																					</li>
+																				</ul>
+																			</li>
+																		</ul>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																			<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">برنامه های آتی</span> </span></span></a>
+																			<ul class="sub-menu">
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">راه اندازی آزمایشگاه پیشرفته تست</span> </span></span></a>
+																				</li>
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت کمپرسورهای اسکرو</span> </span></span></a>
+																				</li>
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">طراحی پمپ و کمپرسور براساس نیاز مشتری</span> </span></span></a>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																			<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تجهیزات و امکانات</span> </span></span></a>
+																		</li>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																			<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تاییدیه ها و سوابق</span> </span></span></a>
+																		</li>
+																	</li>
+																</ul>
+															</li>
+															<!-- END پمپها و کمپرسورهای اسکرو -->
+															<!-- سوخت پاش توربینها -->
+															<li class="<?php echo ($page_name=='construction.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
+																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">سوخت پاش توربینها</span> </span></span></a>
+																<ul class="sub-menu">
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پروژها</span> </span></span></a>
+																		<ul class="sub-menu">
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">سوخت پاش مایع توربین گازی V94.2</span> </span></span></a>
+																				<ul class="sub-menu">
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تست و ردیف چینی</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی و تعمیر</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت و تولید</span> </span></span></a>
+																					</li>
+																				</ul>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">سوخت پاش مایع توربین گازی MHI</span> </span></span></a>
+																				<ul class="sub-menu">
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تست و ردیف چینی</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی و تعمیر</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت و تولید</span> </span></span></a>
+																					</li>
+																				</ul>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">سوخت پاش مایع توربین گازی GE-F9</span> </span></span></a>
+																				<ul class="sub-menu">
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تست و ردیف چینی</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی و تعمیر</span> </span></span></a>
+																					</li>
+																					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																						<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت و تولید</span> </span></span></a>
+																					</li>
+																				</ul>
+																			</li>
+																		</ul>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																			<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">برنامه های آتی</span> </span></span></a>
+																			<ul class="sub-menu">
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت مجموعه کامل سوخت پاش مایع توربینهای</span> </span></span></a>
+																				</li>
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">توربینهای V94.2 (اسپایدر و نازل دیفیوژن)</span> </span></span></a>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																			<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تجهیزات و امکانات</span> </span></span></a>
+																		</li>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																			<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تاییدیه ها و سوابق</span> </span></span></a>
+																		</li>
+																	</li>
+																</ul>
+															</li>
+															<!-- END سوخت پاش توربینها -->
+															<!-- بازسازی قطعات داغ -->
+															<li class="<?php echo ($page_name=='construction.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
+																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی قطعات داغ</span> </span></span></a>
+																<ul class="sub-menu">
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پروژها</span> </span></span></a>
+																		<ul class="sub-menu">
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">V94.2</span> </span></span></a>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">GE-F9</span> </span></span></a>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">GE-F5</span> </span></span></a>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="#;" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">MHI</span> </span></span></a>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">FIAT</span> </span></span></a>
+																			</li>
+																		</ul>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																			<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">برنامه های آتی</span> </span></span></a>
+																			<ul class="sub-menu">
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی پره های متحرک</span> </span></span></a>
+																				</li>
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی اینر کیسینگ V94.2</span> </span></span></a>
+																				</li>
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی میکسینگ چمبر</span> </span></span></a>
+																				</li>
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تهیه کوره اتمسفر محافظ</span> </span></span></a>
+																				</li>
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تهیه میکروسکپ الکترونی</span> </span></span></a>
+																				</li>
+																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تهیه تجهیزات پیشرفته سوراخکاری پره </span> </span></span></a>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																			<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تجهیزات و امکانات</span> </span></span></a>
+																		</li>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																			<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تاییدیه ها و سوابق</span> </span></span></a>
+																		</li>
+																	</li>
+																</ul>
+															</li>
+															<!-- END بازسازی قطعات داغ -->
+															<!--  آب بند پره ها و سایر پروژه ها -->
+															<li class="<?php echo ($page_name=='construction.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
+																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">آب بند پره ها و سایر پروژه ها</span> </span></span></a>
+																<ul class="sub-menu">
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت آب بند پره های توربین V94.2</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تست و رفع عیب سرووالوها</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت منیفولد گاز توربین GE-F9</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت رگلاتوروالو سمپلینگ</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت چک والوهای سوخت توربین GE-F5</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت و بازسازی پمپهای دنده ای سوخت مایع توربین GE-F5</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت پمپ گریز از مرکز صنایع غذایی</span> </span></span></a>
+																	</li>
+																</ul>
+															</li>
+															<!-- END  آب بند پره ها و سایر پروژه ها -->
+															<!-- ارشیا در یک نگاه -->
+															<li class="<?php echo ($page_name=='about-us.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
+																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ارشیا در یک نگاه</span> </span></span></a>
+																<ul class="sub-menu">
+																	<li class="<?php echo ($page_name=='about-us.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
+																		<a href="about-us.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">درباره ما</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تاریخچه</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بیانیه های راهبردی</span> </span></span></a>
+																		<ul class="sub-menu">
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ماموریت</span> </span></span></a>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">چشم انداز</span> </span></span></a>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ارزشها</span> </span></span></a>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">چارت سازمانی</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">هئیت مدیره</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="contact.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پیشنهادات و انتقادات</span> </span></span></a>
+																	</li>
+																</ul>
+															</li>
+															<!-- END ارشیا در یک نگاه -->
+															<!-- رویدادها -->
+															<li class="<?php echo ($page_name=='about-us.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
+																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">رویدادها</span> </span></span></a>
+																<ul class="sub-menu">
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">همایش ها</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازدیدها</span> </span></span></a>
+																	</li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">مقالات</span> </span></span></a>
+																	</li>
+																</ul>
+															</li>
+															<!-- END رویدادها -->
+															<li class="<?php echo ($page_name=='contact.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-162 top-menu-item has-sub-menu">
+																<a href="contact.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تماس با ما</span> </span></span></a>
+															</li>
+															<!-- END  آب بند پره ها و سایر پروژه ها -->
+															<!-- <li class="<?php echo ($page_name=='construction.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
 																<a href="construction.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت</span> </span></span></a>
 															</li>
 															<li class="<?php echo ($page_name=='regeneration.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
@@ -194,20 +484,9 @@ header('Content-Type: text/html; charset=UTF-8');
 															</li>
 															<li class="<?php echo ($page_name=='research.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
 																<a href="research.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تحقیقات</span> </span></span></a>
-															</li>
+															</li> 
 															<li class="<?php echo ($page_name=='#')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
 																<a href="#" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">گالری</span> </span></span></a>
-																 <ul class="sub-menu">
-																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت</span> </span></span></a>
-																	</li>
-																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازسازی</span> </span></span></a>
-																	</li>
-																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تحقیقات</span> </span></span></a>
-																	</li>
-																</ul>
 															</li>
 															<li class="<?php echo ($page_name=='documentation.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
 																<a href="documentation.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">فرم درخواست مستندات</span> </span></span></a>
@@ -217,7 +496,7 @@ header('Content-Type: text/html; charset=UTF-8');
 															</li>
 															<li class="<?php echo ($page_name=='about-us.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
 																<a href="about-us.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">درباره ما</span> </span></span></a>
-															</li>
+															</li> -->
 														</ul>
 													</div>
 													<div class="clear"></div>
