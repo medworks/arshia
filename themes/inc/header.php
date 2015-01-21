@@ -319,10 +319,7 @@ header('Content-Type: text/html; charset=UTF-8');
 																			<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">برنامه های آتی</span> </span></span></a>
 																			<ul class="sub-menu">
 																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت مجموعه کامل سوخت پاش مایع توربینهای</span> </span></span></a>
-																				</li>
-																				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">توربینهای V94.2 (اسپایدر و نازل دیفیوژن)</span> </span></span></a>
+																					<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت مجموعه کامل سوخت پاش مایع توربینهای V94.2 (اسپایدر و نازل دیفیوژن)</span> </span></span></a>
 																				</li>
 																			</ul>
 																		</li>

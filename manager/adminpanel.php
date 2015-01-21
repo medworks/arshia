@@ -89,7 +89,7 @@ header('Content-Type: text/html; charset=UTF-8');
             <a href="?item=catmgr&act=do" class="catmgr"><p>دسته بندی</p></a>
             <a href="?item=secmgr&act=do" class="trick"></a>
           </li>
-          <li>
+          <!-- <li>
             <a href="?item=researchmgr&act=do" id="research" name="research" class="research"><p>مدیریت تحقیقات</p></a>
           </li>
           <li>
@@ -97,11 +97,20 @@ header('Content-Type: text/html; charset=UTF-8');
           </li>
           <li >            
             <a href="?item=constructmgr&act=do" id="construct" name="construct" class="construct"><p>مدیریت ساخت</p></a>
+          </li> -->
+          <li>            
+            <a href="?item=dataentrymgr&act=do" id="construct" name="dataentry" class="construct"><p>مدیریت اطلاعات</p></a>
           </li>
-		  <li >            
+          <li>
+            <a href="?item=eventsmgr&act=do" id="reconstruct" name="events" class="reconstruct"><p>رویدادها</p></a>
+          </li>
+          <li>
+            <a href="?item=aboutusmgr&act=do" id="research" name="about" class="research"><p>ارشیا در یک نگاه</p></a>
+          </li>
+		      <li>            
             <a href="?item=docsmgr&act=do" id="docs" name="docs" class="docs"><p>مدیریت مستندات</p></a>
           </li>
-          <li >            
+          <li>            
             <a href="?item=requestmgr&act=do" id="request" name="request" class="request"><p>درخواست ها</p></a>
           </li>          
           <li>
@@ -110,10 +119,10 @@ header('Content-Type: text/html; charset=UTF-8');
           <li>
             <a href="?item=gallerymgr&act=do" class="gallerymgr"><p>گالری تصاویر</p></a>
           </li>
-          <li >            
+          <li>            
             <a href="?item=usermgr&act=do" id="users" name="users" class="users"><p>مدیریت کاربران</p></a>
           </li> 
-          <li >            
+          <li>            
             <a href="?item=uploadmgr&act=do" id="users" name="users" class="upload"><p>مدیریت آپلود</p></a>
           </li>
           <li>
@@ -133,7 +142,7 @@ header('Content-Type: text/html; charset=UTF-8');
  <footer>
   <div class="foot">
    <p>پانل مدیرت مدیا تک</p>
-   <img src="./images/logo.png" alt="MEdiateq" />
+   <img src="./images/logo.png" alt="Mediateq" />
   </div>
  </footer>
  </div>
