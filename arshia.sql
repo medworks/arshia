@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 22, 2015 at 06:39 PM
+-- Generation Time: Jan 22, 2015 at 07:06 PM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.3
 
@@ -127,6 +127,49 @@ CREATE TABLE IF NOT EXISTS `docs` (
 INSERT INTO `docs` (`id`, `subject`, `address`, `body`) VALUES
 (1, 'اسناد محرمانه', 'D:/xampp/htdocs/arshia/docfiles/New Text Document.txt', 'تست'),
 (2, '10 اشتباه مهم کاربردپذیری در طراحی وب سایت', './docfiles/Practice LM 4.docx', 'تست');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `events`
+--
+
+CREATE TABLE IF NOT EXISTS `events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `events`
+--
+
+INSERT INTO `events` (`id`, `name`) VALUES
+(1, 'همایش ها'),
+(2, 'بازدید ها'),
+(3, 'مقالات');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eventsubject`
+--
+
+CREATE TABLE IF NOT EXISTS `eventsubject` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mid` int(11) NOT NULL,
+  `subject` varchar(100) NOT NULL,
+  `text` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `eventsubject`
+--
+
+INSERT INTO `eventsubject` (`id`, `mid`, `subject`, `text`) VALUES
+(1, 1, 'همایش 1', ''),
+(2, 2, 'بازدید 1', '<p>تست بازدید 1</p>');
 
 -- --------------------------------------------------------
 
