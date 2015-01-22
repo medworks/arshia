@@ -141,10 +141,6 @@ $html=<<<cd
 				<option value="44">-> ساخت چک والوهای سوخت توربین GE-F5</option>
 				<option value="45">-> ساخت و بازسازی پمپهای دنده ای سوخت مایع توربین GE-F5</option>
 				<option value="46">-> ساخت پمپ گریز از مرکز صنایع غذایی</option>
-	      	<option value="0">5) رویدادها</option>
-				<option value="0">- همایشها</option>
-				<option value="0">- همایشها</option>
-				<option value="0">- همایشها</option>
 	    </select>              
 	 <div class="badboy"></div> 
 	 <p>
