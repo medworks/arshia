@@ -64,7 +64,7 @@ $html=<<<cd
   <div class="title">
       <ul>
         <li><a href="adminpanel.php?item=dashboard&act=do">پیشخوان</a></li>
-	    <li><span>مدیریت ساخت</span></li>
+	    <li><span>رویدادها</span></li>
       </ul>
       <div class="badboy"></div>
   </div>
