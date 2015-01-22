@@ -141,21 +141,7 @@ $html=<<<cd
 				<option value="44">-> ساخت چک والوهای سوخت توربین GE-F5</option>
 				<option value="45">-> ساخت و بازسازی پمپهای دنده ای سوخت مایع توربین GE-F5</option>
 				<option value="46">-> ساخت پمپ گریز از مرکز صنایع غذایی</option>
-	    </select>              
-	 <div class="badboy"></div> 
-	 <p>
-		<label for='pic'>عکس </label>
-		<span>*</span>
-	</p>
-	<div class='upload-file'>
-		<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' />  
-		<span class='filename'>لطفا عکس مورد نظر را انتخاب نمایید</span>
-		<span class='action'>انتخاب فایل</span>
-	</div>
-   <div class="badboy"> </div>
-   <div id="imgpreview">
-		<img id="img" src="" alt="" />
-	</div>    
+	    </select>   
 	 <div class="badboy"></div> 
 			         
   	   <p>

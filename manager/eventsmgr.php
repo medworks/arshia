@@ -89,20 +89,6 @@ $html=<<<cd
 		<span>*</span>
 	</p>
 	<input type="text" name="subject" class="validate[required] subject" id="subject" value="{$row[subject]}" />
-	 <div class="badboy"></div>
-	 <p>
-		<label for='pic'>عکس </label>
-		<span>*</span>
-	</p>
-	<div class='upload-file'>
-		<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' />  
-		<span class='filename'>لطفا عکس مورد نظر را انتخاب نمایید</span>
-		<span class='action'>انتخاب فایل</span>
-	</div>
-   <div class="badboy"> </div>
-   <div id="imgpreview">
-		<img id="img" src="" alt="" />
-	</div>    
 	 <div class="badboy"></div> 
 			         
   	   <p>
