@@ -9,6 +9,8 @@ padding: 7px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 border-radius: 5px;
+top: 350px!important;
+left: 600px!important
 }
 
 .tp-caption.sentinel-small-600-black {
@@ -22,4 +24,6 @@ padding: 7px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 border-radius: 5px;
+top: 400px!important;
+left: 600px!important
 }
