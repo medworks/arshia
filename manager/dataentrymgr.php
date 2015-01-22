@@ -17,19 +17,18 @@
 	$userid = $sess->Get("userid");
 	$overall_error = false;
 	if ($_GET['item']!="dataentrymgr")	exit();
-	$recordcount = $db->CountOf("allparts", "`part` = 3");
-	if ($recordcount > 0)
-	{
-	  $row=$db->Select("allparts","*","part='3'");
-	}
 	if ($_POST["mark"]== "save")
 	{
-	    $fields = array("`detail`","`part`");
-		$_POST["detail"] = addslashes($_POST["detail"]);		
-		$values = array("'{$_POST[detail]}'","'3'");
-		if ($recordcount == 0)
+		if ($_POST[menu] == 0)
 		{
-			if (!$db->InsertQuery('allparts',$fields,$values)) 
+			
+		}
+		else
+		{
+			$fields = array("`mid`","`text`");
+			$_POST["text"] = addslashes($_POST["text"]);		
+			$values = array("'{$_POST[menu]}'","'{$_POST[detail]}'");
+			if (!$db->InsertQuery('menusubject',$fields,$values)) 
 			{
 				//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
 				header('location:?item=dataentrymgr&act=new&msg=2');
@@ -38,21 +37,9 @@
 			{  										
 				//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
 				header('location:?item=dataentrymgr&act=new&msg=1');
-			}  				 
-		}
-		else
-		{
-		   $_POST["detail"] = addslashes($_POST["detail"]);	    
-		   $values = array("`detail`"=>"'{$_POST[detail]}'");		
-		   if (!$db->UpdateQuery("allparts",$values,array("part='3'")))
-		   {
-		     header('location:?item=dataentrymgr&act=new&msg=2');
-		   }
-		   else
-		   {
-		     header('location:?item=dataentrymgr&act=new&msg=1');
-		   }		   
-		}
+			} 
+		}		
+		
 	}
 $msgs = GetMessage($_GET['msg']);	
 $html=<<<cd
@@ -70,14 +57,14 @@ $html=<<<cd
   </div>
   <div class="mes" id="message">{$msgs}</div>
   <div class='content'>
-	<form name="frmconstructmgr" id="frmconstructmgr" class="" action="" method="post" >
+	<form name="frminfo" id="frminfo" class="" action="" method="post" >
      <p class="note">پر کردن موارد مشخص شده با * الزامی می باشد</p>
 	 <div class="badboy"></div>
 	 	<p>
          <label for="detail">انتخاب منو </label>
          <span>*</span>
         </p>
-        <select style="float:right;width:300px">
+        <select  name="menu" id = "menu" style="float:right;width:300px">
 	      	<option value="0">انتخاب منو</option>
 	      	<option value="0">1) پمپها و کمپرسورهای اسکرو</option>
 		      	<option value="0">- پروژه ها</option>
@@ -114,7 +101,7 @@ $html=<<<cd
 				      	<option value="22">---> بازسازی و تعمیر</option>
 				      	<option value="23">---> ساخت و تولید</option>
 		      	<option value="0">- برنامه های آتی</option>
-			      	<option value="24">--> راه اندازی آزمایشگاه پیشرفته تست انواع پمپها وکمپرسورهای اسکرو</option>
+			      	<option value="24">--> ساخت مجموعه کامل سوخت پاش مایع توربین های V94.2 (اسپایدر و نازل دیفیوژن) </option>
 		      	<option value="25">-> تجهیزات و امکانات</option>
 		      	<option value="26">-> تاییدیه ها و سوابق</option>
 	      	<option value="0">3) بازسازی قطعات داغ</option>
@@ -122,7 +109,7 @@ $html=<<<cd
 			      	<option value="27">--> V94.2</option>
 			      	<option value="28">--> GE-F9</option>
 			      	<option value="29">--> GE-F5</option>
-			      	<option value="30">--> MH</option>
+			      	<option value="30">--> MHI</option>
 			      	<option value="31">--> FIAT</option>
 				<option value="0">- برنامه های آتی</option>
 			      	<option value="32">--> بازسازی پره های متحرک</option>
@@ -148,7 +135,7 @@ $html=<<<cd
          <label for="detail">توضیحات </label>
          <span>*</span>
         </p>
-        <textarea cols="50" rows="10" name="detail" class="detail" id="detail" > {$row[detail]}</textarea>  
+        <textarea cols="50" rows="10" name="detail" class="detail" id="detail" > {$row[text]}</textarea>  
         <p>     
 	     <input type="submit" value="ثبت" class='submit' />
 		 <input type="hidden" name = "mark" value="save" />
@@ -156,7 +143,21 @@ $html=<<<cd
         </p>  
 	</form>
 	<div class='badboy'></div>	
-  </div>    
+  </div>  
+	<script type='text/javascript'>
+	
+		$(document).ready(function(){
+		  $("#frminfo").submit(function(e)
+		  {
+				//e.preventDefault();
+				if ($('#menu').val() == 0)
+				{
+					alert("برای این گزینه امکان درج مطلب نمی باشد.");
+					return true;
+				}	
+		  });
+	    });
+	</script>	  
 cd;
 return $html;
 ?>

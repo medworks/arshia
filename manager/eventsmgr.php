@@ -17,42 +17,25 @@
 	$userid = $sess->Get("userid");
 	$overall_error = false;
 	if ($_GET['item']!="eventsmgr")	exit();
-	$recordcount = $db->CountOf("allparts", "`part` = 3");
-	if ($recordcount > 0)
-	{
-	  $row=$db->Select("allparts","*","part='3'");
-	}
+	
+	$rows=$db->SelectAll("events","*");
+	$cbmenu = DbSelectOptionTag("cbmenu",$rows,"name",NULL,NULL,NULL,NULL,"  منو  ");
 	if ($_POST["mark"]== "save")
 	{
-	    $fields = array("`detail`","`part`");
-		$_POST["detail"] = addslashes($_POST["detail"]);		
-		$values = array("'{$_POST[detail]}'","'3'");
-		if ($recordcount == 0)
+	    $fields = array("`mid`","`subject`","`text`");
+		$_POST["text"] = addslashes($_POST["text"]);		
+		$values = array("'{$_POST[cbmenu]}'","'{$_POST[subject]}'","'{$_POST[text]}'");
+		
+		if (!$db->InsertQuery('eventsubject',$fields,$values)) 
 		{
-			if (!$db->InsertQuery('allparts',$fields,$values)) 
-			{
-				//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
-				header('location:?item=eventsmgr&act=new&msg=2');
-			} 	
-			else 
-			{  										
-				//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
-				header('location:?item=eventsmgr&act=new&msg=1');
-			}  				 
-		}
-		else
-		{
-		   $_POST["detail"] = addslashes($_POST["detail"]);	    
-		   $values = array("`detail`"=>"'{$_POST[detail]}'");		
-		   if (!$db->UpdateQuery("allparts",$values,array("part='3'")))
-		   {
-		     header('location:?item=eventsmgr&act=new&msg=2');
-		   }
-		   else
-		   {
-		     header('location:?item=eventsmgr&act=new&msg=1');
-		   }		   
-		}
+			//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
+			header('location:?item=eventsmgr&act=new&msg=2');
+		} 	
+		else 
+		{  										
+			//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
+			header('location:?item=eventsmgr&act=new&msg=1');
+		}	
 	}
 $msgs = GetMessage($_GET['msg']);	
 $html=<<<cd
@@ -77,12 +60,7 @@ $html=<<<cd
          <label for="detail">انتخاب منو </label>
          <span>*</span>
         </p>
-        <select style="float:right;width:300px">
-	      	<option value="0">انتخاب منو</option>
-	      	<option value="1">-> همایش ها</option>
-	      	<option value="2">-> بازدید ها</option>
-	      	<option value="3">-> مقالات</option>
-	    </select>              
+        {$cbmenu}             
 	 <div class="badboy"></div>
 	 <p>
 		<label for="subject">عنوان </label>
@@ -95,7 +73,7 @@ $html=<<<cd
          <label for="detail">توضیحات </label>
          <span>*</span>
         </p>
-        <textarea cols="50" rows="10" name="detail" class="detail" id="detail" > {$row[detail]}</textarea>  
+        <textarea cols="50" rows="10" name="text" class="detail" id="text" > {$row[text]}</textarea>  
         <p>     
 	     <input type="submit" value="ثبت" class='submit' />
 		 <input type="hidden" name = "mark" value="save" />
