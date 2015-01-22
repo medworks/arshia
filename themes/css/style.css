@@ -2549,7 +2549,8 @@ body.layout_boxed .header_main_wrapper {
   line-height: 20px;
   padding-top: 11px;
   padding-bottom: 10px;
-  font-weight: 700; }
+  font-weight: 700;
+  padding-right: 15px; }
 
 .navigation-2 .menu > li:first-child > a {
   border-top: 1px solid transparent; }
