@@ -163,7 +163,7 @@ header('Content-Type: text/html; charset=UTF-8');
 					</div>
 				</div>
 			</div>
-			<header class="header_main_wrapper" data-position="fixed" style="margin:20px 0">
+			<header class="header_main_wrapper" data-position="fixed" style="margin:20px 0 0;">
 				<div class="header-1_container cwidth_container">
 					<div class="header-1_wrapper cwidth_wrapper">
 						<div class="header-1 cwidth">

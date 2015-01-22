@@ -15,6 +15,7 @@ deny from all
 	RewriteRule ^construction.html arshia/index.php?item=construction&act=do [L]
 	RewriteRule ^research.html arshia/index.php?item=research&act=do [L]
 	RewriteRule ^regeneration.html arshia/index.php?item=regeneration&act=do [L]
+	RewriteRule ^menu.html arshia/index.php?item=menu&act=do [L]
 	RewriteBase /
 
 #Skip WWW	
