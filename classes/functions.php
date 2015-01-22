@@ -51,7 +51,7 @@
                 if ($act=="do") return "themes/search.php";
 			break;
 			case 'uploadmgr':
-              if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/uploadmgr.php";
+              if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit" or $act=="event" or $act=="menu") return "../manager/uploadmgr.php";
 			break;			
 			case 'researchmgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/researchmgr.php";

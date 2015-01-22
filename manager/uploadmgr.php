@@ -152,7 +152,7 @@ if ($_GET['act']=="do")
 	      <div class="badboy"></div>
 	    </div>
 		<div class="sub-menu" id="mainnav">
-			<ul>
+			<ul class="two-column">
 			  <li>		  
 				<a href="?item=uploadmgr&act=new">عکس جدید
 					<span class="add-file"></span>
@@ -161,6 +161,18 @@ if ($_GET['act']=="do")
 			  <li>
 				<a href="?item=uploadmgr&act=mgr" id="news" name="news">
 				  حذف/ویرایش عکس ها
+					<span class="edit-file"></span>
+				</a>
+			  </li>
+			  <li>
+				<a href="?item=uploadmgr&act=event" id="news" name="news">
+				  عکس رویدادها
+					<span class="add-file"></span>
+				</a>
+			  </li>
+			  <li>
+				<a href="?item=uploadmgr&act=menu" id="news" name="news">
+				  عکس منوها و سایر موارد
 					<span class="edit-file"></span>
 				</a>
 			  </li>
@@ -197,7 +209,8 @@ else
 				<span class='action'>انتخاب فایل</span>
 			</div>
 ";			
-}	
+}
+		
 $html=<<<cd
 		<script type='text/javascript'>
 			$(document).ready(function(){		
