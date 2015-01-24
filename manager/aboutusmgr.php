@@ -92,12 +92,19 @@ $html=<<<cd
 	      	<option value="6">-> هیئت مدیره</option>
 	    </select>   
 		 <div class="badboy"></div> 
-	   <p>
-         <label for="detail">عکس </label>
-         <span>*</span>
-      </p>
-	   <input type='file' name='pic' class='validate[required] pic ltr' id='pic' />
-	 <div class="badboy"></div> 
+	   	<p>
+			<label for='pic'>فایل </label>
+			<span>*</span>
+		</p>
+		<div class='upload-file'>
+			<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' />  
+			<span class='filename'>لطفا عکس مورد نظر را انتخاب نمایید</span>
+			<span class='action'>انتخاب فایل</span>
+		</div>
+	   <div id="imgpreview">
+			<img id="img" src="" alt="" />				
+		</div>
+	 	<div class="badboy"></div> 
 	 
 	   <p>
          <label for="detail">توضیحات </label>
