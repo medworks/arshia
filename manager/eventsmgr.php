@@ -69,7 +69,7 @@ $html=<<<cd
 	<input type="text" name="subject" class="validate[required] subject" id="subject" value="{$row[subject]}" />
 	 <div class="badboy"></div> 
 			         
-  	   <p>
+  	    <p>
          <label for="detail">توضیحات </label>
          <span>*</span>
         </p>

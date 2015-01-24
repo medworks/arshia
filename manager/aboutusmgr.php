@@ -17,42 +17,46 @@
 	$userid = $sess->Get("userid");
 	$overall_error = false;
 	if ($_GET['item']!="aboutusmgr")	exit();
-	$recordcount = $db->CountOf("allparts", "`part` = 3");
-	if ($recordcount > 0)
+	
+	function getelem($id)
 	{
-	  $row=$db->Select("allparts","*","part='3'");
+	  switch ($id)
+	  {
+	   case 1:
+		return "تاریخچه";
+	   break;
+	   case 2:
+		return "ماموریت";
+	   break;
+	   case 3:
+		return "چشم انداز";
+	   break;
+	   case 4:
+		return "ارزشها";
+	   break;
+	   case 5:
+		return "چارت سازمانی";
+	   break;
+	   case 6:
+		return "هیئت مدیره";
+	   break;
+	  }
 	}
+	
 	if ($_POST["mark"]== "save")
 	{
-	    $fields = array("`detail`","`part`");
-		$_POST["detail"] = addslashes($_POST["detail"]);		
-		$values = array("'{$_POST[detail]}'","'3'");
-		if ($recordcount == 0)
-		{
-			if (!$db->InsertQuery('allparts',$fields,$values)) 
+	    $fields = array("`mid`","`pic`","`text`");
+		$_POST["text"] = addslashes($_POST["text"]);		
+		$values = array("'{$_POST[cbmenu]}'","'{$_POST[text]}'","'{$_POST[text]}'");
+		
+			if (!$db->InsertQuery('history',$fields,$values)) 
 			{
-				//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
 				header('location:?item=aboutusmgr&act=new&msg=2');
 			} 	
 			else 
 			{  										
-				//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
 				header('location:?item=aboutusmgr&act=new&msg=1');
 			}  				 
-		}
-		else
-		{
-		   $_POST["detail"] = addslashes($_POST["detail"]);	    
-		   $values = array("`detail`"=>"'{$_POST[detail]}'");		
-		   if (!$db->UpdateQuery("allparts",$values,array("part='3'")))
-		   {
-		     header('location:?item=aboutusmgr&act=new&msg=2');
-		   }
-		   else
-		   {
-		     header('location:?item=aboutusmgr&act=new&msg=1');
-		   }		   
-		}
 	}
 $msgs = GetMessage($_GET['msg']);	
 $html=<<<cd
@@ -70,14 +74,14 @@ $html=<<<cd
   </div>
   <div class="mes" id="message">{$msgs}</div>
   <div class='content'>
-	<form name="frmconstructmgr" id="frmconstructmgr" class="" action="" method="post" >
+	<form name="frminfo" id="frminfo" class="" action="" method="post" enctype="multipart/form-data" >
      <p class="note">پر کردن موارد مشخص شده با * الزامی می باشد</p>
 	 <div class="badboy"></div>
 	 	<p>
          <label for="detail">انتخاب منو </label>
          <span>*</span>
         </p>
-        <select style="float:right;width:300px">
+        <select id="cbmenu" style="float:right;width:300px">
 	      	<option value="0">انتخاب منو</option>
 	      	<option value="1">-> تاریخچه</option>
 	      	<option value="0">- بیانیه های راهبردی</option>
@@ -86,8 +90,15 @@ $html=<<<cd
 		      	<option value="4">--> ارزشها</option>
 	      	<option value="5">-> چارت سازمانی</option>
 	      	<option value="6">-> هیئت مدیره</option>
-	    </select>              
+	    </select>   
+		 <div class="badboy"></div> 
+	   <p>
+         <label for="detail">عکس </label>
+         <span>*</span>
+      </p>
+	   <input type='file' name='pic' class='validate[required] pic ltr' id='pic' />
 	 <div class="badboy"></div> 
+	 
 	   <p>
          <label for="detail">توضیحات </label>
          <span>*</span>
@@ -100,7 +111,21 @@ $html=<<<cd
         </p>  
 	</form>
 	<div class='badboy'></div>	
-  </div>    
+  </div> 
+	<script type='text/javascript'>
+	
+		$(document).ready(function(){
+		  $("#frminfo").submit(function(e)
+		  {
+				//e.preventDefault();
+				if ($('#cbmenu').val() == 0)
+				{
+					alert("برای این گزینه امکان درج مطلب نمی باشد.");
+					return true;
+				}	
+		  });
+	    });
+	</script>	  
 cd;
 return $html;
 ?>
