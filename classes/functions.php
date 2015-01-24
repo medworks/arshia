@@ -332,7 +332,7 @@ function DataGrid($cols, $rows, $colsClass, $rowsClass, $itemsInPage, $pageNo, $
         }
 		function DbSelectOptionTag($optionname,$dbdata,$feild,$selected=Null,$onchange=Null,$classname=null)
         {
-            $option = "<select name='$optionname' class='$classname' id='$optionname' onchange='$onchange' >";
+            $option = "<select name='$optionname' class='$classname' id='$optionname' onchange='$onchange' style='float:right' >";
 			$option.="<option value=''>انتخاب کنید</option>";
             foreach($dbdata as $key=>$val)
             {			  
