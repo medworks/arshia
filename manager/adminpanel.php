@@ -105,6 +105,9 @@ header('Content-Type: text/html; charset=UTF-8');
             <a href="?item=eventsmgr&act=do" id="reconstruct" name="events" class="reconstruct"><p>رویدادها</p></a>
           </li>
           <li>
+            <a href="?item=editeventsmgr&act=do" id="reconstruct" name="editevent" class="reconstruct"><p>ویرایش رویدادها</p></a>
+          </li>
+          <li>
             <a href="?item=aboutusmgr&act=do" id="research" name="about" class="research"><p>ارشیا در یک نگاه</p></a>
           </li>
 		      <li>            
