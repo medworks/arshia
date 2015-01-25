@@ -130,6 +130,9 @@
 			case 9:
 				$result = $msg->ShowSuccess("تنظیمات اعمال شد");
 			break;
+			case 10:
+				$result = $msg->ShowError("فقط عکس هایی با فرمت JPG, JPEG, PNG & GIF");
+			break;	
 		}
 		$result .= <<<JAVA
 		<script language="javascript">
