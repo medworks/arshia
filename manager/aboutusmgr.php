@@ -73,14 +73,15 @@
 			echo "Sorry, your file is too large.";
 			$uploadOk = 0;
 		}
-		
+		/*
 		if($imageFileType != "jpg" && $imageFileType != "png" && 
 		$imageFileType != "jpeg"&& $imageFileType != "gif" ) 
 		{
-			echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+			//echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+			header('location:?item=aboutusmgr&act=new&msg=10');
 			$uploadOk = 0;
 		}
-	
+	   */
 		if ($uploadOk == 0) 
 		{
 			echo "Sorry, your file was not uploaded.";
@@ -148,11 +149,11 @@
 	   $row = $db->Select("history","*","mid = '{$_POST[cbmenu]}'");
 	   if (count($row)>0)
 	   {
-			uploadpics("edit","pic",$db,$id);
+			uploadpics("edit","pic",$db,$row["id"]);
 	   }
 	   else
 	   {
-			uploadpics("insert","pic",$db,$row["id"]);
+			uploadpics("insert","pic",$db,$id);
 	   }
 	}
 $msgs = GetMessage($_GET['msg']);	
