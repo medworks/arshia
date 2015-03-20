@@ -11,7 +11,28 @@
 	die(); // solve a security bug
  }
  if ($_GET['item']!="addpic")	exit();
+ 
  $db = Database::GetDatabase();
+ 
+ if ($_POST["mark"]=="addpic")
+ {
+	for($i=0; $i<count($_FILES['pic']['name']); $i++) 
+	{
+		$tmpFilePath = $_FILES['pic']['tmp_name'][$i];
+		if ($tmpFilePath != "")
+		{
+			$newFilePath = "../eventspics/" . $_FILES['pic']['name'][$i];
+			$fn = "eventspics/" . $_FILES['pic']['name'][$i];
+			if(move_uploaded_file($tmpFilePath, $newFilePath)) 
+			{
+				$fields = array("`type`","`sid`","`name`");
+				$values = array("'1'","'{$_POST[cbtype]}'","'{$fn}'");
+				$db->InsertQuery('pics',$fields,$values);				
+			}
+		}
+	}
+ }
+ 
  
 	$db->cmd = " SELECT e.name,es.id,es.subject,es.mid ,CONCAT(es.subject,'(',e.name,')') as titr FROM events as e , eventsubject as es ".
 	           " WHERE e.id = es.mid ";
@@ -48,7 +69,7 @@ $html=<<<ht
 				<span>*</span>
 			</p>
 			<div class='upload-file'>
-				<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' multiple />  
+				<input type='file' name='pic[]' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' multiple />  
 				<span class='filename'>لطفا عکس مورد نظر را انتخاب نمایید</span>
 				<span class='action'>انتخاب فایل</span>
 			</div>
@@ -72,7 +93,8 @@ $html=<<<ht
 			</p>
 			{$cbtype}
 			<br/>
-			<input type="submit" name="submit" value="ارسال">	
+			<input type="submit" name="submit" value="ارسال" />	
+			<input type="hidden" name="mark" value="addpic" />
 		</form>
 ht;
 return $html;
