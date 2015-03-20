@@ -43,7 +43,7 @@ if ($_GET['act']=="do")
 				</a>
 			  </li>
 			  <li>
-				<a href="?item=eventsmgr&act=adelpic" id="news" name="news">
+				<a href="?item=deleventpic&act=do" id="news" name="news">
 				  حذف / اضافه کردن عکس
 					<span class="edit-file"></span>
 				</a>
