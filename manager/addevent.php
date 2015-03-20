@@ -29,12 +29,12 @@
 		if (!$db->InsertQuery('eventsubject',$fields,$values)) 
 		{
 			//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
-			header('location:?item=eventsmgr&act=new&msg=2');
+			header('location:?item=eventsmgr&act=do&msg=2');
 		} 	
 		else 
 		{  										
 			//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
-			header('location:?item=eventsmgr&act=new&msg=1');
+			header('location:?item=eventsmgr&act=do&msg=1');
 		}	
 	}
 $msgs = GetMessage($_GET['msg']);	

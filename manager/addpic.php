@@ -13,7 +13,18 @@
  if ($_GET['item']!="addpic")	exit();
  $db = Database::GetDatabase();
  
-
+	$db->cmd = " SELECT e.name,es.id,es.subject,es.mid ,CONCAT(es.subject,'(',e.name,')') as titr FROM events as e , eventsubject as es ".
+	           " WHERE e.id = es.mid ";
+	//		   echo $db->cmd;
+	$res  = $db->RunSQL();
+    $rows = array();
+    if ($res)
+    {
+        while($row = mysqli_fetch_array($res)) $rows[] = $row;
+    }
+	
+	$cbtype = DbSelectOptionTag("cbtype",$rows,"titr");
+	
 $html=<<<ht
 	<script type='text/javascript'>
 			$(document).ready(function(){		
@@ -37,7 +48,7 @@ $html=<<<ht
 				<span>*</span>
 			</p>
 			<div class='upload-file'>
-				<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' />  
+				<input type='file' name='pic' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' multiple />  
 				<span class='filename'>لطفا عکس مورد نظر را انتخاب نمایید</span>
 				<span class='action'>انتخاب فایل</span>
 			</div>
@@ -59,9 +70,9 @@ $html=<<<ht
 				<label for="picsadr">محل ذخیره سازی فایل</label>
 				<span>*</span>
 			</p>
-			<select  name="menu" id = "menu" style="float:right;width:300px">
-		      	<option value="0">انتخاب منو</option>
-		    </select>			
+			{$cbtype}
+			<br/>
+			<input type="submit" name="submit" value="ارسال">	
 		</form>
 ht;
 return $html;
