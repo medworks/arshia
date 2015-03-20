@@ -16,7 +16,7 @@
 	$sess = Session::GetSesstion();	
 	$userid = $sess->Get("userid");
 	$overall_error = false;
-	if ($_GET['item']!="editeventsmgr")	exit();
+	if ($_GET['item']!="editevent")	exit();
 	
 	$rows=$db->SelectAll("eventsubject","*");
 	$cbmenu = DbSelectOptionTag("cbmenu",$rows,"name",NULL,NULL,NULL,NULL,"  منو  ");
