@@ -214,7 +214,6 @@ $html=<<<ht
 				<img id="img" src="" alt="" />				
 			</div>
 		   <div class="badboy"></div>
-
 			<p>
 				<label for="subject">عنوان</label>
 				<span></span>
@@ -232,7 +231,6 @@ $html=<<<ht
 			<select  name="menu" id = "menu" style="float:right;width:300px">
 		      	<option value="0">انتخاب منو</option>
 		    </select>			
-			
 		</form>
 				 
 ht;
@@ -357,9 +355,7 @@ $html=<<<ht
 						<option value="50">--> ارزش ها</option>
 					<option value="51">-> چارت سازمانی</option>
 					<option value="52">-> هئیت مدیره</option>
-
-		    </select>			
-			
+		    </select>						
 		</form>
 				 
 ht;
@@ -562,13 +558,10 @@ $code=<<<edit
 								</p>
 								<input type="hidden" name="mark" value="srhnews" /> 
 								{$msgs}
-
 								{$gridcode} 
-															
 							</form>
 					   </center>
 					</div>
-
 edit;
 $html = $code;
 }	

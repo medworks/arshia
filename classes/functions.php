@@ -4,7 +4,7 @@
 	include_once("messages.php");
 	include_once("database.php");
 	include_once("seo.php");
-  function GetPageName($func,$act)
+    function GetPageName($func,$act)
 	{	   
 		$db = Database::GetDatabase();	
 		$seo = Seo::GetSeo();
@@ -49,6 +49,15 @@
 			case 'search':
 				$seo->Site_Title = "جستجو";
                 if ($act=="do") return "themes/search.php";
+			break;
+			case 'addevent':
+                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/addevent.php";
+			break;
+			case 'editevent':
+                if ($act=="do" or  $act=="del" or $act=="edit") return "../manager/editevent.php";
+			break;
+			case 'addpic':
+                if ($act=="do" or  $act=="new" or $act=="edit") return "../manager/addpic.php";
 			break;
 			case 'uploadmgr':
               if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit" or $act=="event" or $act=="menu") return "../manager/uploadmgr.php";
