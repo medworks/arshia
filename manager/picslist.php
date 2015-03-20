@@ -14,30 +14,42 @@
 	}
 	$db = Database::GetDatabase();
 	$sess = Session::GetSesstion();	
-	$userid = $sess->Get("userid");
-	$overall_error = false;
+	$userid = $sess->Get("userid");	
 	if ($_GET['item']!="picslist")	exit();
 	
-	if ($_POST["mark"]== "save")
+	$pics = $db->SelectAll("pics","*","type = 1 AND sid='{$_GET['eid']}'");	
+	
+	if ($_POST["mark"]=="change")
 	{
-	    $fields = array("`mid`","`subject`","`text`");
-		$_POST["text"] = addslashes($_POST["text"]);		
-		$values = array("'{$_POST[cbmenu]}'","'{$_POST[subject]}'","'{$_POST[text]}'");
+		$getimgs = $_POST["pic"];		
+		foreach($getimgs as $key=>$val)
+			$imgid[] = $val;
+		$imgids = implode(',',$imgid);	
+		$db->cmd = " DELETE FROM Pics WHERE id NOT IN ({$imgids}) AND type=1 AND sid={$_GET['eid']}";
+		$db->RunSQL();
 		
-		if (!$db->InsertQuery('eventsubject',$fields,$values)) 
-		{
-			//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
-			header('location:?item=editeventsmgr&act=new&msg=2');
-		} 	
-		else 
-		{  										
-			//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
-			header('location:?item=editeventsmgr&act=new&msg=1');
-		}	
-	}
+		$values = array("`checked`"=>"'1'");
+		$db->UpdateQuery("pics",$values,array("sid='{$_GET[eid]}' AND type=1"));
+		header("location:?item=picslist&act=edit&eid={$_GET['eid']}");
+	}		
 
 $msgs = GetMessage($_GET['msg']);	
 
+for($i=0;$i < count($pics);$i++)
+{
+	if ($pics[$i]['checked'])
+	{
+		$checked = "checked";
+	}
+	else
+	{
+		$checked = "";
+	}
+$html.=<<<cd
+	<img src="../{$pics[$i]['name']}" width="64px" height="64px"/>	
+	<input type="checkbox" name="pic[]" value="{$pics[$i]['id']}" {$checked}>	
+cd;
+}
 $code=<<<edit
 <script type='text/javascript'>
 	$(document).ready(function(){	   			
@@ -56,10 +68,10 @@ $code=<<<edit
 				  </div>
                     <div class="Top">                       
 						<center>
-							<form action="?item=slidesmgr&act=mgr" method="post" id="frmsrh" name="frmsrh">
-								
-								<input type="hidden" name="mark" value="srhnews" /> 
-								{$gridcode} 
+							<form action="" method="post" id="frmsrh" name="frmsrh">
+								{$html} 
+								<input type="submit" name="submit" value="ارسال" /> 
+								<input type="hidden" name="mark" value="change" /> 
 							</form>
 					   </center>
 					</div>
