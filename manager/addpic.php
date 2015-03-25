@@ -62,6 +62,79 @@ $html=<<<ht
 		<div id="message">
 			{$msgs}
 		</div>
+		<style>
+	   		.thumbnail{
+			    height: 100px;
+			    margin: 10px; 
+			    float: right;
+			}
+			#result {
+				display:none;
+			    border: 1px dotted #cccccc;
+			    float: right;
+			    margin:0 auto;
+			    width: 782px;
+			}
+	   	</style>
+	   	<script>
+	   		window.onload = function(){   
+		    //Check File API support
+		    if(window.File && window.FileList && window.FileReader)
+		    {
+		        $('#files').live("change", function(event) {
+		            var files = event.target.files; //FileList object
+		            var output = document.getElementById("result");
+		            for(var i = 0; i< files.length; i++)
+		            {
+		                var file = files[i];
+		                //Only pics
+		                // if(!file.type.match('image'))
+		                if(file.type.match('image.*')){
+		                    if(this.files[0].size < 2097152){    
+		                  // continue;
+		                    var picReader = new FileReader();
+		                    picReader.addEventListener("load",function(event){
+		                        var picFile = event.target;
+		                        var div = document.createElement("div");
+		                        div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" +
+		                                "title='preview image'/>";
+		                        output.insertBefore(div,null);            
+		                    });
+		                    //Read the image
+		                    $('#clear, #result').show();
+		                    picReader.readAsDataURL(file);
+		                    }else{
+		                        alert("Image Size is too big. Minimum size is 2MB.");
+		                        $(this).val("");
+		                    }
+		                }else{
+		                alert("You can only upload image file.");
+		                $(this).val("");
+		            }
+		            }                               
+		           
+		        });
+		    }
+		    else
+		    {
+		        console.log("Your browser does not support File API");
+		    }
+		}
+
+		   $('#files').live("click", function() {
+		        $('.thumbnail').parent().remove();
+		        $('result').hide();
+		        $(this).val("");
+		    });
+
+		    $('#clear').live("click", function() {
+		        $('.thumbnail').parent().remove();
+		        $('#result').hide();
+		        $('#files').val("");
+		        $(this).hide();
+		    });
+
+	   	</script>
 		<form name="frmuploadmgr" id="frmuploadmgr" class="" action="" method="post" enctype="multipart/form-data" > 			
 		   <div class="badboy"></div>
 		   <p>
@@ -69,14 +142,17 @@ $html=<<<ht
 				<span>*</span>
 			</p>
 			<div class='upload-file'>
-				<input type='file' name='pic[]' class='validate[required] pic ltr' id='pic' onChange='showPreview(this);' multiple />  
+				<input type='file' name='pic[]' class='validate[required] pic ltr' id="files" onChange='showPreview(this);' multiple />  
 				<span class='filename'>لطفا عکس مورد نظر را انتخاب نمایید</span>
-				<span class='action'>انتخاب فایل</span>
+				<span class='action' style="-webkit-border-radius:0px !important">انتخاب فایل</span>
+				<span class='action' id="clear">پاک کردن</span>
 			</div>
-		   <div id="imgpreview">
+		   	<div class="badboy"></div>
+        	<output id="result"> </output>
+		   	<!-- <div id="imgpreview">
 				<img id="img" src="" alt="" />				
-			</div>
-		   <div class="badboy"></div>
+			</div> -->
+		   	<div class="badboy"></div>
 			<p>
 				<label for="subject">عنوان</label>
 				<span></span>
@@ -92,7 +168,8 @@ $html=<<<ht
 				<span>*</span>
 			</p>
 			{$cbtype}
-			<br/>
+		   	<div class="badboy"></div>
+		   	<br />
 			<input type="submit" name="submit" value="ارسال" />	
 			<input type="hidden" name="mark" value="addpic" />
 		</form>
