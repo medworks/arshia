@@ -99,7 +99,7 @@ header('Content-Type: text/html; charset=UTF-8');
             <a href="?item=constructmgr&act=do" id="construct" name="construct" class="construct"><p>مدیریت ساخت</p></a>
           </li> -->
           <li>            
-            <a href="?item=dataentrymgr&act=do" id="construct" name="dataentry" class="construct"><p>مدیریت اطلاعات</p></a>
+            <a href="?item=infomgr&act=do" id="construct" name="dataentry" class="construct"><p>مدیریت اطلاعات</p></a>
           </li>
           <li>
             <a href="?item=eventsmgr&act=do" id="reconstruct" name="events" class="reconstruct"><p>مدیریت رویداد ها</p></a>
