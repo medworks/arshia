@@ -26,12 +26,12 @@ if ($_GET['act']=="do")
 		<div class="sub-menu" id="mainnav">
 			<ul class="two-column">
 			  <li>		  
-				<a href="?item=addevent&act=new">ثبت اطلاعات
+				<a href="?item=adddata&act=new">ثبت اطلاعات
 					<span class="add-file"></span>
 				</a>
 			  </li>
 			  <li>
-				<a href="?item=editevent&act=edit" id="news" name="news">
+				<a href="?item=editdata&act=edit" id="news" name="news">
 				  حذف / ویرایش اطلاعات
 					<span class="edit-file"></span>
 				</a>

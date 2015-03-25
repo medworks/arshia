@@ -16,7 +16,7 @@
 	$sess = Session::GetSesstion();	
 	$userid = $sess->Get("userid");
 	$overall_error = false;
-	if ($_GET['item']!="dataentrymgr")	exit();
+	if ($_GET['item']!="adddata")	exit();
 	if ($_POST["mark"]== "save")
 	{
 		if ($_POST[menu] == 0)

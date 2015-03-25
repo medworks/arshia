@@ -76,10 +76,7 @@
 			break;
 			case 'constructmgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/constructmgr.php";
-			break;
-			case 'dataentrymgr':
-                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/dataentrymgr.php";
-			break;
+			break;			
 			case 'eventsmgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/eventsmgr.php";
 			break;
@@ -88,6 +85,12 @@
 			break;
 			case 'infomgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/infomgr.php";
+			break;
+			case 'adddata':
+                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/adddata.php";
+			break;
+			case 'editdata':
+                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/editdata.php";
 			break;
 			case 'aboutusmgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/aboutusmgr.php";
