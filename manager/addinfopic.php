@@ -228,6 +228,20 @@ $html=<<<ht
 			<input type="submit" name="submit" value="ارسال" />	
 			<input type="hidden" name="mark" value="addinfopic" />
 		</form>
+<script type='text/javascript'>
+	
+		$(document).ready(function(){
+		  $("#frminfo").submit(function(e)
+		  {
+				//e.preventDefault();
+				if ($('#cbmenu').val() == 0)
+				{
+					alert("برای این گزینه امکان درج عکس نمی باشد");
+					return true;
+				}	
+		  });
+	    });
+	</script>			
 ht;
 return $html;
 ?>	
