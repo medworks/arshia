@@ -24,20 +24,26 @@
 			
 		}
 		else
-		{
-			$fields = array("`mid`","`text`");
-			$_POST["text"] = addslashes($_POST["text"]);		
-			$values = array("'{$_POST[menu]}'","'{$_POST[detail]}'");
-			if (!$db->InsertQuery('menusubject',$fields,$values)) 
+		{	
+			$find = $db->Select("menusubject","*","mid = '{$_POST[menu]}'");
+			if (count($find)>0)
+			{				
+				$values = array("`text`"=>"'{$_POST[detail]}'");
+				$db->UpdateQuery("menusubject",$values,array(" mid='{$_POST[menu]}'" ));
+			}	
+			else
 			{
-				//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
-				header('location:?item=dataentrymgr&act=new&msg=2');
-			} 	
-			else 
-			{  										
+				$fields = array("`mid`","`text`");
+				$_POST["text"] = addslashes($_POST["text"]);		
+				$values = array("'{$_POST[menu]}'","'{$_POST[detail]}'");
+				if (!$db->InsertQuery('menusubject',$fields,$values)) 
+				{
+					//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
+					header('location:?item=adddata&act=new&msg=2');
+				} 	
+			}	
 				//$msgs = $msg->ShowSuccess("ثبت اطلاعات با مو??قیت انجام شد");			
-				header('location:?item=dataentrymgr&act=new&msg=1');
-			} 
+				header('location:?item=adddata&act=new&msg=1');
 		}		
 		
 	}
@@ -134,8 +140,11 @@ $html=<<<cd
   	   <p>
          <label for="detail">توضیحات </label>
          <span>*</span>
-        </p>
-        <textarea cols="50" rows="10" name="detail" class="detail" id="detail" > {$row[text]}</textarea>  
+        </p>		
+        <textarea cols="50" rows="10" name="detail" class="detail" id="detail" >		
+			{$row["text"]}
+			<div id="rslt" name="rslt"> </div>
+		</textarea>  
         <p>     
 	     <input type="submit" value="ثبت" class='submit' />
 		 <input type="hidden" name = "mark" value="save" />
@@ -147,6 +156,13 @@ $html=<<<cd
 	<script type='text/javascript'>
 	
 		$(document).ready(function(){
+		 $("#menu").on('change', function() {
+			 var mid = $(this).val();			 
+			 $.get('ajaxcommand.php?isinfo=yes&mid='+mid, function( data ) {
+				//alert(data);
+				$("#rslt").html(data);
+			});
+		 });
 		  $("#frminfo").submit(function(e)
 		  {
 				//e.preventDefault();
@@ -155,7 +171,7 @@ $html=<<<cd
 					alert("برای این گزینه امکان درج مطلب نمی باشد.");
 					return true;
 				}	
-		  });
+		  });		  
 	    });
 	</script>	  
 cd;

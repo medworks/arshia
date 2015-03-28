@@ -189,4 +189,12 @@ if($_GET["poll"]=="reg")
 		else 
 			echo "<div class='notification_error rtl'>شما قبلا نظر خود را ثبت نموده اید</div>";
     }
+
+	if($_GET["isinfo"]=="yes")
+	{		
+		$row = $db->Select("menusubject","*","mid = {$_GET['mid']}");
+		//echo $db->cmd;
+		echo $row["text"];		
+	}
+	
 ?>
