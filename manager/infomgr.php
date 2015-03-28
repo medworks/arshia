@@ -37,13 +37,13 @@ if ($_GET['act']=="do")
 				</a>
 			  </li>
 			  <li>
-				<a href="?item=addpic&act=new" id="news" name="news">
+				<a href="?item=addinfopic&act=new" id="news" name="news">
 				  عکس اطلاعات
 					<span class="add-file"></span>
 				</a>
 			  </li>
 			  <li>
-				<a href="?item=deleventpic&act=do" id="news" name="news">
+				<a href="?item=delinfopic&act=do" id="news" name="news">
 				 حذف / اضافه اطلاعات
 					<span class="edit-file"></span>
 				</a>
