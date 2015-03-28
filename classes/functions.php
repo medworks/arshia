@@ -92,6 +92,12 @@
 			case 'editdata':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/editdata.php";
 			break;
+			case 'addinfopic':
+                if ($act=="do" or  $act=="new" or $act=="edit") return "../manager/addinfopic.php";
+			break;
+			case 'delinfopic':
+                if ($act=="do" or  $act=="new" or $act=="edit") return "../manager/delinfopic.php";
+			break;
 			case 'aboutusmgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/aboutusmgr.php";
 			break;
