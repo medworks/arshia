@@ -55,7 +55,7 @@ $rowsClass = array();
 						$rowsClass[] = "datagridoddrow";
 				}
 				$rows[$i]["secid"] = GetSectionName($rows[$i]["secid"]);
-				$rows[$i]["edit"] = "<a href='?item=picslist&act=edit&eid={$rows[$i]["id"]}' class='edit-field' " .
+				$rows[$i]["edit"] = "<a href='?item=infopicslist&act=edit&eid={$rows[$i]["id"]}' class='edit-field' " .
 						"style='text-decoration:none;'></a>";				
 				}
 $msgs = GetMessage($_GET['msg']);	
@@ -67,7 +67,7 @@ if (!$_GET["pageNo"] or $_GET["pageNo"]<=0) $_GET["pageNo"] = 0;
 							"text"=>"متن",
                             "edit"=>"ویرایش",
 							), $rows, $colsClass, $rowsClass, 10,
-                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=picslist&act=mgr");
+                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=infopicslist&act=mgr");
                     
             }
 $msgs = GetMessage($_GET['msg']);
