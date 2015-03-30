@@ -31,6 +31,18 @@
 			    $seo->Site_Title = "گالری تصاویر";				
                 return "themes/gallery.php";
 			break;
+			case 'conference':
+			    $seo->Site_Title = "همایش ها";				
+                return "themes/conference.php";
+			break;
+			case 'visits':
+			    $seo->Site_Title = "بازدید ها";				
+                return "themes/visits.php";
+			break;
+			case 'articles':
+			    $seo->Site_Title = "بازدید ها";				
+                return "themes/articles.php";
+			break;
 			case 'dashboard':
 				if ($act=="do") return "dashboard.php";
 			break;

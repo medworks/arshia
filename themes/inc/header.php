@@ -458,13 +458,13 @@ header('Content-Type: text/html; charset=UTF-8');
 																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">رویدادها</span> </span></span></a>
 																<ul class="sub-menu">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">همایش ها</span> </span></span></a>
+																		<a href="conference.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">همایش ها</span> </span></span></a>
 																	</li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازدیدها</span> </span></span></a>
+																		<a href="visits.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازدیدها</span> </span></span></a>
 																	</li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">مقالات</span> </span></span></a>
+																		<a href="articles.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">مقالات</span> </span></span></a>
 																	</li>
 																</ul>
 															</li>

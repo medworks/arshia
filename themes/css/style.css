@@ -3175,7 +3175,7 @@ body.layout_boxed .header_main_wrapper {
   margin: 0 3px 0 0;
   background-color: #303436;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 700;
   padding: 4px 12px;
   text-decoration: none;
@@ -3423,7 +3423,7 @@ body.layout_boxed .header_main_wrapper {
 .portfolio-post-1 h3.portfolio_title {
   font-size: 14px;
   margin: 17px 0 5px 0;
-  padding: 0 50px 0 0;
+  padding: 0;
   letter-spacing: -1px; }
 
 .portfolio-post-1 h3.portfolio_title,
