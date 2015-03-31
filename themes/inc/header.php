@@ -1,4 +1,4 @@
-<?php
+f<?php
 header('Content-Type: text/html; charset=UTF-8');
 	include_once("classes/functions.php");
 	include_once("classes/seo.php");
@@ -27,6 +27,7 @@ header('Content-Type: text/html; charset=UTF-8');
 	<link rel="shortcut icon" href="./favicon.ico">
 
 	<link rel="stylesheet" href="themes/css/flick.css" type="text/css" media="all">
+	<link href="themes/css/zebra_pagination.css" rel="stylesheet" />
 	<link rel="stylesheet" href="themes/css/wp.css" type="text/css" media="all">
 	<!--[if IE]>
 		<link rel='stylesheet' href='themes/css/ie.css' type='text/css' media='all' />
@@ -120,6 +121,7 @@ header('Content-Type: text/html; charset=UTF-8');
 	<script type="text/javascript" src="themes/js/jquery.countdown.js"></script>
 	<script type="text/javascript" src="themes/js/jquery.countdown_init.js"></script>
 	<script type="text/javascript" src="themes/js/retina-1.1.0-ff-updt.min.js"></script>
+	<script type="text/javascript" src="themes/js/zebra_pagination.js"></script>
 	<!-- <script type="text/javascript" src="themes/js/cookie.js"></script> -->
 
 	<style type="text/css">

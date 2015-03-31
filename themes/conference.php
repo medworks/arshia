@@ -2,10 +2,10 @@
   include_once("./config.php");	
   include_once("./classes/functions.php");
   include_once("./classes/database.php");  
+  include_once("./lib/Zebra_Pagination.php"); 
   
   $db = Database::GetDatabase();  
-  $confs = $db->SelectAll("eventsubject","*","mid = 1");    
-
+  	
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
@@ -39,6 +39,23 @@ $html=<<<cd
 													<div class="portfolio_grid_wrapper">
 														<div class="grid" data-portfolio-cols="4">
 cd;
+$records_per_page = 2;
+  $pagination = new Zebra_Pagination();
+
+  $pagination->navigation_position("right");
+
+  $reccount = $db->CountOf("eventsubject","mid = 1");
+  $pagination->records($reccount); 
+	
+  $pagination->records_per_page($records_per_page);	
+  $confs = $db->SelectAll(
+				"eventsubject",
+				"*",
+				"mid = 1",
+				"id ASC",
+				($pagination->get_page() - 1) * $records_per_page,
+				$records_per_page);
+				
 for($i=0;$i<count($confs);$i++)
 {
 	$pics = $db->SelectAll("pics","*","type=1 AND sid = {$confs[$i][id]}");
@@ -65,16 +82,16 @@ $html.=<<<cd
 															</article>
 cd;
 }
+$pgcodes = $pagination->render(true);
 $html.=<<<cd
 														</div>
 													</div>
+													{$pgcodes}
 													<div class="pagination-1_container">
 														<div class="pagination-1_wrapper">
 															<div class="pagination-1">
 																<div class="desktop clearfix">
-																	<div href="" class="page page_of">صفحه 1 از 2</div>
-																	<a class="page current">1</a>
-																	<a href="#" class="page">2</a>
+																	
 																</div>
 															</div>
 														</div>
