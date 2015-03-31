@@ -1,5 +1,10 @@
 <?php
-  include_once("./classes/functions.php");  
+  include_once("./config.php");	
+  include_once("./classes/functions.php");
+  include_once("./classes/database.php");  
+  
+  $db = Database::GetDatabase();  
+  $confs = $db->SelectAll("eventsubject","*","mid = 1");    
 
 $html=<<<cd
 	<div class="top_content">
@@ -33,11 +38,16 @@ $html=<<<cd
 													</div>
 													<div class="portfolio_grid_wrapper">
 														<div class="grid" data-portfolio-cols="4">
+cd;
+for($i=0;$i<count($confs);$i++)
+{
+	$pics = $db->SelectAll("pics","*","type=1 AND sid = {$confs[$i][id]}");
+$html.=<<<cd
 															<article class="portfolio type-portfolio status-publish has-post-thumbnail hentry tag-photographs portfolio-post-1_container col-1-4 term-id-16">
 																<div class="portfolio-post-1_wrapper col">
 																	<div class="portfolio-post-1">
 																		<div class="portfolio_image_wrapper">
-																			<img src="http://prev.freshface.net/file/sn/wp4/wp-content/uploads/freshizer/49aa8ee93ad749466cfea573f7ecb6e8_bridge-615-406-c.jpg" class="portfolio_image wp-post-image" alt="" height="406" width="615" />
+																			<img src="./{$pics[0][name]}" class="portfolio_image wp-post-image" alt="{$confs[$i]["subject"]}" height="406" width="615" />
 																			<a class="portfolio_image_link_big" href="http://prev.freshface.net/file/sn/wp4/portfolio/dolor-sit-amet-consectetur/"></a>
 																			<div class="portfolio_image_hover">
 																			<div class="portfolio_image_controls clearfix">
@@ -47,12 +57,15 @@ $html=<<<cd
 																	</div>
 																	<div class="portfolio_content">
 																		<h3 class="portfolio_title" style="font-size:20px">
-																			<a href="#">شیلبسلل.</a>
+																			<a href="#">{$confs[$i]["subject"]}</a>
 																		</h3>
 																		<div class="portfolio_date" style="font-size:15px">فروردین 14 1394</div>
 																	</div>
 																</div>
 															</article>
+cd;
+}
+$html.=<<<cd
 														</div>
 													</div>
 													<div class="pagination-1_container">
