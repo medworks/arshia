@@ -41,7 +41,7 @@ $html=<<<cd
 cd;
   $records_per_page = 10;
   $pagination = new Zebra_Pagination();
-  $pagination->base_url("index.php?item=visit");
+  $pagination->base_url("index.php?item=articles");
   $pagination->navigation_position("right");
 
   $reccount = $db->CountOf("eventsubject","mid = 3");
