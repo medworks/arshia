@@ -1,6 +1,11 @@
 <?php
-  include_once("./classes/functions.php");  
-
+  include_once("./config.php");	
+  include_once("./classes/functions.php");
+  include_once("./classes/database.php");  
+  include_once("./lib/Zebra_Pagination.php"); 
+  
+  $db = Database::GetDatabase();  
+  	
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
@@ -33,11 +38,33 @@ $html=<<<cd
 													</div>
 													<div class="portfolio_grid_wrapper">
 														<div class="grid" data-portfolio-cols="4">
+cd;
+  $records_per_page = 10;
+  $pagination = new Zebra_Pagination();
+  $pagination->base_url("index.php?item=visit");
+  $pagination->navigation_position("right");
+
+  $reccount = $db->CountOf("eventsubject","mid = 2");
+  $pagination->records($reccount); 
+	
+  $pagination->records_per_page($records_per_page);	
+  $confs = $db->SelectAll(
+				"eventsubject",
+				"*",
+				"mid = 2",
+				"id ASC",
+				($pagination->get_page() - 1) * $records_per_page,
+				$records_per_page);
+				
+for($i=0;$i<count($confs);$i++)
+{
+	$pics = $db->SelectAll("pics","*","type=1 AND sid = {$confs[$i][id]}");
+$html.=<<<cd
 															<article class="portfolio type-portfolio status-publish has-post-thumbnail hentry tag-photographs portfolio-post-1_container col-1-4 term-id-16">
 																<div class="portfolio-post-1_wrapper col">
 																	<div class="portfolio-post-1">
 																		<div class="portfolio_image_wrapper">
-																			<img src="http://prev.freshface.net/file/sn/wp4/wp-content/uploads/freshizer/49aa8ee93ad749466cfea573f7ecb6e8_bridge-615-406-c.jpg" class="portfolio_image wp-post-image" alt="" height="406" width="615" />
+																			<img src="./{$pics[0][name]}" class="portfolio_image wp-post-image" alt="{$confs[$i]["subject"]}" height="406" width="615" />
 																			<a class="portfolio_image_link_big" href="http://prev.freshface.net/file/sn/wp4/portfolio/dolor-sit-amet-consectetur/"></a>
 																			<div class="portfolio_image_hover">
 																			<div class="portfolio_image_controls clearfix">
@@ -47,21 +74,24 @@ $html=<<<cd
 																	</div>
 																	<div class="portfolio_content">
 																		<h3 class="portfolio_title" style="font-size:20px">
-																			<a href="#">شیلبسلل.</a>
+																			<a href="#">{$confs[$i]["subject"]}</a>
 																		</h3>
 																		<div class="portfolio_date" style="font-size:15px">فروردین 14 1394</div>
 																	</div>
 																</div>
 															</article>
+cd;
+}
+$pgcodes = $pagination->render(true);
+$html.=<<<cd
 														</div>
 													</div>
+													{$pgcodes}
 													<div class="pagination-1_container">
 														<div class="pagination-1_wrapper">
 															<div class="pagination-1">
 																<div class="desktop clearfix">
-																	<div href="" class="page page_of">صفحه 1 از 2</div>
-																	<a class="page current">1</a>
-																	<a href="#" class="page">2</a>
+																	
 																</div>
 															</div>
 														</div>
