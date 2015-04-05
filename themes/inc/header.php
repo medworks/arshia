@@ -81,8 +81,7 @@ header('Content-Type: text/html; charset=UTF-8');
 	<link rel="stylesheet" href="themes/css/magnific-popup-anim.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/font-awesome.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="themes/css/entypo.css" type="text/css" media="all">
-	<link rel="stylesheet" href="themes/css/zocial.css" type="text/css" media="all">
-	
+	<link rel="stylesheet" href="themes/css/zocial.css" type="text/css" media="all">	
 	<script type="text/javascript" src="themes/js/jquery.js"></script>
 	<script type="text/javascript" src="themes/js/jquery-migrate.min.js"></script>
 	<script type="text/javascript" src="themes/js/scrollTo.js"></script>
@@ -121,7 +120,7 @@ header('Content-Type: text/html; charset=UTF-8');
 	<script type="text/javascript" src="themes/js/jquery.countdown.js"></script>
 	<script type="text/javascript" src="themes/js/jquery.countdown_init.js"></script>
 	<script type="text/javascript" src="themes/js/retina-1.1.0-ff-updt.min.js"></script>
-	<script type="text/javascript" src="themes/js/zebra_pagination.js"></script>
+	
 	<!-- <script type="text/javascript" src="themes/js/cookie.js"></script> -->
 
 	<style type="text/css">

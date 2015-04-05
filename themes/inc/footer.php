@@ -120,7 +120,7 @@ $html=<<<cd
 		</footer>
 		<div class="jqres"></div>
 	</div><!-- END BOXED -->
-	
+	<script type="text/javascript" src="themes/js/zebra_pagination.js"></script>
 </body>
 </html>
 

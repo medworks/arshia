@@ -39,9 +39,9 @@ $html=<<<cd
 													<div class="portfolio_grid_wrapper">
 														<div class="grid" data-portfolio-cols="4">
 cd;
-$records_per_page = 2;
+  $records_per_page = 10;
   $pagination = new Zebra_Pagination();
-
+  $pagination->base_url("index.php?item=conference");
   $pagination->navigation_position("right");
 
   $reccount = $db->CountOf("eventsubject","mid = 1");
