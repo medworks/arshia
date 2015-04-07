@@ -14,6 +14,7 @@ deny from all
 	RewriteRule ^documentation.html arshia/index.php?item=documentation [L]
 	RewriteRule ^conference.html arshia/index.php?item=conference [L]
 	RewriteRule ^visits.html arshia/index.php?item=visits [L]
+	RewriteRule ^menupage([0-9]+).html arshia/index.php?item=menu&id=$1 [L]
 	RewriteRule ^articles.html arshia/index.php?item=articles [L]
 	RewriteRule ^construction.html arshia/index.php?item=construction&act=do [L]
 	RewriteRule ^research.html arshia/index.php?item=research&act=do [L]
