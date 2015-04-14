@@ -35,6 +35,10 @@
 			    //$seo->Site_Title = "گالری تصاویر";				
                 return "themes/menupage.php";
 			break;
+			case 'organizationchart':
+			    $seo->Site_Title = "چارت سازمانی";				
+                return "themes/organizationchart.php";
+			break;
 			case 'conference':
 			    $seo->Site_Title = "همایش ها";				
                 return "themes/conference.php";

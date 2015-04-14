@@ -20,6 +20,7 @@ deny from all
 	RewriteRule ^research.html arshia/index.php?item=research&act=do [L]
 	RewriteRule ^regeneration.html arshia/index.php?item=regeneration&act=do [L]
 	RewriteRule ^menu.html arshia/index.php?item=menu&act=do [L]
+	RewriteRule ^organizationchart.html arshia/index.php?item=organizationchart&act=do [L]
 	RewriteBase /
 
 #Skip WWW	

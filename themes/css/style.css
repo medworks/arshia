@@ -2757,7 +2757,8 @@ body.layout_boxed .header_main_wrapper {
   padding-left: 1px; }
 
 .blog-post-1 > .grid > .col-blog-post-right > .col {
-  margin-left: 65px; }
+  /*margin-left: 65px; */
+  }
 
 .blog-post-1 .featured_area {
   margin: 0 0 31px 0; }
