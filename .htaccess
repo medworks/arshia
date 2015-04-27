@@ -22,6 +22,7 @@ deny from all
 	RewriteRule ^menu.html arshia/index.php?item=menu&act=do [L]
 	RewriteRule ^organizationchart.html arshia/index.php?item=organizationchart&act=do [L]
 	RewriteRule ^history.html arshia/index.php?item=history&act=do [L]
+	RewriteRule ^managers.html arshia/index.php?item=managers&act=do [L]
 	RewriteBase /
 
 #Skip WWW	

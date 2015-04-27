@@ -446,7 +446,7 @@ header('Content-Type: text/html; charset=UTF-8');
 																		<a href="organizationchart.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">چارت سازمانی</span> </span></span></a>
 																	</li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">هئیت مدیره</span> </span></span></a>
+																		<a href="managers.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">هئیت مدیره</span> </span></span></a>
 																	</li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
 																		<a href="contact.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پیشنهادات و انتقادات</span> </span></span></a>

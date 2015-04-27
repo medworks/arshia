@@ -43,6 +43,10 @@
 			    $seo->Site_Title = "تاریخچه";				
                 return "themes/history.php";
 			break;
+			case 'managers':
+			    $seo->Site_Title = "هیئت مدیره";				
+                return "themes/managers.php";
+			break;
 			case 'conference':
 			    $seo->Site_Title = "همایش ها";				
                 return "themes/conference.php";
