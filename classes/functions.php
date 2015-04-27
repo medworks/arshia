@@ -39,6 +39,10 @@
 			    $seo->Site_Title = "چارت سازمانی";				
                 return "themes/organizationchart.php";
 			break;
+			case 'history':
+			    $seo->Site_Title = "تاریخچه";				
+                return "themes/history.php";
+			break;
 			case 'conference':
 			    $seo->Site_Title = "همایش ها";				
                 return "themes/conference.php";
