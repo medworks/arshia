@@ -18,31 +18,6 @@
 	$overall_error = false;
 	if ($_GET['item']!="aboutusmgr")	exit();
 	
-	function getelem($id)
-	{
-	  switch ($id)
-	  {
-	   case 1:
-		return "تاریخچه";
-	   break;
-	   case 2:
-		return "ماموریت";
-	   break;
-	   case 3:
-		return "چشم انداز";
-	   break;
-	   case 4:
-		return "ارزشها";
-	   break;
-	   case 5:
-		return "چارت سازمانی";
-	   break;
-	   case 6:
-		return "هیئت مدیره";
-	   break;
-	  }
-	}
-	
 	function uploadpics($mode,$fileup,$db,$id,$filename=NULL)
 	{
 		$target_dir = "../historypics/";

@@ -1,8 +1,11 @@
 <?php
+  include_once("./config.php");	
+  include_once("./classes/functions.php");
   include_once("./classes/database.php");  
+  include_once("./lib/Zebra_Pagination.php"); 
+  
   $db = Database::GetDatabase();  
-  $research = $db->Select("allparts","*","`part`= 2");
-  $pics = $db->SelectAll("uploadcenter","*","address LIKE '_1%'");  
+  $row = $db->Select("history","*","mid = 5");
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
@@ -35,11 +38,11 @@ $html=<<<cd
 																								<div class="col">
 																									<div class="featured_area">
 																										<div class="featured_image_container">
-																											<a class="featured_image_wrapper" href="http://prev.freshface.net/file/sn/wp4/wp-content/uploads/2014/06/blog_meet.jpg" data-effect="mfp-zoom-in"><img class="featured_image" src="http://prev.freshface.net/file/sn/wp4/wp-content/uploads/freshizer/2fcf6e1ebb8195def460649838aa198b_blog_meet-1031-c.jpg" alt=""></a>
+																											<a class="featured_image_wrapper" href="historypics/{$row[pic]}" data-effect="mfp-zoom-in"><img class="featured_image" src="historypics/{$row[pic]}" alt=""></a>
 																										</div>
 																									</div>
 																									<div class="post_content">
-																										<p>توضیحات.</p>
+																										<p>{$row["text"]}</p>
 																									</div>
 																								</div>
 																							</div>
