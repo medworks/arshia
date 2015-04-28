@@ -6,7 +6,7 @@
   
   $db = Database::GetDatabase();  
   $row = $db->Select("menu","*","code = {$_GET['id']}");
-  $subject = $db->Select("menusubject","*","mid = {$_GET['id']}");
+  $subject = $db->Select("menusubject","*","mid = {$row['id']}");
   //echo $db->cmd;
 $html=<<<cd
 	<div class="top_content">

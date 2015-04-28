@@ -53,7 +53,7 @@
 	if ($_GET["act"]=="edit")
 	{
 		$row = $db->Select("menusubject","*","id = '{$_GET[eid]}'");
-		echo $db->cmd;
+	//	echo $db->cmd;
 	}
 $msgs = GetMessage($_GET['msg']);	
 $html=<<<cd
