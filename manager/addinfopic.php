@@ -16,6 +16,7 @@
  
  if ($_POST["mark"]=="addinfopic")
  {
+	$row = $db->Select("menusubject","*","mid = '{$_POST[cbmenu]}'");
 	for($i=0; $i<count($_FILES['pic']['name']); $i++) 
 	{
 		$tmpFilePath = $_FILES['pic']['tmp_name'][$i];
@@ -26,14 +27,28 @@
 			if(move_uploaded_file($tmpFilePath, $newFilePath)) 
 			{
 				$fields = array("`type`","`sid`","`name`");
-				$values = array("'2'","'{$_POST[cbmenu]}'","'{$fn}'");
+				$values = array("'2'","'{$row[id]}'","'{$fn}'");
 				$db->InsertQuery('pics',$fields,$values);				
 			}
 		}
 	}
  }
 	$rows = $db->SelectAll("menusubject","*");
- 	$cbmenu = DbSelectOptionTag("cbmenu",$rows,"text");
+	
+	$mids = array();
+	$myres = array();
+	foreach($rows as $key=>$val)
+		$mids[] = $val["mid"];
+	$strmid = implode(",",$mids);	
+	$db->cmd = "SELECT * FROM menu WHERE id IN (".$strmid .")";
+	//echo $cmd;
+	$res =$db->RunSQL();    
+    if ($res)
+    {
+        while($srow = mysqli_fetch_array($res)) $myres[] = $srow;
+    }
+	//var_dump($myres);
+ 	$cbmenu = DbSelectOptionTag("cbmenu",$myres,"name");
 	
 $html=<<<ht
 	<script type='text/javascript'>

@@ -19,23 +19,26 @@
 	if ($_GET['item']!="adddata")	exit();
 	if ($_POST["mark"]== "save")
 	{
-		if ($_POST[menu] == 0)
+		if ($_POST["menu"] == 0)
 		{
 			
 		}
 		else
 		{	
-			$find = $db->Select("menusubject","*","mid = '{$_POST[menu]}'");
+			
+			$_POST["detail"] = addslashes($_POST["detail"]);		
+			
+			$findcd = $db->Select("menu","*","code = '{$_POST[menu]}'");
+			$find = $db->Select("menusubject","*","mid = '{$findcd[id]}'");
 			if (count($find)>0)
 			{				
 				$values = array("`text`"=>"'{$_POST[detail]}'");
-				$db->UpdateQuery("menusubject",$values,array(" mid='{$_POST[menu]}'" ));
+				$db->UpdateQuery("menusubject",$values,array(" id='{$find[id]}'" ));
 			}	
 			else
 			{
-				$fields = array("`mid`","`text`");
-				$_POST["text"] = addslashes($_POST["text"]);		
-				$values = array("'{$_POST[menu]}'","'{$_POST[detail]}'");
+				$fields = array("`mid`","`text`");				
+				$values = array("'{$findcd[id]}'","'{$_POST[detail]}'");
 				if (!$db->InsertQuery('menusubject',$fields,$values)) 
 				{
 					//$msgs = $msg->ShowError("ثبت اطلاعات با مشکل مواجه شد");
@@ -46,6 +49,11 @@
 				header('location:?item=adddata&act=new&msg=1');
 		}		
 		
+	}
+	if ($_GET["act"]=="edit")
+	{
+		$row = $db->Select("menusubject","*","id = '{$_GET[eid]}'");
+		echo $db->cmd;
 	}
 $msgs = GetMessage($_GET['msg']);	
 $html=<<<cd

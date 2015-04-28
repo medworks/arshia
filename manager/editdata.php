@@ -18,6 +18,12 @@
 	$overall_error = false;
 	if ($_GET['item']!="editdata")	exit();
 	
+	if ($_GET['act']=="del")
+	{
+		$db->Delete("menusubject"," id",$_GET["eid"]);
+		if ($db->CountAll("menusubject")%10==0) $_GET["pageNo"]-=1;		
+		header("location:?item=editdata&act=mgr&pageNo={$_GET[pageNo]}");
+	}
 	$rows=$db->SelectAll("menusubject","*");
 $rowsClass = array();
                 $colsClass = array();
@@ -41,7 +47,7 @@ $rowsClass = array();
 				<a href="javascript:void(0)"
 				onclick="DelMsg('{$rows[$i]['id']}',
 					'از حذف این گروه اطمینان دارید؟',
-				'?item=editeventsmgr&act=del&pageNo={$_GET[pageNo]}&eid=');"
+				'?item=editdata&act=del&pageNo={$_GET[pageNo]}&eid=');"
 				 class='del-field' style='text-decoration:none;'></a>
 del;
 				}
@@ -54,7 +60,7 @@ if (!$_GET["pageNo"] or $_GET["pageNo"]<=0) $_GET["pageNo"] = 0;
 							"text"=>"متن",
                             "edit"=>"ویرایش",
 							"delete"=>"حذف",), $rows, $colsClass, $rowsClass, 10,
-                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=editeventsmgr&act=mgr");
+                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=editdata&act=mgr");
                     
             }
 $msgs = GetMessage($_GET['msg']);
