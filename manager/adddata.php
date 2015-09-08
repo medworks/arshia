@@ -16,6 +16,7 @@
 	$sess = Session::GetSesstion();	
 	$userid = $sess->Get("userid");
 	$overall_error = false;
+	$selectitem="";
 	if ($_GET['item']!="adddata")	exit();
 	if ($_POST["mark"]== "save")
 	{
@@ -53,7 +54,19 @@
 	if ($_GET["act"]=="edit")
 	{
 		$row = $db->Select("menusubject","*","id = '{$_GET[eid]}'");
-	//	echo $db->cmd;
+		$row2 = $db->Select("menu","*","id = '{$row[mid]}'");
+$selectitem=<<<cd
+<script type='text/javascript'>
+	
+		$(document).ready(function(){
+			//$('select[name^="menu"] option:selected').attr("selected",null);
+			//$('#menu option[value="{$row2[code]}"]').attr("selected","selected");
+			//alert($("select[name^='menu'] option[value='{$row2[code]}']").val());
+			$('#menu').val("{$row2[code]}").change();
+		 });
+		    	    
+	</script>	
+cd;
 	}
 $msgs = GetMessage($_GET['msg']);	
 $html=<<<cd
@@ -160,10 +173,11 @@ $html=<<<cd
         </p>  
 	</form>
 	<div class='badboy'></div>	
-  </div>  
+  </div>    
 	<script type='text/javascript'>
 	
 		$(document).ready(function(){
+		/*
 		 $("#menu").on('change', function() {
 			 var mid = $(this).val();			 
 			 $.get('ajaxcommand.php?isinfo=yes&mid='+mid, function( data ) {
@@ -171,6 +185,7 @@ $html=<<<cd
 				$("#rslt").html(data);
 			});
 		 });
+		 */
 		  $("#frminfo").submit(function(e)
 		  {
 				//e.preventDefault();
@@ -182,6 +197,7 @@ $html=<<<cd
 		  });		  
 	    });
 	</script>	  
+	{$selectitem}
 cd;
 return $html;
 ?>
