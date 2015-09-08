@@ -54,13 +54,13 @@ $rowsClass = array();
 						$rowsClass[] = "datagridoddrow";
 				}
 				$rows[$i]["secid"] = GetSectionName($rows[$i]["secid"]);
-				$rows[$i]["edit"] = "<a href='?item=editeventsmgr&act=edit&eid={$rows[$i]["id"]}' class='edit-field' " .
+				$rows[$i]["edit"] = "<a href='?item=addevent&act=edit&eid={$rows[$i]["id"]}' class='edit-field' " .
 						"style='text-decoration:none;'></a>";								
 				$rows[$i]["delete"]=<<< del
 				<a href="javascript:void(0)"
 				onclick="DelMsg('{$rows[$i]['id']}',
 					'از حذف این گروه اطمینان دارید؟',
-				'?item=editeventsmgr&act=del&pageNo={$_GET[pageNo]}&cid=');"
+				'?item=editeventsmgr&act=del&pageNo={$_GET[pageNo]}&eid=');"
 				 class='del-field' style='text-decoration:none;'></a>
 del;
 				}
@@ -72,7 +72,7 @@ if (!$_GET["pageNo"] or $_GET["pageNo"]<=0) $_GET["pageNo"] = 0;
 							"subject"=>"عنوان",
                             "edit"=>"ویرایش",
 							"delete"=>"حذف",), $rows, $colsClass, $rowsClass, 10,
-                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=editeventmgr&act=mgr");
+                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=editevent&act=mgr");
                     
             }
 $msgs = GetMessage($_GET['msg']);

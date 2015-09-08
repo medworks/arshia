@@ -119,10 +119,7 @@
 			break;			
 			case 'eventsmgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/eventsmgr.php";
-			break;
-			case 'editeventsmgr':
-                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/editeventsmgr.php";
-			break;
+			break;			
 			case 'infomgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/infomgr.php";
 			break;

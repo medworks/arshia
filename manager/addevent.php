@@ -37,6 +37,34 @@
 			header('location:?item=eventsmgr&act=do&msg=1');
 		}	
 	}
+	else
+	if ($_POST["mark"]== "edit")	
+	{
+		$values = array("`mid`"=>"'{$_POST[cbmenu]}'",
+						"`subject`"=>"'{$_POST[subject]}'",
+						"`text`"=>"'{$_POST[text]}'");
+		$db->UpdateQuery("eventsubject",$values,array(" id='{$_GET[eid]}'" ));
+		header('location:?item=addevent&act=new&msg=1');		
+	}	
+
+	$editorsave = "<input type='hidden' name = 'mark' value='save' /> ";	
+	if ($_GET["act"]=="edit")
+	{
+		$editorsave = "<input type='hidden' name = 'mark' value='edit' /> ";
+		$row = $db->Select("eventsubject","*","id = '{$_GET[eid]}'");		
+		//echo $db->cmd;
+$selectitem=<<<cd
+<script type='text/javascript'>	
+		$(document).ready(function(){
+			//$('select[name^="menu"] option:selected').attr("selected",null);
+			//$('#menu option[value="{$row[mid]}"]').attr("selected","selected");
+			//alert($("select[name^='menu'] option[value='{$row[mid]}']").val());
+			$('#cbmenu').val("{$row[mid]}").change();
+		 });
+		    	    
+	</script>	
+cd;
+	}
 $msgs = GetMessage($_GET['msg']);	
 $html=<<<cd
 	<script type='text/javascript'>
@@ -76,12 +104,12 @@ $html=<<<cd
         <textarea cols="50" rows="10" name="text" class="detail" id="text" > {$row[text]}</textarea>  
         <p>     
 	     <input type="submit" value="ثبت" class='submit' />
-		 <input type="hidden" name = "mark" value="save" />
-      	 <input type="reset" value="پاک کردن" class='reset' />
+		 {$editorsave}
         </p>  
 	</form>
 	<div class='badboy'></div>	
-  </div>    
+  </div> 
+  {$selectitem}
 cd;
 return $html;
 ?>
