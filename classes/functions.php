@@ -47,6 +47,18 @@
 			    $seo->Site_Title = "هیئت مدیره";				
                 return "themes/managers.php";
 			break;
+			case 'values':
+			    $seo->Site_Title = "ارزش ها";				
+                return "themes/values.php";
+			break;
+			case 'view':
+			    $seo->Site_Title = "چشم انداز";				
+                return "themes/view.php";
+			break;
+			case 'mission':
+			    $seo->Site_Title = "ماموریت";				
+                return "themes/mission.php";
+			break;
 			case 'conference':
 			    $seo->Site_Title = "همایش ها";				
                 return "themes/conference.php";

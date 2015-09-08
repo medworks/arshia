@@ -432,13 +432,13 @@ header('Content-Type: text/html; charset=UTF-8');
 																		<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بیانیه های راهبردی</span> </span></span></a>
 																		<ul class="sub-menu">
 																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ماموریت</span> </span></span></a>
+																				<a href="mission.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ماموریت</span> </span></span></a>
 																			</li>
 																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">چشم انداز</span> </span></span></a>
+																				<a href="view.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">چشم انداز</span> </span></span></a>
 																			</li>
 																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																				<a href="#" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ارزشها</span> </span></span></a>
+																				<a href="values.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ارزشها</span> </span></span></a>
 																			</li>
 																		</ul>
 																	</li>

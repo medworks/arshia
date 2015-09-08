@@ -72,7 +72,7 @@ if (!$_GET["pageNo"] or $_GET["pageNo"]<=0) $_GET["pageNo"] = 0;
 							"subject"=>"عنوان",
                             "edit"=>"ویرایش",
 							"delete"=>"حذف",), $rows, $colsClass, $rowsClass, 10,
-                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=editeventsmgr&act=mgr");
+                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=editeventmgr&act=mgr");
                     
             }
 $msgs = GetMessage($_GET['msg']);

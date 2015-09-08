@@ -25,7 +25,7 @@
 		foreach($getimgs as $key=>$val)
 			$imgid[] = $val;
 		$imgids = implode(',',$imgid);	
-		$db->cmd = " DELETE FROM Pics WHERE id NOT IN ({$imgids}) AND type=1 AND sid={$_GET['eid']}";
+		$db->cmd = " DELETE FROM pics WHERE id NOT IN ({$imgids}) AND type=1 AND sid={$_GET['eid']}";
 		$db->RunSQL();
 		
 		$values = array("`checked`"=>"'1'");

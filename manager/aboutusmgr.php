@@ -122,14 +122,37 @@
 	if ($_POST["mark"]== "save")
 	{
 	   $row = $db->Select("history","*","mid = '{$_POST[cbmenu]}'");
+	   
 	   if (count($row)>0)
 	   {
-			uploadpics("edit","pic",$db,$row["id"]);
+			//uploadpics("edit","pic",$db,$row["id"]);
+			$db->Delete("history"," id",$row["id"]);	
+			$fields = array("`mid`","`text`");
+			$_POST["text"] = addslashes($_POST["text"]);		
+			$values = array("'{$_POST[cbmenu]}'","'{$_POST[text]}'");
+			if (!$db-> InsertQuery('history',$fields,$values)) 
+			{
+				header('location:?item=aboutusmgr&act=new&msg=2');
+			} 	
+			else 
+			{  										
+				header('location:?item=aboutusmgr&act=new&msg=1');
+			}  			
 	   }
 	   else
 	   {
-			uploadpics("insert","pic",$db,$id);
-	   }
+			$fields = array("`mid`","`text`");
+			$_POST["text"] = addslashes($_POST["text"]);		
+			$values = array("'{$_POST[cbmenu]}'","'{$_POST[text]}'");
+			if (!$db-> InsertQuery('history',$fields,$values)) 
+			{
+				header('location:?item=aboutusmgr&act=new&msg=2');
+			} 	
+			else 
+			{  										
+				header('location:?item=aboutusmgr&act=new&msg=1');
+			}  		
+	   }	   
 	}
 $msgs = GetMessage($_GET['msg']);	
 $html=<<<cd
@@ -163,7 +186,8 @@ $html=<<<cd
 		      	<option value="4">--> ارزشها</option>
 	      	<option value="5">-> چارت سازمانی</option>
 	      	<option value="6">-> هیئت مدیره</option>
-	    </select>   
+	    </select> 
+	<!--
 		 <div class="badboy"></div> 
 	   	<p>
 			<label for='pic'>فایل </label>
@@ -177,6 +201,7 @@ $html=<<<cd
 	   <div id="imgpreview">
 			<img id="img" src="" alt="" />				
 		</div>
+	-->	
 	 	<div class="badboy"></div> 
 	 
 	   <p>
@@ -195,6 +220,24 @@ $html=<<<cd
 	<script type='text/javascript'>
 	
 		$(document).ready(function(){
+		  
+		  $('#cbmenu').on('change', function() {			
+			$.ajax({
+				url: 'ajaxcommand.php',
+				type: 'GET',
+				data: "action=aboutus&mid="+$(this).find(":selected").val(),
+				success: function(data) {				
+				$('#text').val(data);
+				//alert(data);
+				tinyMCE.activeEditor.setContent(data);
+				},
+				error: function(e) {				
+				//console.log(e.message);
+				}
+			});	
+			//$("#text").load("ajaxcommand.php?action=aboutus&mid="+$(this).find(":selected").val())
+		});
+		  
 		  $("#frminfo").submit(function(e)
 		  {
 				//e.preventDefault();

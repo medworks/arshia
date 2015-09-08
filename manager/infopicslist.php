@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
     include_once("../config.php");
     include_once("../classes/database.php");
 	include_once("../classes/messages.php");
@@ -25,11 +25,11 @@
 		foreach($getimgs as $key=>$val)
 			$imgid[] = $val;
 		$imgids = implode(',',$imgid);	
-		$db->cmd = " DELETE FROM Pics WHERE id NOT IN ({$imgids}) AND type=2 AND sid={$_GET['eid']}";
+		$db->cmd = " DELETE FROM pics WHERE id NOT IN ({$imgids}) AND type=2 AND sid={$_GET['eid']}";
 		$db->RunSQL();
 		
 		$values = array("`checked`"=>"'1'");
-		$db->UpdateQuery("pics",$values,array("sid='{$_GET[eid]}' AND type=2"));
+		$db->UpdateQuery("pics",$values,array("id IN ({$imgids}) AND sid='{$_GET[eid]}' AND type=2"));
 		header("location:?item=infopicslist&act=edit&eid={$_GET['eid']}");
 	}		
 
@@ -62,7 +62,7 @@ $code=<<<edit
 					<div class="title">
 				      <ul>
 				        <li><a href="adminpanel.php?item=dashboard&act=do">پیشخوان</a></li>
-					    <li><span>مدیریت رویداد ها</span></li>
+					    <li><span>مدیریت عکس ها</span></li>
 				      </ul>
 				      <div class="badboy"></div>
 				  </div>

@@ -5,7 +5,7 @@
   include_once("./lib/Zebra_Pagination.php"); 
   
   $db = Database::GetDatabase();  
-  $row = $db->Select("history","*","mid = 6");
+  $row = $db->Select("history","*","mid = 2");
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
@@ -21,7 +21,7 @@ $html=<<<cd
 												<div class="portfolio-single-1 content_cols_eq">
 													<div class="portfolio_titlebar-2 clearfix">
 														<div class="portfolio_titlebar_right">
-															<h2 class="post_title">هیئت مدیره</h2>
+															<h2 class="post_title">ماموریت</h2>
 														</div>
 													</div>
 													<div class="grid">
@@ -35,15 +35,14 @@ $html=<<<cd
 																					<div class="blog-post-1">
 																						<div class="grid">
 																							<div class="col-blog-post-right">
-<div class="col">
-<div class="featured_area">
-<!--
-<div class="featured_image_container">
-<a class="featured_image_wrapper" href="historypics/{$row[pic]}" data-effect="mfp-zoom-in"><img class="featured_image" src="historypics/{$row[pic]}" alt="">
-</a>
+																								<div class="col">
+																									<div class="featured_area">
+																										<!--
+																										<div class="featured_image_container">
+<a class="featured_image_wrapper" href="historypics/{$row[pic]}" data-effect="mfp-zoom-in"><img class="featured_image" src="historypics/{$row[pic]}" alt=""></a>
 </div>
--->
-																									</div>
+
+-->																									</div>
 																									<div class="post_content">
 																										<p>{$row["text"]}</p>
 																									</div>

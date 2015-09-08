@@ -44,10 +44,10 @@ $html.=<<<cd
 																			</div>
 																		</div>
 																	</div>
-																	<div class="portfolio_content">
+																	<div style="width:500px" class="portfolio_content">
 																		<h3 class="portfolio_title" style="font-size:20px">
 																			<a href="#">{$subject["text"]}</a>
-																		</h3>																		
+																		</h3>		
 																	</div>
 																</div>
 															</article>

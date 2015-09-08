@@ -35,11 +35,15 @@ $html=<<<cd
 																					<div class="blog-post-1">
 																						<div class="grid">
 																							<div class="col-blog-post-right">
-																								<div class="col">
-																									<div class="featured_area">
-																										<div class="featured_image_container">
-																											<a class="featured_image_wrapper" href="historypics/{$row[pic]}" data-effect="mfp-zoom-in"><img class="featured_image" src="historypics/{$row[pic]}" alt=""></a>
-																										</div>
+<div class="col">
+<div class="featured_area">
+<!--
+<div class="featured_image_container">
+<a class="featured_image_wrapper" href="historypics/{$row[pic]}" data-effect="mfp-zoom-in"><img class="featured_image" src="historypics/{$row[pic]}" alt="">
+</a>
+</div>
+-->
+
 																									</div>
 																									<div class="post_content">
 																										<p>{$row["text"]}</p>

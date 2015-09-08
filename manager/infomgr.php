@@ -44,7 +44,7 @@ if ($_GET['act']=="do")
 			  </li>
 			  <li>
 				<a href="?item=delinfopic&act=do" id="news" name="news">
-				 حذف / اضافه اطلاعات
+				 حذف / اضافه عکس
 					<span class="edit-file"></span>
 				</a>
 			  </li>
