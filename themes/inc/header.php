@@ -1,4 +1,4 @@
-f<?php
+<?php
 header('Content-Type: text/html; charset=UTF-8');
 	include_once("classes/functions.php");
 	include_once("classes/seo.php");
@@ -62,14 +62,14 @@ header('Content-Type: text/html; charset=UTF-8');
 		.footer-social .timeline{ 
 			font-family: Georgia, serif, Arial, sans-serif;
 		}
-		body.layout_boxed{ 
-			background-color: #F5D29D;
-		}
-		body.layout_boxed{ 
+		/* body.layout_boxed{ 
 			background-image: url(http://rawofnature.com/demfile/sn/wp/wp-content/themes/sentinel/images/boxed_wood.jpg);
 			background-size: auto;
 			background-position: left top;
 			background-repeat: repeat;
+		} */
+		body.layout_boxed{ 
+			background-color: #FFFFFF;
 		}
 	</style>
 	<link rel="stylesheet" href="themes/css/retina.css" type="text/css" media="all">
@@ -131,7 +131,7 @@ header('Content-Type: text/html; charset=UTF-8');
 		}
 	</style>
 </head>
-<body class="home page page-id-675 page-template-default layout_fullwidth js-comp-ver-3.6.14.1 vc_responsive">
+<body class="home page page-id-675 page-template-default wpb-js-composer js-comp-ver-3.6.14.1 vc_responsive layout_boxed">
 	<div id="layout_width" class="fullwidth">
 		<div class="content_container">
 			<div class="header-2_container cwidth_container">
@@ -164,7 +164,7 @@ header('Content-Type: text/html; charset=UTF-8');
 					</div>
 				</div>
 			</div>
-			<header class="header_main_wrapper" data-position="fixed" style="margin:20px 0 0;">
+			<header class="header_main_wrapper header_compact" data-position="static" style="position: static; top: 0px;">
 				<div class="header-1_container cwidth_container">
 					<div class="header-1_wrapper cwidth_wrapper">
 						<div class="header-1 cwidth">
