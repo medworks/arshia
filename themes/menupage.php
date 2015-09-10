@@ -6,7 +6,8 @@
   
   $db = Database::GetDatabase();  
   $row = $db->Select("menu","*","code = {$_GET['id']}");
-  $subject = $db->Select("menusubject","*","mid = {$row['id']}");
+  $body = $db->Select("menusubject","*","mid = {$row['id']}");
+  $pics = $db->SelectAll("pics","*","type = 2 AND sid = {$body['id']}");
   //echo $db->cmd;
 $html=<<<cd
 	<div class="top_content">
@@ -18,56 +19,64 @@ $html=<<<cd
 							<div class="grid">
 								<div class="col-content">
 									<div class="col">
-										<section class="portfolio-cat-1_container main_column">
-											<div class="portfolio-cat-1_wrapper">
-												<div class="portfolio-cat-1 content_cols_eq">											
-													<div class="portfolio_titlebar clearfix">
+										<article id="post-192" class="post-192 portfolio type-portfolio status-publish hentry tag-webdesign portfolio-single-1_container main_column">
+											<div class="portfolio-single-1_wrapper">
+												<div class="portfolio-single-1 content_cols_eq">
+													<div class="portfolio_titlebar-2 clearfix">
 														<div class="portfolio_titlebar_right">
-															<h1>{$row["name"]}</h1>
-														</div>														
-													</div>
-													<div class="portfolio_grid_wrapper">
-														<div class="grid" data-portfolio-cols="4">
-cd;
-	$pics = $db->SelectAll("pics","*","type=2 AND sid = {$subject[id]}");
-	//echo $db->cmd;
-$html.=<<<cd
-															<article class="portfolio type-portfolio status-publish has-post-thumbnail hentry tag-photographs portfolio-post-1_container col-1-4 term-id-16">
-																<div class="portfolio-post-1_wrapper col">
-																	<div class="portfolio-post-1">
-																		<div class="portfolio_image_wrapper">
-																			<img src="./{$pics[0][name]}" class="portfolio_image wp-post-image" alt="{$confs[$i]["subject"]}" height="406" width="615" />
-																			<a class="portfolio_image_link_big" href="http://prev.freshface.net/file/sn/wp4/portfolio/dolor-sit-amet-consectetur/"></a>
-																			<div class="portfolio_image_hover">
-																			<div class="portfolio_image_controls clearfix">
-																				<a href="#" class="portfolio_image_link"></a>
-																			</div>
-																		</div>
-																	</div>
-																	<div style="width:500px" class="portfolio_content">
-																		<h3 class="portfolio_title" style="font-size:20px">
-																			<a href="#">{$subject["text"]}</a>
-																		</h3>		
-																	</div>
-																</div>
-															</article>
-cd;
-$html.=<<<cd
+															<h2 style="width:300px" class="post_title">{$row["name"]}</h2>
 														</div>
+														<!-- <div class="portfolio_titlebar_right">
+															<div class="portfolio_nav">
+																<a href="#" class="portfolio_prev"></a>
+																<a href="#" class="portfolio_category"></a>			
+																<a href="#" class="portfolio_next"></a>
+															</div>
+														</div> -->
 													</div>
-													{$pgcodes}
-													<div class="pagination-1_container">
-														<div class="pagination-1_wrapper">
-															<div class="pagination-1">
-																<div class="desktop clearfix">
-																	
+													<div class="grid">
+														<div class="col-portfolio-single-left" style="width:70%;">
+															<div class="col">
+																<div class="featured_area">
+																	<ul class="bxslider">
+cd;
+foreach($pics as $key=>$val)
+{
+$html.=<<<cd
+	<li>
+	<!-- alt="{$val[subject]}" title="{$val[body]}" -->
+	   <img src="{$val[name]}"  
+	   data-at2x="{$val[name]}" 	  
+	   data-disable-retina-attrs-resize="false" />
+	</li>		
+cd;
+}
+$html.=<<<cd
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="col-portfolio-single-right" style="width:30%;">
+															<div class="col">
+																<!-- <div class="post_meta clearfix">
+																	<div class="post_meta_item post_date">Posted: <strong>November 18, 2013</strong></div>
+																	<span class="post_meta_item like_number">
+																		<a href="#" class="dot-irecommendthis" id="dot-irecommendthis-192" title="Recommend this">
+																			<span class="dot-irecommendthis-count">47</span>
+																			<span class="dot-irecommendthis-suffix"></span>
+																		</a>
+																	</span>
+																</div> -->
+																<div class="post_content">
+																	{$body["text"]}
+																	<!-- <h3>Project Details</h3><table class="table-3"><tbody><tr><td>CLIENT:</td><td></td><td>ThemeForest</td><td></td></tr><tr><td>DATE:</td><td></td><td>April 11, 2013</td><td></td></tr><tr><td>TAGS:</td><td></td><td>Animation, Web Development</td><td></td></tr></tbody></table><a href="http://www.google.com/" class="sc_button sc_button_round sc_button_small sc_button_dark">Launch Project</a> -->
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-										</section>
+										</article>
 									</div>
 								</div>
 							</div>
@@ -77,8 +86,6 @@ $html.=<<<cd
 			</div>
 		</div>
 	</div>
-	
 cd;
-
 return $html;
 ?>
