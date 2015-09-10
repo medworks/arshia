@@ -7,20 +7,30 @@
 	else{
     $db = Database::GetDatabase();  	
     $slides = $db->SelectAll("slides","*");
-	$construct = $db->Select("allparts","*","part =  3");
-	$conspic = $db->Select("uploadcenter","*","address LIKE '__1%'",null,"0","1");	
-	$consbody = mb_substr($construct["detail"],0,150,"UTF-8")."...";
-	$consbody = strip_tags($consbody);
 	
-	$reconstruct = $db->Select("allparts","*","part =  2");
-	$reconspic = $db->Select("uploadcenter","*","address LIKE '_1%'",null,"0","1");	
-	$reconsbody = mb_substr($reconstruct["detail"],0,150,"UTF-8")."...";
-	$reconsbody = strip_tags($reconsbody);
+	$scropomp = $db->Select("topindex","*","mid = 1");
+	//$conspic = $db->Select("uploadcenter","*","address LIKE '__1%'",null,"0","1");	
+	$scropompimg = "./indexpics/".$scropomp["pic"];
+	$scropompbody = mb_substr($scropomp["text"],0,150,"UTF-8")."...";
+	$scropompbody = strip_tags($scropompbody,1);
 	
-	$research = $db->Select("allparts","*","part =  1");
-	$respic = $db->Select("uploadcenter","*","address LIKE '1%'",null,"0","1");	
-	$resbody = mb_substr($research["detail"],0,150,"UTF-8")."...";
-	$resbody = strip_tags($resbody);
+	$oil = $db->Select("topindex","*","mid = 2");
+	//$reconstruct = $db->Select("allparts","*","part =  2");
+	$oilimg = "./indexpics/".$oil["pic"];
+	$oilbody = mb_substr($oil["text"],0,150,"UTF-8")."...";
+	$oilbody = strip_tags($oilbody);
+	
+	//$research = $db->Select("allparts","*","part =  1");
+	//$respic = $db->Select("uploadcenter","*","address LIKE '1%'",null,"0","1");	
+	$hot = $db->Select("topindex","*","mid = 3");
+	$hotimg = "./indexpics/".$hot["pic"];
+	$hotbody = mb_substr($hot["text"],0,150,"UTF-8")."...";
+	$hotbody = strip_tags($hotbody);
+	
+	$other = $db->Select("topindex","*","mid = 4");
+	$otherimg = "./indexpics/".$other["pic"];
+	$otherbody = mb_substr($other["text"],0,150,"UTF-8")."...";
+	$otherbody = strip_tags($otherbody);
 	
 	$allparts = $db->SelectAll("uploadcenter","*","`address` ='100000' OR `address` ='010000'
 	                            OR `address` ='001000' ","address","0","12");
@@ -156,16 +166,16 @@ $html.=<<<cd
 																<div class="col-1-4">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="construction.html">
+																			<a class="text_icon_expand_item" href="topindex1.html">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="./constructpics/{$conspic[image]}" alt="{$conspic[subject]}">
+																						<img class="text_icon_expand_image" src="{$scropompimg}" alt="{$scropomp[subject]}">
 																					</span>
 																					<span class="tie_icon_wrapper">
 																						<span class="tie_icon icon-magic"></span>
 																					</span>
 																					<span class="tie_content">
-																						<span class="tie_text">{$consbody}</span>
+																						<span class="tie_text">{$scropompbody}</span>
 																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
 																					</span>		
 																					<!-- <span class="tie_subtitle">پمپها و کمپرسورهای اسکرو</span> -->
@@ -178,16 +188,16 @@ $html.=<<<cd
 																<div class="col-1-4">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="regeneration.html">
+																			<a class="text_icon_expand_item" href="topindex2.html">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="./reconstructpics/{$reconspic[image]}" alt="{$reconspic[subject]}">
+																						<img class="text_icon_expand_image" src="{$oilimg}" alt="{$oil[subject]}">
 																					</span>
 																					<span class="tie_icon_wrapper">
 																						<span class="tie_icon icon-cogs"></span>
 																					</span>
 																					<span class="tie_content">
-																						<span class="tie_text">{$reconsbody}</span>
+																						<span class="tie_text">{$oilbody}</span>
 																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
 																					</span>
 																					<!-- <span class="tie_subtitle">سوخت پاش توربینها</span> -->
@@ -200,16 +210,16 @@ $html.=<<<cd
 																<div class="col-1-4">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="research.html">
+																			<a class="text_icon_expand_item" href="topindex3.html">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="./researchpics/{$respic[image]}" alt="{$respic[subject]}">
+																						<img class="text_icon_expand_image" src="{$hotimg}" alt="{$hot[subject]}">
 																					</span>
 																					<span class="tie_icon_wrapper">
 																						<span class="tie_icon icon-retweet"></span>
 																					</span>
 																					<span class="tie_content">
-																						<span class="tie_text">{$resbody}</span>
+																						<span class="tie_text">{$hotbody}</span>
 																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
 																					</span>
 																					<!-- <span class="tie_subtitle">بازسازی قطعات داغ</span> -->
@@ -222,16 +232,16 @@ $html.=<<<cd
 																<div class="col-1-4">
 																	<div class="col">
 																		<div class="text_icon_expand_item_wrapper ">
-																			<a class="text_icon_expand_item" href="research.html">
+																			<a class="text_icon_expand_item" href="topindex4.html">
 																				<span class="text_icon_expand_item_inner">
 																					<span class="text_icon_expand_image_wrapper">
-																						<img class="text_icon_expand_image" src="./researchpics/{$respic[image]}" alt="{$respic[subject]}">
+																						<img class="text_icon_expand_image" src="{$otherimg}" alt="{$other[subject]}">
 																					</span>
 																					<span class="tie_icon_wrapper">
 																						<span class="tie_icon icon-search"></span>
 																					</span>
 																					<span class="tie_content">
-																						<span class="tie_text">{$resbody}</span>
+																						<span class="tie_text">{$otherbody}</span>
 																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
 																					</span>
 																					<!-- <span class="tie_subtitle">آب بند پره ها و سایر پروژه ها</span> -->

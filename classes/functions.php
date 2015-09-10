@@ -35,6 +35,10 @@
 			    //$seo->Site_Title = "گالری تصاویر";				
                 return "themes/menupage.php";
 			break;
+			case 'index':
+			    //$seo->Site_Title = "گالری تصاویر";				
+                return "themes/topindex.php";
+			break;
 			case 'organizationchart':
 			    $seo->Site_Title = "چارت سازمانی";				
                 return "themes/organizationchart.php";
@@ -119,7 +123,10 @@
 			break;			
 			case 'eventsmgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/eventsmgr.php";
-			break;			
+			break;	
+			case 'indexmgr':
+                if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/indexmgr.php";
+			break;		
 			case 'infomgr':
                 if ($act=="do" or $act=="new" or $act=="mgr" or $act=="del" or $act=="edit") return "../manager/infomgr.php";
 			break;
