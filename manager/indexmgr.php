@@ -78,7 +78,8 @@
 				}	
 				$fn = basename($_FILES[$fileup]["name"]);
 				$fields = array("`mid`","`pic`","`text`");
-				$_POST["text"] = addslashes($_POST["text"]);		
+				$_POST["text"] = strip_tags($_POST["text"]);
+				$_POST["text"] = addslashes($_POST["text"]);
 				$values = array("'{$_POST[cbmenu]}'","'{$fn}'","'{$_POST[text]}'");
 				if (!$db-> InsertQuery('topindex',$fields,$values)) 
 				{
@@ -109,7 +110,8 @@
 					{
 						//echo "Sorry, there was an error uploading your file.";
 					}
-					$fn = $filename;						
+					$fn = $filename;	
+					$_POST["text"] = strip_tags($_POST["text"]);	
 					$_POST["text"] = addslashes($_POST["text"]);
 					if (!empty($_FILES[$fileup]["name"]))
 					{
