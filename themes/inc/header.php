@@ -141,7 +141,7 @@ header('Content-Type: text/html; charset=UTF-8');
 							<div class="col">
 								<div class="header-2_content clearfix">
 									<div class="contact_info">
-										Call Us: <a href="javascript:void(0);" style="font-family:'bmitra' !important"><?php echo $tel; ?></a> - Mail: <a href="javascript:void(0);"><?php echo $Contact_Email; ?></a>
+										Call Us: <a href="javascript:void(0);" style="font-family:'bmitra' !important"><?php echo $tel; ?></a> - Mail: <a href="mailto:info@arshia-co.com" target="_blank"><?php echo $Contact_Email; ?></a>
 									</div>
 									<!-- <div style="float:left;margin-left:220px">
 										<a href="./" class="logo">
