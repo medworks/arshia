@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.6
+-- version 4.2.11
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2015 at 08:21 PM
--- Server version: 5.6.16
--- PHP Version: 5.5.9
+-- Generation Time: Sep 10, 2015 at 12:26 PM
+-- Server version: 5.6.21
+-- PHP Version: 5.6.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -27,11 +27,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `allparts` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `detail` text NOT NULL,
-  `part` tinyint(4) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+  `part` tinyint(4) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `allparts`
@@ -49,16 +48,15 @@ INSERT INTO `allparts` (`id`, `detail`, `part`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `articles` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `subject` varchar(100) NOT NULL,
   `body` text NOT NULL,
   `ndate` datetime NOT NULL,
   `userid` int(11) NOT NULL,
   `resource` varchar(50) NOT NULL,
   `catid` int(11) NOT NULL,
-  `keywords` varchar(200) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `keywords` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -67,13 +65,12 @@ CREATE TABLE IF NOT EXISTS `articles` (
 --
 
 CREATE TABLE IF NOT EXISTS `category` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `secid` int(11) NOT NULL,
   `catname` varchar(25) CHARACTER SET utf8 NOT NULL,
   `latinname` varchar(25) CHARACTER SET utf8 NOT NULL,
-  `describe` varchar(100) CHARACTER SET utf8 NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=7 ;
+  `describe` varchar(100) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `category`
@@ -90,11 +87,10 @@ INSERT INTO `category` (`id`, `secid`, `catname`, `latinname`, `describe`) VALUE
 --
 
 CREATE TABLE IF NOT EXISTS `docreqs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `reqid` int(11) NOT NULL,
-  `docid` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+  `docid` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `docreqs`
@@ -111,12 +107,11 @@ INSERT INTO `docreqs` (`id`, `reqid`, `docid`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `docs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `subject` varchar(60) NOT NULL,
   `address` varchar(100) NOT NULL,
-  `body` varchar(300) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+  `body` varchar(300) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `docs`
@@ -133,10 +128,9 @@ INSERT INTO `docs` (`id`, `subject`, `address`, `body`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `events` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+`id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `events`
@@ -154,12 +148,11 @@ INSERT INTO `events` (`id`, `name`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `eventsubject` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `mid` int(11) NOT NULL,
   `subject` varchar(100) NOT NULL,
-  `text` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+  `text` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `eventsubject`
@@ -178,12 +171,11 @@ INSERT INTO `eventsubject` (`id`, `mid`, `subject`, `text`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `gallery` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `image` varchar(60) NOT NULL,
   `subject` varchar(50) NOT NULL,
-  `body` varchar(250) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=5 ;
+  `body` varchar(250) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `gallery`
@@ -201,19 +193,17 @@ INSERT INTO `gallery` (`id`, `image`, `subject`, `body`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `history` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `mid` int(11) NOT NULL,
   `pic` varchar(100) NOT NULL,
-  `text` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+  `text` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `history`
 --
 
 INSERT INTO `history` (`id`, `mid`, `pic`, `text`) VALUES
-(1, 1, 'about_pic.jpg', 'تاریخچه شرکت ارشیا'),
 (2, 2, 'error.png', '<p>ماموریشت شرکت ارشیا</p>'),
 (3, 5, 'about_pic.jpg', '<p>چارت سازمانی شرکت ارشیا گستر</p>');
 
@@ -224,11 +214,10 @@ INSERT INTO `history` (`id`, `mid`, `pic`, `text`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `menu` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `name` varchar(80) NOT NULL,
-  `code` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=63 ;
+  `code` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `menu`
@@ -305,11 +294,10 @@ INSERT INTO `menu` (`id`, `name`, `code`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `menusubject` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `mid` int(11) NOT NULL,
-  `text` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+  `text` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `menusubject`
@@ -325,16 +313,15 @@ INSERT INTO `menusubject` (`id`, `mid`, `text`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `news` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `subject` varchar(100) NOT NULL,
   `image` varchar(60) NOT NULL,
   `body` text NOT NULL,
   `ndate` datetime NOT NULL,
   `userid` int(11) NOT NULL,
   `resource` varchar(50) NOT NULL,
-  `catid` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=125 ;
+  `catid` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=125 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `news`
@@ -360,13 +347,12 @@ INSERT INTO `news` (`id`, `subject`, `image`, `body`, `ndate`, `userid`, `resour
 --
 
 CREATE TABLE IF NOT EXISTS `pics` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `type` int(11) NOT NULL,
   `sid` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `checked` tinyint(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+  `checked` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `pics`
@@ -383,7 +369,7 @@ INSERT INTO `pics` (`id`, `type`, `sid`, `name`, `checked`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `request` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `tel` varchar(15) NOT NULL,
   `mobile` varchar(11) NOT NULL,
@@ -391,9 +377,8 @@ CREATE TABLE IF NOT EXISTS `request` (
   `postcode` varchar(11) NOT NULL,
   `email` varchar(30) NOT NULL,
   `detail` varchar(500) NOT NULL,
-  `regdate` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+  `regdate` datetime NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `request`
@@ -413,12 +398,11 @@ INSERT INTO `request` (`id`, `name`, `tel`, `mobile`, `address`, `postcode`, `em
 --
 
 CREATE TABLE IF NOT EXISTS `section` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `secname` varchar(50) NOT NULL,
   `latinname` varchar(50) NOT NULL,
-  `describe` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+  `describe` varchar(100) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `section`
@@ -440,11 +424,10 @@ INSERT INTO `section` (`id`, `secname`, `latinname`, `describe`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `settings` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `key` varchar(30) NOT NULL,
-  `value` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
+  `value` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `settings`
@@ -486,13 +469,12 @@ INSERT INTO `settings` (`id`, `key`, `value`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `slides` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `image` varchar(60) NOT NULL,
   `subject` varchar(50) NOT NULL,
   `body` varchar(250) NOT NULL,
-  `pos` tinyint(4) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+  `pos` tinyint(4) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `slides`
@@ -506,17 +488,40 @@ INSERT INTO `slides` (`id`, `image`, `subject`, `body`, `pos`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `topindex`
+--
+
+CREATE TABLE IF NOT EXISTS `topindex` (
+`id` int(11) NOT NULL,
+  `mid` int(11) NOT NULL,
+  `pic` varchar(100) NOT NULL,
+  `subject` varchar(50) NOT NULL,
+  `text` varchar(1500) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `topindex`
+--
+
+INSERT INTO `topindex` (`id`, `mid`, `pic`, `subject`, `text`) VALUES
+(1, 1, 'about_pic.jpg', 'پمپ های اسکرو', '<p>شرکت ارشیا از ابتدای تاسیس حرکتی مبتنی بر دانش داشته و همواره در بسط نگاه علمی و دانش محور در صنعت این مرز و بوم کوشیده است.&lt;br&gt;معاونت تحقیقات شرکت ارشیا با این هدف پایه گذاری شد که با ساماندهی متخصصین رشته های مختلف و استفاده از توانمندی دانش آموختگان سطوح مختلف دانشگاهی، پشتوانه </p>'),
+(2, 2, '', 'سوخت پاش توربین ها', '<p>مجموعه کارگاهی ساخت شرکت ارشیا در شهرک صنعتی توس مشهد واقع است. تجهیزاتی چون دوربین ابعاد برداری دیجیتال، تراش و فرز CNC، فرز دروازه ای، بورینگ و تجهیزات عمومی ماشینکاری تحت عنوان این مجموعه مورد استفاده قرار می گیرند.<br>همچنین تیم منسجم و بسیار توانمندی با تخصصهای مختلف از جمله مکانیک، متالورژی، نقشه کشی صنعتی، سیالات و برق و کنترل در دفتر فنی ساخت شرکت ارشیا مشغول به کار هستند که علاوه بر انجام فرایند مهندسی معکوس برای ساخت قطعات و تجهیزات صنایع مادر، کار تدوین دانش فنی ساخت و دستیابی به اصول طراحی محصولات شرکت را نیز بر عهده دارند.<br>برای انجام این مهم، مجموعه سخت افزاری و نرم افزاری مجهز و کارآمدی مهیا شده تا در کنار مراجع علمی بین المللی و استانداردهای شرکت های سازنده بتواند پشتوانه ای محکم برای متخصصان و مهندسان شرکت در زمینه ساخت باشد.<br>ساخت اسکروهای پمپ سوخت مایع واحدهای GE-F9، ساخت مجموعه قطعات داخلی پمپ پیستونی سوخت مایع واحدهای GE-F5، ساخت مجموعه قطعات آب بند واحدهای GE-F9 و V94.2، ساخت لنس گازوئیل واحدهای V94.2، ساخت چک والو پرژ مسیر سوخت مایع و بسیاری قطعات و تجهیزات دیگر صنایع نیروگاهی و نفت و گاز، که همگی همراه با تدوین دانش فنی و دستیابی به اصول طراحی این قطعات بوده، مثالهایی از موفقیت های شرکت ارشیا در زمینه ساخت می باشد.</p>'),
+(3, 3, '', 'بازسازی قطعات داغ', '<p>شرکت ارشیا در راستای توسعه توانمندی ها و امکانات خود اقدام به تجهیز و راه اندازی مجموعه کارگاه های بازسازی در جزیره کیش نموده است. <br>پس از برگزاری موفق نخستین سمینار بررسی موانع بازسازی قطعات داغ در دی ماه سال 89 که با همکاری برق منطقه ای خراسان و دانشگاه فردوسی مشهد صورت پذیرفت، شرکت ارشیا موفق به اجاره سه باب سوله در جزیره کیش از شرکتهای مدیریت تولید نیروگاه های گازی خراسان و مدیریت تولید برق جنوب فارس شد.آغاز به کار این سوله ها از ابتدای سال 91 محقق شد و هم اکنون این شرکت به عنوان تنها شرکت بازسازی قطعات مسیر داغ در جنوب کشور فعالیت دارد. <br>در مجموعه کارگاهی کیش تجهیزات و ابزار مخصوص مناسبی فراهم آمده است تا برای فرایند تخصصی و حساس بازسازی قطعات مسیر داغ استفاده شود. از این تجهیزات می توان به تجهیزات تمیزکاری مکانیکی با Al2O3 ، تجهیزات جوشکاری پیشرفته (Pulse TIG)، مجموعه کامل ابزار سنگ زنی بادی و برقی، فیکسچرها و ابزار مخصوص بازسازی و نیز میز دفرمه گیری با قابلیت اعمال نیرو با سرعت کنترل شده اشاره کرد. <br>نقطه قوت شرکت ارشیا در بازسازی قطعات مسیر داغ، تکیه بر پرسنل کارآزموده و مجرب و نیز استفاده گسترده از منابع معتبر علمی در زمینه بازسازی است. منابعی چون استانداردهای شرکت های سازنده توربین، استانداردها و دستورالعملهای شرکتهای بزرگ بازسازی کننده، کتب تخصصی در زمینه سوپرآلیاژها و استانداردهای معتبر بین المللی، همگی دستمایه تدوین دستورالعملها و ساز و کار بازسازی در شرکت ارشیا هستند.</p>'),
+(4, 4, '', 'سایر پروژه ها', '<p>شرکت ارشیا در راستای توسعه توانمندی ها و امکانات خود اقدام به تجهیز و راه اندازی مجموعه کارگاه های بازسازی در جزیره کیش نموده است. <br>پس از برگزاری موفق نخستین سمینار بررسی موانع بازسازی قطعات داغ در دی ماه سال 89 که با همکاری برق منطقه ای خراسان و دانشگاه فردوسی مشهد صورت پذیرفت، شرکت ارشیا موفق به اجاره سه باب سوله در جزیره کیش از شرکتهای مدیریت تولید نیروگاه های گازی خراسان و مدیریت تولید برق جنوب فارس شد.آغاز به کار این سوله ها از ابتدای سال 91 محقق شد و هم اکنون این شرکت به عنوان تنها شرکت بازسازی قطعات مسیر داغ در جنوب کشور فعالیت دارد. <br>در مجموعه کارگاهی کیش تجهیزات و ابزار مخصوص مناسبی فراهم آمده است تا برای فرایند تخصصی و حساس بازسازی قطعات مسیر داغ استفاده شود. از این تجهیزات می توان به تجهیزات تمیزکاری مکانیکی با Al2O3 ، تجهیزات جوشکاری پیشرفته (Pulse TIG)، مجموعه کامل ابزار سنگ زنی بادی و برقی، فیکسچرها و ابزار مخصوص بازسازی و نیز میز دفرمه گیری با قابلیت اعمال نیرو با سرعت کنترل شده اشاره کرد. <br>نقطه قوت شرکت ارشیا در بازسازی قطعات مسیر داغ، تکیه بر پرسنل کارآزموده و مجرب و نیز استفاده گسترده از منابع معتبر علمی در زمینه بازسازی است. منابعی چون استانداردهای شرکت های سازنده توربین، استانداردها و دستورالعملهای شرکتهای بزرگ بازسازی کننده، کتب تخصصی در زمینه سوپرآلیاژها و استانداردهای معتبر بین المللی، همگی دستمایه تدوین دستورالعملها و ساز و کار بازسازی در شرکت ارشیا هستند.</p>');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `uploadcenter`
 --
 
 CREATE TABLE IF NOT EXISTS `uploadcenter` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `image` varchar(60) NOT NULL,
   `subject` varchar(50) NOT NULL,
   `body` varchar(250) NOT NULL,
-  `address` varchar(10) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=29 ;
+  `address` varchar(10) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `uploadcenter`
@@ -559,16 +564,15 @@ INSERT INTO `uploadcenter` (`id`, `image`, `subject`, `body`, `address`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+`id` int(11) NOT NULL,
   `name` varchar(30) NOT NULL,
   `family` varchar(50) NOT NULL,
   `image` varchar(60) NOT NULL,
   `email` varchar(30) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(35) NOT NULL,
-  `type` tinyint(4) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+  `type` tinyint(4) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`
@@ -580,6 +584,234 @@ INSERT INTO `users` (`id`, `name`, `family`, `image`, `email`, `username`, `pass
 (3, 'علی', 'قائمی', './newspics/works.png', 'ali.ghaemi@gmail.com', 'ghaemi', '827ccb0eea8a706c4c34a16891f84e7b', 0),
 (4, 'آرش', 'خویتندار', './newspics/addworks.png', 'arash.kh@gmail.com', 'arash', '827ccb0eea8a706c4c34a16891f84e7b', 0);
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `allparts`
+--
+ALTER TABLE `allparts`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `articles`
+--
+ALTER TABLE `articles`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `category`
+--
+ALTER TABLE `category`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `docreqs`
+--
+ALTER TABLE `docreqs`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `docs`
+--
+ALTER TABLE `docs`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `events`
+--
+ALTER TABLE `events`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `eventsubject`
+--
+ALTER TABLE `eventsubject`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `gallery`
+--
+ALTER TABLE `gallery`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `history`
+--
+ALTER TABLE `history`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `menu`
+--
+ALTER TABLE `menu`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `menusubject`
+--
+ALTER TABLE `menusubject`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pics`
+--
+ALTER TABLE `pics`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `request`
+--
+ALTER TABLE `request`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `section`
+--
+ALTER TABLE `section`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `settings`
+--
+ALTER TABLE `settings`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `slides`
+--
+ALTER TABLE `slides`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `topindex`
+--
+ALTER TABLE `topindex`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `uploadcenter`
+--
+ALTER TABLE `uploadcenter`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `allparts`
+--
+ALTER TABLE `allparts`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `articles`
+--
+ALTER TABLE `articles`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `category`
+--
+ALTER TABLE `category`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `docreqs`
+--
+ALTER TABLE `docreqs`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `docs`
+--
+ALTER TABLE `docs`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `events`
+--
+ALTER TABLE `events`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `eventsubject`
+--
+ALTER TABLE `eventsubject`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `gallery`
+--
+ALTER TABLE `gallery`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `history`
+--
+ALTER TABLE `history`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `menu`
+--
+ALTER TABLE `menu`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=63;
+--
+-- AUTO_INCREMENT for table `menusubject`
+--
+ALTER TABLE `menusubject`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=125;
+--
+-- AUTO_INCREMENT for table `pics`
+--
+ALTER TABLE `pics`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `request`
+--
+ALTER TABLE `request`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `section`
+--
+ALTER TABLE `section`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `settings`
+--
+ALTER TABLE `settings`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
+--
+-- AUTO_INCREMENT for table `slides`
+--
+ALTER TABLE `slides`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `topindex`
+--
+ALTER TABLE `topindex`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `uploadcenter`
+--
+ALTER TABLE `uploadcenter`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
