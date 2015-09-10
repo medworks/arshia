@@ -65,10 +65,51 @@
 		{    
 			if ($mode == "insert")
 			{
-				
-				if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
-				{	
-					$fn = basename($_FILES[$fileup]["name"]);
+				if (isset($_FILES[$fileup]))
+				{
+					if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
+					{	
+							
+					} 
+					else 
+					{
+						echo "Sorry, there was an error uploading your file.";
+					}
+				}	
+				$fn = basename($_FILES[$fileup]["name"]);
+				$fields = array("`mid`","`pic`","`text`");
+				$_POST["text"] = addslashes($_POST["text"]);		
+				$values = array("'{$_POST[cbmenu]}'","'{$fn}'","'{$_POST[text]}'");
+				if (!$db-> InsertQuery('history',$fields,$values)) 
+				{
+					header('location:?item=aboutusmgr&act=new&msg=2');
+				} 	
+				else 
+				{  										
+					header('location:?item=aboutusmgr&act=new&msg=1');
+				}  		
+			}
+			else
+			{				
+					$lpic = $db->Select("history","*","id = '{$id}'");
+					$lfn = $target_dir.$lpic["pic"];
+					if (file_exists($lfn)&& $lpic["pic"]!="")
+					{
+						unlink($lfn);
+					}
+					$db->Delete("history"," id",$id);
+					if (isset($_FILES[$fileup]))
+					{
+						if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
+						{	
+							
+						} 
+						else 
+						{
+							echo "Sorry, there was an error uploading your file.";
+						}	
+					}	
+					$fn = $filename;
 					$fields = array("`mid`","`pic`","`text`");
 					$_POST["text"] = addslashes($_POST["text"]);		
 					$values = array("'{$_POST[cbmenu]}'","'{$fn}'","'{$_POST[text]}'");
@@ -80,41 +121,6 @@
 					{  										
 						header('location:?item=aboutusmgr&act=new&msg=1');
 					}  			
-				} 
-				else 
-				{
-					echo "Sorry, there was an error uploading your file.";
-				}
-			}
-			else
-			{
-				
-					$lpic = $db->Select("history","*","id = '{$id}'");
-					$lfn = $target_dir.$lpic["pic"];
-					if (file_exists($lfn)&& $lpic["pic"]!="")
-					{
-						unlink($lfn);
-					}
-					$db->Delete("history"," id",$id);	
-					if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
-					{	
-						$fn = $filename;
-						$fields = array("`mid`","`pic`","`text`");
-						$_POST["text"] = addslashes($_POST["text"]);		
-						$values = array("'{$_POST[cbmenu]}'","'{$fn}'","'{$_POST[text]}'");
-						if (!$db-> InsertQuery('history',$fields,$values)) 
-						{
-							header('location:?item=aboutusmgr&act=new&msg=2');
-						} 	
-						else 
-						{  										
-							header('location:?item=aboutusmgr&act=new&msg=1');
-						}  			
-					} 
-					else 
-					{
-						echo "Sorry, there was an error uploading your file.";
-					}	
 			}
 		}
 	}
@@ -125,7 +131,8 @@
 	   
 	   if (count($row)>0)
 	   {
-			//uploadpics("edit","pic",$db,$row["id"]);
+			uploadpics("edit","pic",$db,$row["id"]);
+			/*
 			$db->Delete("history"," id",$row["id"]);	
 			$fields = array("`mid`","`text`");
 			$_POST["text"] = addslashes($_POST["text"]);		
@@ -137,10 +144,13 @@
 			else 
 			{  										
 				header('location:?item=aboutusmgr&act=new&msg=1');
-			}  			
+			} 
+			*/ 			
 	   }
 	   else
 	   {
+			uploadpics("insert","pic",$db,$row["id"]);
+			/*
 			$fields = array("`mid`","`text`");
 			$_POST["text"] = addslashes($_POST["text"]);		
 			$values = array("'{$_POST[cbmenu]}'","'{$_POST[text]}'");
@@ -151,7 +161,8 @@
 			else 
 			{  										
 				header('location:?item=aboutusmgr&act=new&msg=1');
-			}  		
+			} 
+			*/	
 	   }	   
 	}
 $msgs = GetMessage($_GET['msg']);	
@@ -186,8 +197,7 @@ $html=<<<cd
 		      	<option value="4">--> ارزشها</option>
 	      	<option value="5">-> چارت سازمانی</option>
 	      	<option value="6">-> هیئت مدیره</option>
-	    </select> 
-	<!--
+	    </select> 	
 		 <div class="badboy"></div> 
 	   	<p>
 			<label for='pic'>فایل </label>
@@ -201,7 +211,6 @@ $html=<<<cd
 	   <div id="imgpreview">
 			<img id="img" src="" alt="" />				
 		</div>
-	-->	
 	 	<div class="badboy"></div> 
 	 
 	   <p>
