@@ -169,7 +169,7 @@ $html.=<<<cd
 																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
 																					</span>		
 																					<!-- <span class="tie_subtitle">پمپها و کمپرسورهای اسکرو</span> -->
-																					<span class="tie_title">پمپها و کمپرسورهای اسکرو</span>
+																					<span class="tie_title">پمپهای اسکرو</span>
 																				</span>
 																			</a>
 																		</div>
@@ -191,7 +191,7 @@ $html.=<<<cd
 																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
 																					</span>
 																					<!-- <span class="tie_subtitle">سوخت پاش توربینها</span> -->
-																					<span class="tie_title">سوخت پاش توربین ها</span>
+																					<span class="tie_title">سوخت پاش توربینها</span>
 																				</span>
 																			</a>
 																		</div>
@@ -235,7 +235,7 @@ $html.=<<<cd
 																						<span class="sc_button sc_button_round sc_button_small sc_button_green">نمایش جزئیات</span>
 																					</span>
 																					<!-- <span class="tie_subtitle">آب بند پره ها و سایر پروژه ها</span> -->
-																					<span class="tie_title">آب بند پره ها و سایر پروژه ها</span>
+																					<span class="tie_title">سایر پروژه ها</span>
 																				</span>
 																			</a>
 																		</div>
@@ -278,7 +278,7 @@ $html.=<<<cd
 <img src='./{$picadd}/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='220px' height='175px' />
 																							<div class="rps_image_hover">
 																								<div class="rps_image_controls clearfix">
-																									<a href="#" class="rps_image_link"></a>
+																									<!-- <a href="#" class="rps_image_link"></a> -->
 																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="./{$picadd}/{$val[image]}"></a>
 																								</div>
 																							</div>
