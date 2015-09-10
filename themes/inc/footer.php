@@ -101,13 +101,12 @@ $html=<<<cd
 										<img src="themes/images/logo_footer.png" alt="Arshia">
 									</a>
 									<div class="footer-bottom_left ltr">
-										© Copyright 2013 by Arshia. All Rights Reserved. Designed by <a href="http://www.mediateq.ir" target="_blank">Mediateq</a>
+										© Copyright 2013-2015 by Arshia. All Rights Reserved. Designed by <a href="http://www.mediateq.ir" target="_blank">Mediateq</a>
 									</div>
 									<div class="footer-bottom_right">
 										<div class="footer_links">
 											<a href="./">Home</a>
-											<a href="gallery.html">Gallery</a>
-											<a href="contact.html">Contact</a>
+											<a href="contact.html">Contact us</a>
 											<a href="about-us.html">About</a>
 										</div>
 									</div>
