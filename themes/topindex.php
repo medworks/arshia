@@ -63,9 +63,9 @@ foreach($pics as $key=>$val)
 $html.=<<<cd
 	<li>
 	   <img src="{$val[name]}"  
-	   data-at2x="{$val[name]}" 
-	  <!-- alt="{$val[subject]}" title="{$val[body]}" -->
-	   data-disable-retina-attrs-resize="false">
+	   data-at2x="{$val[name]}" 	  
+	   data-disable-retina-attrs-resize="false"/>
+	   <!-- alt="{$val[subject]}" title="{$val[body]}" -->
 	</li>		
 cd;
 }

@@ -11,26 +11,32 @@
 	$scropomp = $db->Select("topindex","*","mid = 1");
 	//$conspic = $db->Select("uploadcenter","*","address LIKE '__1%'",null,"0","1");	
 	$scropompimg = "./indexpics/".$scropomp["pic"];
+	$scropomp["text"] = preg_replace('/<[^>]*>/', '', $scropomp["text"]);
 	$scropompbody = mb_substr($scropomp["text"],0,150,"UTF-8")."...";
-	$scropompbody = strip_tags($scropompbody,1);
+	//$scropompbody = strip_tags($scropompbody);	
 	
 	$oil = $db->Select("topindex","*","mid = 2");
 	//$reconstruct = $db->Select("allparts","*","part =  2");
 	$oilimg = "./indexpics/".$oil["pic"];
+	$oil["text"] = preg_replace('/<[^>]*>/', '', $oil["text"]);
 	$oilbody = mb_substr($oil["text"],0,150,"UTF-8")."...";
-	$oilbody = strip_tags($oilbody);
+	//$oilbody = strip_tags($oilbody);
+	
 	
 	//$research = $db->Select("allparts","*","part =  1");
 	//$respic = $db->Select("uploadcenter","*","address LIKE '1%'",null,"0","1");	
 	$hot = $db->Select("topindex","*","mid = 3");
 	$hotimg = "./indexpics/".$hot["pic"];
+	$hot["text"] = preg_replace('/<[^>]*>/', '', $hot["text"]);
 	$hotbody = mb_substr($hot["text"],0,150,"UTF-8")."...";
-	$hotbody = strip_tags($hotbody);
+	//$hotbody = strip_tags($hotbody);	
 	
 	$other = $db->Select("topindex","*","mid = 4");
 	$otherimg = "./indexpics/".$other["pic"];
+	$other["text"] = preg_replace('/<[^>]*>/', '', $other["text"]);
 	$otherbody = mb_substr($other["text"],0,150,"UTF-8")."...";
-	$otherbody = strip_tags($otherbody);
+	//$otherbody = strip_tags($otherbody);
+	
 	
 	$allparts = $db->SelectAll("uploadcenter","*","`address` ='100000' OR `address` ='010000'
 	                            OR `address` ='001000' ","address","0","12");
