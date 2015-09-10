@@ -112,7 +112,10 @@ header('Content-Type: text/html; charset=UTF-8');
           <li>
             <a href="?item=aboutusmgr&act=do" id="research" name="about" class="research"><p>ارشیا در یک نگاه</p></a>
           </li>
-		      <li>            
+		  <li>
+            <a href="?item=indexmgr&act=do" id="index" name="index" class="research"><p>مدیریت شاخص</p></a>
+          </li>
+		  <li>            
             <a href="?item=docsmgr&act=do" id="docs" name="docs" class="docs"><p>مدیریت مستندات</p></a>
           </li>
           <li>            

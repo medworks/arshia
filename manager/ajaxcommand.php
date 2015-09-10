@@ -197,9 +197,15 @@ if($_GET["poll"]=="reg")
 		echo $row["text"];		
 	}
 	
-	if ($_GET["action"]="aboutus")
+	if ($_GET["action"]=="aboutus")
 	{
 		$row = $db->Select("history","*","mid = {$_GET['mid']}");
+		echo $row["text"];
+	}
+	
+	if ($_GET["action"]=="getindex")
+	{
+		$row = $db->Select("topindex","*","mid = {$_GET['mid']}");
 		echo $row["text"];
 	}
 	
