@@ -8,11 +8,22 @@
   $row = $db->Select("topindex","*","mid = {$_GET['id']}");  
   if ($_GET["id"]==1)
   {
-	  $where = " sid IN (4,8,12) ";
-  }else
+	  $where = " type = 2 AND sid IN (4,5,6,8,9,10,12,13,14) ";
+  }
+  else
   if ($_GET["id"]==2)
   {
-	  $where = " sid IN (24,25,26,28,29,30,32,33,34) ";
+	  $where = " type = 2 AND sid IN (24,25,26,28,29,30,32,33,34) ";
+  }
+  else
+  if ($_GET["id"]==3)
+  {
+	  $where = " type = 2 AND sid IN (41,42,43,44,45) ";
+  }
+  else
+  if ($_GET["id"]==4)
+  {
+	  $where = " type = 2 AND sid IN (56,57,58,59,60) ";
   }
   
   $pics = $db->SelectAll("pics","*",$where);  
