@@ -6,6 +6,16 @@
   
   $db = Database::GetDatabase();  
   $row = $db->Select("topindex","*","mid = {$_GET['id']}");  
+  if ($_GET["id"]==1)
+  {
+	  $where = " sid IN (4,8,12) ";
+  }else
+  if ($_GET["id"]==2)
+  {
+	  $where = " sid IN (24,25,26,28,29,30,32,33,34) ";
+  }
+  
+  $pics = $db->SelectAll("pics","*",$where);  
 $html=<<<cd
 	<div class="top_content">
 		<div class="main_content_container cwidth_container">
@@ -41,9 +51,9 @@ foreach($pics as $key=>$val)
 {
 $html.=<<<cd
 	<li>
-	   <img src="./constructpics/{$val[image]}"  
-	   data-at2x="./constructpics/{$val[image]}" 
-	   alt="{$val[subject]}" title="{$val[body]}" 
+	   <img src="{$val[name]}"  
+	   data-at2x="{$val[name]}" 
+	  <!-- alt="{$val[subject]}" title="{$val[body]}" -->
 	   data-disable-retina-attrs-resize="false">
 	</li>		
 cd;

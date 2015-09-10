@@ -103,25 +103,35 @@
 					//$db->Delete("index"," id",$id);				
 					if (move_uploaded_file($_FILES[$fileup]["tmp_name"], $target_file)) 
 					{	
-						$fn = $filename;						
-						$_POST["text"] = addslashes($_POST["text"]);
-						$values = array("`mid`"=>"'{$_POST[cbmenu]}'",
-										"`pic`"=>"'{$fn}'",
-										"`text`"=>"'{$_POST[text]}'");		
-						if (!$db->UpdateQuery("topindex",$values,array("id = '{$id}'")))
-						{
-							header('location:?item=indexmgr&act=new&msg=2');
-							//echo $db->cmd;
-						} 	
-						else 
-						{  										
-							header('location:?item=indexmgr&act=new&msg=1');
-						}  			
+						
 					} 
 					else 
 					{
-						echo "Sorry, there was an error uploading your file.";
-					}						
+						//echo "Sorry, there was an error uploading your file.";
+					}
+					$fn = $filename;						
+					$_POST["text"] = addslashes($_POST["text"]);
+					if (!empty($_FILES[$fileup]["name"]))
+					{
+						$values = array("`mid`"=>"'{$_POST[cbmenu]}'",
+										"`pic`"=>"'{$fn}'",
+										"`text`"=>"'{$_POST[text]}'");
+					}
+					else
+					{
+						$values = array("`mid`"=>"'{$_POST[cbmenu]}'",
+										"`text`"=>"'{$_POST[text]}'");
+					}		
+					
+					if (!$db->UpdateQuery("topindex",$values,array("id = '{$id}'")))
+					{
+						header('location:?item=indexmgr&act=new&msg=2');
+						//echo $db->cmd;
+					} 	
+					else 
+					{  										
+						header('location:?item=indexmgr&act=new&msg=1');
+					}  				
 			}
 		}
 	}
