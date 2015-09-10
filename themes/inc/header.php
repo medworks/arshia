@@ -143,11 +143,11 @@ header('Content-Type: text/html; charset=UTF-8');
 									<div class="contact_info">
 										Call Us: <a href="javascript:void(0);" style="font-family:'bmitra' !important"><?php echo $tel; ?></a> - Mail: <a href="javascript:void(0);"><?php echo $Contact_Email; ?></a>
 									</div>
-									<div style="float:left;margin-left:220px">
+									<!-- <div style="float:left;margin-left:220px">
 										<a href="./" class="logo">
 											<img width="148" height="31" src="themes/images/logo.png" data-at2x="themes/images/logo@2x.png" alt="media">
 										</a>
-									</div>
+									</div> -->
 									<div class="header_right">
 										<div class="social_links">
 											<a href="https://<?php echo $twitter; ?>" class="social_link icon-twitter"></a>
@@ -171,7 +171,7 @@ header('Content-Type: text/html; charset=UTF-8');
 							<div class="col-1-5 left">
 								<div class="col">
 									<a href="./" class="logo">
-										<!-- <img width="148" height="31" src="themes/images/logo.png" data-at2x="themes/images/logo@2x.png" alt="media"> -->
+										<img width="148" height="31" src="themes/images/logo.png" data-at2x="themes/images/logo@2x.png" alt="media">
 									</a>
 								</div>
 							</div>
@@ -192,9 +192,9 @@ header('Content-Type: text/html; charset=UTF-8');
 															<li class="<?php echo ($page_name=='')?'current-menu-item':'';?> menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item menu-item-688 top-menu-item has-sub-menu">
 																<a href="./" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">صفحه اصلی</span> </span></span></a>
 															</li>
-															<!-- پمپها و کمپرسورهای اسکرو -->
+															<!-- پمپهای اسکرو -->
 															<li class="<?php echo ($page_name=='construction.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
-																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پمپها و کمپرسورهای اسکرو</span> </span></span></a>
+																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پمپهای اسکرو</span> </span></span></a>
 																<ul class="sub-menu">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
 																		<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پروژها</span> </span></span></a>
@@ -390,9 +390,9 @@ header('Content-Type: text/html; charset=UTF-8');
 																</ul>
 															</li>
 															<!-- END بازسازی قطعات داغ -->
-															<!--  آب بند پره ها و سایر پروژه ها -->
+															<!--  سایر پروژه ها -->
 															<li class="<?php echo ($page_name=='construction.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
-																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">آب بند پره ها و سایر پروژه ها</span> </span></span></a>
+																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">سایر پروژه ها</span> </span></span></a>
 																<ul class="sub-menu">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
 																		<a href="menupage40.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت آب بند پره های توربین V94.2</span> </span></span></a>
@@ -417,13 +417,27 @@ header('Content-Type: text/html; charset=UTF-8');
 																	</li>
 																</ul>
 															</li>
-															<!-- END  آب بند پره ها و سایر پروژه ها -->
+															<!-- END  سایر پروژه ها -->
 															<!-- ارشیا در یک نگاه -->
 															<li class="<?php echo ($page_name=='about-us.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
 																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ارشیا در یک نگاه</span> </span></span></a>
 																<ul class="sub-menu">
-																	<li class="<?php echo ($page_name=='about-us.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
+																	<!-- <li class="<?php echo ($page_name=='about-us.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
 																		<a href="about-us.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">درباره ما</span> </span></span></a>
+																	</li> -->
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																		<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">رویدادها</span> </span></span></a>
+																		<ul class="sub-menu">
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="conference.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">همایشها</span> </span></span></a>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="visits.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازدیدها</span> </span></span></a>
+																			</li>
+																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
+																				<a href="articles.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">مقالات</span> </span></span></a>
+																			</li>
+																		</ul>
 																	</li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
 																		<a href="history.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تاریخچه</span> </span></span></a>
@@ -432,7 +446,7 @@ header('Content-Type: text/html; charset=UTF-8');
 																		<a href="javascript:void(0);" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بیانیه های راهبردی</span> </span></span></a>
 																		<ul class="sub-menu">
 																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																				<a href="mission.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ماموریت</span> </span></span></a>
+																				<a href="mission.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">راهبرد</span> </span></span></a>
 																			</li>
 																			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
 																				<a href="view.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">چشم انداز</span> </span></span></a>
@@ -446,35 +460,21 @@ header('Content-Type: text/html; charset=UTF-8');
 																		<a href="organizationchart.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">چارت سازمانی</span> </span></span></a>
 																	</li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="managers.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">هئیت مدیره</span> </span></span></a>
+																		<a href="managers.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">هیئت مدیره</span> </span></span></a>
 																	</li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="contact.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پیشنهادات و انتقادات</span> </span></span></a>
+																		<a href="contact.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">پیشنهاد و انتقاد</span> </span></span></a>
 																	</li>
 																</ul>
 															</li>
 															<!-- END ارشیا در یک نگاه -->
 															<!-- رویدادها -->
-															<li class="<?php echo ($page_name=='about-us.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-119 top-menu-item has-sub-menu">
-																<a href="javascript:void(0);" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">رویدادها</span> </span></span></a>
-																<ul class="sub-menu">
-																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="conference.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">همایش ها</span> </span></span></a>
-																	</li>
-																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="visits.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">بازدیدها</span> </span></span></a>
-																	</li>
-																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item menu-item-594 has-sub-menu">
-																		<a href="articles.html" class="has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">مقالات</span> </span></span></a>
-																	</li>
-																</ul>
-															</li>
+															
 															<!-- END رویدادها -->
-															<li class="<?php echo ($page_name=='contact.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-162 top-menu-item has-sub-menu">
+															<!-- <li class="<?php echo ($page_name=='contact.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item menu-item-162 top-menu-item has-sub-menu">
 																<a href="contact.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">تماس با ما</span> </span></span></a>
 															</li>
-															<!-- END  آب بند پره ها و سایر پروژه ها -->
-															<!-- <li class="<?php echo ($page_name=='construction.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
+															<li class="<?php echo ($page_name=='construction.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
 																<a href="construction.html" class="top-menu-item-a has-sub-menu-a"><span class="item_wrapper"><span class="item"><span class="item_name">ساخت</span> </span></span></a>
 															</li>
 															<li class="<?php echo ($page_name=='regeneration.html')?'current-menu-item':'';?> menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item menu-item-585 top-menu-item has-sub-menu">
