@@ -107,7 +107,7 @@ $html=<<<cd
 										<div class="footer_links">
 											<a href="./">Home</a>
 											<a href="contact.html">Contact us</a>
-											<a href="about-us.html">About</a>
+											<a href="about-us.html">About us</a>
 										</div>
 									</div>
 								</div>
