@@ -16,6 +16,24 @@
 	$sess = Session::GetSesstion();	
 	$userid = $sess->Get("userid");
 	$overall_error = false;
+		function getfather($db,$table,$curid)
+	{
+		$crow=$db->Select("{$table}","*","id = {$curid}");
+		$code = $crow["code"];
+		while($code!=0)
+		{	
+			if ($code==0) break;
+			$db->cmd =<<<cd
+	SELECT * FROM {$table} WHERE id < {$curid} ORDER BY id DESC LIMIT 1;
+cd;
+	$res = $db->RunSQL();
+    if ($res)
+	    $row = mysqli_fetch_array($res);
+		$curid = $row["id"];
+		$code =$row["code"];
+		}
+		return $curid;
+	}
 	if ($_GET['item']!="delinfopic")	exit();
 	
 	$rows=$db->SelectAll("menusubject","*");
@@ -44,8 +62,11 @@ $rowsClass = array();
                 {						
 		        $rows[$i]["text"] =(mb_strlen($rows[$i]["text"])>20)?mb_substr($rows[$i]["text"],0,20,"UTF-8")."...":$rows[$i]["text"];
 				$row = $db->Select("menu","*","id = {$rows[$i][mid]}");
-		        $rows[$i]["mid"] =(mb_strlen($row["name"])>20)?mb_substr($row["name"],0,20,"UTF-8")."...":$row["name"];
-                              
+		        //$rows[$i]["mid"] =(mb_strlen($row["name"])>20)?mb_substr($row["name"],0,20,"UTF-8")."...":$row["name"];                
+				$father = getfather($db,"menu",$rows[$i]["mid"]);
+				$nrow = $db->Select("menu","*","id = {$father}");
+				
+				$rows[$i]["mid"] =$row["name"]."({$nrow[name]} )";              
 				if ($i % 2==0)
 				 {
 						$rowsClass[] = "datagridevenrow";

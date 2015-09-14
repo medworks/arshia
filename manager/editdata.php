@@ -6,7 +6,7 @@
 	include_once("../classes/functions.php");
 	include_once("../classes/login.php");
 	include_once("../lib/persiandate.php");	
-	$login = Login::GetLogin();
+	$login = Login::GetLogin();	
 	if (!$login->IsLogged())
 	{
 		header("Location: ../index.php");
@@ -16,6 +16,24 @@
 	$sess = Session::GetSesstion();	
 	$userid = $sess->Get("userid");
 	$overall_error = false;
+	function getfather($db,$table,$curid)
+	{
+		$crow=$db->Select("{$table}","*","id = {$curid}");
+		$code = $crow["code"];
+		while($code!=0)
+		{	
+			if ($code==0) break;
+			$db->cmd =<<<cd
+	SELECT * FROM {$table} WHERE id < {$curid} ORDER BY id DESC LIMIT 1;
+cd;
+	$res = $db->RunSQL();
+    if ($res)
+	    $row = mysqli_fetch_array($res);
+		$curid = $row["id"];
+		$code =$row["code"];
+		}
+		return $curid;
+	}
 	if ($_GET['item']!="editdata")	exit();
 	
 	if ($_GET['act']=="del")
@@ -31,8 +49,11 @@ $rowsClass = array();
                 for($i = 0; $i < Count($rows); $i++)
                 {						
 		        $rows[$i]["text"] =(mb_strlen($rows[$i]["text"])>30)?mb_substr($rows[$i]["text"],0,30,"UTF-8")."...":$rows[$i]["text"];
-				$mid = $db->Select("menu","*","id = {$rows[$i][mid]}");
-				$rows[$i]["mid"] =$mid["name"];
+				$id = $db->Select("menu","*","id = {$rows[$i][mid]}");				
+				$father = getfather($db,"menu",$rows[$i][mid]);
+				$nrow = $db->Select("menu","*","id = {$father}");
+				
+				$rows[$i]["mid"] =$id["name"]."({$nrow[name]} )";
 				if ($i % 2==0)
 				 {
 						$rowsClass[] = "datagridevenrow";
