@@ -65,7 +65,30 @@ $selectitem=<<<cd
 			$('#menu').val("{$row2[code]}").change();
 		 });
 		    	    
-	</script>	
+	</script>
+<script type='text/javascript'>
+	
+		$(document).ready(function(){
+		  
+		  $('#menu').on('change', function() {			
+			alert("4545");
+			$.ajax({
+				url: 'ajaxcommand.php',
+				type: 'GET',
+				data: "action=data&mid="+$(this).find(":selected").val(),
+				success: function(data) {				
+				$('#detail').val(data);
+				alert(data);
+				tinyMCE.activeEditor.setContent(data);
+				},
+				error: function(e) {				
+				//console.log(e.message);
+				}
+			});				
+		});
+		  		 
+	    });
+	</script>	  	
 cd;
 	}
 $msgs = GetMessage($_GET['msg']);	

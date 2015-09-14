@@ -209,4 +209,10 @@ if($_GET["poll"]=="reg")
 		echo $row["text"];
 	}
 	
+	if ($_GET["action"]=="data")
+	{
+		$row = $db->Select("menusubject","*","mid = {$_GET['mid']}");
+		echo $row["text"];
+	}
+	
 ?>
