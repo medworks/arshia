@@ -88,7 +88,7 @@ if (!$_GET["pageNo"] or $_GET["pageNo"]<=0) $_GET["pageNo"] = 0;
 							"text"=>"متن",
                             "edit"=>"ویرایش",
 							), $rows, $colsClass, $rowsClass, 10,
-                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=infopicslist&act=mgr");
+                            $_GET["pageNo"], "id", false, true, true, $rowCount,"item=delinfopic&act=do");
                     
             }
 $msgs = GetMessage($_GET['msg']);
