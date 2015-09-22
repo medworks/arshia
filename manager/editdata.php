@@ -42,7 +42,7 @@ cd;
 		if ($db->CountAll("menusubject")%10==0) $_GET["pageNo"]-=1;		
 		header("location:?item=editdata&act=mgr&pageNo={$_GET[pageNo]}");
 	}
-	$rows=$db->SelectAll("menusubject","*");
+	$rows=$db->SelectAll("menusubject","*",	null,"id DESC",	$_GET["pageNo"]*10,10);
 $rowsClass = array();
                 $colsClass = array();
                 $rowCount =($_GET["rec"]=="all" or $_POST["mark"]!="srhcat")?$db->CountAll("menusubject"):Count($rows);

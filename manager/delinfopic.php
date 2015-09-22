@@ -36,7 +36,7 @@ cd;
 	}
 	if ($_GET['item']!="delinfopic")	exit();
 	
-	$rows=$db->SelectAll("menusubject","*");
+	$rows=$db->SelectAll("menusubject","*",	null,"id DESC",	$_GET["pageNo"]*10,10);
 	$cbmenu = DbSelectOptionTag("cbmenu",$rows,"name",NULL,NULL,NULL,NULL,"  منو  ");
 	if ($_POST["mark"]== "save")
 	{
