@@ -272,7 +272,7 @@ $html.=<<<cd
 																			<div class="clearfix rps_controls">
 																				<a href="" class="btn_prev">Prev</a><a href="" class="btn_next">Next</a>
 																			</div>
-																			<ul class="recent_posts_slider clearfix" data-num-columns="6" data-image-width="220" data-autoslide-interval="2500" data-autoslide-stop-click="yes">
+																			<ul class="recent_posts_slider clearfix" data-num-columns="6" data-image-width="220" data-autoslide-interval="9000" data-autoslide-stop-click="no">
 cd;
 foreach($allparts as $key=>$val)
 {
