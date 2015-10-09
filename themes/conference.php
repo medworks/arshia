@@ -74,7 +74,7 @@ $html.=<<<cd
 																	</div>
 																	<div class="portfolio_content">
 																		<h3 class="portfolio_title" style="font-size:20px">
-																			<a href="#">{$confs[$i]["subject"]}</a>
+															<a href="confview{$confs[$i]["id"]}.html">{$confs[$i]["subject"]}</a>
 																		</h3>
 																		<div class="portfolio_date" style="font-size:15px">فروردین 14 1394</div>
 																	</div>

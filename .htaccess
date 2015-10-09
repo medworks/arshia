@@ -27,6 +27,7 @@ deny from all
 	RewriteRule ^view.html arshia/index.php?item=view&act=do [L]
 	RewriteRule ^mission.html arshia/index.php?item=mission&act=do [L]
 	RewriteRule ^topindex([0-9]+).html arshia/index.php?item=index&id=$1 [L]
+	RewriteRule ^confview([0-9]+).html index.php?item=confview&id=$1 [L]
 	RewriteBase /
 
 #Skip WWW	
