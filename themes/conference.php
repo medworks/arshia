@@ -68,7 +68,7 @@ $html.=<<<cd
 																			<a class="portfolio_image_link_big" href="http://prev.freshface.net/file/sn/wp4/portfolio/dolor-sit-amet-consectetur/"></a>
 																			<div class="portfolio_image_hover">
 																			<div class="portfolio_image_controls clearfix">
-																				<a href="#" class="portfolio_image_link"></a>
+																				<a href="confview{$confs[$i]["id"]}.html" class="portfolio_image_link"></a>
 																			</div>
 																		</div>
 																	</div>
