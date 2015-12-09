@@ -38,8 +38,9 @@
 	//$otherbody = strip_tags($otherbody);
 	
 	
-	$allparts = $db->SelectAll("uploadcenter","*","`address` ='100000' OR `address` ='010000'
-	                            OR `address` ='001000' ","address","0","12");
+	//$allparts = $db->SelectAll("uploadcenter","*","`address` ='100000' OR `address` ='010000' OR `address` ='001000' ","address","0","12");
+	$allparts = $db->SelectAll("slides","*","pos = 2");
+	
 	
 	
 $html=<<<cd
@@ -281,6 +282,7 @@ $html.=<<<cd
 																					<div class="rps_slide">
 																						<div class="rps_image_wrapper">
 cd;
+/*
 if ($val["address"][0]=='1')
 	$picadd="researchpics" ;
 else
@@ -289,20 +291,21 @@ if ($val["address"][1]=='1')
 else
 if ($val["address"][2]=='1')
    $picadd="constructpics";
-
+*/
+  //$picadd="slidespics";
 $html.=<<<cd
-<img src='./{$picadd}/{$val[image]}' alt='{$val[subject]}' class='rps_image' width='220px' height='175px' />
+<img src='{$val[image]}' alt='{$val[subject]}' class='rps_image' width='220px' height='175px' />
 																							<div class="rps_image_hover">
 																								<div class="rps_image_controls clearfix">
 																									<!-- <a href="#" class="rps_image_link"></a> -->
-																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="./{$picadd}/{$val[image]}"></a>
-																								</div>
+																									<a class="rps_image_zoom" data-effect="mfp-zoom-in" href="{$val[image]}"></a>
+		</div>
 																							</div>
 																						</div>
 																						<div class="rps_content">
 																							<!-- <div class="rps_like_wrapper"><a href="#" class="dot-irecommendthis" id="dot-irecommendthis-194" title="Recommend this"><span class="dot-irecommendthis-count">26</span> <span class="dot-irecommendthis-suffix"></span></a></div> -->
-																							<h3 class="rps_title"><a href="#">{$val["subject"]}</a></h3>
-																							<!-- <div class="rps_date">فروردین 18, 1392</div> -->
+	<!--																						<h3 class="rps_title"><a href="#">{$val["subject"]}</a></h3>
+																							 <div class="rps_date">فروردین 18, 1392</div> -->
 																						</div>
 																					</div>
 																				</li>
