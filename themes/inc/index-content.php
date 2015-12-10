@@ -6,7 +6,7 @@
 	}
 	else{
     $db = Database::GetDatabase();  	
-    $slides = $db->SelectAll("slides","*");
+    $slides = $db->SelectAll("slides","*","pos = 1");
 	
 	$scropomp = $db->Select("topindex","*","mid = 1");
 	//$conspic = $db->Select("uploadcenter","*","address LIKE '__1%'",null,"0","1");	
